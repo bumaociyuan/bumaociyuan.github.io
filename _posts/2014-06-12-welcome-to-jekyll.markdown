@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to bumaociyuan の blog!"
 date:   2014-06-12 01:06:50
 categories: jekyll update
 ---
