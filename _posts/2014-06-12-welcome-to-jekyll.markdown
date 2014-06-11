@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Welcome to bumaociyuan の blog!"
+title:  "Welcome to bumaociyuan's blog!"
 date:   2014-06-12 01:06:50
 categories: jekyll update
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
+`jekyll自动生成的第一篇blog` You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
 Jekyll also offers powerful support for code snippets:
