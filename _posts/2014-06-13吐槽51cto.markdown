@@ -1,8 +1,0 @@
----
-layout: post
-title:  "吐槽51cto"
-date:   2014-06-12 02:06:50
-categories: 吐槽
-
----
-老子就是来吐槽的，，垃圾51cto 关老子blog 挨球
