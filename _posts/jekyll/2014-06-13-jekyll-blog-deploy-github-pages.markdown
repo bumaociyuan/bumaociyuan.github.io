@@ -33,6 +33,7 @@ Run
        //auto create HTML file in _site dir
 
 Run
+
        jekyll serve 
        //preview in port 4000
        
