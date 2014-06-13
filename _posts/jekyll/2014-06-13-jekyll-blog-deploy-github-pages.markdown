@@ -24,5 +24,5 @@ http://jekyllrb.com/
 then
 
 	cp my-awesome-site path/of/my/repository
-
+write 
 to be continue...
