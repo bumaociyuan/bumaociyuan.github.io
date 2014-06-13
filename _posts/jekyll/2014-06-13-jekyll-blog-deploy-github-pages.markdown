@@ -27,5 +27,15 @@ then
 
 Write .md file in _post dir
 
+Run 
+
+       jekyll build
+       //auto create HTML file in _site dir
+
+Run
+       jekyll serve 
+       //preview in port 4000
+       
+
 
 to be continue...
