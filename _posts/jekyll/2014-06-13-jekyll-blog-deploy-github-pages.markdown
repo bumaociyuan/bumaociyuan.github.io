@@ -24,5 +24,8 @@ http://jekyllrb.com/
 then
 
 	cp my-awesome-site path/of/my/repository
-Wi
+
+Write .md file in _post dir
+
+
 to be continue...
