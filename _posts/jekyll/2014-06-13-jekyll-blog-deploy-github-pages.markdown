@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "jekyll blog deploy github pages"
+date:   2014-06-13 12:06:50
+categories: jekyll
+
+---
+simple blog
+
+[github pages](https://pages.github.com/)
+
+write with jekyll
+
+http://jekyllrb.com/
+
+	gem install jekyll
+	jekyll new my-awesome-site
+	cd my-awesome-site
+	jekyll serve
+	
+	//Now browse to http://localhost:4000
+	
+
+then
+
+	cp my-awesome-site path/of/my/repository
+
+to be continue...
