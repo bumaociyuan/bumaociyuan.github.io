@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Ad hoc 教程 3 ==> ipa 的远程安装"
+date:   2013-12-09 16:06:50
+categories: ios
+
+---
+Ad hoc 是苹果的内测机制，可以给所有注册的device 安装内测ipa。
+
+* 首先申请ad hoc 证书
+* 在dev center 加入设备udid
+* 设备下载 mobleprovision文件
+* 生成ipa,并安装(安装可以用itunes，安装或者远程安装) `注意打包时不能连接手机！特别是5s 不然会出现5s可以安装，其他设备不能安装的bug，原因是5s 是64位`
+
+生成证书参考:[Ad hoc 教程 1 ==> 生成证书](/ios/2013/10/23/ad-hoc-1.html)
+
+用itunes安装参考:[Ad hoc 教程 2==> 通过itunes安装ipa](/ios/2013/10/26/ad-hoc-2.html)
+
+**ipa 的远程安装**
+
+主要是使用苹果的itms协议
+通过safari打开
+`itms-services://?action=download-manifest&url=http://10.0.0.23:8000/srp.plist`
+
+或者应用内调用 
+`【UIApplication shareApplication】openUrl` 的方法打开
+
+`itms-services://?action=download-manifest&url=http://10.0.0.23:8000/srp.plist`
+
+标准plist   ==>[statard.plist](https://gist.github.com/bumaociyuan/5015bf421fc3070ae13b)
+
+demo plist  ==>[srp.plist](https://gist.github.com/bumaociyuan/5015bf421fc3070ae13b)
+
+需要配置的 字段
+
+* bundle-identifier     ==> bundle identifier
+
+* bundle-version        ==> bundle version
+
+* title                 ==> 安装的时候显示的title
+
+* software-package      ==> ipa url
+
+* display-image         ==> 144 * 144 icon url
+
+* full-size-image        ==> 512 * 512 icon url
+
+
+
+
+

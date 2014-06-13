@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Introduction to CocoaPods"
+date:   2013-10-13 16:06:50
+categories: ios
+
+---
+references: [raywenderlich](http://www.raywenderlich.com/12139/introduction-to-cocoapods)
+
+error:
+![image](http://www.dasdoc.com/uploads/origin/201310/131615156.png)
+To solve this error 
+run this command :
+
+`sudo xcode-select -switch /Applications/Xcode.app`

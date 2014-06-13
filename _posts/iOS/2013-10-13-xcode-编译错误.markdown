@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "xcode 编译错误"
+date:   2013-10-13 16:06:50
+categories: ios
+
+---
+error:
+
+`Command /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 1`
+
+解决方法：
+将Apple LLVM compiler 4.2 - Language ->c++ Standard Library 修改为 libstdc++ （GNU C++ standard library）
+
