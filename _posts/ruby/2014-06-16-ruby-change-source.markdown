@@ -2,7 +2,7 @@
 layout: post
 title:  "ruby change source"
 date:   2014-06-16 16:06:50
-categories: ios
+categories: ruby
 
 ---
 	$ gem sources --remove https://rubygems.org/
