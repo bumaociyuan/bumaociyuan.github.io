@@ -29,3 +29,32 @@ commit to repo
 push to remote
 
 	git push 
+	
+checkout
+	
+	git checkout .
+	
+view branches
+	
+	git branch
+	
+create new branch
+	
+	git branch new-branch-name
+	
+switch branch
+	
+	git checkout branch-name
+	
+merge  branch1 to branch2
+	
+	git checkout branch1
+	git merge branch2
+	
+delete branch
+
+	git branch -D branch-name
+
+	
+
+	
