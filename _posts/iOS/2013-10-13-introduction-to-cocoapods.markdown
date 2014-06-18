@@ -15,7 +15,11 @@ references: [raywenderlich](http://www.raywenderlich.com/12139/introduction-to-c
 
 error:
 ![image](http://www.dasdoc.com/uploads/origin/201310/131615156.png)
+
 To solve this error 
 run this command :
 
 	sudo xcode-select -switch /Applications/Xcode.app
+	
+
+`platform :ios, "7.0"`
