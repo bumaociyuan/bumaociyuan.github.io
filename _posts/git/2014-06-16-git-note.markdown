@@ -58,7 +58,11 @@ categories: git
 **delete branch**
 
 	git branch -D branch-name
-
+	
+**git merge from new branch to master**
+	
+	git checkout master
+	git merge new-branch-name
 	
 
 	
