@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "git note"
+date:   2014-06-16 19:06:50
+categories: git
+
+---
+
+**clone from remote**
+
+	git clone url-of-repository
+	
+
+**check status**
+
+	git status
+
+	
+**add all changes**
+
+	git add .
+	
+	
+**add some file**
+
+	git add file-path
+	
+	
+**commit to repo**
+
+	git commit -m 'comment'
+	
+**push to remote**
+
+	git push 
+	
+**checkout**
+	
+	git checkout .
+	
+**view branches**
+	
+	git branch
+	
+**create new branch**
+	
+	git branch new-branch-name
+	
+**switch branch**
+	
+	git checkout branch-name
+	
+**merge  branch1 to branch2**
+	
+	git checkout branch1
+	git merge branch2
+	
+**delete branch**
+
+	git branch -D branch-name
+	
+**git merge from new branch to master**
+	
+	git checkout master
+	git merge new-branch-name
+	
+
+	
