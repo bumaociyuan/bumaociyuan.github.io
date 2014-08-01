@@ -10,4 +10,5 @@ group style tableview background color in ios 7
 
 ```
 [UIColor colorWithRed:0.933 green:0.933 blue:0.957 alpha:1.000]
+hex : EDEDF4
 ```
