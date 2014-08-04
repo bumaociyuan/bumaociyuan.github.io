@@ -10,7 +10,7 @@ references: [raywenderlich](http://www.raywenderlich.com/12139/introduction-to-c
 
 
 
-	$ sudo gem install cocoapods
+	 sudo gem install cocoapods
 
 
 error:
@@ -23,3 +23,7 @@ run this command :
 	
 
 `platform :ios, "7.0"`
+
+
+	pod install --verbose --no-repo-update
+	pod update --verbose --no-repo-update
