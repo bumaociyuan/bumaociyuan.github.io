@@ -6,16 +6,15 @@ categories: ios
 
 ---
 
-in appdelegate.m
+in `AppDelegate.m`
 
 		UINavigationBar * bar = [UINavigationBar appearance];
 		bar.backIndicatorImage = [UIImage imageNamed:@"navBackButton"];
 		bar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"navBackButton"];
 	
-in baseviewcontroller.m -viewdidload
-
+in `BaseViewController.m` -viewdidload
 
 		self.navigationItem.leftItemsSupplementBackButton = YES;
-		self.navigationItem.backBarButtonItem = [self textBarButtonItemWithText:@"" 		handler:nil];
+		self.navigationItem.backBarButtonItem = [self textBarButtonItemWithText:@""];
 		
-`cannot handle the back bar button item click event`
+**cannot handle the back bar button item click event**
