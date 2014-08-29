@@ -8,10 +8,22 @@ categories: ios
 reference [stackoverflow](http://stackoverflow.com/questions/4778847/find-replace-in-xcode-using-regular-expression)
 
 example
-search: `NSLocalizedString(@"words", nil)  with regex: (NSLocalizedString\()(@"\w+")(, nil\))`
-relace regex: `ZXLocalizeble\(\2\)`
+search: 
+`NSLocalizedString(@"words", nil) `
+
+ with regex: 
+ 
+` (NSLocalizedString\()(@"\w+")(, nil\))`
+
+
+relace regex: 
+
+`ZXLocalizeble\(\2\)`
+
 replace all  
- result: `ZXLocalizeble(@"words")`
+
+result: `ZXLocalizeble(@"words")`
 
 insert return
- press ctrl+q press return
+
+press `ctrl+q` press `return`
