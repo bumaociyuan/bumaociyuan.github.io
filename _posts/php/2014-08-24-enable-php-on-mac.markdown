@@ -24,4 +24,24 @@ categories: ios
 	    ServerName yourwebsitename
 
 
+### Another tutorial
+1. Install : XAMPP Mac OS X 1.7.3 [download](http://www.apachefriends.org/download.php?xampp-macosx-1.7.3.dmg)
+* `sudo su`
+* `/Applications/XAMPP/xamppfiles/xampp start`
+* if you see 
 
+		XAMPP: Starting ProFTPD.../Applications/XAMPP/xamppfiles/xampp: line 184: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory fail.  
+		Contents of "/Applications/XAMPP/xamppfiles//var/proftpd/start.err":  		cat: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory  
+
+	do these commands
+	
+	`sudo mkdir /Applications/XAMPP/xamppfiles/var/proftpd/`
+	
+	`touch /Applications/XAMPP/xamppfiles/var/proftpd/start.err`
+	
+	`sudo /Applications/XAMPP/xamppfiles/xampp fix_rights`
+	
+	then redo the `/Applications/XAMPP/xamppfiles/xampp start` cmd
+
+2. in http://localhost you can see the test site
+3. 

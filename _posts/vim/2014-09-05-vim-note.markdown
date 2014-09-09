@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "vim note"
+date:   2014-09-05 09:41:50
+categories: terminal
+
+---
+
+
