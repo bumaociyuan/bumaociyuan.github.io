@@ -9,18 +9,27 @@ categories: ios
 
 [http://guides.cocoapods.org/](http://guides.cocoapods.org/making/making-a-cocoapod.html)
 
+demo : [link](https://github.com/bumaociyuan/NSString-BlockHelper.git)
 
-NSString-BlockHelper.podspec
+1. create NSString-BlockHelper.podspec
 
 	Pod::Spec.new do |s|
-	  s.name     = 'NSString-BlockHelper'
-	  s.version  = '1.0.0'
-	  s.license  = 'MIT'
-	  s.summary  = "NSString+BlockHelper"
-	  s.homepage = 'http://bumaociyuan.github.io/'
-	  s.authors  = { ‘bumaociyuan’ =>
-	                 'http://bumaociyuan.github.io/' }
-	  s.social_media_url = "https://twitter.com/bumaociyuan"
-	  s.source   = { :git => 'https://twitter.com/bumaociyuan', :tag => '1.0.0' }
-	  s.source_files = 'NSString-BlockHelper'
+  		s.name     = 'NSString-BlockHelper'
+  		s.version  = '1.0.0'
+  		s.license  = { :type => 'MIT', :file => 'LICENSE.md' }
+		s.summary  = "NSString+BlockHelper"
+  		s.homepage = 'https://github.com/bumaociyuan/NSString-BlockHelper'
+		s.authors  = { 'bumaociyuan' => 'http://bumaociyuan.github.io/' }
+ 		s.source   = { :git => 'https://github.com/bumaociyuan/NSString-BlockHelper.git', :tag => s.version.to_s }
+ 		s.source_files = 'NSString+BlockHelper/*{h,m}'
+ 		s.requires_arc = true
 	end
+
+
+2. set the tag
+`git tag 1.0.0;	git push --tags`
+
+
+3. use the cmd
+`pod trunk push NSString-BlockHelper.podspec --verbose` to push .podspec to repo
+

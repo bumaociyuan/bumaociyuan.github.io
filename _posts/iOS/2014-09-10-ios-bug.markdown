@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "ios bug"
+date:   2014-09-10 09:54:52
+categories: ios
+
+---
+
+#iOS 7 
+Q: ios7中使用UISearchDisplayController进行搜索 输入内容然后滑动searchResultsTableView然后取消 再次点击搜索 输入内容之后点search 然后在取消 这样重复几次UISearchDisplayController的contentSize就会不正确的能向下滑动很长 
+
+A:
+
+	#pragma mark - UISearchDisplayDelegate
+	- (void)searchDisplayController:(UISearchDisplayController *)controller 	willShowSearchResultsTableView:(UITableView *)tableView {
+  	  tableView.contentInset = UIEdgeInsetsZero;
+  	  tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
+	}
