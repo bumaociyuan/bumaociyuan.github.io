@@ -6,6 +6,14 @@ categories: git
 
 ---
 
+**init**
+
+	git init
+
+**add remote url**
+
+	git remote add repoName repoUrl
+
 **clone from remote**
 
 	git clone url-of-repository
