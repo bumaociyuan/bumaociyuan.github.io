@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "curl note"
+date:   2014-09-16 09:55:50
+categories: terminal
+
+---
+抓取页面内容到一个文件中
+
+	curl -o file.html  http://www.baidu.com

@@ -9,6 +9,8 @@ categories: ios
 
 [http://guides.cocoapods.org/](http://guides.cocoapods.org/making/making-a-cocoapod.html)
 
+[Your First CocoaPod](http://code.dblock.org/your-first-cocoapod)
+
 demo : [link](https://github.com/bumaociyuan/NSString-BlockHelper.git)
 
 1. create NSString-BlockHelper.podspec

@@ -42,9 +42,23 @@ categories: git
 
 	git push 
 	
+**log**
+	
+	git log		 		#查看最近 提交
+	git log -10 		#查看最近 提交 -10
+	git log --graph 	#查看最近 提交 --graph
+	
 **checkout**
 	
 	git checkout .
+	
+`**git checkout <commit number> <filename> **`
+
+	git checkout 3f33b7959ff97715d69e418620895d98b811f8cb mite_server/*
+	
+**撤销提交**
+	
+	git revert 
 	
 **view branches**
 	
