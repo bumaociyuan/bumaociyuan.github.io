@@ -96,6 +96,6 @@ categories: git
 	
 **push to server**
 
-	git push origin branch-name-on server
+	git push origin branch-name-on-server
 
 	
