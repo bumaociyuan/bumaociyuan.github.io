@@ -1,3 +1,8 @@
 name: bumaociyuan's blog
 markdown: redcarpet
 pygments: true
+
+ comments :
+    provider : duoshuo
+    duoshuo : 
+      short_name : bumaociyuan

@@ -64,6 +64,10 @@ categories: git
 	
 	git branch
 	
+**view branches on server**
+
+	git branch -r
+	
 **create new branch**
 	
 	git branch new-branch-name
