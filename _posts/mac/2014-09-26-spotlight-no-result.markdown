@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "spotlight no result"
+title:  "spotlight no resultfads"
 date:   2014-09-26 11:06:50
 categories: mac
 
