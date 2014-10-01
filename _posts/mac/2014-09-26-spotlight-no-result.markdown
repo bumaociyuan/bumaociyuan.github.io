@@ -6,7 +6,7 @@ categories: mac
 
 ---
 
-test3
+test4
 
 [link](http://blog.cnrainbird.com/index.php/2013/02/14/osx_zhong_jian_spotlight_suo_yin/)
 
