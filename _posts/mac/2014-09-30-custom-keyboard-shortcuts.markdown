@@ -10,6 +10,7 @@ categories: mac
 
 
 * `System Preferences` -> `Keyboard` -> `Shortcuts` -> `App Shortcuts` -> plus button
+
 ![image](https://raw.githubusercontent.com/bumaociyuan/bumaociyuan.github.io/master/_resources/2014/09/30/1.png)
 
 OK~
