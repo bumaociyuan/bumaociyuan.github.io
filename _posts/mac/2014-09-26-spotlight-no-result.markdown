@@ -6,6 +6,8 @@ categories: mac
 
 ---
 
+test
+
 [link](http://blog.cnrainbird.com/index.php/2013/02/14/osx_zhong_jian_spotlight_suo_yin/)
 
 	$sudo mdutil -E /Volumes/Macintosh\ HD/
