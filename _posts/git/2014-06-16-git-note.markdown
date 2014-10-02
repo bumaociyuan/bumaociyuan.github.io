@@ -64,10 +64,6 @@ categories: git
 	
 	git branch
 	
-**view branches on server**
-
-	git branch -r
-	
 **create new branch**
 	
 	git branch new-branch-name
@@ -102,36 +98,4 @@ categories: git
 
 	git push origin branch-name-on-server
 
-**git tag**
-
-	#view tags on local
-	$ git tag
-	 v0.1
-	 v1.3
-	 
-	 #filter tag
-	$ git tag -l 'v1.4.2.*'
-	 v1.4.2.1
-	 v1.4.2.2
-	 v1.4.2.3
-	 v1.4.2.4
-	 
-	 #create tag
-	 -a + tag-name
-	 -m + tag-intro
-	 $ git tag -a v0.1 -m v0.1 d375fcf
-	 
-	 #show tag
-	 $git show v0.3
-	 tag v0.3
-	 Tagger: Havanna <skykiss_2000@163.com>
-	 Date:   Fri Jun 15 12:21:48 2012 +0800
-	 
-	 #push tag to server
-	 git push --tags
-	 
-	 #delete tag on local
-	 $ git tag -d v0.1
-	 
-	 #delete tag on server
-	 $ git push origin :refs/tags/v0.1
+	
