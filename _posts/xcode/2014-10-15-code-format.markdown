@@ -15,7 +15,7 @@ categories: ios
 
 * open `Terminal` 
 
-* run `git clone https://github.com/bumaociyuan/ uncrustify.cfg .uncrustify`
+* run `git clone https://github.com/bumaociyuan/uncrustify.cfg .uncrustify`
 
 * set shortcut for `Format Active File` with [this article](http://bumaociyuan.github.io/mac/2014/09/30/custom-keyboard-shortcuts.html)
 
