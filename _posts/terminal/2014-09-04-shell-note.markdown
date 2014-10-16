@@ -5,6 +5,9 @@ date:   2014-09-04 16:41:50
 categories: terminal
 
 ---
+[Linux Shell Scripting Tutorial v1.05r3
+A Beginner's handbook](http://www.freeos.com/guides/lsst/)
+
 [link](http://www.92csz.com/study/linux/12.htm)
 
 #### 1. 记录命令历史
