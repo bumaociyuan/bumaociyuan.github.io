@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "app store short url"
-date:   2014-10-09 22:39:52
+date:   2014-10-18 22:39:52
 categories: ios
 
 ---
