@@ -98,4 +98,19 @@ categories: git
 
 	git push origin branch-name-on-server
 
+**tag**
 	
+	git tag	        		             #查看所有标签
+	git tag v0.1.2-light   			     #创建轻量标签
+	git tag -a v0.1.2 -m “0.1.2版本”   	 #创建附注标签
+	
+	git checkout tag-name
+	git tag -d v0.1.2					 #删除标签
+	git tag -a v0.1.1 9fbc3d0			 #补打标签
+	
+	git push --tags
+	
+`通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：`
+	
+	git push origin tag-name			 #将tag-name标签提交到git服务器
+	git push origin –tags				 #将本地所有标签一次性提交到git服务器
