@@ -33,13 +33,13 @@ demo plist  ==>[srp.plist](https://gist.github.com/bumaociyuan/5015bf421fc3070ae
 
 需要配置的 字段
 
-* bundle-identifier     ==> bundle identifier
+* bundle-identifier     ==> bundle identifier   #`必须`
 
 * bundle-version        ==> bundle version
 
 * title                 ==> 安装的时候显示的title
 
-* software-package      ==> ipa url
+* software-package      ==> ipa url #`必须`
 
 * display-image         ==> 144 * 144 icon url
 
