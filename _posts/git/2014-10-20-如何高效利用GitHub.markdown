@@ -6,7 +6,3 @@ categories: git
 
 ---
 [link](http://www.yangzhiping.com/tech/github.html)
-> dfafsadafdsasdf 
-
-
-dsaf
