@@ -12,11 +12,15 @@ categories: git
 
 **add remote url**
 
-	git remote add repo-name repo-url
+	git remote add origin repo-url
+
+**delete remote url**
+	
+	git remote rm origin
 
 **clone from remote**
 
-	git clone url-of-repository
+	git clone repo-url
 
 **check status**
 
@@ -48,9 +52,7 @@ categories: git
 **checkout**
 	
 	git checkout .
-	
 	git checkout <commit number> <filename>  #**常用**
-
 	git checkout 3f33b7959ff97715d69e418620895d98b811f8cb folder-name/* #恢复某folder-name下所有文件到 3f33b7959ff97715d69e418620895d98b811f8cb
 	
 **撤销提交**
@@ -68,7 +70,7 @@ categories: git
 	
 **switch branch**
 	
-	git checkout branch-name
+	git checkout branch-name 		#切换到branch-name
 	
 **merge  branch1 to branch2**
 	
