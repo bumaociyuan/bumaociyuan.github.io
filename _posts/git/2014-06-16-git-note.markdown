@@ -29,7 +29,8 @@ categories: git
 	
 **add all changes**
 
-	git add .
+	git add .     #add all file in current folder
+	git add -A    #git
 	
 **add some file**
 
@@ -48,6 +49,8 @@ categories: git
 	git log		 		#查看最近 提交
 	git log -10 		#查看最近 提交 -10
 	git log --graph 	#查看最近 提交 --graph
+	gitk				#GUI查看提交记录，需要用homebrew 升级git
+	gitk file-path		#GUI查看filefile-path提交记录
 	
 **checkout**
 	
