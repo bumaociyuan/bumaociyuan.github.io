@@ -8,3 +8,8 @@
 	path = _theme_packages/twitter
 	url = https://github.com/jekyllbootstrap/theme-twitter.git
         ignore = dirty
+
+[submodule "_theme_packages/hooligan"]
+	path = _theme_packages/hooligan
+	url = https://github.com/dhulihan/hooligan.git
+        ignore = dirty
