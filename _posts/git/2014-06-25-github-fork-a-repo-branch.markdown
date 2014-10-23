@@ -11,7 +11,7 @@ I don’t know a native way yet, but you can do it following this recipe:
 * Fork the repository in question (called ‘upstream’) on the GitHub website to your workspace there.
 * Run the GitHub desktop application and clone the repository onto your PC.
 * Use the GitHub desktop application to open a shell in the repository. (The git commands are not available from the default PowerShell unless you configure that manually.)
-* Set the source repository as upstream: 
+* Set the source repository as upstream:
 
 		git remote add upstream https://github.com/{user}/{source-repo}.git
 
