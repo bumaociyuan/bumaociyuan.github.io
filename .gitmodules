@@ -1,0 +1,10 @@
+[submodule "_theme_packages/the-program"]
+	path = _theme_packages/the-program
+	url = https://github.com/jekyllbootstrap/theme-the-program.git
+        ignore = dirty
+
+
+[submodule "_theme_packages/twitter"]
+	path = _theme_packages/twitter
+	url = https://github.com/jekyllbootstrap/theme-twitter.git
+        ignore = dirty
