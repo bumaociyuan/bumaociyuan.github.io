@@ -5,6 +5,7 @@ date:   2014-06-13 12:06:50
 categories: jekyll
 
 ---
+[demos](https://github.com/jekyll/jekyll/wiki/Sites)
 simple blog
 
 [github pages](https://pages.github.com/)
