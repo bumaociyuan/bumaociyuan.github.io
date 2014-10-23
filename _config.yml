@@ -1,3 +1,7 @@
-name: bumaociyuan's blog
-markdown: redcarpet
-pygments: true
+title : bumaociyuan's blog
+
+author :
+  name : bumaociyuan
+  email : zx19880528@gmail.com
+  github : bumaociyuan
+  twitter : bumaociyuan
