@@ -6,38 +6,44 @@ categories: jekyll
 
 ---
 [demos](https://github.com/jekyll/jekyll/wiki/Sites)
+
 simple blog
 
 [github pages](https://pages.github.com/)
 
-write with jekyll
+[Host on GitHub in 3 Minutes](http://jekyllbootstrap.com/usage/jekyll-quick-start.html?#)
 
-http://jekyllrb.com/
 
-	gem install jekyll
-	jekyll new my-awesome-site
-	cd my-awesome-site
-	jekyll serve
-	
-	//Now browse to http://localhost:4000
-	
+1. Create a New Repository
 
-then
+	Go to your https://github.com and create a new repository named USERNAME.github.com
 
-	cp my-awesome-site path/of/my/repository
 
-Write .md file in _post dir
+2. install jekyll
 
-Run 
+	http://jekyllrb.com/
 
-       jekyll build
-       //auto create HTML file in _site dir
+		gem install jekyll
+		jekyll new my-awesome-site
+		cd my-awesome-site
+		jekyll serve
+		
+		//Now browse to http://localhost:4000
 
-Run
+		cp my-awesome-site path/of/USERNAME.github.com 
 
-       jekyll serve 
-       //preview in port 4000
+3. Write .md file in _post dir
+
+	Run 
+		
+		   cd path/of/USERNAME.github.com 
+	       jekyll build
+	       //auto create HTML file in _site dir
+
+	Run
+
+	       jekyll serve 
+	       //preview in port 4000
        
+	commit ur changes to github,visit `USERNAME.github.io`
 
-
-to be continue...
