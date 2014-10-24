@@ -25,7 +25,7 @@ if build error is `If you haven't initialized your submodule`
 	url = https://github.com/theme-name/theme-name.git
         ignore = dirty
 
-* cd the submodule's directory, run git submodule init, then git submodule update.
+* cd the submodule's directory, run `git submodule init`, then `git submodule update`.
 * commit and push your changes to trigger another build on our servers.
 	
 	
