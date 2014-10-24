@@ -45,18 +45,10 @@ simple blog
 	   cd path/of/USERNAME.github.com 
 	   
        jekyll build
-       
-       //auto create HTML file in _site dir 
-```
+		//auto create HTML file in _site dir 
 
-
-	Run
-	
-	
-```
-	       jekyll serve 
-	       
-	       //preview in port 4000
+		jekyll serve 
+		//preview in port 4000
 ```
        
 	commit ur changes to github,visit `USERNAME.github.io`
