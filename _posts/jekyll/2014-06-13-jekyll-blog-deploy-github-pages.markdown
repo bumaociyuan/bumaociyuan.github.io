@@ -23,33 +23,33 @@ simple blog
 
 	http://jekyllrb.com/
 	
-```
-	gem install jekyll
-	
-	jekyll new my-awesome-site
-	
-	cd my-awesome-site
-	
-	jekyll serve
-	
-	//Now browse to http://localhost:4000
-	
-	cp my-awesome-site path/of/USERNAME.github.com 
-```
+	```
+		gem install jekyll
+		
+		jekyll new my-awesome-site
+		
+		cd my-awesome-site
+		
+		jekyll serve
+		
+		//Now browse to http://localhost:4000
+		
+		cp my-awesome-site path/of/USERNAME.github.com 
+	```
 
 3. Write .md file in _post dir
 
 	Run 
 	
-```
-	   cd path/of/USERNAME.github.com 
-	   
-       jekyll build
+	```
+		cd path/of/USERNAME.github.com 
+		
+		jekyll build
 		//auto create HTML file in _site dir 
-
+		
 		jekyll serve 
 		//preview in port 4000
-```
+	```
        
 	commit ur changes to github,visit `USERNAME.github.io`
 
