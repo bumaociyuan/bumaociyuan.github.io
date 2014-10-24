@@ -48,6 +48,6 @@ simple blog
 	jekyll serve 
 	//preview in port 4000
 ```
-       
-	commit ur changes to github,visit `USERNAME.github.io`
+
+commit ur changes to github,visit `USERNAME.github.io`
 
