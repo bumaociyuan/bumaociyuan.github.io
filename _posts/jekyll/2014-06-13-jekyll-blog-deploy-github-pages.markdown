@@ -14,12 +14,12 @@ simple blog
 [Host on GitHub in 3 Minutes](http://jekyllbootstrap.com/usage/jekyll-quick-start.html?#)
 
 
-1. Create a New Repository
+* Create a New Repository
 
 	Go to your https://github.com and create a new repository named USERNAME.github.com
 
 
-2. install jekyll
+* install jekyll
 
 	http://jekyllrb.com/
 	
@@ -37,7 +37,7 @@ simple blog
 		cp my-awesome-site path/of/USERNAME.github.com 
 	```
 
-3. Write .md file in _post dir
+* Write .md file in _post dir
 
 	Run 
 	
