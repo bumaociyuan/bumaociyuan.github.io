@@ -20,15 +20,22 @@ A Beginner's handbook](http://www.freeos.com/guides/lsst/)
 * split
 
 ```
-	str="hello,world,i,like,you,babalala"  
-	arr=(${str//,/ })  
+	string="hello,world,i,like,you,babalala"  
+	array=(${string//,/ })  
   
-	for i in ${arr[@]}  
+	for i in ${array[@]}  
 	do  
    	 echo $i  
 	done 
 ```
+* join
 
+```
+	array=(${string//,/})
+	printf -v var "%s-" "${array[@]}"
+	var=${var%?}
+
+```
 
 
 
