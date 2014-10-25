@@ -10,6 +10,29 @@ A Beginner's handbook](http://www.freeos.com/guides/lsst/)
 
 [link](http://www.92csz.com/study/linux/12.htm)
 
+
+-----2014.10.25-------
+
+* 创建以当前时间为文件名的
+	
+	mkdir `date +%Y%m%d`
+	
+* split
+
+```
+	str="hello,world,i,like,you,babalala"  
+	arr=(${str//,/ })  
+  
+	for i in ${arr[@]}  
+	do  
+   	 echo $i  
+	done 
+```
+
+
+
+
+-----2014-09-04-------
 #### 1. 记录命令历史
 * `!! （”连续两个”!”），表示执行上一条指令`
 * !n（这里的n是数字），表示执行命令历史中第n条指令，例如”!100”表示执行命令历史中第100个命令
@@ -105,14 +128,13 @@ test.txt
 8. [ ] ：中括号，中间为字符组合，代表中间字符中的任意一个 
 
 ```
-zx:terminal_study niko$ ls
-ddd	error	text
-zx:terminal_study niko$ ls t*
-text
-zx:terminal_study niko$ ls [te]*
-error	text
-zx:terminal_study niko$ 
+	zx:terminal_study niko$ ls
+	ddd	error	text
+	zx:terminal_study niko$ ls t*
+	text
+	zx:terminal_study niko$ ls [te]*
+	error	text
+	zx:terminal_study niko$ 
 
 ```
-
 
