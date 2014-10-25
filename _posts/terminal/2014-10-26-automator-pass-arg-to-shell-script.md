@@ -7,6 +7,6 @@ tags: [automator shell]
 
 ---
 
-![image](https://raw.githubusercontent.com/bumaociyuan/bumaociyuan.github.io/master/_resources/2014/10/26/1.jpg =400x)
+<img src="https://raw.githubusercontent.com/bumaociyuan/bumaociyuan.github.io/master/_resources/2014/10/26/1.jpg alt="Drawing" style="width: 800px;"/>
 
-pic say every thing
+pic says every thing
