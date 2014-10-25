@@ -7,7 +7,6 @@ tags: [automator shell]
 
 ---
 
-![image](https://raw.githubusercontent.com/bumaociyuan/bumaociyuan.github.io/master/_resources/2014/10/26/1.jpg)
+![image](https://raw.githubusercontent.com/bumaociyuan/bumaociyuan.github.io/master/_resources/2014/10/26/1.jpg =400x)
 
 pic say every thing
-no pic say a jb
