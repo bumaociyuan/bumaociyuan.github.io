@@ -32,3 +32,5 @@ tags: []
 
 ---
 EOF
+
+open $fileName
