@@ -87,5 +87,13 @@ JB :
       num_posts: 5
       width: 580
       colorscheme: light
+
+
+  analytics :
+    provider : getclicky 
+    getclicky :
+      site_id : 100784435
+
+
   sharing :
     provider : false
