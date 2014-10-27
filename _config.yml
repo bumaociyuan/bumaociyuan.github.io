@@ -7,8 +7,9 @@ author :
   twitter : bumaociyuan
   feedburner : bumaociyuan
 
-paginate: 5
+paginate: 10
 paginate_path: "page:num"
+
 markdown: redcarpet
 highlighter: pygments
 
