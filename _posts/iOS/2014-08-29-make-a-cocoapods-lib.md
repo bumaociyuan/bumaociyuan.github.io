@@ -3,6 +3,7 @@ layout: post
 title:  "make a cocoapods lib"
 date:   2014-08-29 13:54:52
 categories: ios
+tags: [cocoapods,tutorial]
 
 ---
 [nshipster blog](http://nshipster.com/cocoapods/)

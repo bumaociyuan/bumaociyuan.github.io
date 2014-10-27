@@ -3,7 +3,7 @@ layout: post
 title:  "google addresses"
 date:   2014-06-18 11:06:50
 categories: breakWall
-tags : [how-to, GFW]
+tags : [google]
 
 ---
 

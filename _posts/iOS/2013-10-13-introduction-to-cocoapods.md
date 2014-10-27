@@ -3,6 +3,7 @@ layout: post
 title:  "Introduction to CocoaPods"
 date:   2013-10-13 16:06:50
 categories: ios
+tags: [cocoapods,tutorial]
 
 ---
 references: [raywenderlich](http://www.raywenderlich.com/12139/introduction-to-cocoapods)

@@ -3,6 +3,7 @@ layout: post
 title:  "block note"
 date:   2014-09-29 11:13:52
 categories: ios
+tags: tutorial
 
 ---
 
