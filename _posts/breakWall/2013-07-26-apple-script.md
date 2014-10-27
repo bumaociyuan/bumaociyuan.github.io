@@ -3,6 +3,7 @@ layout: post
 title:  "用apple script写自动开启wallproxy的命令"
 date:   2013-07-26 11:58:50
 categories: breakWall
+tags: [automator,applescript]
 
 ---
 

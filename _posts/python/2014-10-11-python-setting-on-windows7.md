@@ -3,6 +3,7 @@ layout: post
 title:  "python setting on windows7"
 date:   2014-10-11 10:56:50
 categories: python
+tags: [windows]
 
 ---
 
