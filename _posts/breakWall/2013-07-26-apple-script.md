@@ -5,6 +5,20 @@ date:   2013-07-26 11:58:50
 categories: breakWall
 
 ---
+
+---2014.10.27---
+
+`Automator`->`Application`->`Run Shell Script`
+如下图
+<img src="/resources/2014/10/27/1.png" alt="Drawing" style="width: 800px;"/>
+click `cmd+s` 
+`File Format` as `Application`
+如下图
+<img src="/resources/2014/10/27/2.png" alt="Drawing" style="width: 800px;"/>
+
+
+---2013-07-26---
+
 打开 as编辑器
 
 	tell the application "Terminal"
