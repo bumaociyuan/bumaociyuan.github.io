@@ -5,6 +5,9 @@ date:   2014-06-13 12:06:50
 categories: jekyll
 
 ---
+
+[document cn](http://jekyllcn.com)
+
 [Jekyll Introduction](http://themes.jekyllbootstrap.com/preview/the-minimum/lessons/2011/12/29/jekyll-introduction/)
 
 [demos](https://github.com/jekyll/jekyll/wiki/Sites)

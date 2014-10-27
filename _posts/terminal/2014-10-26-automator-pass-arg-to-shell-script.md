@@ -7,6 +7,6 @@ tags: [automator,shell]
 
 ---
 
-<img src="https://raw.githubusercontent.com/bumaociyuan/bumaociyuan.github.io/master/_resources/2014/10/26/1.jpg" alt="Drawing" style="width: 800px;"/>
+<img src="/resources/2014/10/26/1.jpg" alt="Drawing" style="width: 800px;"/>
 
 pic says every thing
