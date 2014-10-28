@@ -9,6 +9,7 @@ author :
 
 timezone: 'Asia/Shanghai'
 
+date: 2005-01-24 12:00:36 +0800
 
 gems: ['jekyll-lunr-js-search']
 exclude_from_search: true
@@ -17,7 +18,7 @@ paginate: 10
 paginate_path: "page:num"
 
 # timezone: Asia/Shanghai
-timezone: "America/New_York"
+# timezone: "America/New_York"
 
 
 
