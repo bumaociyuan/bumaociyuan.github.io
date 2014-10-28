@@ -16,6 +16,8 @@ exclude_from_search: true
 paginate: 10
 paginate_path: "page:num"
 
+date: 'YYYY-MM-DD HH:MM:ss.sssssss -08:00'
+
 categories:
   - android
   - breakWall
