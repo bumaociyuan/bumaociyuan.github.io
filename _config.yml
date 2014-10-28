@@ -16,7 +16,8 @@ exclude_from_search: true
 paginate: 10
 paginate_path: "page:num"
 
-timezone: Asia/Shanghai
+# timezone: Asia/Shanghai
+timezone: "America/New_York"
 
 
 
