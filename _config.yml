@@ -6,7 +6,9 @@ author :
   github : bumaociyuan
   twitter : bumaociyuan
   feedburner : bumaociyuan
-  
+
+timezone: China/Beijing
+
 gems: ['jekyll-lunr-js-search']
 exclude_from_search: true
 
