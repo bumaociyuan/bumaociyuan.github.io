@@ -16,23 +16,9 @@ exclude_from_search: true
 paginate: 10
 paginate_path: "page:num"
 
-date: 'YYYY-MM-DD HH:MM:ss.sssssss -08:00'
+timezone: Asia/China
 
-categories:
-  - android
-  - breakWall
-  - git
-  - iOS
-  - jekyll
-  - mac
-  - other
-  - php
-  - python
-  - ruby
-  - terminal
-  - vb
-  - vim
-  - xcode
+
 
 markdown: redcarpet
 highlighter: pygments
