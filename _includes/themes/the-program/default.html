@@ -16,10 +16,9 @@
 
 <style type="text/css">
         .search-box {
-			 margin:15px 5px 15px 25px; 
+			 margin:5px auto 15px 30px; 
         }
-        
-    </style>
+</style>
 
 <div id="page" class="hentry">
 	<header class="the-header">
@@ -45,7 +44,7 @@
 					
 		</div><!-- unit-head -->
 
-<div class="search-box"><div id="search"><form action="/search" method="get"><input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></form></div>
+<div class="search-box"><div id="search"><form action="/search" method="get" onsubmit="return false;"><input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off" ></form></div>
 
 <section id="search-results" style="display: none;"><p>Search results</p><div class="entries"></div></section></div>
 
@@ -90,6 +89,10 @@
 	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
 	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
 	}(document, 'script'));
+
+
+	
+
 </script>
 <script>
 /*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
