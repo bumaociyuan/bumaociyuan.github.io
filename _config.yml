@@ -6,6 +6,9 @@ author :
   github : bumaociyuan
   twitter : bumaociyuan
   feedburner : bumaociyuan
+  
+gems: ['jekyll-lunr-js-search']
+exclude_from_search: true
 
 paginate: 10
 paginate_path: "page:num"

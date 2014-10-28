@@ -19,6 +19,7 @@
 		<div class="unit-head">
 			<div class="unit-inner unit-head-inner">
 				<nav class="nav-global">
+
 					<ul>
 						<li class="logo"><a href="/">{{ site.title }}</a></li>
 						<li ><a href="/">home</a></li>
@@ -27,10 +28,20 @@
 						<li class="tag"><a href="/tags/">tags</a></li>
 						<li ><a href="http://github.com/bumaociyuan">my github</a></li>
 						<li ><a href="https://github.com/bumaociyuan/bumaociyuan.github.io/">fork me</a></li>
+						
+
 					</ul>
+
 				</nav>
+
 			</div><!-- unit-inner -->
+					
 		</div><!-- unit-head -->
+
+<div class="search-box"><div id="search"><form action="/search" method="get"><input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></form></div>
+
+<section id="search-results" style="display: none;"><p>Search results</p><div class="entries"></div></section></div>
+
 	</header>
 	<div class="body" role="main">
 		<div class="unit-body">
@@ -45,7 +56,7 @@
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
 				<div class="misc vcard">
-					<h4>about</h4>
+					<h4>About</h4>
 					<ul>
 						<li class="contact"><a href="mailto:site.author.email">{{ site.author.email }}<a></li>
 						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
@@ -79,5 +90,35 @@
 </script>
   
   {% include JB/analytics %}
+
+<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/date.format.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/URI.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#search-query').lunrSearch({
+      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
+      results:  '#search-results',          // jQuery selector for the search results container
+      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
+      template: '#search-results-template'  // jQuery selector for the Mustache.js template
+    });
+  });
+</script>
+{% raw %}
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+      <p>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <a href="{{url}}">{{title}}</a>
+      </p>
+    </article>
+  {{/entries}}
+</script>
+{% endraw %}
 </body>
 </html>
