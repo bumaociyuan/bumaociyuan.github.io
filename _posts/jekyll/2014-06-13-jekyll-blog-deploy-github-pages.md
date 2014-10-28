@@ -10,23 +10,21 @@ categories: jekyll
 
 [Jekyll Introduction](http://themes.jekyllbootstrap.com/preview/the-minimum/lessons/2011/12/29/jekyll-introduction/)
 
-[demos](https://github.com/jekyll/jekyll/wiki/Sites)
+[sites using jekyll](https://github.com/jekyll/jekyll/wiki/Sites)
 
-simple blog
-
-[github pages](https://pages.github.com/)
+[github pages document](https://pages.github.com/)
 
 [Host on GitHub in 3 Minutes](http://jekyllbootstrap.com/usage/jekyll-quick-start.html?#)
 
 
-* Create a New Repository
+1. Create a New Repository
 
 	Go to your https://github.com and create a new repository named USERNAME.github.com
 
 
-* install jekyll
+2. install jekyll
 
-	http://jekyllrb.com/
+	[http://jekyllrb.com/](http://jekyllrb.com/)
 	
 ```
 	gem install jekyll
@@ -42,7 +40,7 @@ simple blog
 	cp my-awesome-site path/of/USERNAME.github.com 
 ```
 
-* Write .md file in _post dir
+3. Write .md file in _post dir
 	
 ```
 	cd path/of/USERNAME.github.com 
