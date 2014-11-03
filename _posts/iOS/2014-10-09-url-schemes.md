@@ -6,6 +6,19 @@ categories: ios
 
 ---
 
+---2014.11.03---
+- Personal Hotspot (prefs:root=INTERNET_TETHERING)
+- Location Services (prefs:root=LOCATION_SERVICES)
+- Mobile Data (prefs:root=MOBILE_DATA_SETTINGS_ID)
+- Sounds (prefs:root=Sounds)
+
+Some others:
+VPN: prefs:root=General&path=VPN
+Phone App: mobilephone://
+Settings App: prefs:root
+
+---2014.10.09---
+
 prefs:root=General&path=About
 
 prefs:root=General&path=ACCESSIBILITY 
