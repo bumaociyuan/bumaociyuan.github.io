@@ -6,6 +6,33 @@ categories: ios
 tags: [cocoapods,tutorial]
 
 ---
+
+---2014.11.05---
+
+update lib
+
+edit the `NSString-BlockHelper.podspec` add `1.0.1` version
+
+```
+git tag 1.0.1;	git push --tags
+pod trunk push NSString-BlockHelper.podspec --verbose
+
+```
+
+get error `You need to register a session first.`
+
+```
+pod trunk register yourEmail 'yourName' --description='macbook pro'
+pod trunk push NSString-BlockHelper.podspec --verbose
+```
+
+`pod search` cannot search the `1.0.1` version
+
+but `pod install` in new project can install `1.0.1`
+
+
+---2014.08.29---
+
 [nshipster blog](http://nshipster.com/cocoapods/)
 
 [http://guides.cocoapods.org/](http://guides.cocoapods.org/making/making-a-cocoapod.html)
