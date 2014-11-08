@@ -3,7 +3,7 @@ layout: post
 title:  "customize tabbar icon and text color"
 date:   2014-10-30	15:41:32
 categories: [ios]
-tags: [code]
+tags: [code snippet]
 
 ---
 

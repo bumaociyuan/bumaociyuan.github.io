@@ -3,7 +3,7 @@ layout: post
 title:  "turn off uisearchbar animation"
 date:   2014-10-31	10:44:25
 categories: [ios]
-tags: [code]
+tags: [code snippet]
 
 ---
 
