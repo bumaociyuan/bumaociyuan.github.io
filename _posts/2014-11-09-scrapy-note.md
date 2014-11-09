@@ -9,9 +9,9 @@ tags: [scrapy,tutorial]
 
 [http://doc.scrapy.org](http://doc.scrapy.org/en/latest/intro/tutorial.html)
 
-* install `pip` [click here](https://pip.pypa.io/en/latest/installing.html#install-pip)
+install `pip` [click here](https://pip.pypa.io/en/latest/installing.html#install-pip)
 
-* ##install scrapy
+1. install scrapy
 	
 	```
 	sudo pip install scrapy 
@@ -19,15 +19,15 @@ tags: [scrapy,tutorial]
 	sudo easy_install Scrapy
 	```
 
-* ##tutorial project 
+2. tutorial project 
 
-	1. set up a new Scrapy project
+	* set up a new Scrapy project
 		
 		```
 		scrapy startproject proName
 		```
 	
-	2. This will create a tutorial directory with the following contents:
+	* This will create a tutorial directory with the following contents:
 	
 		```
 		tutorial/
@@ -41,7 +41,7 @@ tags: [scrapy,tutorial]
 		            __init__.py
 	            ...
 		```
-	3.  we edit items.py, found in the tutorial directory. Our Item class looks like this:
+	* we edit items.py, found in the tutorial directory. Our Item class looks like this:
 	
 		```
 		import scrapy
@@ -52,14 +52,14 @@ tags: [scrapy,tutorial]
 		    desc = scrapy.Field()
 		```
 		
-	4. xpath
+	* xpath
 	
 		* `/html/head/title` : selects the `<title>` element, inside the `<head>` element of a HTML document
 		* `/html/head/title/text()` : selects the text inside the aforementioned `<title>` element
 		* `//td` : selectes all the `<td>` elements
 		* `//div[@class="mine"]` : selects all `<div>` elements which contains an attribute `class="mine"`
 	
-	5. This is the code for our first Spider; save it in a file named dmoz_spider.py under the tutorial/spiders directory:
+	* This is the code for our first Spider; save it in a file named dmoz_spider.py under the tutorial/spiders directory:
 	
 	
 	```
@@ -85,14 +85,14 @@ tags: [scrapy,tutorial]
 	```
 
 
-	6. Storing the scraped data
+	* Storing the scraped data
 	
 	
 	```
 	scrapy crawl dmoz -o items.json
 	```
 
-* ##Trying Selectors in the Shell
+3. Trying Selectors in the Shell
 
 	```		
 	scrapy shell "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"	
