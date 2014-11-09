@@ -11,6 +11,12 @@ A Beginner's handbook](http://www.freeos.com/guides/lsst/)
 [link](http://www.92csz.com/study/linux/12.htm)
 
 
+---2014.11.09--
+
+```
+rm -rf dirPath
+```
+
 -----2014.10.25-------
 
 * 创建以当前时间为文件名的
