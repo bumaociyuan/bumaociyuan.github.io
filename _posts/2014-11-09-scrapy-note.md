@@ -14,8 +14,8 @@ tags: [scrapy,tutorial]
 * ##install scrapy
 	
 	```
-	sudo pip install scrapy
-	#or
+	sudo pip install scrapy 
+	or
 	sudo easy_install Scrapy
 	```
 
@@ -61,29 +61,32 @@ tags: [scrapy,tutorial]
 	
 	5. This is the code for our first Spider; save it in a file named dmoz_spider.py under the tutorial/spiders directory:
 	
-	```
-	import scrapy
-
-	from tutorial.items import DmozItem
 	
-	class DmozSpider(scrapy.Spider):
-	    name = "dmoz"
-	    allowed_domains = ["dmoz.org"]
-	    start_urls = [
-	        "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/",
-	        "http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"
-	    ]
+	```
+		import scrapy
 	
-	    def parse(self, response):
-	        for sel in response.xpath('//ul/li'):
-	            item = DmozItem()
-	            item['title'] = sel.xpath('a/text()').extract()
-	            item['link'] = sel.xpath('a/@href').extract()
-	            item['desc'] = sel.xpath('text()').extract()
-            yield item
+		from tutorial.items import DmozItem
+		
+		class DmozSpider(scrapy.Spider):
+		    name = "dmoz"
+		    allowed_domains = ["dmoz.org"]
+		    start_urls = [
+		        "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/",
+		        "http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"
+		    ]
+		
+		    def parse(self, response):
+		        for sel in response.xpath('//ul/li'):
+		            item = DmozItem()
+		            item['title'] = sel.xpath('a/text()').extract()
+		            item['link'] = sel.xpath('a/@href').extract()
+		            item['desc'] = sel.xpath('text()').extract()
+	            yield item
 	```
 
-	5. Storing the scraped data
+
+	6. Storing the scraped data
+	
 	
 	```
 	scrapy crawl dmoz -o items.json

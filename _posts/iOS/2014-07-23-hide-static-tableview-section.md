@@ -3,7 +3,7 @@ layout: post
 title:  "hide static tableview section"
 date:   2014-07-23 09:08:00
 categories: ios
-tags: code snippet
+tags: [code snippet]
 
 ---
 
