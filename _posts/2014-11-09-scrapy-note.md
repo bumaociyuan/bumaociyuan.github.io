@@ -52,7 +52,14 @@ tags: [scrapy,tutorial]
 		    desc = scrapy.Field()
 		```
 		
-	4. This is the code for our first Spider; save it in a file named dmoz_spider.py under the tutorial/spiders directory:
+	4. xpath
+	
+		* `/html/head/title` : selects the `<title>` element, inside the `<head>` element of a HTML document
+		* `/html/head/title/text()` : selects the text inside the aforementioned `<title>` element
+		* `//td` : selectes all the `<td>` elements
+		* `//div[@class="mine"]` : selects all `<div>` elements which contains an attribute `class="mine"`
+	
+	5. This is the code for our first Spider; save it in a file named dmoz_spider.py under the tutorial/spiders directory:
 	
 	```
 	import scrapy
