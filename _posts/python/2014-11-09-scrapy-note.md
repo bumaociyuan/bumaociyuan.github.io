@@ -55,14 +55,18 @@ class DmozItem(scrapy.Item):
     desc = scrapy.Field()
 ```
 	
-* xpath
+## xpath	
 
-	* `/html/head/title` : selects the `<title>` element, inside the `<head>` element of a HTML document
-	* `/html/head/title/text()` : selects the text inside the aforementioned `<title>` element
-	* `//td` : selectes all the `<td>` elements
-	* `//div[@class="mine"]` : selects all `<div>` elements which contains an attribute `class="mine"`
+1. `/html/head/title` : selects the `<title>` element, inside the `<head>` element of a HTML document
+ 
+2. `/html/head/title/text()` : selects the text inside the aforementioned `<title>` element
+ 
+3. `//td` : selectes all the `<td>` elements
+ 
+4. `//div[@class="mine"]` : selects all `<div>` elements which contains an 	attribute `class="mine"`
+ 
 
-* This is the code for our first Spider; save it in a file named dmoz_spider.py under the tutorial/spiders directory:
+* This is the code for our first Spider; save it in a file named `dmoz_spider.py` under the tutorial/spiders directory:
 
 
 ```
@@ -96,8 +100,8 @@ scrapy crawl dmoz -o items.json
 ```
 
 ## Trying Selectors in the Shell
+	
 
-
-	```		
-	scrapy shell "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"	
-	```
+```			
+scrapy shell "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"		
+```
