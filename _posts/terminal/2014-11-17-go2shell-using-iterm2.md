@@ -7,5 +7,6 @@ tags: [Go2Shell,iterm]
 
 ---
 
-
-open -a Go2Shell --args config
+```
+cd Applications;open -a Go2Shell --args config
+```
