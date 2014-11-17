@@ -66,7 +66,7 @@ class DmozItem(scrapy.Item):
 4. `//div[@class="mine"]` : selects all `<div>` elements which contains an 	attribute `class="mine"`
  
 
-* This is the code for our first Spider; save it in a file named `dmoz_spider.py` under the tutorial/spiders directory:
+* This is the code for our first Spider; save it in a file named `dmoz_spider.py` under the `tutorial/spiders` directory:
 
 
 ```
