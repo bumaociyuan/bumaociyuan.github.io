@@ -7,5 +7,4 @@ tags: [google]
 
 ---
 
-![image](http://www.360kb.com/kb/2_122.html)
-
+[https://github.com/bumaociyuan/googleHosts](https://github.com/bumaociyuan/googleHosts)
