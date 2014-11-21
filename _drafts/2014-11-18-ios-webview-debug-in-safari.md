@@ -10,3 +10,5 @@ tags: []
 App add load html in UIWebView ,
 
 Open `Safari` click `Develop` click `iOS Simulator`
+
+now debug in safari
