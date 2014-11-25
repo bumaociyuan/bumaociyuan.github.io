@@ -7,7 +7,7 @@ tags: [download]
 
 ---
 
-[link](http://stackoverflow.com/questions/10335747/how-to-download-xcode-4-5-6-and-get-the-dmg-file)
+[How to download Xcode 4 / 5 / 6 and get the DMG file?](http://stackoverflow.com/questions/10335747/how-to-download-xcode-4-5-6-and-get-the-dmg-file)
 
 [https://developer.apple.com/downloads/](https://developer.apple.com/downloads/)
 
