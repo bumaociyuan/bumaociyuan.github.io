@@ -8,8 +8,8 @@ tags: [tfs]
 ---
 
 1. Download [latest release of git tf](https://gittf.codeplex.com/)
-2. Extract the contents of git-tf-2.0.3.20131219.zip to a folder on your local machine, i.e. `~/git-tf` on mac.
-3. Add the path where you extracted Git-TF (i.e. C:\git-tf) to your PATH environment variable.
+2. Extract the contents of git-tf-2.0.3.20131219.zip to a folder on your local machine, i.e. `/Users/[ME]/git-tf/` on mac.
+3. Add the path where you extracted Git-TF (i.e. `/Users/[ME]/git-tf/`) to your PATH environment variable.
 
 ```
 export PATH="/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/":$PATH
