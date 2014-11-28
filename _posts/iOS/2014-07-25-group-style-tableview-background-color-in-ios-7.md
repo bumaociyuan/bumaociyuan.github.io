@@ -14,6 +14,8 @@ hex : EDEDF4
 ```
 
 ios 8
+
 ```
-[UIColor colorWithRed:0.937255 green:0.937255 blue:0.956863 alpha:1]
+[UIColor colorWithRed:0.937 green:0.937 blue:0.957 alpha:1.000]
 ```
+hex: EFEFF4
