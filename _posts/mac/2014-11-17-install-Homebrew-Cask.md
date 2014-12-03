@@ -15,4 +15,6 @@ brew tap phinze/homebrew-cask && brew install brew-cask
 
 ```
 brew cask search
+
+brew cask install firefox
 ```
