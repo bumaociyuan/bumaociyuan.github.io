@@ -2,8 +2,8 @@
 layout: post
 title:  "cocoapods empty reply form server"
 date:   2014-12-03	12:38:41
-categories: []
-tags: []
+categories: [ios]
+tags: [cocoapods]
 
 ---
 
