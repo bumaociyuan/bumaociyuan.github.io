@@ -14,9 +14,11 @@ categories: ios
 5. visit `localhost` you will see **It works!**
 6. `/etc/apache2/httpd.conf`Search for “virtual” in your text editor. You should see the following lines:
 
-		#Virtual hosts
-		#Include /private/etc/apache2/	extra/httpd-
-	Uncomment the second line that starts with “#Include” by removing the “#”. We now need to modify httpd-vhosts.conf file to add our virtual hosts.
+```
+#Virtual hosts
+#Include /private/etc/apache2/	extra/httpd-
+```
+Uncomment the second line that starts with “#Include” by removing the “#”. We now need to modify httpd-vhosts.conf file to add our virtual hosts.
 
 7. open`/etc/apache2/extra/httpd-vhosts.conf`
 
@@ -33,10 +35,11 @@ ServerName yourwebsitename
 if you see 
 
 ```
-		XAMPP: Starting ProFTPD.../Applications/XAMPP/xamppfiles/xampp: line 184: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory fail.  
-		Contents of "/Applications/XAMPP/xamppfiles//var/proftpd/start.err":  		cat: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory  
+XAMPP: Starting ProFTPD.../Applications/XAMPP/xamppfiles/xampp: line 184: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory fail.  
+Contents of "/Applications/XAMPP/xamppfiles//var/proftpd/start.err":  		cat: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory  
 ```
 do these commands
+
 ```
 	`sudo mkdir /Applications/XAMPP/xamppfiles/var/proftpd/`
 	
