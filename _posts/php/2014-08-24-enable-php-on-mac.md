@@ -14,27 +14,33 @@ categories: ios
 5. visit `localhost` you will see **It works!**
 6. `/etc/apache2/httpd.conf`Search for “virtual” in your text editor. You should see the following lines:
 
-		#Virtual hosts
-		#Include /private/etc/apache2/	extra/httpd-
-	Uncomment the second line that starts with “#Include” by removing the “#”. We now need to modify httpd-vhosts.conf file to add our virtual hosts.
+```
+#Virtual hosts
+#Include /private/etc/apache2/	extra/httpd-
+```
+Uncomment the second line that starts with “#Include” by removing the “#”. We now need to modify httpd-vhosts.conf file to add our virtual hosts.
 
 7. open`/etc/apache2/extra/httpd-vhosts.conf`
 
-		DocumentRoot "/Users/username/Sites/Website"
-	    ServerName yourwebsitename
-
+```
+DocumentRoot "/Users/username/Sites/Website"
+ServerName yourwebsitename
+```
 
 ### Another tutorial
-1. Install : XAMPP Mac OS X 1.7.3 [download](http://www.apachefriends.org/download.php?xampp-macosx-1.7.3.dmg)
+* Install : XAMPP Mac OS X 1.7.3 [download](http://www.apachefriends.org/download.php?xampp-macosx-1.7.3.dmg)
 * `sudo su`
 * `/Applications/XAMPP/xamppfiles/xampp start`
-* if you see 
 
-		XAMPP: Starting ProFTPD.../Applications/XAMPP/xamppfiles/xampp: line 184: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory fail.  
-		Contents of "/Applications/XAMPP/xamppfiles//var/proftpd/start.err":  		cat: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory  
+if you see 
 
-	do these commands
-	
+```
+XAMPP: Starting ProFTPD.../Applications/XAMPP/xamppfiles/xampp: line 184: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory fail.  
+Contents of "/Applications/XAMPP/xamppfiles//var/proftpd/start.err":  		cat: /Applications/XAMPP/xamppfiles//var/proftpd/start.err: No such file or directory  
+```
+do these commands
+
+```
 	`sudo mkdir /Applications/XAMPP/xamppfiles/var/proftpd/`
 	
 	`touch /Applications/XAMPP/xamppfiles/var/proftpd/start.err`
@@ -42,6 +48,6 @@ categories: ios
 	`sudo /Applications/XAMPP/xamppfiles/xampp fix_rights`
 	
 	then redo the `/Applications/XAMPP/xamppfiles/xampp start` cmd
+```
 
-2. in http://localhost you can see the test site
-3. 
+* in http://localhost you can see the test site
