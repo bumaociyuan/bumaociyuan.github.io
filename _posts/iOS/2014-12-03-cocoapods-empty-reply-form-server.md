@@ -21,3 +21,10 @@ Fix this
 ```
 git config --global url."git://".insteadOf https://
 ```
+
+remove it
+
+```
+git config --global --unset url."git://".insteadOf https://
+
+```
