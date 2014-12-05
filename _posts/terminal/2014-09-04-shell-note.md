@@ -10,6 +10,16 @@ A Beginner's handbook](http://www.freeos.com/guides/lsst/)
 
 [link](http://www.92csz.com/study/linux/12.htm)
 
+---2014.12.05--
+
+Key/Command | Description 	
+------------ | ------------- 
+Ctrl + A | Go to the beginning of the line you are currently typing on  | 
+Ctrl + E| Go to the end of the line you are currently typing on  | 
+Ctrl + U | Clear the line before the cursor | 
+Ctrl + K| Clear the line after the cursor | 
+Ctrl + W| Delete the word before the cursor | 
+
 
 ---2014.11.09--
 
