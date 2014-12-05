@@ -12,13 +12,21 @@ A Beginner's handbook](http://www.freeos.com/guides/lsst/)
 
 ---2014.12.05--
 
-Key/Command | Description 	
------------- | ------------- 
-Ctrl + A | Go to the beginning of the line you are currently typing on  | 
-Ctrl + E| Go to the end of the line you are currently typing on  | 
-Ctrl + U | Clear the line before the cursor | 
-Ctrl + K| Clear the line after the cursor | 
-Ctrl + W| Delete the word before the cursor | 
+[gitbook](http://anotheruiguy.gitbooks.io/gitforeveryone/content/terminal/cheat-sheet.html)
+
+
+
+
+`Ctrl + A `     Go to the beginning of the line you are currently typing on 
+
+`Ctrl + E  `    Go to the end of the line you are currently typing on  
+
+`Ctrl + U  `    Clear the line before the cursor 
+
+`Ctrl + K  `    Clear the line after the cursor 
+
+`Ctrl + W `    Delete the word before the cursor 
+
 
 
 ---2014.11.09--
