@@ -19,11 +19,11 @@ A Beginner's handbook](http://www.freeos.com/guides/lsst/)
 
 `Ctrl + A `     Go to the beginning of the line you are currently typing on 
 
-`Ctrl + E  `    Go to the end of the line you are currently typing on  
+`Ctrl + E `    Go to the end of the line you are currently typing on  
 
-`Ctrl + U  `    Clear the line before the cursor 
+`Ctrl + U `    Clear the line before the cursor 
 
-`Ctrl + K  `    Clear the line after the cursor 
+`Ctrl + K `    Clear the line after the cursor 
 
 `Ctrl + W `    Delete the word before the cursor 
 

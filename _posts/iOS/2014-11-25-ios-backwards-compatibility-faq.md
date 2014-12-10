@@ -7,9 +7,9 @@ tags: [faq]
 
 ---
 
-# [xcode download addresses](http://)
+# [xcode download addresses](http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html)
 
-# [multiple xcode coexist](http://)
+# [multiple xcode coexist](http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html)
 
 # Storyboard build error
 
