@@ -70,6 +70,8 @@ sys.setdefaultencoding('utf-8')
 
 [local doc](http://localhost:8080/docs/config/filter.html)
 
+[Proxy Support HOW-TO](http://tomcat.apache.org/tomcat-7.0-doc/proxy-howto.html) 
+
 `No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8080' is therefore not allowed access. `
 
 
