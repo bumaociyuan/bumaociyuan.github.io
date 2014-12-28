@@ -6,6 +6,14 @@ categories: ios
 
 ---
 
+December 27, 2014 update
+[link](http://www.jianshu.com/p/50b63a221f09)
+
+	  [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
+
+----
+
 in `AppDelegate.m`
 
 		UINavigationBar * bar = [UINavigationBar appearance];
