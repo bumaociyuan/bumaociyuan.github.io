@@ -20,3 +20,9 @@ categories: ios
 Xcode > Preferences > Accounts > View Details > And just refresh the Provisioning Profile 
 
 ---
+
+**Command /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 1**
+
+将Apple LLVM compiler 4.2 - Language ->c++ Standard Library 修改为 libstdc++ （GNU C++ standard library）
+
+---
