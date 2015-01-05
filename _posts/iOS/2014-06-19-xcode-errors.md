@@ -11,3 +11,12 @@ categories: ios
 ```
 "build active architecture only" to yes
 ```
+
+---
+**E79CDDB501B68E74DDF03EA4E75246A7FDF010D0: no identity found Command /usr/bin/codesign failed with exit code 1**
+
+[link](http://stackoverflow.com/questions/26376166/e79cddb501b68e74ddf03ea4e75246a7fdf010d0-no-identity-found-command-usr-bin-cod)
+
+Xcode > Preferences > Accounts > View Details > And just refresh the Provisioning Profile 
+
+---
