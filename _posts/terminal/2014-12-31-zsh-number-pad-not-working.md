@@ -2,8 +2,8 @@
 layout: post
 title:  "zsh number pad not working"
 date:   2014-12-31	16:57:03
-categories: []
-tags: []
+categories: [terminal]
+tags: [zsh]
 
 ---
 
