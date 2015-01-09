@@ -26,5 +26,4 @@ remove it
 
 ```
 git config --global --unset url."git://".insteadOf https://
-
 ```
