@@ -5,6 +5,18 @@ date:   2014-09-04 16:41:50
 categories: terminal
 
 ---
+
+---
+January 14, 2015
+
+[List Your 15 Most Used Terminal Commands](http://osxdaily.com/2012/11/02/list-most-used-terminal-commands/)
+
+```bash
+history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head -15
+```
+
+---
+
 [Linux Shell Scripting Tutorial v1.05r3
 A Beginner's handbook](http://www.freeos.com/guides/lsst/)
 
