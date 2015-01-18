@@ -38,7 +38,12 @@ tags: []
 
 ##server
 
-[tomcat](http://)
+[tomcat](http://www.cnblogs.com/ydhliphonedev/archive/2012/10/26/2741637.html)
+
+1. download [Tomcat](http://tomcat.apache.org/download-70.cgi)
+2. 解压压缩文件到MAC系统：“/Library”目录下，将文件夹改名为Tomcat。
+3. 修改文件权限：`sudo chmod 755 /Users/[username]/Library/Tomcat/bin/*.sh`
+
 
 ##支持中文路径
 
