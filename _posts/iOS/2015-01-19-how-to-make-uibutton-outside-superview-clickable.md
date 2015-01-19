@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How can UIButton outside superview be clicked"
+title: "How to make UIButton outside superview clickable"
 description: ""
 category: ios 
 tags: []
