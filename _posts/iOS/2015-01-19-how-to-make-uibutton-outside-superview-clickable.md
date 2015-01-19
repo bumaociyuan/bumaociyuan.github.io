@@ -11,10 +11,10 @@ in superview.m file
 ```objc
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
         if (CGRectContainsPoint(self.bounds, point) ||
-                    CGRectContainsPoint(self.outsideButton.frame, point)) {
-                    return YES;
-                        }
+				CGRectContainsPoint(self.outsideButton.frame, point)) {
+				return YES;
+		}
                             
-                                return NO;
+		return NO;
 }
 ```
