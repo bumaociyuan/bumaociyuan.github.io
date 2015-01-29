@@ -36,6 +36,21 @@ bash debian_shadowsocks_tennfy.sh
 
 #start
 /etc/init.d/shadowsocks-libev start
+
+#config
+vi /etc/shadowsocks-libev/config.json
+```
+
+```
+
+{
+    "server":"104.224.166.82",
+    "server_port":88,			#change the port need to restart server
+    "local_port":1080,
+    "password":"48zFWAFgA3",
+    "timeout":60,
+    "method":"rc4-md5"
+}
 ```
 
 
