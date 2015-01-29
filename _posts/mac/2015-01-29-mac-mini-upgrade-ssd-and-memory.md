@@ -2,7 +2,7 @@
 layout: post
 title: "Mac mini upgrade ssd and memory"
 description: ""
-category: 
+category: mac
 tags: []
 ---
 
