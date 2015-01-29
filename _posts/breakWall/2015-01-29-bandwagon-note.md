@@ -3,7 +3,7 @@ layout: post
 title: "bandwagon note"
 description: ""
 category: breakWall
-tags: [bandwagon]
+tags: [bandwagon,tutorial]
 ---
 
 [tutorial](http://www.advertcn.com/thread-20498-1-1.html)
