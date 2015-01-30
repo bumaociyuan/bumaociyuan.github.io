@@ -7,9 +7,17 @@ tags: [tfs]
 
 ---
 
+[Mac下配置Git-TF来连接TFS2012](http://www.2cto.com/os/201209/157713.html)
+
+[Adding a certificate authority to the Java runtime](http://mikepilat.com/2011/05/adding-a-certificate-authority-to-the-java-runtime.html)
+
+[Git For TFVC Users](http://hamidshahid.blogspot.com/2014/02/git-for-tfvc-users.html)
+
 1. Download [latest release of git tf](https://gittf.codeplex.com/)
 2. Extract the contents of git-tf-2.0.3.20131219.zip to a folder on your local machine, i.e. `/Users/[ME]/git-tf/` on mac.
 3. Add the path where you extracted Git-TF (i.e. `/Users/[ME]/git-tf/`) to your PATH environment variable.
+
+open ~/.profile
 
 ```
 export PATH="/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/":$PATH
@@ -43,10 +51,6 @@ sudo keytool -import -trustcacerts -file path-of-ca.cer -alias CompanyCA -keysto
 git tf clone https://server.com/tfs $/projectName
 ```
 
-[Mac下配置Git-TF来连接TFS2012](http://www.2cto.com/os/201209/157713.html)
-
-[Adding a certificate authority to the Java runtime](http://mikepilat.com/2011/05/adding-a-certificate-authority-to-the-java-runtime.html)
-
 
 7. pull
 
@@ -73,4 +77,3 @@ git config [--global] core.autocrlf false
 git config [--global] core.ignorecase true
 ```
 
-[Git For TFVC Users](http://hamidshahid.blogspot.com/2014/02/git-for-tfvc-users.html)
