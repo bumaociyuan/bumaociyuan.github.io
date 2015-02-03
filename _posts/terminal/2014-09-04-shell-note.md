@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title:  "shell note"
@@ -6,8 +7,18 @@ categories: terminal
 
 ---
 
+February 2, 2015
+
+```
+caffeinate -t 3600
+```
+
+Where 3600 is the number of seconds in one hour. You may modify it to any number of seconds, or alternatively just enter caffeinate without a timer to disable sleep mode until that terminal window is closed.
+
 ---
 January 14, 2015
+
+
 
 [List Your 15 Most Used Terminal Commands](http://osxdaily.com/2012/11/02/list-most-used-terminal-commands/)
 
