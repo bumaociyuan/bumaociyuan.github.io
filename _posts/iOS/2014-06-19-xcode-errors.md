@@ -5,6 +5,16 @@ date:   2014-06-19 18:28:50
 categories: ios
 
 ---
+
+---
+February 4, 2015
+
+**Showing first 200 notices only**
+静态库重复
+
+
+---
+
 **Mach O Link Error- linker command failed with exit code 1 (use -v to see invocation)**
 
 [link](http://stackoverflow.com/questions/12591711/mach-o-link-error-linker-command-failed-with-exit-code-1-use-v-to-see-invocat)
