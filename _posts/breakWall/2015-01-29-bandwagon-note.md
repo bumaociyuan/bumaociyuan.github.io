@@ -53,8 +53,10 @@ vi /etc/shadowsocks-libev/config.json
 }
 ```
 
-mac os client [link](http://sourceforge.net/projects/shadowsocksgui/)
+[mac os client](http://sourceforge.net/projects/shadowsocksgui/)
 
-ios client [https://github.com/linusyang/MobileShadowSocks](https://github.com/linusyang/MobileShadowSocks)
+[windows client](https://sourceforge.net/projects/shadowsocksgui/files/dist/)
+
+[ios client](https://github.com/linusyang/MobileShadowSocks)
 
 
