@@ -36,8 +36,12 @@ git config --global git-tf.server.password ***********
 
 5. install ca.cer
 
+required java version "1.6.0_65"
+
+[download Java for OS X 2014-001](http://support.apple.com/kb/DL1572)
+
 ```
-sudo keytool -import -trustcacerts -file path-of-ca.cer -alias CompanyCA -keystore  $JAVA_HOME/lib/security/cacerts
+sudo keytool -import -trustcacerts -file zztxca.cer -alias CompanyCA -keystore  /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/security/cacerts
 
 #the default password for the cacerts keystore is `changeit`
 
