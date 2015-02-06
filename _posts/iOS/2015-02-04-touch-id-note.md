@@ -21,6 +21,5 @@ tags: []
                  }
              }];
         } else {
-            NSLog(@"没有开启TOUCHID设备自行解决");
         }
 ```
