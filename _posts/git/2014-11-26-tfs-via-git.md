@@ -36,7 +36,7 @@ git config --global git-tf.server.password ***********
 
 5. install ca.cer
 
-required java version "1.6.0_65"
+required java version "1.6.0_65" (must)
 
 [download Java for OS X 2014-001](http://support.apple.com/kb/DL1572)
 
