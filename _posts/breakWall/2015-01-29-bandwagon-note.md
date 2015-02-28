@@ -11,7 +11,7 @@ tags: [bandwagon,tutorial]
 [3.99$ VPS](https://bandwagonhost.com/aff.php?aff=322&pid=19)
 
 
-1. 进入搬瓦工ClientArea-https://bandwagonhost.com/clientarea.php输入注册的邮箱和密码登录；
+1. 进入搬瓦工ClientArea- [https://bandwagonhost.com/clientarea.php](https://bandwagonhost.com/clientarea.php)输入注册的邮箱和密码登录；
 
 2. 点击Services-My Services-点击你需要架设的VPS对应的KiWiVM Control Panel，这样我们就进入VPS的控制面板（在这里可以看到你的VPS的IP和SSH端口等信息）；
 
