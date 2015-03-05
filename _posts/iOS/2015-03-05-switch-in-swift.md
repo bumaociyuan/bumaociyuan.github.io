@@ -13,7 +13,7 @@ tags: [swift]
 var testVar = 1
 var result = 0
 
-switch(testVal) {
+switch(testVar) {
 case 0:
     fallthrough
 case 1:
@@ -31,7 +31,7 @@ default:
 int testVar = 1;
 int result = 0;
 
-switch(testVal) {
+switch(testVar) {
 case 0:
 case 1:
     result = 1;
