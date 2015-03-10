@@ -11,10 +11,9 @@ tags: tutorial
 
 	 void (^someBlock)(NSMutableArray *,id) = ^(NSMutableArray *items,NSString *item) {
 			//do some thing
-	            }
-	        }
-	    };
-	    someBlock(items, item);
+	 };
+	     
+	 someBlock(items, item);
 	    
 **use block as type**
 
