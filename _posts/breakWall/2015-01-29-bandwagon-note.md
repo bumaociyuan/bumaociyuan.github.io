@@ -44,10 +44,10 @@ vi /etc/shadowsocks-libev/config.json
 ```
 
 {
-    "server":"104.224.166.82",
+    "server":"ip",
     "server_port":88,			#change the port need to restart server
     "local_port":1080,
-    "password":"48zFWAFgA3",
+    "password":"password",
     "timeout":60,
     "method":"rc4-md5"
 }
