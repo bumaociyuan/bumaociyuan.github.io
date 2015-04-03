@@ -13,6 +13,8 @@ references: [raywenderlich](http://www.raywenderlich.com/12139/introduction-to-c
 
 	 sudo gem install cocoapods
 
+	 sudo gem update cocoapods
+
 
 error:
 ![image](http://www.dasdoc.com/uploads/origin/201310/131615156.png)
