@@ -10,6 +10,8 @@ category: ios
 
 [Xcode 5 & Asset Catalog: How to reference the LaunchImage?](http://stackoverflow.com/questions/19107543/xcode-5-asset-catalog-how-to-reference-the-launchimage)
 
+#[UIImage+SplashImage](https://github.com/bumaociyuan/common/blob/master/category/UIImage%2BSplashImage.m)
+
 **For App Icons:**
 
 iPhone
@@ -40,3 +42,4 @@ iPad
 * LaunchImage-800-667h@2x.png (iPhone 6)
 * LaunchImage-800-Portrait-736h@3x.png (iPhone 6 Plus Portrait)
 * LaunchImage-800-Landscape-736h@3x.png (iPhone 6 Plus Landscape)
+
