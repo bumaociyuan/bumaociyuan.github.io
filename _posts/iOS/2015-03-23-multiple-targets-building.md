@@ -15,7 +15,8 @@ tags: [xcode]
 3. `Duplicate`
 
 #Rename Target,Scheme And Product
-1. target , slow click or return key
+1. `Manage Schemes`
+1. select target , slow click or return key
 2. scheme , [stackoverflow.com 233](http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme) 
 3. build target, in `Edit Scheme...` `Build` tab if there are multiple targets, remove useless targets with unchecking all checkboxes and delete them
 4. product
