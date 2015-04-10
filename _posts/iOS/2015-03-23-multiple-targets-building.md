@@ -19,7 +19,7 @@ tags: [xcode]
 1. select target , slow click or return key
 2. scheme , [stackoverflow.com 233](http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme) 
 3. build target, in `Edit Scheme...` `Build` tab if there are multiple targets, remove useless targets with unchecking all checkboxes and delete them
-4. product
+4. `Build Setting` change `Product Name` from `xxx copy` to `newName`
 
 #Info.plist
 rename info.plist ,in `Build Settings` `General` tag select new plist file
