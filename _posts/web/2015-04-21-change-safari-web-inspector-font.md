@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "change safari inspector font size"
+title: "change web safari inspector font size"
 description: ""
 category: web 
 tags: [safari]
