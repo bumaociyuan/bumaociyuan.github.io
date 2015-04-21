@@ -18,3 +18,9 @@ tags: [black magic]
 Find out who commit the bug code .
 
 Just right click on the line and click on “`Show Blame for Line`”
+
+#Simulate slow internet
+
+[Network Link Conditioner](http://nshipster.com/network-link-conditioner/)
+
+[Download](https://developer.apple.com/downloads/index.action?q=Network%20Link%20Conditioner#)
