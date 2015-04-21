@@ -43,7 +43,7 @@ int1 -le int2　|　　int1小于等于int2为真
 -s file　　|　　文件大小非0时为真 
 -t file　　|　　当文件描述符(默认为1)指定的设备为终端时为真
 
-4. 复杂逻辑|断
+4. 复杂逻辑断
  
 表达式|逻辑
 ---------|-------------
@@ -69,6 +69,6 @@ fi
 #The -z switch will test if the expansion of "$1" is a null string or not. If it is a null string then the body is executed.
 ```
 
-#file io
+#file
 [ -f "filepath" ] ：判断是否是一个文件 
 [ -d "folerpath" ] ：判断是否是一个文件夹 
