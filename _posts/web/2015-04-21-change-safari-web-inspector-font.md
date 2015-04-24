@@ -6,4 +6,4 @@ category: web
 tags: [safari]
 ---
 
-https://gist.github.com/chrisphenry/8949607
+[https://gist.github.com/chrisphenry/8949607](https://gist.github.com/chrisphenry/8949607)
