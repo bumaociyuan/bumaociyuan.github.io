@@ -10,7 +10,7 @@ tags: []
 ](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
 ```
-$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+$ git remote add upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 ```
 
 2. [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
