@@ -12,11 +12,11 @@ tags: []
 2. In the `viewDidLoad` do a `[self setNeedsStatusBarAppearanceUpdate];`
 3. Add the following method:
 
-	```
+```
 	-(UIStatusBarStyle)preferredStatusBarStyle{ 
     return UIStatusBarStyleLightContent; 
 	}
-	```
+```
 
 This will not work controllers inside `UINavigationController`
 
