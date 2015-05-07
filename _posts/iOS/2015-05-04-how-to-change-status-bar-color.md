@@ -13,9 +13,9 @@ tags: []
 3. Add the following method:
 
 ```
-	-(UIStatusBarStyle)preferredStatusBarStyle{ 
-    return UIStatusBarStyleLightContent; 
-	}
+-(UIStatusBarStyle)preferredStatusBarStyle{ 
+   return UIStatusBarStyleLightContent; 
+}
 ```
 
 This will not work controllers inside `UINavigationController`
