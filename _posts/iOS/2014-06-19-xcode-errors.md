@@ -36,3 +36,7 @@ Xcode > Preferences > Accounts > View Details > And just refresh the Provisionin
 将Apple LLVM compiler 4.2 - Language ->c++ Standard Library 修改为 libstdc++ （GNU C++ standard library）
 
 ---
+
+**Could not change executable permissions on the application.**
+
+Delete the app, restart iPhone
