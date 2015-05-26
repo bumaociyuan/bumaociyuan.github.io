@@ -1,10 +1,8 @@
-
 ---
 layout: post
 title:  "shell note"
 date:   2014-09-04 16:41:50
 categories: terminal
-
 ---
 
 February 2, 2015
@@ -15,7 +13,7 @@ caffeinate -t 3600
 
 Where 3600 is the number of seconds in one hour. You may modify it to any number of seconds, or alternatively just enter caffeinate without a timer to disable sleep mode until that terminal window is closed.
 
----
+-------
 January 14, 2015
 
 
@@ -26,7 +24,7 @@ January 14, 2015
 history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head -15
 ```
 
----
+-------
 
 [Linux Shell Scripting Tutorial v1.05r3
 A Beginner's handbook](http://www.freeos.com/guides/lsst/)
