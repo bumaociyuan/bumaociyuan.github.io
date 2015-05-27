@@ -28,7 +28,6 @@ tags: [other]
 ifunbox 也不能打开 iphone 的root file system,
 
 不过`openssh` 还可以用, 用`ssh` 到手机果断 `rm /Library/MobileSubstrate/DynamicLibraries/libReveal.dylib`
-`openssh` v5
 
 重启手机完全正常.
 
