@@ -35,5 +35,26 @@ reveal crisis
 
 fin
 
+#解决办法
 
+[Reveal 1.5.x 會讓 SpringBoard crash](http://hiraku.tw/2015/03/3779/)
 
+>正確解法是新增 libReveal.plist  設定 filter （對，我以前懶惰都不設定）
+
+>Bundle 設定一個不存在的值就好了，例如 com.apple.Tabemonodesuyo
+
+>之後裝 Reveal Loader，用 loader 去控制要在哪個 App 執行就好，
+
+[Injecting Reveal With MobileSubstrate
+](http://www.zdziarski.com/blog/?p=2361)
+
+```
+#remove reveal loader
+$ scp -r Reveal.framework root@x.x.x.x:/System/Library/Frameworks
+
+$ scp libReveal.dylib root@x.x.x.x:/Library/MobileSubstrate/DynamicLibraries
+
+$ vim /Library/MobileSubstrate/DynamicLibraries/libReveal.plist
+#input :{ Filter = { Bundles = ( "com.yourdomain.yourapp" ); }; }
+
+```
