@@ -55,6 +55,8 @@ $ scp -r Reveal.framework root@x.x.x.x:/System/Library/Frameworks
 $ scp libReveal.dylib root@x.x.x.x:/Library/MobileSubstrate/DynamicLibraries
 
 $ vim /Library/MobileSubstrate/DynamicLibraries/libReveal.plist
-#input :{ Filter = { Bundles = ( "com.yourdomain.yourapp" ); }; }
+#input :{ Filter = { Bundles = ( "com.apple.MobileSMS"; "net.whatsapp.WhatsApp" ); }; }
+
+$ killall SpringBoard
 
 ```
