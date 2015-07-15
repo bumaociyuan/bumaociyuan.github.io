@@ -15,6 +15,8 @@ Add shortcut for services
 in Xcode many shortcuts not working
 `cmd+shift+X` works well
 
+---
+##2013-10-11
 
 reference [stackoverflow](http://stackoverflow.com/questions/4778847/find-replace-in-xcode-using-regular-expression)
 

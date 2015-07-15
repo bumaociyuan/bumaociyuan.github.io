@@ -19,3 +19,10 @@ tags: [ios]
 >Images 3x will downscale to resolution 1080 x 1920. 
 
 [http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support](http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support)
+
+##Size Class for launch image
+
+* `2x [- +]` for iPhone6
+* `2x [- +]` for iPhone4
+* `3x [- +]` for iPhone6plus
+* `Retina 4 2x [- +]` for iPhone5
