@@ -7,7 +7,7 @@ tags: []
 ---
 
 [Five Tips for Using Self Signed SSL Certificates with iOS](http://blog.httpwatch.com/2013/12/12/five-tips-for-using-self-signed-ssl-certificates-with-ios/)
-
+[Create a HTTPS Server to install ipa locally](https://github.com/bumaociyuan/zxIpaServer)
 
 ```
 openssl genrsa -out myselfsigned.key 2048

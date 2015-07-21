@@ -6,6 +6,23 @@ categories: ios
 
 ---
 
+July 21, 2015
+[iOS开发的一些奇巧淫技](http://blog.csdn.net/justinjing0612/article/details/42294329)
+
+```objc
+self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
+
+                                         initWithImage:img
+
+                                         style:UIBarButtonItemStylePlain
+
+                                         target:self
+
+                                         action:@selector(onBack:)];
+
+self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+```
+
 December 27, 2014 update
 [link](http://www.jianshu.com/p/50b63a221f09)
 
