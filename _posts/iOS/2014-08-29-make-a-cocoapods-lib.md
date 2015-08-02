@@ -22,7 +22,7 @@ pod trunk push NSString-BlockHelper.podspec --verbose
 get error `You need to register a session first.`
 
 ```
-pod trunk register yourEmail 'yourName' --description='macbook pro'
+pod trunk register <yourEmail> '<yourName>' --description='macbook pro'
 #click the confirm email in yourEmail
 pod trunk push NSString-BlockHelper.podspec --verbose
 ```
