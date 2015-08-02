@@ -7,6 +7,17 @@ tags: [cocoapods,tutorial]
 
 ---
 
+---2015.08.02---
+
+**error**`- ERROR | [watchOS] Returned an unsuccessful exit code.` blabla
+
+add flowing code in podspec
+
+```
+s.osx.deployment_target = '10.8'
+s.ios.deployment_target = '6.0'
+```
+
 ---2014.11.05---
 
 update lib
