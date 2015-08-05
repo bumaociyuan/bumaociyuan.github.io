@@ -13,6 +13,9 @@ tags: []
 [How To Run Meld on Mac OS X Yosemite Without Homebrew, MacPorts, or Think](http://www.alexkras.com/how-to-run-meld-on-mac-os-x-yosemite-without-homebrew-macports-or-think/)
 
 ```
-brew install homebrew/x11/meld
-git config --global merge.tool meld
+$ brew install homebrew/x11/meld
+
+#config git no backup and using meld for git mergetool
+$ git config --global mergetool.keepBackup false
+$ git config --global merge.tool meld
 ```
