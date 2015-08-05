@@ -14,4 +14,5 @@ tags: []
 
 ```
 brew install homebrew/x11/meld
+git config --global merge.tool meld
 ```
