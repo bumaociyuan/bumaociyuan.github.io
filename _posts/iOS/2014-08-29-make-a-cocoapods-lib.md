@@ -7,6 +7,17 @@ tags: [cocoapods,tutorial]
 
 ---
 
+---2015.08.02---
+
+**error**`- ERROR | [watchOS] Returned an unsuccessful exit code.` blabla
+
+add flowing code in podspec
+
+```
+s.osx.deployment_target = '10.8'
+s.ios.deployment_target = '6.0'
+```
+
 ---2014.11.05---
 
 update lib
@@ -22,7 +33,7 @@ pod trunk push NSString-BlockHelper.podspec --verbose
 get error `You need to register a session first.`
 
 ```
-pod trunk register yourEmail 'yourName' --description='macbook pro'
+pod trunk register <yourEmail> '<yourName>' --description='macbook pro'
 #click the confirm email in yourEmail
 pod trunk push NSString-BlockHelper.podspec --verbose
 ```
