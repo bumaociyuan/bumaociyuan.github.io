@@ -7,10 +7,12 @@ tags: [homebrew]
 
 ---
 
+[caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
+
 install
 
 ```
-brew tap phinze/homebrew-cask && brew install brew-cask
+brew install caskroom/cask/brew-cask
 ```
 
 ```
