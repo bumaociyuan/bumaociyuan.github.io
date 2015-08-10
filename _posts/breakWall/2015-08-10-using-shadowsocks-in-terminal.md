@@ -2,8 +2,8 @@
 layout: post
 title: "using shadowsocks in terminal"
 description: ""
-category: 
-tags: []
+category: breakwall
+tags: [terminal,shadowsocks]
 ---
 
 [Using Shadowsocks with Command Line Tools](https://github.com/shadowsocks/shadowsocks/wiki/Using-Shadowsocks-with-Command-Line-Tools)
@@ -39,4 +39,5 @@ into `~/.proxychains/proxychains.conf`
 
 ```
 $ proxychains4 youtube-dl -o funny_video.flv https://www.youtube.com/funny_video
+##youtube-dl supported site https://github.com/rg3/youtube-dl/blob/master/docs/supportedsites.md :D
 ```
