@@ -16,7 +16,10 @@ add flowing code in podspec
 ```
 s.osx.deployment_target = '10.8'
 s.ios.deployment_target = '6.0'
+s.watchos.deployment_target = '2.0'
 ```
+
+[build on Xcode 7](https://github.com/CocoaPods/CocoaPods/issues/3925)
 
 ---2014.11.05---
 
