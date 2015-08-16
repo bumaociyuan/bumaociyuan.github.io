@@ -6,7 +6,6 @@ category: terminal
 tags: [zsh]
 ---
 
-##oh my zsh auto update failed 
 Error message like :
 
 ```
