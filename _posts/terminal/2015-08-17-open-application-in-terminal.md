@@ -15,9 +15,9 @@ I found solution of [open sublime in terminal](http://bumaociyuan.github.io/mac/
 # -------
 # Function
 # -------
-function google() { open "https://www.google.com/search?q=$1&gws_rd=ssl"; }
-function baidu() { open "https://www.baidu.com/s?ie=UTF-8&wd=$1"; }
-function github() { open "https://github.com/search?utf8=%E2%9C%93&q=$1"; }
+function google() { open "https://www.google.com/search?q=$*&gws_rd=ssl"; }
+function baidu() { open "https://www.baidu.com/s?ie=UTF-8&wd=$*"; }
+function github() { open "https://github.com/search?utf8=%E2%9C%93&q=$*"; }
 
 # -------
 # Aliases
@@ -25,6 +25,7 @@ function github() { open "https://github.com/search?utf8=%E2%9C%93&q=$1"; }
 alias chrome='open -a /Applications/Google\ Chrome.app'
 alias sublime='open -a /Applications/Sublime\ Text\ 3.app'
 alias xcode='open -a /Applications/Xcode.app'
+alias mou='open -a /Applications/Mou.app'
 ...and so on
 
 ```
