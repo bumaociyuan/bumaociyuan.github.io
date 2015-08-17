@@ -9,35 +9,34 @@ tags: [alias]
 
 I found solution of [open sublime in terminal](http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html), but how can I open others app in terminal ?
 
-```
-$ touch ~/.bashrc
-```
-
-copy 
+##Copy  following lines into  `~/.bashrc` or  `~/.zshrc`
 
 ```
 # -------
 # Function
 # -------
 function google() { open "https://www.google.com/search?q=$1&gws_rd=ssl"; }
-
 function baidu() { open "https://www.baidu.com/s?ie=UTF-8&wd=$1"; }
+function github() { open "https://github.com/search?utf8=%E2%9C%93&q=$1"; }
 
 # -------
 # Aliases
 # -------
 alias chrome='open -a /Applications/Google\ Chrome.app'
+alias sublime='open -a /Applications/Sublime\ Text\ 3.app'
+alias xcode='open -a /Applications/Xcode.app'
+...and so on
 
 ```
 
-into `~/.bashrc` then
-
+##Make sure `~/bash_profile` contains following line
 ```
-$ source ~/.bashrc
+if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
+```
 
-#usage
-$ google bumaociyuan
-$ baidu bumaociyuan
+#Usage
+```
+$ github bumaociyuan
 
-$chrome http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html
+$ chrome http://bumaociyuan.github.io/terminal/2015/08/17/open-application-in-terminal.html
 ```
