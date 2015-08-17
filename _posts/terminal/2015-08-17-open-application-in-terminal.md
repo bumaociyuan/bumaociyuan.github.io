@@ -11,7 +11,7 @@ I found solution of [open sublime in terminal](http://bumaociyuan.github.io/mac/
 
 ##Copy  following lines into  `~/.bashrc` or  `~/.zshrc`
 
-```shell
+```
 # -------
 # Function
 # -------
