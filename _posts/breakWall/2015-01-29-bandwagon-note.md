@@ -8,8 +8,19 @@ tags: [bandwagon,tutorial]
 
 [tutorial](http://www.advertcn.com/thread-20498-1-1.html)
 
-[3.99$ VPS](https://bandwagonhost.com/aff.php?aff=322&pid=19)
+~~[3.99$ VPS](https://bandwagonhost.com/aff.php?aff=322&pid=19)~~
 
+[7vps.net vps推荐网站](http://www.7vps.net/)
+
+
+August 24, 2015
+---
+
+[【新版】bandwagonhost-美国vps主机最新特价版VPS 支持支付宝](http://www.7vps.net/3332.html)
+
+bandwagonhos（搬砖工）美国vps主机商，已经没有以前的便宜货出售了，由于目前他们拿不到低价的IPv4，或者说拿不到低价的大量IP，所以接下来都不会再卖之前3.99美元一年的VPS了
+
+---
 
 1. 进入搬瓦工ClientArea- [https://bandwagonhost.com/clientarea.php](https://bandwagonhost.com/clientarea.php)输入注册的邮箱和密码登录；
 
