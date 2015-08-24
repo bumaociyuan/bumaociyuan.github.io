@@ -6,6 +6,14 @@ category:
 tags: []
 ---
 
+
+#search file in dir
+
+```
+find . | grep 'keyword'
+find . | grep 'keyword' | xargs open #open grepped file
+```
+
 #logical
 
 1. 字符串判断
