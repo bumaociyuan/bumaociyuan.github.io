@@ -13,6 +13,8 @@ tags: [bandwagon,tutorial]
 [7vps.net vps推荐网站](http://www.7vps.net/)
 
 
+[用 Shadowsocks 来做 SOCKS5 代理](http://blog.miskcoo.com/2014/10/shadowsocks-proxy)
+
 August 24, 2015
 ---
 
