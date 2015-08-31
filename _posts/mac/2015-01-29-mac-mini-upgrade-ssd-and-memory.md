@@ -16,4 +16,6 @@ SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E2
 
 视频 [http://v.youku.com/v_show/id_XNDkxNTkzNTQw.html](http://v.youku.com/v_show/id_XNDkxNTkzNTQw.html)
 
+[support.apple.com](https://support.apple.com/en-us/HT205041)
+
 

@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: "bandwagon note"
@@ -39,7 +40,8 @@ bandwagonhos（搬砖工）美国vps主机商，已经没有以前的便宜货�
 ssh -p <port> root@<ip>	
 
 #download
-wget http://tennfyfile.qiniudn.com/debian_shadowsocks_tennfy.sh
+wget https://gist.githubusercontent.com/bumaociyuan/6972132712358e2f0ab3/raw/5503365c05badb5ce49be0a94554134aed01d46e/debian_shadowsocks.sh
+#or wget http://tennfyfile.qiniudn.com/debian_shadowsocks_tennfy.sh
 
 #install
 bash debian_shadowsocks_tennfy.sh
