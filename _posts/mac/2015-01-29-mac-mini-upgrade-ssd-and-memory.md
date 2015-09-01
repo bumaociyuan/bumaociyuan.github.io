@@ -3,7 +3,7 @@ layout: post
 title: "Mac mini upgrade ssd and memory"
 description: ""
 category: mac
-tags: []
+tags: [ssd,upgrade]
 ---
 
 购买配件:
@@ -14,8 +14,9 @@ SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E2
 
 螺丝刀 ：宝工（Pro'skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 [http://item.jd.com/617776.html](http://item.jd.com/617776.html)
 
-视频 [http://v.youku.com/v_show/id_XNDkxNTkzNTQw.html](http://v.youku.com/v_show/id_XNDkxNTkzNTQw.html)
-
 [support.apple.com](https://support.apple.com/en-us/HT205041)
+
+<iframe height=498 width=510 src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder=0 allowfullscreen></iframe>
+
 
 
