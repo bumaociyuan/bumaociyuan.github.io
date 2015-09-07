@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "make a jx build system in sublime text 3"
+title: "make a jxa build system in sublime text 3"
 description: ""
 category: 
-tags: [jx,sublime,applescript]
+tags: [jxa,sublime,applescript]
 ---
 
 `Tools` -> `Build System` -> `New Build System...`
