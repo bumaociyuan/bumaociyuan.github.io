@@ -2,7 +2,7 @@
 layout: post
 title: "make a jxa build system in sublime text 3"
 description: ""
-category: 
+category: js
 tags: [jxa,sublime,applescript]
 ---
 
