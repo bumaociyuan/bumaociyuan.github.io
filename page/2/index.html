@@ -203,8 +203,8 @@ clicky_site_ids.push(100784435);
           
           
             
-              <a class="post-title-link" href="/2015/09/08/terminal-2015-04-16-shell-note-2-coding-basic.html" itemprop="url">
-                shell note 2 coding
+              <a class="post-title-link" href="/ios/2015/07/15/uitextview-text-length-limitation.html" itemprop="url">
+                UITextView text length limitation
               </a>
             
           
@@ -214,227 +214,8 @@ clicky_site_ids.push(100784435);
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
-          </time>
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/09/08/terminal-2015-04-16-shell-note-2-coding-basic.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/09/08/terminal-2015-04-16-shell-note-2-coding-basic.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>#search file in dir</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find</span> . | <span class="keyword">grep</span> <span class="string">'keyword'</span></span><br><span class="line"><span class="keyword">find</span> . | <span class="keyword">grep</span> <span class="string">'keyword'</span> | xargs <span class="keyword">open</span> #open grepped <span class="keyword">file</span></span><br></pre></td></tr></table></figure>
-<p>#logical</p>
-<ol>
-<li>字符串判断</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>逻辑</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>str1 = str2　　</td>
-<td>　　当两个串有相同内容、长度时为真 </td>
-</tr>
-<tr>
-<td>str1 != str2　</td>
-<td>　　当串str1和str2不等时为真 </td>
-</tr>
-<tr>
-<td>-n str1　　　　</td>
-<td>　 当串的长度大于0时为真(串非空) </td>
-</tr>
-<tr>
-<td>-z str1　　　　</td>
-<td>　 当串的长度为0时为真(空串) </td>
-</tr>
-<tr>
-<td>str1　　　　　　</td>
-<td>　   当串str1为非空时为真</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>数字的判断</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>逻辑</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>int1 -eq int2　</td>
-<td>　　两数相等为真 </td>
-</tr>
-<tr>
-<td>int1 -ne int2　</td>
-<td>　　两数不等为真 </td>
-</tr>
-<tr>
-<td>int1 -gt int2　</td>
-<td>　　int1大于int2为真 </td>
-</tr>
-<tr>
-<td>int1 -ge int2　</td>
-<td>　　int1大于等于int2为真 </td>
-</tr>
-<tr>
-<td>int1 -lt int2　</td>
-<td>　　int1小于int2为真 </td>
-</tr>
-<tr>
-<td>int1 -le int2　</td>
-<td>　　int1小于等于int2为真</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>文件的判断</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>逻辑 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-r file　　</td>
-<td>　　用户可读为真 </td>
-</tr>
-<tr>
-<td>-w file　　</td>
-<td>　　用户可写为真 </td>
-</tr>
-<tr>
-<td>-x file　　</td>
-<td>　　用户可执行为真 </td>
-</tr>
-<tr>
-<td>-f file　　</td>
-<td>　　文件为正规文件为真 </td>
-</tr>
-<tr>
-<td>-d file　　</td>
-<td>　　文件为目录为真 </td>
-</tr>
-<tr>
-<td>-c file　　</td>
-<td>　　文件为字符特殊文件为真 </td>
-</tr>
-<tr>
-<td>-b file　　</td>
-<td>　　文件为块特殊文件为真 </td>
-</tr>
-<tr>
-<td>-s file　　</td>
-<td>　　文件大小非0时为真 </td>
-</tr>
-<tr>
-<td>-t file　　</td>
-<td>　　当文件描述符(默认为1)指定的设备为终端时为真</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>复杂逻辑断</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>逻辑</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-a 　 　</td>
-<td>　　 与 </td>
-</tr>
-<tr>
-<td>-o　　　</td>
-<td>　　 或 </td>
-</tr>
-<tr>
-<td>!　　　　</td>
-<td>　　非</td>
-</tr>
-</tbody>
-</table>
-<p>eg. </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="variable">$#</span> <span class="operator">-eq</span> <span class="number">0</span> ]</span><br><span class="line">  <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"No arguments supplied"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="comment"># variable will tell you the number of input arguments the script was passed</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -z <span class="string">"$1"</span> ]</span><br><span class="line">  <span class="keyword">then</span></span><br><span class="line">    echo <span class="string">"No argument supplied"</span></span><br><span class="line">fi</span><br><span class="line">#The -z switch will test <span class="keyword">if</span> the expansion <span class="keyword">of</span> <span class="string">"$1"</span> <span class="keyword">is</span> a <span class="keyword">null</span> <span class="typename">string</span> <span class="keyword">or</span> <span class="keyword">not</span>. <span class="keyword">If</span> it <span class="keyword">is</span> a <span class="keyword">null</span> <span class="typename">string</span> <span class="keyword">then</span> the <span class="keyword">body</span> <span class="keyword">is</span> executed.</span><br></pre></td></tr></table></figure>
-<p>#file<br>[ -f “filepath” ] ：判断是否是一个文件<br>[ -d “folerpath” ] ：判断是否是一个文件夹 </p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-01-21-nsassert-note.html" itemprop="url">
-                NSAssert note
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
+          <time itemprop="dateCreated" datetime="2015-07-15T00:00:00+08:00" content="2015-07-15">
+            2015-07-15
           </time>
         </span>
 
@@ -459,8 +240,8 @@ clicky_site_ids.push(100784435);
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-01-21-nsassert-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-01-21-nsassert-note.html" itemprop="commentsCount"></span>
+            <a href="/ios/2015/07/15/uitextview-text-length-limitation.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/07/15/uitextview-text-length-limitation.html" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -475,126 +256,12 @@ clicky_site_ids.push(100784435);
 
       
         
-          <span itemprop="articleBody"><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSAssert</span>(condition, desc, ...)</span><br><span class="line"><span class="comment">//if condition is true ,app will crash , log outputs desc</span></span><br></pre></td></tr></table></figure>
-<p>disable NSAssert in <code>release</code> mode</p>
-<p>in <code>Build Settings</code> -&gt; <code>Preprocessor Macros</code> add <code>NS_BLOCK_ASSERTIONS</code> to <code>release</code> section</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-02-06-use-app-icons-and-launch-images-in-code.html" itemprop="url">
-                use app icons and launch images in code
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-02-06-use-app-icons-and-launch-images-in-code.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-02-06-use-app-icons-and-launch-images-in-code.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://stackoverflow.com/questions/18780476/ios-7-app-icons-launch-images-and-naming-convention-while-keeping-ios-6-icons" target="_blank" rel="external">iOS 7 App Icons, Launch images And Naming Convention While Keeping iOS 6 Icons</a></p>
-<p><a href="http://stackoverflow.com/questions/19107543/xcode-5-asset-catalog-how-to-reference-the-launchimage" target="_blank" rel="external">Xcode 5 &amp; Asset Catalog: How to reference the LaunchImage?</a></p>
-<p>#<a href="https://github.com/bumaociyuan/common/blob/master/category/UIImage%2BSplashImage.m" target="_blank" rel="external">UIImage+SplashImage</a></p>
-<p><strong>For App Icons:</strong></p>
-<p>iPhone</p>
+          <span itemprop="articleBody"><p>iOS8 以上键盘的自动联想功能使UITextView的长度限制产生一些bug</p>
 <ul>
-<li>AppIcon57x57.png (iPhone non retina) [Notice the Icon name prefix]</li>
-<li>AppIcon57x57@2x.png (iPhone retina)</li>
+<li><a href="http://blog.csdn.net/jasonblog/article/details/36894075" target="_blank" rel="external">再谈multistage text input（中文输入法）下UITextView的内容长度限制</a></li>
+<li><a href="http://stackoverflow.com/questions/19948394/textviewdidchange-crashes-in-ios-7/19960476#19960476" target="_blank" rel="external">textViewDidChange: crashes in iOS 7</a></li>
 </ul>
-<p>iPad</p>
-<ul>
-<li>AppIcon72x72~ipad.png (iPad non retina)</li>
-<li>AppIcon72x72@2x~ipad.png (iPad retina)</li>
-</ul>
-<p><strong>For Launch Images</strong></p>
-<ul>
-<li>LaunchImage-568h@2x.png</li>
-<li>LaunchImage-700-568h@2x.png</li>
-<li>LaunchImage-700-Landscape@2x~ipad.png</li>
-<li>LaunchImage-700-Landscape~ipad.png</li>
-<li>LaunchImage-700-Portrait@2x~ipad.png</li>
-<li>LaunchImage-700-Portrait~ipad.png</li>
-<li>LaunchImage-700@2x.png</li>
-<li>LaunchImage-Landscape@2x~ipad.png</li>
-<li>LaunchImage-Landscape~ipad.png</li>
-<li>LaunchImage-Portrait@2x~ipad.png</li>
-<li>LaunchImage-Portrait~ipad.png</li>
-<li>LaunchImage.png</li>
-<li>LaunchImage@2x.png</li>
-<li>LaunchImage-800-667h@2x.png (iPhone 6)</li>
-<li>LaunchImage-800-Portrait-736h@3x.png (iPhone 6 Plus Portrait)</li>
-<li>LaunchImage-800-Landscape-736h@3x.png (iPhone 6 Plus Landscape)</li>
-</ul>
-</span>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#define textLimitLength 50</span></span><br><span class="line"><span class="preprocessor">#pragma mark - UITextViewDelegate</span></span><br><span class="line">- (<span class="built_in">BOOL</span>)textView:(<span class="built_in">UITextView</span> *)textView shouldChangeTextInRange:(<span class="built_in">NSRange</span>)range replacementText:(<span class="built_in">NSString</span> *)text &#123;</span><br><span class="line">    <span class="keyword">if</span> (textView<span class="variable">.text</span><span class="variable">.length</span> &gt;= textLimitLength &amp;&amp; text<span class="variable">.length</span> &gt; range<span class="variable">.length</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)textViewDidChange:(<span class="built_in">UITextView</span> *)textView &#123;</span><br><span class="line">    <span class="keyword">if</span> (textView<span class="variable">.markedTextRange</span> == <span class="literal">nil</span> &amp;&amp;  textView<span class="variable">.text</span><span class="variable">.length</span> &gt; textLimitLength) &#123;</span><br><span class="line">        textView<span class="variable">.text</span> = [textView<span class="variable">.text</span> substringToIndex:textLimitLength];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
         
       
     </div>
@@ -624,455 +291,7 @@ clicky_site_ids.push(100784435);
           
           
             
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-02-11-notification-center-action.html" itemprop="url">
-                notification center action
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-02-11-notification-center-action.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-02-11-notification-center-action.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIMutableUserNotificationCategory_class/index.html" target="_blank" rel="external">UIMutableUserNotificationCategory doc</a></p>
-<p><a href="https://gist.github.com/calitb/19167a5f9b2d28cf2a96" target="_blank" rel="external">iOS8 beta: add actions to Remote Notification</a></p>
-<p><a href="http://www.cnphp6.com/archives/50193" target="_blank" rel="external">IOS8 推送第二篇</a></p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-03-05-switch-in-swift.html" itemprop="url">
-                switch in swift
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-03-05-switch-in-swift.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-03-05-switch-in-swift.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>###swift</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> testVar = <span class="number">1</span></span><br><span class="line"><span class="keyword">var</span> result = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(testVar) &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">fallthrough</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    result = <span class="number">3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>###objc</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">int</span> testVar = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(testVar) &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line"><span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    result = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    result = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-03-06-swift-lazy-initialization.html" itemprop="url">
-                swift lazy initialization
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-03-06-swift-lazy-initialization.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-03-06-swift-lazy-initialization.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  lazy <span class="keyword">var</span> someView: <span class="type">UIView</span> = &#123;</span><br><span class="line">      <span class="keyword">var</span> result = <span class="type">UIView</span>()</span><br><span class="line"><span class="comment">//do something</span></span><br><span class="line">      <span class="keyword">return</span> result</span><br><span class="line">  &#125;()</span><br></pre></td></tr></table></figure></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-03-23-multiple-targets-building.html" itemprop="url">
-                multiple targets building
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-03-23-multiple-targets-building.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-03-23-multiple-targets-building.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://samwize.com/2014/05/22/create-multiple-targets-slash-apps-for-1-xcode-project/" target="_blank" rel="external">link</a><br><a href="http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme" target="_blank" rel="external">stackoverflow.com 233</a> </p>
-<h1 id="Create_New_Target">Create New Target</h1><ol>
-<li>select project target </li>
-<li>right click </li>
-<li><code>Duplicate</code></li>
-</ol>
-<p>#Rename Target,Scheme And Product</p>
-<ol>
-<li><code>Manage Schemes</code></li>
-<li>select target , slow click or return key</li>
-<li>scheme , <a href="http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme" target="_blank" rel="external">stackoverflow.com 233</a> </li>
-<li>build target, in <code>Edit Scheme...</code> <code>Build</code> tab if there are multiple targets, remove useless targets with unchecking all checkboxes and delete them</li>
-<li><code>Build Setting</code> change <code>Product Name</code> from <code>xxx copy</code> to <code>newName</code></li>
-</ol>
-<p>#Info.plist<br>rename info.plist ,in <code>Build Settings</code> <code>General</code> tag select new plist file</p>
-<p>#Preprocessor<br>Select “Awesome Lite” target &gt; Build Settings &gt; Preprocessing &gt; Preprocessor Macros &gt; Add TARGET_LITE to each of the configuration (eg both Debug and Release configurations).</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#if defined(TARGET_LITE)</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Lite version"</span>);</span><br><span class="line"><span class="preprocessor">#else</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Original version"</span>);</span><br><span class="line"><span class="preprocessor">#endif</span></span><br></pre></td></tr></table></figure>
-<p>#Resources, Images and Assets Catalog<br>Select the resource &gt; File Inspector &gt; Target Membership &gt; check the targets intended.</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-04-12-ios-dev-black-magic.html" itemprop="url">
-                ios dev black magic
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-04-12-ios-dev-black-magic.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-04-12-ios-dev-black-magic.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>#Macro</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hexcolor">#def</span>ine kBaseURL @<span class="string">"http://domain.com"</span></span><br><span class="line"><span class="hexcolor">#def</span>ine kActionURL kBaseURL @<span class="string">"/api/action"</span></span><br></pre></td></tr></table></figure>
-<p>#Source Control</p>
-<p>Find out who commit the bug code .</p>
-<p>Just right click on the line and click on “<code>Show Blame for Line</code>”</p>
-<p>#Simulate slow internet</p>
-<p><a href="http://nshipster.com/network-link-conditioner/" target="_blank" rel="external">Network Link Conditioner</a></p>
-<p><a href="https://developer.apple.com/downloads/index.action?q=Network%20Link%20Conditioner#" target="_blank" rel="external">Download</a></p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-06-29-reactive-cocoa-note.html" itemprop="url">
+              <a class="post-title-link" href="/ios/2015/06/29/reactive-cocoa-note.html" itemprop="url">
                 reactive cocoa note
               </a>
             
@@ -1083,8 +302,8 @@ clicky_site_ids.push(100784435);
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
+          <time itemprop="dateCreated" datetime="2015-06-29T00:00:00+08:00" content="2015-06-29">
+            2015-06-29
           </time>
         </span>
 
@@ -1109,8 +328,8 @@ clicky_site_ids.push(100784435);
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-06-29-reactive-cocoa-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-06-29-reactive-cocoa-note.html" itemprop="commentsCount"></span>
+            <a href="/ios/2015/06/29/reactive-cocoa-note.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/06/29/reactive-cocoa-note.html" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -1158,8 +377,8 @@ clicky_site_ids.push(100784435);
           
           
             
-              <a class="post-title-link" href="/ios/2015/09/08/iOS-2015-07-15-uitextview-text-length-limitation.html" itemprop="url">
-                UITextView text length limitation
+              <a class="post-title-link" href="/2015/06/29/lucky-seven.html" itemprop="url">
+                Lucky Seven
               </a>
             
           
@@ -1169,8 +388,492 @@ clicky_site_ids.push(100784435);
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-08T14:01:43+08:00" content="2015-09-08">
-            2015-09-08
+          <time itemprop="dateCreated" datetime="2015-06-29T00:00:00+08:00" content="2015-06-29">
+            2015-06-29
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/06/29/lucky-seven.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/06/29/lucky-seven.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><img src="https://cloud.githubusercontent.com/assets/4977911/8399384/fc26c938-1e3f-11e5-8d99-6834219e53fa.jpg"></p>
+<p>777</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/05/28/reveal-crisis.html" itemprop="url">
+                reveal crisis
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-05-28T00:00:00+08:00" content="2015-05-28">
+            2015-05-28
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/05/28/reveal-crisis.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/05/28/reveal-crisis.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>27岁生日前一天,入手了正版reveal<br>装了 reveal loader没的反应<br>看了<a href="http://c.blog.sina.com.cn/profile.php?blogid=cb8a22ea89000gtw" target="_blank" rel="external">这篇教程</a><br>这**的blog</p>
+<blockquote>
+<p>4、将libReveal.dylib上传到设备的/Library/MobileSubstrate/DynamicLibraries</p>
+<p>6、re-spring或重启iOS设备，打开你想看的app，再从Reveal界面左上角选择要连接的机器，进入不同的页面之后还可以点击右上角的刷新钮来刷新监测的页面信息。</p>
+</blockquote>
+<p>这步我的iphone 就无限 apple logo 了,<br>差点就用 itunes restore 了</p>
+<p>幸好看到了这个哥们的<a href="https://youtu.be/MnH3225PFVk" target="_blank" rel="external">视频</a><br>解决的了无限logo<br>方法就是<code>按住音量上30秒或以上</code></p>
+<p>但是启动了手机之后所有cydia 插件都不能用了, <code>超雪</code> <code>afc2add</code> 都没的了,多半是 libReveal.dylib 把cydia 的auto load 卡到了,</p>
+<p>ifunbox 也不能打开 iphone 的root file system,</p>
+<p>不过<code>openssh</code> 还可以用, 用<code>ssh</code> 到手机果断 <code>rm /Library/MobileSubstrate/DynamicLibraries/libReveal.dylib</code></p>
+<p>重启手机完全正常.</p>
+<p>reveal crisis</p>
+<p>fin</p>
+<p>#解决办法</p>
+<p><a href="http://hiraku.tw/2015/03/3779/" target="_blank" rel="external">Reveal 1.5.x 會讓 SpringBoard crash</a></p>
+<blockquote>
+<p>正確解法是新增 libReveal.plist  設定 filter （對，我以前懶惰都不設定）</p>
+<p>Bundle 設定一個不存在的值就好了，例如 com.apple.Tabemonodesuyo</p>
+<p>之後裝 Reveal Loader，用 loader 去控制要在哪個 App 執行就好，</p>
+</blockquote>
+<p><a href="http://www.zdziarski.com/blog/?p=2361" target="_blank" rel="external">Injecting Reveal With MobileSubstrate
+</a></p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#remove reveal loader</span></span><br><span class="line"><span class="variable">$ </span>scp -r <span class="constant">Reveal</span>.framework root<span class="variable">@x</span>.x.x.<span class="symbol">x:</span>/<span class="constant">System</span>/<span class="constant">Library</span>/<span class="constant">Frameworks</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>scp libReveal.dylib root<span class="variable">@x</span>.x.x.<span class="symbol">x:</span>/<span class="constant">Library</span>/<span class="constant">MobileSubstrate</span>/<span class="constant">DynamicLibraries</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>vim /<span class="constant">Library</span>/<span class="constant">MobileSubstrate</span>/<span class="constant">DynamicLibraries</span>/libReveal.plist</span><br><span class="line"><span class="comment">#input :&#123; Filter = &#123; Bundles = ( "com.apple.MobileSMS"; "net.whatsapp.WhatsApp" ); &#125;; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>killall <span class="constant">SpringBoard</span></span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/java/2015/05/28/install-java-7.html" itemprop="url">
+                install java 7
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-05-28T00:00:00+08:00" content="2015-05-28">
+            2015-05-28
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/java/" itemprop="url" rel="index">
+                  <span itemprop="name">java</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/java/2015/05/28/install-java-7.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="java/2015/05/28/install-java-7.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" rel="external">Installed Java 7 on Mac OS X but Terminal is still using version 6</a></p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/mac/2015/05/26/reindex-spotlight.html" itemprop="url">
+                reindex spotlight
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-05-26T00:00:00+08:00" content="2015-05-26">
+            2015-05-26
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/mac/" itemprop="url" rel="index">
+                  <span itemprop="name">mac</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/mac/2015/05/26/reindex-spotlight.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/05/26/reindex-spotlight.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://apple.stackexchange.com/questions/24401/spotlight-reports-indexing-and-searching-disabled-in-lion" target="_blank" rel="external">Spotlight reports “Indexing and searching disabled” in Lion</a></p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> mdutil -i <span class="built_in">off</span> /</span><br><span class="line">sudo rm -rf /.Spotlight*</span><br><span class="line">sudo mdutil -i <span class="built_in">on</span> /</span><br><span class="line">sudo mdutil -E /</span><br></pre></td></tr></table></figure>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/05/17/install-meld-on-mac.html" itemprop="url">
+                install meld on mac
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-05-17T00:00:00+08:00" content="2015-05-17">
+            2015-05-17
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/05/17/install-meld-on-mac.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/05/17/install-meld-on-mac.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="https://gist.github.com/p1nox/6102015" target="_blank" rel="external">gist</a></p>
+<p><a href="https://github.com/yousseb/meld/releases/tag/osx-v1" target="_blank" rel="external">dmg</a></p>
+<p><a href="http://www.alexkras.com/how-to-run-meld-on-mac-os-x-yosemite-without-homebrew-macports-or-think/" target="_blank" rel="external">How To Run Meld on Mac OS X Yosemite Without Homebrew, MacPorts, or Think</a></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ brew <span class="operator"><span class="keyword">install</span> homebrew/x11/meld</span><br><span class="line"></span><br><span class="line">#config git <span class="keyword">no</span> <span class="keyword">backup</span> <span class="keyword">and</span> <span class="keyword">using</span> meld <span class="keyword">for</span> git mergetool</span><br><span class="line">$ git config <span class="comment">--global mergetool.keepBackup false</span></span><br><span class="line">$ git config <span class="comment">--global merge.tool meld</span></span></span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/js/2015/05/13/js-base64-decode-unicode.html" itemprop="url">
+                js base64 decode unicode
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-05-13T00:00:00+08:00" content="2015-05-13">
+            2015-05-13
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/js/" itemprop="url" rel="index">
+                  <span itemprop="name">js</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/js/2015/05/13/js-base64-decode-unicode.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="js/2015/05/13/js-base64-decode-unicode.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding" target="_blank" rel="external">Base64 encoding and decoding</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">utf8_to_b64</span>(<span class="params"> str </span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">window</span>.btoa(<span class="built_in">unescape</span>(<span class="built_in">encodeURIComponent</span>( str )));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">b64_to_utf8</span>(<span class="params"> str </span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">decodeURIComponent</span>(<span class="built_in">escape</span>(<span class="built_in">window</span>.atob( str )));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Usage:</span></span><br><span class="line">utf8_to_b64(<span class="string">'✓ à la mode'</span>); <span class="comment">// "4pyTIMOgIGxhIG1vZGU="</span></span><br><span class="line">b64_to_utf8(<span class="string">'4pyTIMOgIGxhIG1vZGU='</span>); <span class="comment">// "✓ à la mode"</span></span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/ios/2015/05/04/how-to-change-status-bar-color.html" itemprop="url">
+                How to change status bar color
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-05-04T00:00:00+08:00" content="2015-05-04">
+            2015-05-04
           </time>
         </span>
 
@@ -1195,8 +898,8 @@ clicky_site_ids.push(100784435);
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/ios/2015/09/08/iOS-2015-07-15-uitextview-text-length-limitation.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/09/08/iOS-2015-07-15-uitextview-text-length-limitation.html" itemprop="commentsCount"></span>
+            <a href="/ios/2015/05/04/how-to-change-status-bar-color.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/05/04/how-to-change-status-bar-color.html" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -1211,12 +914,103 @@ clicky_site_ids.push(100784435);
 
       
         
-          <span itemprop="articleBody"><p>iOS8 以上键盘的自动联想功能使UITextView的长度限制产生一些bug</p>
+          <span itemprop="articleBody"><p><a href="http://stackoverflow.com/questions/17678881/how-to-change-status-bar-text-color-in-ios-7" target="_blank" rel="external">How to change Status Bar text color in iOS 7</a></p>
+<ol>
+<li>Set the <code>UIViewControllerBasedStatusBarAppearance</code> to <code>YES</code> in the <code>.plist</code> file.</li>
+<li>In the <code>viewDidLoad</code> do a <code>[self setNeedsStatusBarAppearanceUpdate];</code></li>
+<li>Add the following method:</li>
+</ol>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-(<span class="built_in">UIStatusBarStyle</span>)preferredStatusBarStyle&#123; </span><br><span class="line">   <span class="keyword">return</span> <span class="built_in">UIStatusBarStyleLightContent</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>This will not work controllers inside <code>UINavigationController</code></p>
+<p><a href="http://stackoverflow.com/questions/19022210/preferredstatusbarstyle-isnt-called/19513714#19513714" target="_blank" rel="external">For anyone using a UINavigationController:</a></p>
+<p>The <code>UINavigationController</code> does not forward on <code>preferredStatusBarStyle</code> calls to its child view controllers. Instead it manages its own state - as it should, it is drawing at the top of the screen where the status bar lives and so should be responsible for it. Therefor implementing preferredStatusBarStyle in your VCs within a nav controller will do nothing - they will never be called.</p>
+<p>The trick is what the <code>UINavigationController</code> uses to decide what to return for <code>UIStatusBarStyleDefault</code> or <code>UIStatusBarStyleLightContent</code>. It bases this on it’s <code>UINavigationBar.barStyle</code>. The default (<code>UIBarStyleDefault</code>) results in the dark foreground <code>UIStatusBarStyleDefault</code> status bar. And <code>UIBarStyleBlack</code> will give a <code>UIStatusBarStyleLightContent</code> status bar.</p>
+<p>If you want <code>UIStatusBarStyleLightContent</code> on a <code>UINavigationController</code> use:</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span><span class="variable">.navigationController</span><span class="variable">.navigationBar</span><span class="variable">.barStyle</span> = <span class="built_in">UIBarStyleBlack</span>;</span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html" itemprop="url">
+                Xcode 6   xcassets for universal image support
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-04-30T00:00:00+08:00" content="2015-04-30">
+            2015-04-30
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><blockquote>
+<p>In 1x place image with resolution 320 x 480. </p>
+<p>In 2x place image with resolution 640 x 960. </p>
+<p>In Retina 4 2x place image with resolution 640 x 1136. </p>
+<p>in 3x place image with resolution 1242 x 2208. </p>
+<p>Images of Retina 4 2x will upscale to resolution 750 x 1334. </p>
+<p>Images 3x will downscale to resolution 1080 x 1920. </p>
+</blockquote>
+<p><a href="http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support" target="_blank" rel="external">http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support</a></p>
+<p>##Size Class for launch image</p>
 <ul>
-<li><a href="http://blog.csdn.net/jasonblog/article/details/36894075" target="_blank" rel="external">再谈multistage text input（中文输入法）下UITextView的内容长度限制</a></li>
-<li><a href="http://stackoverflow.com/questions/19948394/textviewdidchange-crashes-in-ios-7/19960476#19960476" target="_blank" rel="external">textViewDidChange: crashes in iOS 7</a></li>
+<li><code>2x [- +]</code> for iPhone6</li>
+<li><code>2x [- +]</code> for iPhone4</li>
+<li><code>3x [- +]</code> for iPhone6plus</li>
+<li><code>Retina 4 2x [- +]</code> for iPhone5</li>
 </ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#define textLimitLength 50</span></span><br><span class="line"><span class="preprocessor">#pragma mark - UITextViewDelegate</span></span><br><span class="line">- (<span class="built_in">BOOL</span>)textView:(<span class="built_in">UITextView</span> *)textView shouldChangeTextInRange:(<span class="built_in">NSRange</span>)range replacementText:(<span class="built_in">NSString</span> *)text &#123;</span><br><span class="line">    <span class="keyword">if</span> (textView<span class="variable">.text</span><span class="variable">.length</span> &gt;= textLimitLength &amp;&amp; text<span class="variable">.length</span> &gt; range<span class="variable">.length</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)textViewDidChange:(<span class="built_in">UITextView</span> *)textView &#123;</span><br><span class="line">    <span class="keyword">if</span> (textView<span class="variable">.markedTextRange</span> == <span class="literal">nil</span> &amp;&amp;  textView<span class="variable">.text</span><span class="variable">.length</span> &gt; textLimitLength) &#123;</span><br><span class="line">        textView<span class="variable">.text</span> = [textView<span class="variable">.text</span> substringToIndex:textLimitLength];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
+</span>
         
       
     </div>
@@ -1273,7 +1067,7 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">120</span>
+              <span class="site-state-item-count">119</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
