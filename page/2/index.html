@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -52,7 +52,7 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
+    scheme: 'Mist',
     sidebar: 'post'
   };
 </script>
@@ -154,13 +154,6 @@ clicky_site_ids.push(100784435);
 
       
       
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            <i class="menu-item-icon icon-next-search"></i> <br />
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
@@ -168,6 +161,10 @@ clicky_site_ids.push(100784435);
     <div class="site-search">
       
   
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -191,6 +188,96 @@ clicky_site_ids.push(100784435);
       <div class="main-inner">
         <div id="content" class="content"> 
   <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/ios/2015/07/17/self-signed-certificates-in-ios.html" itemprop="url">
+                self signed certificates in iOS
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-07-17T00:00:00-04:00" content="2015-07-17">
+            2015-07-17
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2015/07/17/self-signed-certificates-in-ios.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/07/17/self-signed-certificates-in-ios.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://blog.httpwatch.com/2013/12/12/five-tips-for-using-self-signed-ssl-certificates-with-ios/" target="_blank" rel="external">Five Tips for Using Self Signed SSL Certificates with iOS</a><br><a href="https://github.com/bumaociyuan/zxIpaServer" target="_blank" rel="external">Create a HTTPS Server to install ipa locally</a></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">openssl genrsa -out myselfsigned<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -new -x509 -key myselfsigned<span class="class">.key</span> -out myselfsigned<span class="class">.cer</span> -days <span class="number">365</span> -subj /CN=www<span class="class">.mysite</span><span class="class">.com</span></span><br><span class="line"></span><br><span class="line">openssl pkcs12 -export -out myselfsigned<span class="class">.pfx</span> -inkey myselfsigned<span class="class">.key</span> -<span class="keyword">in</span> myselfsigned<span class="class">.cer</span></span><br><span class="line"></span><br><span class="line">openssl genrsa -out myCA<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -x509 -new -key myCA<span class="class">.key</span> -out myCA<span class="class">.cer</span> -days <span class="number">730</span> -subj /CN=<span class="string">"My Custom CA"</span></span><br><span class="line"></span><br><span class="line">openssl genrsa -out mycert1<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -new -out mycert1<span class="class">.req</span> -key mycert1<span class="class">.key</span> -subj /CN=www2<span class="class">.mysite</span><span class="class">.com</span></span><br><span class="line"></span><br><span class="line">openssl x509 -req -<span class="keyword">in</span> mycert1<span class="class">.req</span> -out mycert1<span class="class">.cer</span> -CAkey myCA<span class="class">.key</span> -CA myCA<span class="class">.cer</span> -days <span class="number">365</span> -CAcreateserial -CAserial serial</span><br></pre></td></tr></table></figure>
+<p>www.mysite.com 可以是ip</p>
+<ul>
+<li>服务器使用<code>mycert1.cer</code> <code>mycert1.key</code> 创建https服务</li>
+<li>手机端下载安装<code>myCA.cer</code></li>
+</ul>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -945,90 +1032,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html" itemprop="url">
-                Xcode 6   xcassets for universal image support
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-04-30T00:00:00-04:00" content="2015-04-30">
-            2015-04-30
-          </time>
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><blockquote>
-<p>In 1x place image with resolution 320 x 480. </p>
-<p>In 2x place image with resolution 640 x 960. </p>
-<p>In Retina 4 2x place image with resolution 640 x 1136. </p>
-<p>in 3x place image with resolution 1242 x 2208. </p>
-<p>Images of Retina 4 2x will upscale to resolution 750 x 1334. </p>
-<p>Images 3x will downscale to resolution 1080 x 1920. </p>
-</blockquote>
-<p><a href="http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support" target="_blank" rel="external">http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support</a></p>
-<p>##Size Class for launch image</p>
-<ul>
-<li><code>2x [- +]</code> for iPhone6</li>
-<li><code>2x [- +]</code> for iPhone4</li>
-<li><code>3x [- +]</code> for iPhone6plus</li>
-<li><code>Retina 4 2x [- +]</code> for iPhone5</li>
-</ul>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1067,21 +1070,21 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">119</span>
+              <span class="site-state-item-count">120</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">48</span>
+              <span class="site-state-item-count">50</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -1146,7 +1149,7 @@ clicky_site_ids.push(100784435);
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 

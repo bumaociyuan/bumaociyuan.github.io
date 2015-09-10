@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -52,7 +52,7 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
+    scheme: 'Mist',
     sidebar: 'post'
   };
 </script>
@@ -154,13 +154,6 @@ clicky_site_ids.push(100784435);
 
       
       
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            <i class="menu-item-icon icon-next-search"></i> <br />
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
@@ -168,6 +161,10 @@ clicky_site_ids.push(100784435);
     <div class="site-search">
       
   
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -191,6 +188,97 @@ clicky_site_ids.push(100784435);
       <div class="main-inner">
         <div id="content" class="content"> 
   <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/python/2014/10/11/python-setting-on-windows7.html" itemprop="url">
+                python setting on windows7
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-10-11T10:56:50-04:00" content="2014-10-11">
+            2014-10-11
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/python/" itemprop="url" rel="index">
+                  <span itemprop="name">python</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/python/2014/10/11/python-setting-on-windows7.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="python/2014/10/11/python-setting-on-windows7.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><ul>
+<li>下载 Python:<a href="http://www.python.org/getit/" target="_blank" rel="external">http://www.python.org/getit/</a></li>
+<li>Python环境变量 右键我的电脑，高级设置找到环境变量</li>
+<li>在系统变量中找到Path，并在变量值最后加上python的安装路径</li>
+<li><code>;d:\python27</code></li>
+<li>再找到PATHEXT，在变量值最后加上后缀</li>
+<li><code>;.PY;.PYM</code></li>
+</ul>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -1218,176 +1306,6 @@ vimtutor
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/terminal/2014/09/05/shell-note.html" itemprop="url">
-                shell note
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-09-04T16:41:50-04:00" content="2014-09-04">
-            2014-09-04
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/terminal/" itemprop="url" rel="index">
-                  <span itemprop="name">terminal</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/terminal/2014/09/05/shell-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="terminal/2014/09/05/shell-note.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>February 2, 2015</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caffeinate -t <span class="number">3600</span></span><br></pre></td></tr></table></figure>
-<p>Where 3600 is the number of seconds in one hour. You may modify it to any number of seconds, or alternatively just enter caffeinate without a timer to disable sleep mode until that terminal window is closed.</p>
-<hr>
-<p>January 14, 2015</p>
-<p><a href="http://osxdaily.com/2012/11/02/list-most-used-terminal-commands/" target="_blank" rel="external">List Your 15 Most Used Terminal Commands</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">history</span> | awk <span class="string">'&#123;a[$2]++&#125;END&#123;for(i in a)&#123;print a[i] " " i&#125;&#125;'</span> | sort -rn | head -<span class="number">15</span></span><br></pre></td></tr></table></figure>
-<hr>
-<p><a href="http://www.freeos.com/guides/lsst/" target="_blank" rel="external">Linux Shell Scripting Tutorial v1.05r3<br>A Beginner’s handbook</a></p>
-<p><a href="http://www.92csz.com/study/linux/12.htm" target="_blank" rel="external">link</a></p>
-<p>—2014.12.05–</p>
-<p><a href="http://anotheruiguy.gitbooks.io/gitforeveryone/content/terminal/cheat-sheet.html" target="_blank" rel="external">gitbook</a></p>
-<p><code>Ctrl + A</code>     Go to the beginning of the line you are currently typing on </p>
-<p><code>Ctrl + E</code>    Go to the end of the line you are currently typing on  </p>
-<p><code>Ctrl + U</code>    Clear the line before the cursor </p>
-<p><code>Ctrl + K</code>    Clear the line after the cursor </p>
-<p><code>Ctrl + W</code>    Delete the word before the cursor </p>
-<p>—2014.11.09–</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rm</span> -rf dirPath</span><br></pre></td></tr></table></figure>
-<p>—–2014.10.25——-</p>
-<ul>
-<li><p>创建以当前时间为文件名的</p>
-<p>  mkdir <code>date +%Y%m%d</code></p>
-</li>
-<li><p>split</p>
-</li>
-</ul>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">string=<span class="string">"hello,world,i,like,you,babalala"</span>  </span><br><span class="line"><span class="keyword">array</span>=($&#123;string//,/ &#125;)  </span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> $&#123;array[@]&#125;  </span><br><span class="line">do  </span><br><span class="line">  	 echo <span class="variable">$i</span>  </span><br><span class="line">done</span><br></pre></td></tr></table></figure>
-<ul>
-<li>join</li>
-</ul>
-<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">array</span>=($&#123;<span class="built_in">string</span><span class="comment">//,/&#125;)</span></span><br><span class="line">printf <span class="attribute">-v</span> <span class="built_in">var</span> <span class="string">"%s-"</span> <span class="string">"$&#123;array[@]&#125;"</span></span><br><span class="line"><span class="built_in">var</span>=$&#123;<span class="built_in">var</span>%?&#125;</span><br></pre></td></tr></table></figure>
-<p>—–2014-09-04——-</p>
-<h4 id="1-_记录命令历史">1. 记录命令历史</h4><ul>
-<li><code>!! （”连续两个”!”），表示执行上一条指令</code></li>
-<li>!n（这里的n是数字），表示执行命令历史中第n条指令，例如”!100”表示执行命令历史中第100个命令</li>
-<li><code>!字符串（字符串大于等于1），例如!ta，表示执行命令历史中最近一次以ta为开头的指令。</code></li>
-</ul>
-<h4 id="2-_指令和文件名补全">2. 指令和文件名补全</h4><ul>
-<li><code>按tab键，它可以帮你补全一个指令，也可以帮你补全一个路径或者一个文件名。连续按两次tab键，系统则会把所有的指令或者文件名都列出来。</code></li>
-</ul>
-<h4 id="3-_别名_alias">3. 别名 alias</h4><p><img src="http://www.92csz.com/study/linux/images/12_7.png" alt="image"></p>
-<ul>
-<li>alias语法很简单，alias [命令别名]=[’具体的命令’]。</li>
-</ul>
-<h4 id="4-_通配符">4. 通配符</h4><ul>
-<li>在bash下，可以使用*来匹配零个或多个字符，而用?匹配一个字符。<br><img src="http://www.92csz.com/study/linux/images/12_8.png" alt="image"></li>
-</ul>
-<h4 id="5-_管道符">5. 管道符</h4><ul>
-<li><code>前面已经提过过管道符”|”，就是把前面的命令运行的结果丢给后面的命令。</code></li>
-</ul>
-<h4 id="6-_作业控制">6. 作业控制</h4><ul>
-<li>当运行一个进程时，<code>你可以使它暂停（按Ctrl+z），然后使用fg命令恢复它</code>，利用bg命令使他到后台运行，你也可以使它终止（按Ctrl+c）。</li>
-</ul>
-<h4 id="7-_变量">7. 变量</h4><ul>
-<li>前面章节中笔者曾经介绍过环境变量PATH，这个环境变量就是shell预设的一个变量，通常shell预设的变量都是大写的。变量，说简单点就是使用一个较简单的字符串来替代某些具有特殊意义的设定以及数据。就拿PATH来讲，这个PATH就代替了所有常用命令的绝对路径的设定。因为有了PATH这个变量，所以我们运行某个命令时不再去输入全局路径，直接敲命令名即可。你可以使用echo命令显示变量的值。</li>
-<li>使用env命令即可全部列出系统预设的全部系统变量了。不过登录的用户不一样这些环境变量的值也不一样。当前显示的就是root这个账户的环境变量了。下面笔者简单介绍一下常见的环境变量：</li>
-</ul>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">使用env命令即可全部列出系统预设的全部系统变量了。不过登录的用户不一样这些环境变量的值也不一样。当前显示的就是root这个账户的环境变量了。下面笔者简单介绍一下常见的环境变量：</span><br><span class="line">PATH	决定了<span class="keyword">shell</span>将到哪些目录中寻找命令或程序</span><br><span class="line"></span><br><span class="line">HOME	当前用户主目录</span><br><span class="line"></span><br><span class="line">HISTSIZE	历史记录数</span><br><span class="line"></span><br><span class="line">LOGNAME	当前用户的登录名</span><br><span class="line"></span><br><span class="line">HOSTNAME	指主机的名称</span><br><span class="line"></span><br><span class="line"><span class="keyword">SHELL</span>	前用户<span class="keyword">Shell</span>类型</span><br><span class="line"></span><br><span class="line">LANG	语言相关的环境变量，多语言可以修改此环境变量</span><br><span class="line"></span><br><span class="line">MAIL	当前用户的邮件存放目录</span><br><span class="line"></span><br><span class="line"><span class="keyword">PWD</span>	当前目录</span><br><span class="line"></span><br><span class="line">env命令显示的变量只是环境变量，系统预设的变量其实还有很多，你可以使用<span class="keyword">set</span>命令把系统预设的全部变量都显示出来。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>set不仅可以显示系统预设的变量，也可以连同用户自定义的变量显示出来。用户自定义变量？是的，用户自己同样可以定义变量</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">myname=zx //不能有空格 myname='first name'</span><br><span class="line"><span class="operator"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zx</span><br><span class="line"></span><br><span class="line">myname=<span class="string">"$myname"</span>dddd //变量内容可以累加其他变量的内容，需要**加双引号**</span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zxdddd</span><br><span class="line"></span><br><span class="line"><span class="keyword">work</span>=/<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday/</span><br><span class="line">cd $<span class="keyword">work</span></span><br><span class="line">pwd //<span class="keyword">output</span> : /<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday</span></span><br></pre></td></tr></table></figure>
-<h4 id="8-_特殊符号">8. 特殊符号</h4><ol>
-<li>* ：代表零个或多个字符或数字。</li>
-<li>? ：只代表一个任意的字符</li>
-<li># ：这个符号在linux中表示注释说明的意思，即”#”后面的内容linux忽略掉。</li>
-<li>\ ：转义字符，将后面的特殊符号（例如”*” ）还原为普通字符。</li>
-<li>| ：管道符，前面多次说过，它的作用在于将符号前面命令的结果丢给符号后面的命令。这里提到的后面的命令，并不是所有的命令都可以的，一般针对文档操作的命令比较常用，例如cat, less, head, tail, grep, cut, sort, wc, uniq, tee, tr, split, sed, awk等等，其中grep, sed, awk为正则表达式必须掌握的工具，在后续内容中详细介绍。</li>
-<li>$ ：除了用于变量前面的标识符外，还有一个妙用，就是和’!’结合起来使用。</li>
-</ol>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ls</span> <span class="keyword">test</span>.txt </span><br><span class="line"><span class="keyword">test</span>.txt</span><br><span class="line"><span class="keyword">ls</span> !$</span><br><span class="line"><span class="keyword">ls</span> <span class="keyword">test</span>.txt</span><br><span class="line"><span class="keyword">test</span>.txt</span><br></pre></td></tr></table></figure>
-<p>‘!$’表示上条命中中最后一个变量（也许称为变量不合适，总之就是上条命令中最后出现的那个东西）例如上边命令最后是test.txt那么在当前命令下输入!$则代表test.txt。</p>
-<ul>
-<li>grep ：过滤一个或多个字符</li>
-<li><p>cut ：截取某一个字段 -d ：后面跟分隔字符，分隔字符要用双引号括起来, -c ：后面接的是第几个字符, -f ：后面接的是第几个区块</p>
-</li>
-<li><p>sort ：用做排序 -t 分隔符 ：作用跟cut的-d一个意思, -n ：使用纯数字排序, -r ：反向排序, -u ：去重复</p>
-</li>
-<li>wc ：统计文档的行数、字符数、词数，常用的选项为：-l ：统计行数, -m ：统计字符数, -w ：统计词数</li>
-<li>uniq ：去重复的行，笔者常用的选项只有一个：-c ：统计重复的行数，并把行数写在前面</li>
-</ul>
-<ol>
-<li>：分号。平时我们都是在一行中敲一个命令，然后回车就运行了，那么想在一行中运行两个或两个以上的命令如何呢？则需要在命令之间加一个”;”了。</li>
-<li>[ ] ：中括号，中间为字符组合，代表中间字符中的任意一个 </li>
-</ol>
-<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">zx:terminal_study niko$ <span class="keyword">ls</span></span><br><span class="line">ddd	<span class="keyword">error</span>	<span class="keyword">text</span></span><br><span class="line">zx:terminal_study niko$ <span class="keyword">ls</span> t*</span><br><span class="line"><span class="keyword">text</span></span><br><span class="line">zx:terminal_study niko$ <span class="keyword">ls</span> [te]*</span><br><span class="line"><span class="keyword">error</span>	<span class="keyword">text</span></span><br><span class="line">zx:terminal_study niko$</span><br></pre></td></tr></table></figure>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1426,21 +1344,21 @@ vimtutor
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">119</span>
+              <span class="site-state-item-count">120</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">48</span>
+              <span class="site-state-item-count">50</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -1505,7 +1423,7 @@ vimtutor
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 

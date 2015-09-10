@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -52,7 +52,7 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
+    scheme: 'Mist',
     sidebar: 'post'
   };
 </script>
@@ -154,13 +154,6 @@ clicky_site_ids.push(100784435);
 
       
       
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            <i class="menu-item-icon icon-next-search"></i> <br />
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
@@ -168,6 +161,10 @@ clicky_site_ids.push(100784435);
     <div class="site-search">
       
   
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -191,6 +188,90 @@ clicky_site_ids.push(100784435);
       <div class="main-inner">
         <div id="content" class="content"> 
   <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html" itemprop="url">
+                Xcode 6   xcassets for universal image support
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-04-30T00:00:00-04:00" content="2015-04-30">
+            2015-04-30
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/04/30/xcode-6---xcassets-for-universal-image-support.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><blockquote>
+<p>In 1x place image with resolution 320 x 480. </p>
+<p>In 2x place image with resolution 640 x 960. </p>
+<p>In Retina 4 2x place image with resolution 640 x 1136. </p>
+<p>in 3x place image with resolution 1242 x 2208. </p>
+<p>Images of Retina 4 2x will upscale to resolution 750 x 1334. </p>
+<p>Images 3x will downscale to resolution 1080 x 1920. </p>
+</blockquote>
+<p><a href="http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support" target="_blank" rel="external">http://stackoverflow.com/questions/26020979/xcode-6-xcassets-for-universal-image-support</a></p>
+<p>##Size Class for launch image</p>
+<ul>
+<li><code>2x [- +]</code> for iPhone6</li>
+<li><code>2x [- +]</code> for iPhone4</li>
+<li><code>3x [- +]</code> for iPhone6plus</li>
+<li><code>Retina 4 2x [- +]</code> for iPhone5</li>
+</ul>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -1151,91 +1232,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/mac/2015/02/05/parallels-ip-note.html" itemprop="url">
-                Parallels ip note
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-02-05T00:00:00-05:00" content="2015-02-05">
-            2015-02-05
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/mac/" itemprop="url" rel="index">
-                  <span itemprop="name">mac</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/mac/2015/02/05/parallels-ip-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/02/05/parallels-ip-note.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://bbs.feng.com/read-htm-tid-5291229.html" target="_blank" rel="external">如何给Parallels中的系统分配固定IP</a></p>
-<p>rclick dock icon <code>Virtual Machines List</code> -&gt; rclick windows icon <code>Configure</code> -&gt; <code>Hardware</code> -&gt; <code>Network 1</code> -&gt; <code>Type</code> to <code>Default Adapter</code></p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1274,21 +1270,21 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">119</span>
+              <span class="site-state-item-count">120</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">48</span>
+              <span class="site-state-item-count">50</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -1353,7 +1349,7 @@ clicky_site_ids.push(100784435);
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 

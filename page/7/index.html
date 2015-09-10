@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -52,7 +52,7 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
+    scheme: 'Mist',
     sidebar: 'post'
   };
 </script>
@@ -154,13 +154,6 @@ clicky_site_ids.push(100784435);
 
       
       
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            <i class="menu-item-icon icon-next-search"></i> <br />
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
@@ -168,6 +161,10 @@ clicky_site_ids.push(100784435);
     <div class="site-search">
       
   
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -191,6 +188,89 @@ clicky_site_ids.push(100784435);
       <div class="main-inner">
         <div id="content" class="content"> 
   <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/ios/2014/10/31/customize-tabbar-icon-and-text-color.html" itemprop="url">
+                customize tabbar icon and text color
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-10-30T15:41:32-04:00" content="2014-10-30">
+            2014-10-30
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2014/10/31/customize-tabbar-icon-and-text-color.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/10/31/customize-tabbar-icon-and-text-color.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)configTabBar &#123;</span><br><span class="line">    <span class="built_in">UIColor</span> *greenColor = [<span class="built_in">UIColor</span> colorWithRed:<span class="number">0.213</span></span><br><span class="line">                                          green:<span class="number">0.898</span></span><br><span class="line">                                           blue:<span class="number">0.573</span></span><br><span class="line">                                          alpha:<span class="number">1.000</span>];</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.tabBar</span><span class="variable">.items</span></span><br><span class="line">     enumerateObjectsUsingBlock:^(<span class="built_in">UITabBarItem</span> *obj, <span class="built_in">NSUInteger</span> idx, <span class="built_in">BOOL</span> *stop) &#123;</span><br><span class="line">         [obj  setTitleTextAttributes:@&#123;</span><br><span class="line">                                        <span class="built_in">NSForegroundColorAttributeName</span>: [<span class="built_in">UIColor</span> whiteColor],</span><br><span class="line">                                        &#125;</span><br><span class="line">                             forState:<span class="built_in">UIControlStateNormal</span>];</span><br><span class="line">         [obj  setTitleTextAttributes:@&#123;</span><br><span class="line">                                        <span class="built_in">NSForegroundColorAttributeName</span>: greenColor,</span><br><span class="line">                                        &#125;</span><br><span class="line">                             forState:<span class="built_in">UIControlStateSelected</span>];</span><br><span class="line">         obj<span class="variable">.image</span> = [[<span class="built_in">UIImage</span> imageNamed:<span class="string">@"tabbar_icon"</span><span class="variable">.addInt</span>(idx)] imageWithRenderingMode:<span class="built_in">UIImageRenderingModeAlwaysOriginal</span>];</span><br><span class="line">         obj<span class="variable">.selectedImage</span> = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@"tabbar_icon"</span><span class="variable">.addInt</span>(idx)];</span><br><span class="line">     &#125;];</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -1371,97 +1451,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/python/2014/10/11/python-setting-on-windows7.html" itemprop="url">
-                python setting on windows7
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-10-11T10:56:50-04:00" content="2014-10-11">
-            2014-10-11
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/python/" itemprop="url" rel="index">
-                  <span itemprop="name">python</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/python/2014/10/11/python-setting-on-windows7.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="python/2014/10/11/python-setting-on-windows7.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><ul>
-<li>下载 Python:<a href="http://www.python.org/getit/" target="_blank" rel="external">http://www.python.org/getit/</a></li>
-<li>Python环境变量 右键我的电脑，高级设置找到环境变量</li>
-<li>在系统变量中找到Path，并在变量值最后加上python的安装路径</li>
-<li><code>;d:\python27</code></li>
-<li>再找到PATHEXT，在变量值最后加上后缀</li>
-<li><code>;.PY;.PYM</code></li>
-</ul>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1500,21 +1489,21 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">119</span>
+              <span class="site-state-item-count">120</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">48</span>
+              <span class="site-state-item-count">50</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -1579,7 +1568,7 @@ clicky_site_ids.push(100784435);
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 

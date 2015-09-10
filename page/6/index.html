@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -52,7 +52,7 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
+    scheme: 'Mist',
     sidebar: 'post'
   };
 </script>
@@ -154,13 +154,6 @@ clicky_site_ids.push(100784435);
 
       
       
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            <i class="menu-item-icon icon-next-search"></i> <br />
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
@@ -168,6 +161,10 @@ clicky_site_ids.push(100784435);
     <div class="site-search">
       
   
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -191,6 +188,216 @@ clicky_site_ids.push(100784435);
       <div class="main-inner">
         <div id="content" class="content"> 
   <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/git/2014/11/23/git-note-2.html" itemprop="url">
+                git note 2
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-11-22T21:56:19-05:00" content="2014-11-22">
+            2014-11-22
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/git/" itemprop="url" rel="index">
+                  <span itemprop="name">git</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/git/2014/11/23/git-note-2.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="git/2014/11/23/git-note-2.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git archive -o latest<span class="class">.zip</span> HEAD</span><br></pre></td></tr></table></figure>
+<p><strong>How many lines of code differs between two commits?</strong></p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment">--shortstat commit1 commit2</span></span><br></pre></td></tr></table></figure>
+<p><strong>git merge tool</strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#configure</span></span><br><span class="line">git config [--global] merge<span class="class">.tool</span> &lt;toolname&gt; <span class="id">#vimdiff</span> opendiff meld or kdiff3</span><br><span class="line">git config --global mergetool<span class="class">.keepBackup</span> false</span><br><span class="line"></span><br><span class="line"><span class="id">#using</span> kdiff3</span><br><span class="line">git config --global merge<span class="class">.tool</span> kdiff3</span><br><span class="line">git config --global mergetool<span class="class">.kdiff3</span><span class="class">.path</span> /Applications/kdiff3.app/Contents/MacOS/kdiff3</span><br><span class="line"><span class="id">#remove</span> <span class="class">.orig</span> backup file [Git mergetool generates unwanted <span class="class">.orig</span> files](http:<span class="comment">//stackoverflow.com/a/26218700/2480488)</span></span><br><span class="line"></span><br><span class="line"><span class="id">#merge</span> using specific tool</span><br><span class="line">git mergetool -t &lt;toolname&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>resolve merge conflicts</strong></p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grep</span> -<span class="keyword">lr</span> <span class="string">'&lt;&lt;&lt;&lt;&lt;&lt;&lt;'</span> .				  #output conflict <span class="keyword">files</span></span><br><span class="line">git checkout --ours PATH/FILE 			#solution <span class="keyword">is</span> current branch </span><br><span class="line">git checkout --theirs PATH/FILE 		#solution <span class="keyword">is</span> others branch</span><br><span class="line"></span><br><span class="line"><span class="keyword">grep</span> -<span class="keyword">lr</span> <span class="string">'&lt;&lt;&lt;&lt;&lt;&lt;&lt;'</span> . | xargs git checkout --ours</span><br><span class="line"><span class="keyword">grep</span> -<span class="keyword">lr</span> <span class="string">'&lt;&lt;&lt;&lt;&lt;&lt;&lt;'</span> . | xargs git checkout --theirs</span><br></pre></td></tr></table></figure>
+<p><strong>fetch from origin with deleted remote branches</strong></p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> fetch -p</span><br></pre></td></tr></table></figure>
+<p><strong>revert git commit on server</strong><br><a href="http://stackoverflow.com/questions/1270514/undoing-a-git-push" target="_blank" rel="external">Undoing a git push</a></p>
+<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard &lt;commit&gt;</span>
+git push -<span class="keyword">f</span> origin &lt;<span class="keyword">commit</span>&gt;:&lt;branch&gt;
+#<span class="keyword">reset</span> <span class="keyword">local</span> <span class="keyword">and</span> origin &lt;branch&gt; <span class="keyword">to</span> &lt;<span class="keyword">commit</span>&gt;</span>
+</code></pre><p><strong>reduce git repository size</strong></p>
+<pre><code><span class="comment">git</span> <span class="comment">reflog</span> <span class="comment">expire</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">all</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">expire=now</span>
+<span class="comment">git</span> <span class="comment">gc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">prune=now</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">aggressive</span>
+</code></pre><p><strong>git total count</strong></p>
+<pre><code>git rev-<span class="type">list</span> HEAD <span class="comment">--count</span>
+</code></pre><p><strong>git rebase</strong></p>
+<pre><code>git rebase --onto <span class="tag">&lt;<span class="title">newbase</span>&gt;</span> <span class="tag">&lt;<span class="title">since</span>&gt;</span> <span class="tag">&lt;<span class="title">till</span>&gt;</span>
+
+ git rebase -i <span class="tag">&lt;<span class="title">newbase</span>&gt;</span>    
+</code></pre><p><strong>git help config</strong></p>
+<pre><code>git <span class="built_in">help</span> config
+</code></pre><p><strong>git checkout</strong></p>
+<pre><code><span class="title">git</span> checkout 
+</code></pre><p><strong>git reset</strong></p>
+<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--soft &lt;commit&gt;    # 不修改工作区和暂存区，只重置master</span>
+git <span class="keyword">reset</span> <span class="comment">--hard &lt;commit&gt;    # 替换工作区，暂存区，master &lt;commit&gt;</span>
+git <span class="keyword">reset</span> <span class="comment">--mixed </span></span>
+</code></pre><p><strong>git reset <commit> <path></path></commit></strong></p>
+<pre><code>git add .
+git <span class="operator"><span class="keyword">reset</span> <span class="keyword">HEAD</span> .    # 撤销 git <span class="keyword">add</span> .
+
+git <span class="keyword">reset</span> &lt;<span class="keyword">commit</span>&gt; &lt;paths&gt; # 重置暂存区为&lt;<span class="keyword">commit</span>&gt;</span>
+</code></pre><p><strong>git reflog</strong></p>
+<pre><code>git reflog             <span class="comment">#查看之前几次修改 SHA1值</span>
+git <span class="keyword">reset</span> --hard HEAD<span class="variable">@{num}</span> 
+</code></pre><p><strong>commit count</strong></p>
+<pre><code>git rev-<span class="type">list</span> HEAD <span class="comment">--count</span>
+</code></pre><p><strong>git clean</strong></p>
+<pre><code>git clean <span class="operator">-f</span> <span class="operator">-d</span> 
+</code></pre><p><strong>git stash</strong></p>
+<pre><code><span class="preprocessor"># 保存当前工作状态</span>
+git <span class="keyword">add</span> .                     <span class="preprocessor"># 加入index</span>
+git stash                     <span class="preprocessor"># 保存 ,当前工作区所有</span>
+
+git stash list                 <span class="preprocessor"># 查看 stash list</span>
+git checkout -b new_branch
+
+<span class="preprocessor"># do some thing ...</span>
+
+git checkout master
+git stash <span class="keyword">pop</span>               <span class="preprocessor"># 多个stash 使用git stash pop stash@{num}</span>
+</code></pre><p><strong>后悔药</strong></p>
+<pre><code>git checkout HEAD^ -- &lt;file path&gt;
+
+HEAD^         后悔一步
+HEAD^^         后悔两步
+HEAD^^^     ...
+HEAD^<span class="number">4</span>        ...
+HEAD^<span class="number">5</span>        以此类推
+</code></pre><p>角色： 最近六次提交分别是ABCDEF</p>
+<pre><code>$git <span class="command">log</span> <span class="comment">--online -6</span>
+XXXXXXX modify hello.h                        <span class="comment"># F    XXXXXXX add hello.h                            # E</span>
+XXXXXXX ignore object files                    <span class="comment"># D</span>
+XXXXXXX move .<span class="type">file</span> outside also works.        <span class="comment"># C</span>
+XXXXXXX Hello world initialized                <span class="comment"># B</span>
+XXXXXXX README <span class="keyword">is</span> frome welcome.txt        <span class="comment"># A</span>
+</code></pre><p>坏蛋： 提交 D。</p>
+<p>目的就是：干掉提交D<br>需要拣选指令–<code>git cherry-pick</code><br>含义是从众多的提交中挑选出一个提交应用在当前的工作分支中。该命令需要提供一个提交ID作为参数，操作过程相当于讲该提交到出为补丁文件，然后在当前HEAD上重放，形成无论内容还是提交说明都一致的提提交<br>首先对版本库要‘参演’的角色进行标记，使用<code>git tag</code> 命令</p>
+<pre><code>git <span class="built_in">tag</span> F
+git <span class="built_in">tag</span> E HEAD^
+git <span class="built_in">tag</span> D HEAD^^
+git <span class="built_in">tag</span> C HEAD^^^
+git <span class="built_in">tag</span> B HEAD^<span class="number">4</span>
+git <span class="built_in">tag</span> A HEAD^<span class="number">5</span>
+</code></pre><p>1.第一幕干掉坏蛋 D<br>(1) 执行 git checkout ,暂时将 HEAD 头指针切换到 C。<br>切换过程显示非跟踪状态的警告，没有关系，因为剧情需要。</p>
+<pre><code><span class="variable">$git</span> checkout C
+<span class="variable">$git</span> checkout -b new_branch_name
+</code></pre><p>(2) 执行拣选操作将 E 提交在    </p>
+<p><strong>change some history comment</strong></p>
+<pre><code>git rebase -<span class="tag">i</span> &lt;commit number&gt;
+</code></pre><p><strong>change last comment</strong></p>
+<pre><code>git <span class="operator"><span class="keyword">commit</span> <span class="comment">--amend    </span></span>
+</code></pre><p><strong>安装自动补全命令</strong></p>
+<pre><code><span class="keyword">brew </span>install <span class="keyword">bash-completion</span>
+</code></pre><p><strong>.gitignore</strong></p>
+<pre><code><span class="comment"># 这是注释行 -- 被忽略</span>
+*.a         <span class="comment"># 忽略所有以 .a 为扩展名的文件。</span>
+!<span class="class"><span class="keyword">lib</span>.<span class="title">a</span>        <span class="comment"># 但是 lib.a 文件或者目录不要忽略，即使前面设置了对 *.a 的忽略。</span></span>
+/<span class="constant">TODO</span>         <span class="comment"># 只忽略此目录下的 TODO 文件，子目录的 TODO 文件不忽略。</span>
+build/      <span class="comment"># 忽略所有 build/ 目录下的文件</span>
+doc/*.txt     <span class="comment"># 忽略文件如 doc/notes.txt，但是文件如 doc/server/arch.txt 不被忽略。</span>
+
+“<span class="comment"># a comment - this is ignored</span>
+<span class="comment"># no .a files</span>
+*.a
+<span class="comment"># but do track lib.a, even though you're ignoring .a files above</span>
+!<span class="class"><span class="keyword">lib</span>.<span class="title">a</span></span>
+<span class="comment"># only ignore the root TODO file, not subdir/TODO</span>
+/<span class="constant">TODO</span>
+<span class="comment"># ignore all files in the build/ directory</span>
+build/
+<span class="comment"># ignore doc/notes.txt, but not doc/server/arch.txt</span>
+doc/*.txt
+<span class="comment"># ignore all .txt files in the doc/ directory</span>
+doc/**<span class="regexp">/*.txt”</span>
+</code></pre><p><strong>remove ignored files</strong></p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm -r <span class="comment">--cached . </span></span><br><span class="line">git <span class="built_in">add</span> .</span><br><span class="line">git commit -am <span class="string">"Remove ignored files"</span></span><br></pre></td></tr></table></figure>
+<p><strong>git rev-list HEAD | wc -l</strong></p>
+<pre><code>git rev-<span class="type">list</span> HEAD | wc -l   <span class="comment"># 查看历史提交次数</span>
+</code></pre><p><strong>git diff</strong></p>
+<pre><code>git diff B A             <span class="comment"># 比较里程碑 B 和里程碑 A</span>
+git diff A                <span class="comment"># 比较工作区和里程碑 A</span>
+git diff --cached A     <span class="comment"># 比较暂存区和里程碑 A</span>
+git diff --cached        <span class="comment"># 比较工作区和暂存区</span>
+git diff HEAD             <span class="comment"># 比较工作区和HEAD</span>
+
+若只有一个参数就是比较工作区和 这个参数
+两个参数就是比较两个参数
+参数可以是 里程碑 commitId 工作区 等等
+
+git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&lt;commit2&gt;</span> -- <span class="variable">&lt;paths&gt;</span>
+</code></pre><p><strong>git blame</strong></p>
+<pre><code>git blame &lt;<span class="type">file</span> path&gt;     <span class="comment"># 文件追溯</span>
+</code></pre></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -1000,89 +1207,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2014/10/31/customize-tabbar-icon-and-text-color.html" itemprop="url">
-                customize tabbar icon and text color
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-10-30T15:41:32-04:00" content="2014-10-30">
-            2014-10-30
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2014/10/31/customize-tabbar-icon-and-text-color.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/10/31/customize-tabbar-icon-and-text-color.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)configTabBar &#123;</span><br><span class="line">    <span class="built_in">UIColor</span> *greenColor = [<span class="built_in">UIColor</span> colorWithRed:<span class="number">0.213</span></span><br><span class="line">                                          green:<span class="number">0.898</span></span><br><span class="line">                                           blue:<span class="number">0.573</span></span><br><span class="line">                                          alpha:<span class="number">1.000</span>];</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.tabBar</span><span class="variable">.items</span></span><br><span class="line">     enumerateObjectsUsingBlock:^(<span class="built_in">UITabBarItem</span> *obj, <span class="built_in">NSUInteger</span> idx, <span class="built_in">BOOL</span> *stop) &#123;</span><br><span class="line">         [obj  setTitleTextAttributes:@&#123;</span><br><span class="line">                                        <span class="built_in">NSForegroundColorAttributeName</span>: [<span class="built_in">UIColor</span> whiteColor],</span><br><span class="line">                                        &#125;</span><br><span class="line">                             forState:<span class="built_in">UIControlStateNormal</span>];</span><br><span class="line">         [obj  setTitleTextAttributes:@&#123;</span><br><span class="line">                                        <span class="built_in">NSForegroundColorAttributeName</span>: greenColor,</span><br><span class="line">                                        &#125;</span><br><span class="line">                             forState:<span class="built_in">UIControlStateSelected</span>];</span><br><span class="line">         obj<span class="variable">.image</span> = [[<span class="built_in">UIImage</span> imageNamed:<span class="string">@"tabbar_icon"</span><span class="variable">.addInt</span>(idx)] imageWithRenderingMode:<span class="built_in">UIImageRenderingModeAlwaysOriginal</span>];</span><br><span class="line">         obj<span class="variable">.selectedImage</span> = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@"tabbar_icon"</span><span class="variable">.addInt</span>(idx)];</span><br><span class="line">     &#125;];</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1121,21 +1245,21 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">119</span>
+              <span class="site-state-item-count">120</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">48</span>
+              <span class="site-state-item-count">50</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -1200,7 +1324,7 @@ clicky_site_ids.push(100784435);
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 
