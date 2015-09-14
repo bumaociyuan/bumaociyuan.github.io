@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-09-14T02:09:28.000Z</updated>
+  <updated>2015-09-14T07:06:36.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -13,6 +13,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ngrok note]]></title>
+    <link href="http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html"/>
+    <id>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</id>
+    <published>2015-09-14T18:45:55.000Z</published>
+    <updated>2015-09-14T07:06:36.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p><code>ngrok.com</code> has been GFWed</p>
+</blockquote>
+<h1 id="Installation">Installation</h1><ol>
+<li><a href="https://ngrok.com/download" target="_blank" rel="external">https://ngrok.com/download</a></li>
+<li>unzip <code>ngrok.zip</code></li>
+</ol>
+<a id="more"></a>
+<h1 id="Usage">Usage</h1><h2 id="Expose_a_local_web_server_to_the_internet">Expose a local web server to the internet</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ngrok http <span class="number">8000</span></span><br></pre></td></tr></table></figure>
+<p>output will be like</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ngrok by @inconshreveable     (Ctrl+C to quit)</span><br><span class="line"></span><br><span class="line">Tunnel Status                 online</span><br><span class="line">Version                       <span class="number">2.0</span><span class="number">.19</span>/<span class="number">2.0</span><span class="number">.19</span></span><br><span class="line">Web Interface                 http:<span class="comment">//127.0.0.1:4040</span></span><br><span class="line">Forwarding                    http:<span class="comment">//c9f486b5.ngrok.io -&gt; localhost:8000</span></span><br><span class="line">Forwarding                    https:<span class="comment">//c9f486b5.ngrok.io -&gt; localhost:8000</span></span><br><span class="line"></span><br><span class="line">Connections                   ttl     opn     rt1     rt5     p50     p90</span><br><span class="line">                              <span class="number">0</span>       <span class="number">0</span>       <span class="number">0.00</span>    <span class="number">0.00</span>    <span class="number">0.00</span>    <span class="number">0.00</span></span><br></pre></td></tr></table></figure>
+<p><code>http://c9f486b5.ngrok.io</code> also GFWed</p>
+<h2 id="TCP_Tunnels">TCP Tunnels</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./ngrok tcp <span class="number">22</span></span><br></pre></td></tr></table></figure>
+<p>output will be like</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ngrok by @inconshreveable     (Ctrl+C to quit)</span><br><span class="line"></span><br><span class="line">Tunnel Status                 online</span><br><span class="line">Version                       <span class="number">2.0</span><span class="number">.19</span>/<span class="number">2.0</span><span class="number">.19</span></span><br><span class="line">Web Interface                 http:<span class="comment">//127.0.0.1:4040</span></span><br><span class="line">Forwarding                    tcp:<span class="comment">//0.tcp.ngrok.io:33213 -&gt; localhost:22</span></span><br><span class="line"></span><br><span class="line">Connections                   ttl     opn     rt1     rt5     p50     p90</span><br><span class="line">                              <span class="number">0</span>       <span class="number">0</span>       <span class="number">0.00</span>    <span class="number">0.00</span>    <span class="number">0.00</span>    <span class="number">0.00</span></span><br></pre></td></tr></table></figure>
+<p>ssh login</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ proxychains4 ssh zx@<span class="number">0</span><span class="class">.tcp</span><span class="class">.ngrok</span><span class="class">.io</span> -<span class="tag">p</span> <span class="number">33213</span></span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p><code>ngrok.com</code> has been GFWed</p>
+</blockquote>
+<h1 id="Installation">Installation</h1><ol>
+<li><a href="https://ngrok.com/download">https://ngrok.com/download</a></li>
+<li>unzip <code>ngrok.zip</code></li>
+</ol>]]>
+    
+    </summary>
+    
+      <category term="ngrok" scheme="http://bumaociyuan.github.io/categories/ngrok/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[从 Jekyll 迁移到 Hexo]]></title>
@@ -67,6 +105,29 @@
   </entry>
   
   <entry>
+    <title><![CDATA[alfred run a jxa script]]></title>
+    <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
+    <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
+    <published>2015-09-07T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p>Add a bash script</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osascript -l JavaScript &lt;&lt;<span class="string">"EOF"</span></span><br><span class="line"></span><br><span class="line"><span class="tag">var</span> app = <span class="function"><span class="title">Application</span><span class="params">(<span class="string">'Finder'</span>)</span></span></span><br><span class="line">app.<span class="function"><span class="title">activate</span><span class="params">()</span></span></span><br><span class="line">app<span class="class">.includeStandardAdditions</span> = true</span><br><span class="line">app.<span class="function"><span class="title">displayAlert</span><span class="params">(<span class="string">'wow'</span>)</span></span></span><br><span class="line"></span><br><span class="line">FOE</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p>Add a bash script</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="lin]]>
+    </summary>
+    
+      <category term="alfred" scheme="http://bumaociyuan.github.io/tags/alfred/"/>
+    
+      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
+    
+      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
+    
+      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[make a jxa build system in sublime text 3]]></title>
     <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
@@ -85,29 +146,6 @@
       <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
     
       <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
-    
-      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[alfred run a jxa script]]></title>
-    <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
-    <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
-    <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p>Add a bash script</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osascript -l JavaScript &lt;&lt;<span class="string">"EOF"</span></span><br><span class="line"></span><br><span class="line"><span class="tag">var</span> app = <span class="function"><span class="title">Application</span><span class="params">(<span class="string">'Finder'</span>)</span></span></span><br><span class="line">app.<span class="function"><span class="title">activate</span><span class="params">()</span></span></span><br><span class="line">app<span class="class">.includeStandardAdditions</span> = true</span><br><span class="line">app.<span class="function"><span class="title">displayAlert</span><span class="params">(<span class="string">'wow'</span>)</span></span></span><br><span class="line"></span><br><span class="line">FOE</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p>Add a bash script</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="lin]]>
-    </summary>
-    
-      <category term="alfred" scheme="http://bumaociyuan.github.io/tags/alfred/"/>
-    
-      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
-    
-      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
     
       <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
     
@@ -235,25 +273,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[open sublime in terminal]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
-    <published>2015-08-10T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
-    </summary>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
-    
-      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[using shadowsocks in terminal]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html</id>
@@ -275,6 +294,25 @@
       <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[open sublime in terminal]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
+    <published>2015-08-10T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
+    </summary>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
+    
+      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   
@@ -981,32 +1019,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
-    <published>2015-01-29T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
-<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
-<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
-<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
-    </summary>
-    
-      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
-    
-      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[bandwagon note]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</id>
@@ -1050,6 +1062,32 @@
       <category term="tutorial" scheme="http://bumaociyuan.github.io/tags/tutorial/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
+    <published>2015-01-29T05:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
+<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
+<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
+<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
+    </summary>
+    
+      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
+    
+      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   

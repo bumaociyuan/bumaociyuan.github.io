@@ -200,6 +200,90 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2014/10/31/turn-off-uisearchbar-animation.html" itemprop="url">
+                turn off uisearchbar animation
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-10-31T10:44:25-04:00" content="2014-10-31">
+            2014-10-31
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2014/10/31/turn-off-uisearchbar-animation.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/10/31/turn-off-uisearchbar-animation.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>You can cancel animation by subclassing UISearchDisplayController and adding this:</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)setActive:(<span class="built_in">BOOL</span>)visible animated:(<span class="built_in">BOOL</span>)animated</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">self</span><span class="variable">.active</span> == visible) <span class="keyword">return</span>;</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.searchContentsController</span><span class="variable">.navigationController</span> setNavigationBarHidden:<span class="literal">YES</span> animated:<span class="literal">NO</span>];</span><br><span class="line">    [<span class="keyword">super</span> setActive:visible animated:animated];</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.searchContentsController</span><span class="variable">.navigationController</span> setNavigationBarHidden:<span class="literal">NO</span> animated:<span class="literal">NO</span>];</span><br><span class="line">    <span class="keyword">if</span> (visible) &#123;</span><br><span class="line">        [<span class="keyword">self</span><span class="variable">.searchBar</span> becomeFirstResponder];</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        [<span class="keyword">self</span><span class="variable">.searchBar</span> resignFirstResponder];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2014/10/31/customize-tabbar-icon-and-text-color.html" itemprop="url">
                 customize tabbar icon and text color
               </a>
@@ -1350,112 +1434,11 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2014/10/16/code-format.html" itemprop="url">
-                code format
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-10-15T15:07:52-04:00" content="2014-10-15">
-            2014-10-15
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2014/10/16/code-format.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/10/16/code-format.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>#download BBUncrustifyPlugin</p>
-<ul>
-<li><p><a href="https://github.com/benoitsan/BBUncrustifyPlugin-Xcode" target="_blank" rel="external">download</a> BBUncrustifyPlugin and install</p>
-</li>
-<li><p>open <code>Xcode</code> <code>Edit</code>-&gt;<code>Format Code</code>-&gt;<code>BBUncrustifyPlugin Prefreences</code> set <code>Formatter</code> to <code>Uncrustify</code></p>
-</li>
-<li><p>open <code>Terminal</code> </p>
-</li>
-<li><p>run <code>git clone https://github.com/bumaociyuan/uncrustify.cfg .uncrustify</code></p>
-</li>
-<li><p>set shortcut for <code>Format Active File</code> with <a href="http://bumaociyuan.github.io/mac/2014/10/01/custom-keyboard-shortcuts.html">this article</a></p>
-</li>
-</ul>
-<h2 id="download_UncrustifyX">download UncrustifyX</h2><ul>
-<li>download <a href="https://github.com/ryanmaxwell/UncrustifyX/releases/download/0.4.3/UncrustifyX-0.4.3.zip" target="_blank" rel="external">UncrustifyX</a></li>
-</ul>
-<p>UncrustifyX allows importing and exporting of Uncrustify .cfg files, and provides a GUI to run a configuration set on a list of files, or direct source code input.</p>
-<p>##Have fun</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/">&laquo;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/8/">&raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/6/">&laquo;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/8/">&raquo;</a>
   </nav>
 
  </div>
@@ -1489,14 +1472,14 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">120</span>
+              <span class="site-state-item-count">121</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>

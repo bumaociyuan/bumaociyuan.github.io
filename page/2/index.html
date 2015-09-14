@@ -200,6 +200,93 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html" itemprop="url">
+                share internet connection from mac to mobile device
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-08-08T00:00:00-04:00" content="2015-08-08">
+            2015-08-08
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/mac/" itemprop="url" rel="index">
+                  <span itemprop="name">mac</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://apple.stackexchange.com/questions/180578/reverse-tether-share-osx-yosemite-wifi-connection-over-bluetooth" target="_blank" rel="external">Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth</a></p>
+<p>In order to do this in Yosemite, you’ll need to go back to the main screen of System Preferences and click on the <code>Sharing</code> preference pane. In the sidebar, there will be an Internet Sharing option. Click on this to view its settings.</p>
+<p>Now set the “Share your connection from” drop down to <code>Wi-Fi</code> and then check the <code>Bluetooth PAN</code> checkbox in the menu below. Next just make sure to check the box next Internet Sharing in the sidebar.</p>
+<p>Once this is done your Mac should be sharing its Wi-Fi connection to devices in your Bluetooth PAN.</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2015/07/17/self-signed-certificates-in-ios.html" itemprop="url">
                 self signed certificates in iOS
               </a>
@@ -937,106 +1024,11 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/05/04/how-to-change-status-bar-color.html" itemprop="url">
-                How to change status bar color
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-05-04T00:00:00-04:00" content="2015-05-04">
-            2015-05-04
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/05/04/how-to-change-status-bar-color.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/05/04/how-to-change-status-bar-color.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://stackoverflow.com/questions/17678881/how-to-change-status-bar-text-color-in-ios-7" target="_blank" rel="external">How to change Status Bar text color in iOS 7</a></p>
-<ol>
-<li>Set the <code>UIViewControllerBasedStatusBarAppearance</code> to <code>YES</code> in the <code>.plist</code> file.</li>
-<li>In the <code>viewDidLoad</code> do a <code>[self setNeedsStatusBarAppearanceUpdate];</code></li>
-<li>Add the following method:</li>
-</ol>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-(<span class="built_in">UIStatusBarStyle</span>)preferredStatusBarStyle&#123; </span><br><span class="line">   <span class="keyword">return</span> <span class="built_in">UIStatusBarStyleLightContent</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>This will not work controllers inside <code>UINavigationController</code></p>
-<p><a href="http://stackoverflow.com/questions/19022210/preferredstatusbarstyle-isnt-called/19513714#19513714" target="_blank" rel="external">For anyone using a UINavigationController:</a></p>
-<p>The <code>UINavigationController</code> does not forward on <code>preferredStatusBarStyle</code> calls to its child view controllers. Instead it manages its own state - as it should, it is drawing at the top of the screen where the status bar lives and so should be responsible for it. Therefor implementing preferredStatusBarStyle in your VCs within a nav controller will do nothing - they will never be called.</p>
-<p>The trick is what the <code>UINavigationController</code> uses to decide what to return for <code>UIStatusBarStyleDefault</code> or <code>UIStatusBarStyleLightContent</code>. It bases this on it’s <code>UINavigationBar.barStyle</code>. The default (<code>UIBarStyleDefault</code>) results in the dark foreground <code>UIStatusBarStyleDefault</code> status bar. And <code>UIBarStyleBlack</code> will give a <code>UIStatusBarStyleLightContent</code> status bar.</p>
-<p>If you want <code>UIStatusBarStyleLightContent</code> on a <code>UINavigationController</code> use:</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span><span class="variable">.navigationController</span><span class="variable">.navigationBar</span><span class="variable">.barStyle</span> = <span class="built_in">UIBarStyleBlack</span>;</span><br></pre></td></tr></table></figure></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/">&laquo;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/3/">&raquo;</a>
+    <a class="extend prev" rel="prev" href="/">&laquo;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/3/">&raquo;</a>
   </nav>
 
  </div>
@@ -1070,14 +1062,14 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">120</span>
+              <span class="site-state-item-count">121</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
