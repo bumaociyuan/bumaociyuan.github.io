@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-09-14T01:45:41.000Z</updated>
+  <updated>2015-09-14T02:09:28.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://bumaociyuan.github.io/hexo/2015/09/10/Migrate-from-Jekyll-to-Hexo.html"/>
     <id>http://bumaociyuan.github.io/hexo/2015/09/10/Migrate-from-Jekyll-to-Hexo.html</id>
     <published>2015-09-10T14:47:11.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-14T02:09:28.000Z</updated>
     <content type="html"><![CDATA[<div align="center"><br><img src="http://7xlh4f.com1.z0.glb.clouddn.com/1.png" alt="image"><br></div>
 
 
@@ -47,7 +47,7 @@
 <h1 id="Permissions_Problem">Permissions Problem</h1><p>hexo n 文件没有修改权限</p>
 <p><img src="https://pbs.twimg.com/media/COglE-kUkAElI-f.png:large" alt="image"></p>
 <p>解决办法<br><a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions" target="_blank" rel="external">Fixing npm permissions</a></p>
-]]></content>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>_prefix=<span class="variable">$(</span>npm config get prefix)</span><br><span class="line"><span class="variable">$ </span>sudo chown -<span class="constant">R</span> <span class="string">`whoami`</span> _prefix</span><br><span class="line"><span class="variable">$ </span>sudo chown -<span class="constant">R</span> <span class="string">`whoami`</span> &lt;blog-directory&gt;</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<div align="center"><br><img src="http://7xlh4f.com1.z0.glb.clouddn.com/1.png" alt="image"><br></div>
 
