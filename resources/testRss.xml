@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-09-14T07:06:36.000Z</updated>
+  <updated>2015-09-16T05:16:06.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -15,11 +15,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[zelda link between worlds]]></title>
+    <link href="http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html"/>
+    <id>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</id>
+    <published>2015-09-16T17:14:56.000Z</published>
+    <updated>2015-09-16T05:16:06.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="刷钱流程"><a href="http://www.k73.com/3ds/25729.html" target="_blank" rel="external">刷钱流程</a></h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">第一，获得大师剑</span><br><span class="line"></span><br><span class="line">第二，在卡卡里克村中间那个商人那里买一个瓶子</span><br><span class="line"></span><br><span class="line">第三，从第三个神殿处往上游，再往左游，游到桥底下有一个人，会送你一个瓶子</span><br><span class="line"></span><br><span class="line">第四，在卡卡里克村看到那个小偷后，从旁边变成壁画绕道他身后吓他获得天马靴。</span><br><span class="line"></span><br><span class="line">最后，去卡卡里克村里印有蜜蜂的房子里找那个大叔要捕虫网。</span><br><span class="line"></span><br><span class="line">然后就可以在卡卡里克村左下角的那片草丛刷蜜蜂了，获得大师剑的目的是能用剑气砍大面积的草，获得天马靴的目的是快速在两地之间来回并且撞旁边的树以提升遇到蜜蜂的机会。</span><br><span class="line"></span><br><span class="line">买下所有道具差不多要<span class="number">7200</span>卢比，一只蜜蜂<span class="number">50</span>卢比，加上砍草撞树获得的，基本两个小时可以收集到。</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="刷钱流程"><a href="http://www.k73.com/3ds/25729.html" target="_blank" rel="external">刷钱流程</a></h1><figure class="highlight cpp"><table><]]>
+    </summary>
+    
+      <category term="3ds" scheme="http://bumaociyuan.github.io/tags/3ds/"/>
+    
+      <category term="game" scheme="http://bumaociyuan.github.io/categories/game/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[ngrok note]]></title>
     <link href="http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html"/>
     <id>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</id>
     <published>2015-09-14T18:45:55.000Z</published>
-    <updated>2015-09-14T07:06:36.000Z</updated>
+    <updated>2015-09-14T07:25:54.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p><code>ngrok.com</code> has been GFWed</p>
 </blockquote>
@@ -36,7 +53,7 @@
 <p>output will be like</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ngrok by @inconshreveable     (Ctrl+C to quit)</span><br><span class="line"></span><br><span class="line">Tunnel Status                 online</span><br><span class="line">Version                       <span class="number">2.0</span><span class="number">.19</span>/<span class="number">2.0</span><span class="number">.19</span></span><br><span class="line">Web Interface                 http:<span class="comment">//127.0.0.1:4040</span></span><br><span class="line">Forwarding                    tcp:<span class="comment">//0.tcp.ngrok.io:33213 -&gt; localhost:22</span></span><br><span class="line"></span><br><span class="line">Connections                   ttl     opn     rt1     rt5     p50     p90</span><br><span class="line">                              <span class="number">0</span>       <span class="number">0</span>       <span class="number">0.00</span>    <span class="number">0.00</span>    <span class="number">0.00</span>    <span class="number">0.00</span></span><br></pre></td></tr></table></figure>
 <p>ssh login</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ proxychains4 ssh zx@<span class="number">0</span><span class="class">.tcp</span><span class="class">.ngrok</span><span class="class">.io</span> -<span class="tag">p</span> <span class="number">33213</span></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ proxychains4 ssh zx@<span class="number">0.</span>tcp.ngrok.io -p <span class="number">33213</span></span><br><span class="line"><span class="preprocessor"># http:<span class="comment">//bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html</span></span></span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<blockquote>
 <p><code>ngrok.com</code> has been GFWed</p>
@@ -105,29 +122,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[alfred run a jxa script]]></title>
-    <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
-    <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
-    <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p>Add a bash script</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osascript -l JavaScript &lt;&lt;<span class="string">"EOF"</span></span><br><span class="line"></span><br><span class="line"><span class="tag">var</span> app = <span class="function"><span class="title">Application</span><span class="params">(<span class="string">'Finder'</span>)</span></span></span><br><span class="line">app.<span class="function"><span class="title">activate</span><span class="params">()</span></span></span><br><span class="line">app<span class="class">.includeStandardAdditions</span> = true</span><br><span class="line">app.<span class="function"><span class="title">displayAlert</span><span class="params">(<span class="string">'wow'</span>)</span></span></span><br><span class="line"></span><br><span class="line">FOE</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p>Add a bash script</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="lin]]>
-    </summary>
-    
-      <category term="alfred" scheme="http://bumaociyuan.github.io/tags/alfred/"/>
-    
-      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
-    
-      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
-    
-      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[make a jxa build system in sublime text 3]]></title>
     <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
@@ -146,6 +140,29 @@
       <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
     
       <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
+    
+      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[alfred run a jxa script]]></title>
+    <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
+    <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
+    <published>2015-09-07T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p>Add a bash script</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osascript -l JavaScript &lt;&lt;<span class="string">"EOF"</span></span><br><span class="line"></span><br><span class="line"><span class="tag">var</span> app = <span class="function"><span class="title">Application</span><span class="params">(<span class="string">'Finder'</span>)</span></span></span><br><span class="line">app.<span class="function"><span class="title">activate</span><span class="params">()</span></span></span><br><span class="line">app<span class="class">.includeStandardAdditions</span> = true</span><br><span class="line">app.<span class="function"><span class="title">displayAlert</span><span class="params">(<span class="string">'wow'</span>)</span></span></span><br><span class="line"></span><br><span class="line">FOE</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p>Add a bash script</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="lin]]>
+    </summary>
+    
+      <category term="alfred" scheme="http://bumaociyuan.github.io/tags/alfred/"/>
+    
+      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
+    
+      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
     
       <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
     
@@ -384,24 +401,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[reactive cocoa note]]></title>
-    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
-    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
-    <published>2015-06-29T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
-<p>Combine two signals</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
-    </summary>
-    
-      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Lucky Seven]]></title>
     <link href="http://bumaociyuan.github.io//2015/06/29/lucky-seven.html"/>
     <id>http://bumaociyuan.github.io//2015/06/29/lucky-seven.html</id>
@@ -417,6 +416,24 @@
     </summary>
     
       <category term="other" scheme="http://bumaociyuan.github.io/tags/other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[reactive cocoa note]]></title>
+    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
+    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
+    <published>2015-06-29T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
+<p>Combine two signals</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
+    </summary>
+    
+      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
     
   </entry>
   
@@ -1019,6 +1036,32 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
+    <published>2015-01-29T05:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
+<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
+<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
+<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
+    </summary>
+    
+      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
+    
+      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[bandwagon note]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</id>
@@ -1062,32 +1105,6 @@
       <category term="tutorial" scheme="http://bumaociyuan.github.io/tags/tutorial/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
-    <published>2015-01-29T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
-<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
-<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
-<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
-    </summary>
-    
-      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
-    
-      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   

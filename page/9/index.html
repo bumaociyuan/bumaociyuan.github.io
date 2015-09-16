@@ -200,6 +200,100 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2014/09/10/ios-bug.html" itemprop="url">
+                ios bug
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-09-10T09:54:52-04:00" content="2014-09-10">
+            2014-09-10
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2014/09/10/ios-bug.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/09/10/ios-bug.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>Bug: ios7中使用UISearchDisplayController进行搜索 输入内容然后滑动searchResultsTableView然后取消 再次点击搜索 输入内容之后点search 然后在取消 这样重复几次UISearchDisplayController的contentSize就会不正确的能向下滑动很长 </p>
+<p>Solution:</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#pragma mark - UISearchDisplayDelegate</span></span><br><span class="line">- (<span class="keyword">void</span>)searchDisplayController:(<span class="built_in">UISearchDisplayController</span> *)controller 	willShowSearchResultsTableView:(<span class="built_in">UITableView</span> *)tableView &#123;</span><br><span class="line"> 	  tableView<span class="variable">.contentInset</span> = <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line"> 	  tableView<span class="variable">.scrollIndicatorInsets</span> = <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Bug: <a href="http://stackoverflow.com/questions/19569688/right-aligned-uitextfield-spacebar-does-not-advance-cursor-in-ios-7" target="_blank" rel="external">Right aligned UITextField spacebar does not advance cursor in iOS 7</a><br><a href="https://github.com/nicklockwood/FXForms/issues/106" target="_blank" rel="external">FXForms/issues/106</a></p>
+<p>Solution:</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)textField:(<span class="built_in">UITextField</span> *)textField shouldChangeCharactersInRange:(<span class="built_in">NSRange</span>)range replacementString:(<span class="built_in">NSString</span> *)string &#123;</span><br><span class="line">    <span class="comment">// only when adding on the end of textfield &amp;&amp; it's a space</span></span><br><span class="line">    <span class="keyword">if</span> (range<span class="variable">.location</span> == textField<span class="variable">.text</span><span class="variable">.length</span> &amp;&amp; [string isEqualToString:<span class="string">@" "</span>]) &#123;</span><br><span class="line">        <span class="comment">// ignore replacement string and add your own</span></span><br><span class="line">        textField<span class="variable">.text</span> = [textField<span class="variable">.text</span> stringByAppendingString:<span class="string">@"\u00a0"</span>];</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// for all other cases, proceed with replacement</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Bug: <a href="http://stackoverflow.com/questions/5659674/uitableviewcell-textlabel-offset" target="_blank" rel="external">UITableViewCell textLabel offset</a></p>
+<p>Solution:</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//in Cell.m file</span></span><br><span class="line"><span class="keyword">self</span><span class="variable">.indentationLevel</span> = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">self</span><span class="variable">.indentationWidth</span> = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<p>Bug: <a href="http://stackoverflow.com/questions/5190648/why-is-detailtextlabel-not-visible" target="_blank" rel="external">Why is detailTextLabel not visible?</a></p>
+<p>Solution:</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cell = [[<span class="built_in">UITableViewCell</span> alloc] initWithStyle:<span class="built_in">UITableViewCellStyleSubtitle</span> reuseIdentifier:CellIdentifier];</span><br><span class="line">   cell<span class="variable">.detailTextLabel</span><span class="variable">.text</span> = <span class="string">@"some words"</span>;</span><br><span class="line">   [cell setNeedsLayout];</span><br><span class="line">   [cell layoutIfNeeded];</span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/terminal/2014/09/05/vim-note.html" itemprop="url">
                 vim note
               </a>
@@ -1250,90 +1344,6 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2014/07/29/ios-webview-block-detect-iphone-number.html" itemprop="url">
-                ios webview block detect iphone number
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-07-29T11:25:00-04:00" content="2014-07-29">
-            2014-07-29
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2014/07/29/ios-webview-block-detect-iphone-number.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/07/29/ios-webview-block-detect-iphone-number.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>add this in html head tag</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta content=<span class="string">"telephone=no"</span> <span class="property">name</span>=<span class="string">"format-detection"</span> /&gt;</span><br></pre></td></tr></table></figure></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1372,7 +1382,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">121</span>
+              <span class="site-state-item-count">122</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1386,7 +1396,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">50</span>
+              <span class="site-state-item-count">51</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

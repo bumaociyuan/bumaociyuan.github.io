@@ -200,6 +200,162 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/git/2014/06/17/git-note.html" itemprop="url">
+                git note
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-06-16T19:06:50-04:00" content="2014-06-16">
+            2014-06-16
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/git/" itemprop="url" rel="index">
+                  <span itemprop="name">git</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/git/2014/06/17/git-note.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="git/2014/06/17/git-note.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://git-scm.com/download/mac" target="_blank" rel="external">download OSX latest git</a></p>
+<p><strong>init</strong></p>
+<pre><code><span class="title">git</span> init
+</code></pre><p><strong>add remote url</strong></p>
+<pre><code><span class="label">git</span> remote <span class="keyword">add </span>origin repo-url
+</code></pre><p><strong>delete remote url</strong></p>
+<pre><code><span class="title">git</span> remote rm origin
+</code></pre><p><strong>clone from remote</strong></p>
+<pre><code>git <span class="built_in">clone</span> repo-url
+</code></pre><p><strong>check status</strong></p>
+<pre><code>git <span class="keyword">status</span>
+</code></pre><p><strong>add all changes</strong></p>
+<pre><code>git add .     <span class="hexcolor">#add</span> all file <span class="keyword">in</span> current folder
+git add -A    #git
+</code></pre><p><strong>add some file</strong></p>
+<pre><code>git <span class="built_in">add</span> <span class="built_in">file</span>-path
+</code></pre><p><strong>commit to repo</strong></p>
+<pre><code>git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">'comment'</span></span>
+</code></pre><p><strong>remove all commits not in origin/master</strong></p>
+<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard origin/master</span></span>
+</code></pre><p><strong>push to remote</strong></p>
+<pre><code><span class="label">git</span> <span class="keyword">push </span>
+</code></pre><p><strong>log</strong></p>
+<pre><code>git <span class="command">log</span>                 <span class="comment">#查看最近 提交</span>
+git <span class="command">log</span> -<span class="number">10</span>         <span class="comment">#查看最近 提交 -10</span>
+git <span class="command">log</span> <span class="comment">--graph     #查看最近 提交 --graph</span>
+gitk                <span class="comment">#GUI查看提交记录，需要用homebrew 升级git</span>
+gitk <span class="type">file</span>-path        <span class="comment">#GUI查看filefile-path提交记录</span>
+
+git <span class="command">log</span> <span class="comment">--decorate</span>
+git <span class="command">log</span> <span class="comment">--decorate --all --oneline --graph</span>
+</code></pre><p><strong>checkout</strong></p>
+<pre><code>git checkout .
+git checkout &lt;commit number&gt; &lt;filename&gt;  #**常用**
+git checkout <span class="number">3f33b7959</span>ff<span class="number">97715d69e41</span><span class="number">8620895d98</span>b811f8cb folder-name/* #恢复某folder-name下所有文件到 <span class="number">3f33b7959</span>ff<span class="number">97715d69e41</span><span class="number">8620895d98</span>b811f8cb
+</code></pre><p><strong>撤销提交</strong></p>
+<pre><code><span class="label">git</span> <span class="keyword">revert </span>
+</code></pre><p><strong>view branches</strong></p>
+<pre><code>git branch             <span class="comment">#查看本地分支</span>
+git branch <span class="operator">-a</span>         <span class="comment">#查看本地和服务器分支</span>
+</code></pre><p><strong>create new branch</strong></p>
+<pre><code>git branch <span class="keyword">new</span>-branch-name
+</code></pre><p><strong>switch branch</strong></p>
+<pre><code>git checkout branch-<span class="property">name</span>         <span class="comment">#切换到branch-name</span>
+</code></pre><p><strong>git merge from dev to master</strong></p>
+<pre><code>git checkout master
+git <span class="built_in">merge</span> dev
+</code></pre><p><strong>delete branch</strong></p>
+<pre><code><span class="label">git</span> <span class="keyword">branch </span>-D <span class="keyword">branch-name </span>                    #删除本地分支<span class="keyword">branch-name
+</span>
+<span class="label">git</span> <span class="keyword">push </span>origin --delete <span class="keyword">branch-name </span>      #删除服务器分支<span class="keyword">branch-name</span>
+</code></pre><p><strong>基于远程跟踪分支创建本地分支</strong></p>
+<pre><code><span class="title">git</span> checkout --track -b branch-name-<span class="built_in">on</span>-local origin/branch-name-<span class="built_in">on</span>-server
+</code></pre><p><strong>diff</strong></p>
+<pre><code><span class="title">git</span> diff master origin/master             <span class="comment"># 比较 master(本地) 和服务器 master 的差异</span>
+</code></pre><p><strong>push to server</strong></p>
+<pre><code>git push origin branch-<span class="property">name</span>-<span class="function_start"><span class="keyword">on</span></span>-server
+</code></pre><p><strong>tag</strong></p>
+<pre><code>git tag                                 <span class="preprocessor">#查看所有标签</span>
+git tag v0<span class="number">.1</span><span class="number">.2</span>-light                    <span class="preprocessor">#创建轻量标签</span>
+git tag -a v0<span class="number">.1</span><span class="number">.2</span> -m “<span class="number">0.1</span><span class="number">.2</span>版本”        <span class="preprocessor">#创建附注标签</span>
+
+git checkout tag-name
+git tag -d v0<span class="number">.1</span><span class="number">.2</span>                     <span class="preprocessor">#删除标签</span>
+git tag -a v0<span class="number">.1</span><span class="number">.1</span> <span class="number">9f</span>bc3d0             <span class="preprocessor">#补打标签</span>
+
+git push --tags
+</code></pre><p><code>通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：</code></p>
+<pre><code>git <span class="keyword">push</span> origin tag-name             <span class="preprocessor">#将tag-name标签提交到git服务器</span>
+git <span class="keyword">push</span> origin –tags                 <span class="preprocessor">#将本地所有标签一次性提交到git服务器</span>
+</code></pre><p><strong>push all</strong></p>
+<pre><code>git <span class="keyword">push</span> --all                         <span class="preprocessor">#push 所有branch</span>
+git <span class="keyword">push</span> --all origin                 <span class="preprocessor">#push 所有tag 和所有branch到服务器</span>
+</code></pre></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ruby/2014/06/17/ruby-change-source.html" itemprop="url">
                 ruby change source
               </a>
@@ -1006,115 +1162,6 @@ $ gem install rails
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/vb/2013/12/10/vb-based-browser.html" itemprop="url">
-                vb based browser
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2013-12-09T16:06:50-05:00" content="2013-12-09">
-            2013-12-09
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/vb/" itemprop="url" rel="index">
-                  <span itemprop="name">vb</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/vb/2013/12/10/vb-based-browser.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="vb/2013/12/10/vb-based-browser.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>参考视频教学 <a href="https://www.youtube.com/watch?v=48Wjvd1vQ4U" target="_blank" rel="external">youtube</a></p>
-<p>需要两个三方库 sourceCode<br><a href="http://www.dasdoc.com/uploads/origin/201312/091920306.rar" target="_blank" rel="external">ChromeBasedWebBrowser.rar</a><br>,<a href="http://ishare.iask.sina.com.cn/f/63101622.html?sudaref=www.baidu.com&amp;retcode=0" target="_blank" rel="external">xulrunner-1.9.en-US.win32.zip</a></p>
-<p>1，新建一个class 继承 <code>Skybound.Gecko.GeckoWebBrowser</code></p>
-<pre><code>Imports Skybound.Gecko
-<span class="keyword">Public</span> <span class="class"><span class="keyword">Class</span> <span class="title">FasterBrowser</span></span>
-    Inherits GeckoWebBrowser
-<span class="keyword">End</span> <span class="class"><span class="keyword">Class</span></span>
-</code></pre><p>2，在ui 上加入 new class</p>
-<p>3，</p>
-<pre><code><span class="keyword">Imports</span> Skybound.Gecko
-
-<span class="keyword">Public</span> <span class="keyword">Class</span> Form1
-
-    <span class="keyword">Sub</span> <span class="keyword">New</span>()
-        InitializeComponent()
-
-        Xpcom.Initialize(Environment.CurrentDirectory + <span class="string">"lrunner"</span>)
-
-
-    <span class="keyword">End</span> <span class="keyword">Sub</span>
-
-    <span class="keyword">Private</span> <span class="keyword">Sub</span> Button1_Click(<span class="keyword">ByVal</span> sender <span class="keyword">As</span> System.<span class="built_in">Object</span>, <span class="keyword">ByVal</span> e <span class="keyword">As</span> System.EventArgs) <span class="keyword">Handles</span> Button1.Click
-        FasterBrowser1.Navigate(<span class="string">"http://www.zmaitech.com"</span>)
-    <span class="keyword">End</span> <span class="keyword">Sub</span>
-
-<span class="keyword">End</span> <span class="keyword">Class</span>
-</code></pre></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1153,7 +1200,7 @@ $ gem install rails
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">121</span>
+              <span class="site-state-item-count">122</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1167,7 +1214,7 @@ $ gem install rails
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">50</span>
+              <span class="site-state-item-count">51</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
