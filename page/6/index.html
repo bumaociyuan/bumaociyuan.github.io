@@ -200,6 +200,97 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2014/11/26/ios-backwards-compatibility-faq.html" itemprop="url">
+                iOS backwards compatibility FAQ
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-11-25T14:34:50-05:00" content="2014-11-25">
+            2014-11-25
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2014/11/26/ios-backwards-compatibility-faq.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/11/26/ios-backwards-compatibility-faq.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="xcode_download_addresses"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html">xcode download addresses</a></h1><h1 id="multiple_xcode_coexist"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html">multiple xcode coexist</a></h1><h1 id="Storyboard_build_error">Storyboard build error</h1><p>Error message</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This <span class="property">version</span> <span class="keyword">does</span> <span class="keyword">not</span> support constraints <span class="keyword">to</span> layout margins. Open this document <span class="keyword">with</span> Xcode <span class="number">6.0</span> <span class="keyword">or</span> later.</span><br></pre></td></tr></table></figure>
+<ol>
+<li>Select <code>UI.storyboard</code></li>
+<li>Show the file inspector</li>
+<li>In <code>Interface Builder Document</code> section <code>Opens in</code> change to <code>Xcode 5.1</code></li>
+<li>Uncheck all <code>Constrain to margins</code></li>
+</ol>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/xcode/2014/11/25/multiple-xcode-coexist.html" itemprop="url">
                 multiple xcode coexist
               </a>
@@ -1141,92 +1232,6 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2014/11/04/app-extension-note.html" itemprop="url">
-                app extension note
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-11-03T14:24:53-05:00" content="2014-11-03">
-            2014-11-03
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2014/11/04/app-extension-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/11/04/app-extension-note.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="https://github.com/bumaociyuan/iphoneExtension" target="_blank" rel="external">demo</a></p>
-<p>remove the default margin of widget</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#pragma mark - NCWidgetProviding</span></span><br><span class="line">- (<span class="built_in">UIEdgeInsets</span>)widgetMarginInsetsForProposedMarginInsets:(<span class="built_in">UIEdgeInsets</span>)defaultMarginInsets &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1265,14 +1270,14 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">122</span>
+              <span class="site-state-item-count">123</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>

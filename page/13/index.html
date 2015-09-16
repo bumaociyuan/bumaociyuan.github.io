@@ -200,6 +200,101 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2013/09/06/苹果开发证书申请.html" itemprop="url">
+                苹果开发证书申请
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2013-09-06T10:58:50-04:00" content="2013-09-06">
+            2013-09-06
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2013/09/06/苹果开发证书申请.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2013/09/06/苹果开发证书申请.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>首先登陆developer.apple.com<br>点击 certificates开始创建新cer<br>选择证书类型：开发证书好像只能请一个，第二个是推送的开发证书，production的第一个就是发布证书<br><img src="http://www.dasdoc.com/uploads/origin/201309/061143136.png" alt="image"></p>
+<p>然后生成certSigningRequest， 点击keychain 如下图<br><img src="http://www.dasdoc.com/uploads/origin/201309/061127556.png" alt="image"></p>
+<p>然后<br><img src="http://www.dasdoc.com/uploads/origin/201309/061131486.png" alt="image"></p>
+<p>email 最好输 apple 账号的证书<br>common name 就是 这个key 的名字<br>ca email 不填<br>选saved to disk<br>click continue</p>
+<p>choose File 刚刚生成的 certSigningRequest 点击Generate 如下图<br><img src="http://www.dasdoc.com/uploads/origin/201309/061135356.png" alt="image"></p>
+<p>添加APP ID 点击 App IDs<br>新建<br>App ID Description 就是Description<br>选择Wildcard App ID  填 类似com.companyname.*<br>生成通用app id（pushID 需要选择Explicit App ID）</p>
+<p>点击Devices 添加设备，输入名字和UDID即可</p>
+<p>最后生成Provisioning Profiles<br>选择类型<br><img src="http://www.dasdoc.com/uploads/origin/201309/061154036.png" alt="image"></p>
+<p>下一步选择 App ID<br>再下一步选择证书<br>再下一步选择设备（Distribution 不用这步）<br>再下一步输入name 最后生成<br>生成后下载</p>
+<p>调试：<br>双击cer文件<br>双击provisioning 文件或者直接拖进 xcode organizer<br>xcode 中的<br>targets 和 project 选择证书<br><img src="http://www.dasdoc.com/uploads/origin/201309/061201596.png" alt="image"></p>
+<p>注意 bundle identifier 要和 App ID 一致</p>
+<p>然后选择真机就可以调试了</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2013/08/21/真机调试.html" itemprop="url">
                 真机调试
               </a>
@@ -415,14 +510,14 @@ quit
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">122</span>
+              <span class="site-state-item-count">123</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
