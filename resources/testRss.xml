@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-09-16T05:50:04.000Z</updated>
+  <updated>2015-09-18T02:40:20.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html"/>
     <id>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</id>
     <published>2015-09-16T17:14:56.000Z</published>
-    <updated>2015-09-16T05:50:04.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://app.tgbus.com/saver/read.aspx?type=tvgame&amp;id=396160" target="_blank" rel="external">全流程攻略</a><br><a href="http://app.tgbus.com/saver/read.aspx?type=tvgame&amp;id=396275" target="_blank" rel="external">支线任务一览</a><br><a href="http://www.k73.com/3ds/25729.html" target="_blank" rel="external">刷钱流程</a></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">第一，获得大师剑</span><br><span class="line"></span><br><span class="line">第二，在卡卡里克村中间那个商人那里买一个瓶子</span><br><span class="line"></span><br><span class="line">第三，从第三个神殿处往上游，再往左游，游到桥底下有一个人，会送你一个瓶子</span><br><span class="line"></span><br><span class="line">第四，在卡卡里克村看到那个小偷后，从旁边变成壁画绕道他身后吓他获得天马靴。</span><br><span class="line"></span><br><span class="line">最后，去卡卡里克村里印有蜜蜂的房子里找那个大叔要捕虫网。</span><br><span class="line"></span><br><span class="line">然后就可以在卡卡里克村左下角的那片草丛刷蜜蜂了，获得大师剑的目的是能用剑气砍大面积的草，获得天马靴的目的是快速在两地之间来回并且撞旁边的树以提升遇到蜜蜂的机会。</span><br><span class="line"></span><br><span class="line">买下所有道具差不多要<span class="number">7200</span>卢比，一只蜜蜂<span class="number">50</span>卢比，加上砍草撞树获得的，基本两个小时可以收集到。</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
@@ -37,7 +37,7 @@
     <link href="http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html"/>
     <id>http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html</id>
     <published>2015-09-16T03:32:56.000Z</published>
-    <updated>2015-09-17T06:52:31.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><strong>docker rm all non running containers</strong></p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>docker rm <span class="string">`docker ps -aq`</span></span><br></pre></td></tr></table></figure>
 <p><strong><a href="https://dashboard.daocloud.io/runtimes/new" target="_blank" rel="external">Docker 加速器 2.0</a></strong></p>
@@ -56,7 +56,7 @@
     <link href="http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html"/>
     <id>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</id>
     <published>2015-09-14T18:45:55.000Z</published>
-    <updated>2015-09-14T07:25:54.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p><code>ngrok.com</code> has been GFWed</p>
 </blockquote>
@@ -94,7 +94,7 @@
     <link href="http://bumaociyuan.github.io/hexo/2015/09/10/Migrate-from-Jekyll-to-Hexo.html"/>
     <id>http://bumaociyuan.github.io/hexo/2015/09/10/Migrate-from-Jekyll-to-Hexo.html</id>
     <published>2015-09-10T14:47:11.000Z</published>
-    <updated>2015-09-14T02:09:28.000Z</updated>
+    <updated>2015-09-18T02:51:37.000Z</updated>
     <content type="html"><![CDATA[<div align="center"><br><img src="http://7xlh4f.com1.z0.glb.clouddn.com/1.png" alt="image"><br></div>
 
 
@@ -115,10 +115,18 @@
 <figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="actionscript"></span><br><span class="line"><span class="keyword">var</span> clicky_site_ids = clicky_site_ids || [];</span><br><span class="line">clicky_site_ids.push(</span></span><span class="expression">&#123;&#123; <span class="variable">theme.getclicky</span>_<span class="variable">analytics</span> &#125;&#125;</span><span class="xml"><span class="javascript">);</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line">  s.type = <span class="string">'text/javascript'</span>;</span><br><span class="line">  s.async = <span class="literal">true</span>;</span><br><span class="line">  s.src = <span class="string">'//static.getclicky.com/js'</span>;</span><br><span class="line">  ( <span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>] ).appendChild( s );</span><br><span class="line">&#125;)();</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">noscript</span>&gt;</span><span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">alt</span>=<span class="value">"Clicky"</span> <span class="attribute">width</span>=<span class="value">"1"</span> <span class="attribute">height</span>=<span class="value">"1"</span> <span class="attribute">src</span>=<span class="value">"//in.getclicky.com/</span></span></span><span class="expression">&#123;&#123; <span class="variable">theme.getclicky</span>_<span class="variable">analytics</span> &#125;&#125;</span><span class="xml"><span class="tag"><span class="value">ns.gif"</span> /&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span><span class="tag">&lt;/<span class="title">noscript</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p>编辑 <code>themes/next/layout/_scripts/analytics.swig</code></p>
 <figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> &#123;% <span class="keyword">include</span> <span class="symbol">'analytics</span>/google-analytics.swig' %&#125;</span><br><span class="line"> &#123;% <span class="keyword">include</span> <span class="symbol">'analytics</span>/baidu-analytics.swig' %&#125;</span><br><span class="line">+&#123;% <span class="keyword">include</span> <span class="symbol">'analytics</span>/getclicky-analytics.swig' %&#125; ＃add this line</span><br></pre></td></tr></table></figure>
-<h1 id="Deployment">Deployment</h1><p>直接使用 hexo-deployer-git 发布会出现覆盖commit 的问题<br>源码如下 <code>node_modules/hexo-deployer-git/lib/deployer.js</code></p>
+<h1 id="Deployment">Deployment</h1><p>##方法一<br>直接使用 hexo-deployer-git 发布会出现覆盖commit 的问题<br>源码如下 <code>node_modules/hexo-deployer-git/lib/deployer.js</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setup</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// Create a placeholder for the first commit</span></span><br><span class="line">  <span class="keyword">return</span> fs.writeFile(pathFn.join(deployDir, <span class="string">'placeholder'</span>), <span class="string">''</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> git(<span class="string">'init'</span>);</span><br><span class="line">  &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> git(<span class="string">'add'</span>, <span class="string">'-A'</span>);</span><br><span class="line">  &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> git(<span class="string">'commit'</span>, <span class="string">'-m'</span>, <span class="string">'First commit'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">push</span>(<span class="params">repo</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> git(<span class="string">'add'</span>, <span class="string">'-A'</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> git(<span class="string">'commit'</span>, <span class="string">'-m'</span>, message).catch(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="comment">// Do nothing. It's OK if nothing to commit.</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> git(<span class="string">'push'</span>, <span class="string">'-u'</span>, repo.url, <span class="string">'master:'</span> + repo.branch, <span class="string">'--force'</span>); <span class="comment">//--force 会清除 github 上的历史commit 所以hexo</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>解决办法</p>
  <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ rm -rf <span class="class">.deploy_git</span></span><br><span class="line">$ copy -rf &lt;bumaociyuan<span class="class">.github</span><span class="class">.io-path</span>&gt; .deploy_git</span><br></pre></td></tr></table></figure>
+<p>##方法二</p>
+<ol>
+<li>建立给 github.io repo 建立 hexo 分支</li>
+<li>复制 hexo 所有文件到 repo 文件夹</li>
+<li>编辑 .gitignore<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">.DS_Store</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git checkout -b hexo</span><br><span class="line"><span class="variable">$ </span>rm -rf</span><br></pre></td></tr></table></figure>
 <h1 id="Permissions_Problem">Permissions Problem</h1><p>hexo n 文件没有修改权限</p>
 <p><img src="https://pbs.twimg.com/media/COglE-kUkAElI-f.png:large" alt="image"></p>
 <p>解决办法<br><a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions" target="_blank" rel="external">Fixing npm permissions</a></p>
@@ -146,7 +154,7 @@
     <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
     <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -170,7 +178,7 @@
     <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
     <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>Add a bash script</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osascript -l JavaScript &lt;&lt;<span class="string">"EOF"</span></span><br><span class="line"></span><br><span class="line"><span class="tag">var</span> app = <span class="function"><span class="title">Application</span><span class="params">(<span class="string">'Finder'</span>)</span></span></span><br><span class="line">app.<span class="function"><span class="title">activate</span><span class="params">()</span></span></span><br><span class="line">app<span class="class">.includeStandardAdditions</span> = true</span><br><span class="line">app.<span class="function"><span class="title">displayAlert</span><span class="params">(<span class="string">'wow'</span>)</span></span></span><br><span class="line"></span><br><span class="line">FOE</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
@@ -193,7 +201,7 @@
     <link href="http://bumaociyuan.github.io//2015/09/02/remote-control-mac-on-mac-os-1010.html"/>
     <id>http://bumaociyuan.github.io//2015/09/02/remote-control-mac-on-mac-os-1010.html</id>
     <published>2015-09-02T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://support.apple.com/kb/PH14179?locale=en_US" target="_blank" rel="external">OS X Mavericks: Share your screen using Back to My Mac</a></p>
 <p>Follow these steps for each computer whose screen you want to share.</p>
 <ol>
@@ -219,7 +227,7 @@
     <link href="http://bumaociyuan.github.io/game/2015/09/01/play-ps-game-on-mac-with-openemu.html"/>
     <id>http://bumaociyuan.github.io/game/2015/09/01/play-ps-game-on-mac-with-openemu.html</id>
     <published>2015-09-01T04:00:00.000Z</published>
-    <updated>2015-09-17T07:41:04.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<div align="center"><br><iframe width="560" height="315" src="https://www.youtube.com/embed/6z2Aa3lrDmM" frameborder="0" allowfullscreen></iframe><br></div>
 
 <ol>
@@ -259,6 +267,8 @@
     
       <category term="openemu" scheme="http://bumaociyuan.github.io/tags/openemu/"/>
     
+      <category term="playstation" scheme="http://bumaociyuan.github.io/tags/playstation/"/>
+    
       <category term="game" scheme="http://bumaociyuan.github.io/categories/game/"/>
     
   </entry>
@@ -268,7 +278,7 @@
     <link href="http://bumaociyuan.github.io/terminal/2015/08/17/open-application-in-terminal.html"/>
     <id>http://bumaociyuan.github.io/terminal/2015/08/17/open-application-in-terminal.html</id>
     <published>2015-08-17T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>I found solution of <a href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html">open sublime in terminal</a>, but how can I open others app in terminal ?</p>
 <p>##Copy  following lines into  <code>~/.bashrc</code> or  <code>~/.zshrc</code></p>
 <figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># -------</span><span class="preprocessor"></span><br><span class="line"># Function</span><span class="preprocessor"></span><br><span class="line"># -------</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">google</span>(</span>) &#123; open <span class="string">"https://www.google.com/search?q=$*&amp;gws_rd=ssl"</span>; &#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">baidu</span>(</span>) &#123; open <span class="string">"https://www.baidu.com/s?ie=UTF-8&amp;wd=$*"</span>; &#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">github</span>(</span>) &#123; open <span class="string">"https://github.com/search?utf8=%E2%9C%93&amp;q=$*"</span>; &#125;<span class="preprocessor"></span><br><span class="line"></span><br><span class="line"># -------</span><span class="preprocessor"></span><br><span class="line"># Aliases</span><span class="preprocessor"></span><br><span class="line"># -------</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">chrome</span>=<span class="comment">'open -a /Applications/Google\ Chrome.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">sublime</span>=<span class="comment">'open -a /Applications/Sublime\ Text\ 3.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">xcode</span>=<span class="comment">'open -a /Applications/Xcode.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">mou</span>=<span class="comment">'open -a /Applications/Mou.app'</span></span><br><span class="line">...<span class="literal">and</span> so on</span><br></pre></td></tr></table></figure>
@@ -290,7 +300,7 @@
     <link href="http://bumaociyuan.github.io/terminal/2015/08/14/oh-my-zsh-update-failed.html"/>
     <id>http://bumaociyuan.github.io/terminal/2015/08/14/oh-my-zsh-update-failed.html</id>
     <published>2015-08-14T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>Error message like :</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">blabla <span class="string">https:</span><span class="comment">//...... certificate .... fail </span></span><br><span class="line">:D</span><br></pre></td></tr></table></figure>
 <p>##Solution</p>
@@ -311,7 +321,7 @@
     <link href="http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html</id>
     <published>2015-08-10T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/shadowsocks/shadowsocks/wiki/Using-Shadowsocks-with-Command-Line-Tools" target="_blank" rel="external">Using Shadowsocks with Command Line Tools</a></p>
 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1</span></span><br><span class="line"><span class="variable">$ </span>brew install proxychains-ng</span><br><span class="line"></span><br><span class="line"><span class="comment">#2</span></span><br><span class="line"><span class="variable">$ </span>mkdir ~<span class="regexp">/.proxychains;touch ~/</span>.proxychains/proxychains.conf</span><br></pre></td></tr></table></figure>
 <p>then copy </p>
@@ -336,7 +346,7 @@
     <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
     <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
     <published>2015-08-10T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
@@ -355,7 +365,7 @@
     <link href="http://bumaociyuan.github.io/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html"/>
     <id>http://bumaociyuan.github.io/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html</id>
     <published>2015-08-08T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://apple.stackexchange.com/questions/180578/reverse-tether-share-osx-yosemite-wifi-connection-over-bluetooth" target="_blank" rel="external">Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth</a></p>
 <p>In order to do this in Yosemite, you’ll need to go back to the main screen of System Preferences and click on the <code>Sharing</code> preference pane. In the sidebar, there will be an Internet Sharing option. Click on this to view its settings.</p>
 <p>Now set the “Share your connection from” drop down to <code>Wi-Fi</code> and then check the <code>Bluetooth PAN</code> checkbox in the menu below. Next just make sure to check the box next Internet Sharing in the sidebar.</p>
@@ -378,7 +388,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html</id>
     <published>2015-07-17T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://blog.httpwatch.com/2013/12/12/five-tips-for-using-self-signed-ssl-certificates-with-ios/" target="_blank" rel="external">Five Tips for Using Self Signed SSL Certificates with iOS</a><br><a href="https://github.com/bumaociyuan/zxIpaServer" target="_blank" rel="external">Create a HTTPS Server to install ipa locally</a></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">openssl genrsa -out myselfsigned<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -new -x509 -key myselfsigned<span class="class">.key</span> -out myselfsigned<span class="class">.cer</span> -days <span class="number">365</span> -subj /CN=www<span class="class">.mysite</span><span class="class">.com</span></span><br><span class="line"></span><br><span class="line">openssl pkcs12 -export -out myselfsigned<span class="class">.pfx</span> -inkey myselfsigned<span class="class">.key</span> -<span class="keyword">in</span> myselfsigned<span class="class">.cer</span></span><br><span class="line"></span><br><span class="line">openssl genrsa -out myCA<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -x509 -new -key myCA<span class="class">.key</span> -out myCA<span class="class">.cer</span> -days <span class="number">730</span> -subj /CN=<span class="string">"My Custom CA"</span></span><br><span class="line"></span><br><span class="line">openssl genrsa -out mycert1<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -new -out mycert1<span class="class">.req</span> -key mycert1<span class="class">.key</span> -subj /CN=www2<span class="class">.mysite</span><span class="class">.com</span></span><br><span class="line"></span><br><span class="line">openssl x509 -req -<span class="keyword">in</span> mycert1<span class="class">.req</span> -out mycert1<span class="class">.cer</span> -CAkey myCA<span class="class">.key</span> -CA myCA<span class="class">.cer</span> -days <span class="number">365</span> -CAcreateserial -CAserial serial</span><br></pre></td></tr></table></figure>
 <p>www.mysite.com 可以是ip</p>
@@ -400,7 +410,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/07/15/uitextview-text-length-limitation.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/07/15/uitextview-text-length-limitation.html</id>
     <published>2015-07-15T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>iOS8 以上键盘的自动联想功能使UITextView的长度限制产生一些bug</p>
 <ul>
 <li><a href="http://blog.csdn.net/jasonblog/article/details/36894075" target="_blank" rel="external">再谈multistage text input（中文输入法）下UITextView的内容长度限制</a></li>
@@ -422,7 +432,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
     <published>2015-06-29T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
 <p>Combine two signals</p>
@@ -440,7 +450,7 @@
     <link href="http://bumaociyuan.github.io//2015/06/29/lucky-seven.html"/>
     <id>http://bumaociyuan.github.io//2015/06/29/lucky-seven.html</id>
     <published>2015-06-29T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><img src="https://cloud.githubusercontent.com/assets/4977911/8399384/fc26c938-1e3f-11e5-8d99-6834219e53fa.jpg"></p>
 <p>777</p>
 ]]></content>
@@ -459,7 +469,7 @@
     <link href="http://bumaociyuan.github.io//2015/05/28/reveal-crisis.html"/>
     <id>http://bumaociyuan.github.io//2015/05/28/reveal-crisis.html</id>
     <published>2015-05-28T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>27岁生日前一天,入手了正版reveal<br>装了 reveal loader没的反应<br>看了<a href="http://c.blog.sina.com.cn/profile.php?blogid=cb8a22ea89000gtw" target="_blank" rel="external">这篇教程</a><br>这**的blog</p>
 <blockquote>
 <p>4、将libReveal.dylib上传到设备的/Library/MobileSubstrate/DynamicLibraries</p>
@@ -496,7 +506,7 @@
     <link href="http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html"/>
     <id>http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html</id>
     <published>2015-05-28T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" rel="external">Installed Java 7 on Mac OS X but Terminal is still using version 6</a></p>
 ]]></content>
     <summary type="html">
@@ -512,7 +522,7 @@
     <link href="http://bumaociyuan.github.io/mac/2015/05/26/reindex-spotlight.html"/>
     <id>http://bumaociyuan.github.io/mac/2015/05/26/reindex-spotlight.html</id>
     <published>2015-05-26T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://apple.stackexchange.com/questions/24401/spotlight-reports-indexing-and-searching-disabled-in-lion" target="_blank" rel="external">Spotlight reports “Indexing and searching disabled” in Lion</a></p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> mdutil -i <span class="built_in">off</span> /</span><br><span class="line">sudo rm -rf /.Spotlight*</span><br><span class="line">sudo mdutil -i <span class="built_in">on</span> /</span><br><span class="line">sudo mdutil -E /</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -531,7 +541,7 @@
     <link href="http://bumaociyuan.github.io//2015/05/17/install-meld-on-mac.html"/>
     <id>http://bumaociyuan.github.io//2015/05/17/install-meld-on-mac.html</id>
     <published>2015-05-17T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://gist.github.com/p1nox/6102015" target="_blank" rel="external">gist</a></p>
 <p><a href="https://github.com/yousseb/meld/releases/tag/osx-v1" target="_blank" rel="external">dmg</a></p>
 <p><a href="http://www.alexkras.com/how-to-run-meld-on-mac-os-x-yosemite-without-homebrew-macports-or-think/" target="_blank" rel="external">How To Run Meld on Mac OS X Yosemite Without Homebrew, MacPorts, or Think</a></p>
@@ -548,7 +558,7 @@
     <link href="http://bumaociyuan.github.io/js/2015/05/13/js-base64-decode-unicode.html"/>
     <id>http://bumaociyuan.github.io/js/2015/05/13/js-base64-decode-unicode.html</id>
     <published>2015-05-13T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding" target="_blank" rel="external">Base64 encoding and decoding</a></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">utf8_to_b64</span>(<span class="params"> str </span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">window</span>.btoa(<span class="built_in">unescape</span>(<span class="built_in">encodeURIComponent</span>( str )));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">b64_to_utf8</span>(<span class="params"> str </span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">decodeURIComponent</span>(<span class="built_in">escape</span>(<span class="built_in">window</span>.atob( str )));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Usage:</span></span><br><span class="line">utf8_to_b64(<span class="string">'✓ à la mode'</span>); <span class="comment">// "4pyTIMOgIGxhIG1vZGU="</span></span><br><span class="line">b64_to_utf8(<span class="string">'4pyTIMOgIGxhIG1vZGU='</span>); <span class="comment">// "✓ à la mode"</span></span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
@@ -568,7 +578,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/05/04/how-to-change-status-bar-color.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/05/04/how-to-change-status-bar-color.html</id>
     <published>2015-05-04T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/17678881/how-to-change-status-bar-text-color-in-ios-7" target="_blank" rel="external">How to change Status Bar text color in iOS 7</a></p>
 <ol>
 <li>Set the <code>UIViewControllerBasedStatusBarAppearance</code> to <code>YES</code> in the <code>.plist</code> file.</li>
@@ -595,7 +605,7 @@
     <link href="http://bumaociyuan.github.io//2015/04/30/xcode-6---xcassets-for-universal-image-support.html"/>
     <id>http://bumaociyuan.github.io//2015/04/30/xcode-6---xcassets-for-universal-image-support.html</id>
     <published>2015-04-30T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>In 1x place image with resolution 320 x 480. </p>
 <p>In 2x place image with resolution 640 x 960. </p>
@@ -629,7 +639,7 @@
     <link href="http://bumaociyuan.github.io/web/2015/04/21/change-safari-web-inspector-font.html"/>
     <id>http://bumaociyuan.github.io/web/2015/04/21/change-safari-web-inspector-font.html</id>
     <published>2015-04-21T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://gist.github.com/chrisphenry/8949607" target="_blank" rel="external">https://gist.github.com/chrisphenry/8949607</a></p>
 ]]></content>
     <summary type="html">
@@ -648,7 +658,7 @@
     <link href="http://bumaociyuan.github.io//2015/04/16/shell-note-2-coding-basic.html"/>
     <id>http://bumaociyuan.github.io//2015/04/16/shell-note-2-coding-basic.html</id>
     <published>2015-04-16T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>#search file in dir</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">find</span> . | <span class="keyword">grep</span> <span class="string">'keyword'</span></span><br><span class="line"><span class="keyword">find</span> . | <span class="keyword">grep</span> <span class="string">'keyword'</span> | xargs <span class="keyword">open</span> #open grepped <span class="keyword">file</span></span><br></pre></td></tr></table></figure>
 <p>#logical</p>
@@ -813,7 +823,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/04/12/ios-dev-black-magic.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/04/12/ios-dev-black-magic.html</id>
     <published>2015-04-12T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>#Macro</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hexcolor">#def</span>ine kBaseURL @<span class="string">"http://domain.com"</span></span><br><span class="line"><span class="hexcolor">#def</span>ine kActionURL kBaseURL @<span class="string">"/api/action"</span></span><br></pre></td></tr></table></figure>
 <p>#Source Control</p>
@@ -839,7 +849,7 @@
     <link href="http://bumaociyuan.github.io/git/2015/03/26/update-github-fork.html"/>
     <id>http://bumaociyuan.github.io/git/2015/03/26/update-github-fork.html</id>
     <published>2015-03-26T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li><a href="https://help.github.com/articles/configuring-a-remote-for-a-fork/" target="_blank" rel="external">Configuring a remote for a fork
 </a></li>
@@ -864,7 +874,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/03/23/multiple-targets-building.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/03/23/multiple-targets-building.html</id>
     <published>2015-03-23T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://samwize.com/2014/05/22/create-multiple-targets-slash-apps-for-1-xcode-project/" target="_blank" rel="external">link</a><br><a href="http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme" target="_blank" rel="external">stackoverflow.com 233</a> </p>
 <h1 id="Create_New_Target">Create New Target</h1><ol>
 <li>select project target </li>
@@ -899,7 +909,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/03/06/swift-lazy-initialization.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/03/06/swift-lazy-initialization.html</id>
     <published>2015-03-06T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  lazy <span class="keyword">var</span> someView: <span class="type">UIView</span> = &#123;</span><br><span class="line">      <span class="keyword">var</span> result = <span class="type">UIView</span>()</span><br><span class="line"><span class="comment">//do something</span></span><br><span class="line">      <span class="keyword">return</span> result</span><br><span class="line">  &#125;()</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class]]>
@@ -916,7 +926,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/03/05/switch-in-swift.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/03/05/switch-in-swift.html</id>
     <published>2015-03-05T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>###swift</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> testVar = <span class="number">1</span></span><br><span class="line"><span class="keyword">var</span> result = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(testVar) &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">fallthrough</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    result = <span class="number">3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>###objc</p>
@@ -938,7 +948,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/02/11/notification-center-action.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/02/11/notification-center-action.html</id>
     <published>2015-02-11T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIMutableUserNotificationCategory_class/index.html" target="_blank" rel="external">UIMutableUserNotificationCategory doc</a></p>
 <p><a href="https://gist.github.com/calitb/19167a5f9b2d28cf2a96" target="_blank" rel="external">iOS8 beta: add actions to Remote Notification</a></p>
 <p><a href="http://www.cnphp6.com/archives/50193" target="_blank" rel="external">IOS8 推送第二篇</a></p>
@@ -956,7 +966,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/02/06/use-app-icons-and-launch-images-in-code.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/02/06/use-app-icons-and-launch-images-in-code.html</id>
     <published>2015-02-06T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/18780476/ios-7-app-icons-launch-images-and-naming-convention-while-keeping-ios-6-icons" target="_blank" rel="external">iOS 7 App Icons, Launch images And Naming Convention While Keeping iOS 6 Icons</a></p>
 <p><a href="http://stackoverflow.com/questions/19107543/xcode-5-asset-catalog-how-to-reference-the-launchimage" target="_blank" rel="external">Xcode 5 &amp; Asset Catalog: How to reference the LaunchImage?</a></p>
 <p>#<a href="https://github.com/bumaociyuan/common/blob/master/category/UIImage%2BSplashImage.m" target="_blank" rel="external">UIImage+SplashImage</a></p>
@@ -1004,7 +1014,7 @@
     <link href="http://bumaociyuan.github.io/mac/2015/02/05/parallels-ip-note.html"/>
     <id>http://bumaociyuan.github.io/mac/2015/02/05/parallels-ip-note.html</id>
     <published>2015-02-05T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://bbs.feng.com/read-htm-tid-5291229.html" target="_blank" rel="external">如何给Parallels中的系统分配固定IP</a></p>
 <p>rclick dock icon <code>Virtual Machines List</code> -&gt; rclick windows icon <code>Configure</code> -&gt; <code>Hardware</code> -&gt; <code>Network 1</code> -&gt; <code>Type</code> to <code>Default Adapter</code></p>
 ]]></content>
@@ -1024,7 +1034,7 @@
     <link href="http://bumaociyuan.github.io//2015/02/04/touch-id-note.html"/>
     <id>http://bumaociyuan.github.io//2015/02/04/touch-id-note.html</id>
     <published>2015-02-04T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">LAContext *lol = [[LAContext alloc] init];</span><br><span class="line">       </span><br><span class="line">       <span class="built_in">NSError</span> *error = <span class="literal">nil</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *message = <span class="string">@"message"</span>;</span><br><span class="line">       </span><br><span class="line">       <span class="keyword">if</span> ([lol canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&amp;error]) &#123;</span><br><span class="line">           [lol evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:message reply:^(<span class="built_in">BOOL</span> succes, <span class="built_in">NSError</span> *error)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (succes) &#123;</span><br><span class="line">                    <span class="comment">//do something</span></span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;];</span><br><span class="line">       &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
@@ -1038,7 +1048,7 @@
     <link href="http://bumaociyuan.github.io/xcode/2015/01/30/xcode-only-ios-device-no-simulator.html"/>
     <id>http://bumaociyuan.github.io/xcode/2015/01/30/xcode-only-ios-device-no-simulator.html</id>
     <published>2015-01-30T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>xcode only ios device no simulator</p>
 <p><a href="http://www.reddit.com/r/iOSProgramming/comments/2b9j2p/xcode_6_missing_ios_8_simulator/" target="_blank" rel="external">Xcode 6 missing iOS 8 simulator</a></p>
 <p><code>iOS Simulator</code> -&gt; <code>Hardware</code> -&gt; <code>Device</code> -&gt; <code>Manage Devices...</code> click plus button at bottom , create simulators</p>
@@ -1057,7 +1067,7 @@
     <link href="http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</id>
     <published>2015-01-29T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>#相关链接</p>
 <p><a href="http://www.advertcn.com/thread-20498-1-1.html" target="_blank" rel="external">tutorial</a></p>
 <p><del><a href="https://bandwagonhost.com/aff.php?aff=322&amp;pid=19" target="_blank" rel="external">3.99$ VPS</a></del></p>
@@ -1104,7 +1114,7 @@
     <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
     <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
     <published>2015-01-29T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>购买配件:</p>
 <p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
 <p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
@@ -1130,7 +1140,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/01/21/nsassert-note.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/01/21/nsassert-note.html</id>
     <published>2015-01-21T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSAssert</span>(condition, desc, ...)</span><br><span class="line"><span class="comment">//if condition is true ,app will crash , log outputs desc</span></span><br></pre></td></tr></table></figure>
 <p>disable NSAssert in <code>release</code> mode</p>
 <p>in <code>Build Settings</code> -&gt; <code>Preprocessor Macros</code> add <code>NS_BLOCK_ASSERTIONS</code> to <code>release</code> section</p>
@@ -1148,7 +1158,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/01/19/how-to-make-uibutton-outside-superview-clickable.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/01/19/how-to-make-uibutton-outside-superview-clickable.html</id>
     <published>2015-01-19T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>in superview.m file </p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)pointInside:(<span class="built_in">CGPoint</span>)point withEvent:(<span class="built_in">UIEvent</span> *)event &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">CGRectContainsPoint</span>(<span class="keyword">self</span><span class="variable">.bounds</span>, point) ||</span><br><span class="line">				<span class="built_in">CGRectContainsPoint</span>(<span class="keyword">self</span><span class="variable">.outsideButton</span><span class="variable">.frame</span>, point)) &#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">		&#125;</span><br><span class="line">                            </span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -1166,7 +1176,7 @@
     <link href="http://bumaociyuan.github.io/java/2015/01/16/create-war-for-tomcat.html"/>
     <id>http://bumaociyuan.github.io/java/2015/01/16/create-war-for-tomcat.html</id>
     <published>2015-01-16T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /to/your/folder/location</span><br><span class="line">jar -cvf my_web_app.war *</span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
@@ -1182,7 +1192,7 @@
     <link href="http://bumaociyuan.github.io/git/2015/01/16/cache-github-password.html"/>
     <id>http://bumaociyuan.github.io/git/2015/01/16/cache-github-password.html</id>
     <published>2015-01-16T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://help.github.com/articles/caching-your-github-password-in-git/" target="_blank" rel="external">https://help.github.com/articles/caching-your-github-password-in-git/</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper osxkeychain</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -1199,7 +1209,7 @@
     <link href="http://bumaociyuan.github.io/mac/2015/01/13/use-the-purchases-page-to-try-again.html"/>
     <id>http://bumaociyuan.github.io/mac/2015/01/13/use-the-purchases-page-to-try-again.html</id>
     <published>2015-01-13T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://liyunpeng.iteye.com/blog/1999174" target="_blank" rel="external">Mac OS X 10.9 中 app store下载应用出现use the purchases page to try again</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">open <span class="variable">$TMPDIR</span>../C/;sudo rm -r com.apple.appstore</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
@@ -1217,7 +1227,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/01/12/d-u-n-s-profile-lookup.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/01/12/d-u-n-s-profile-lookup.html</id>
     <published>2015-01-12T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/ios/enroll/dunsLookupForm.action" target="_blank" rel="external">D-U-N-S Profile Lookup</a></p>
 ]]></content>
     <summary type="html">
@@ -1236,7 +1246,7 @@
     <link href="http://bumaociyuan.github.io/ios/2015/01/09/scroll-view-autolayout-demo.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/01/09/scroll-view-autolayout-demo.html</id>
     <published>2015-01-09T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/bumaociyuan/scrollViewAutoLayoutDemo" target="_blank" rel="external">scrollViewAutoLayoutDemo</a></p>
 ]]></content>
     <summary type="html">
@@ -1253,7 +1263,7 @@
     <link href="http://bumaociyuan.github.io/terminal/2015/01/01/zsh-number-pad-not-working.html"/>
     <id>http://bumaociyuan.github.io/terminal/2015/01/01/zsh-number-pad-not-working.html</id>
     <published>2014-12-31T21:57:03.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/robbyrussell/oh-my-zsh/issues/2654" target="_blank" rel="external">oh-my-zsh issue 2654</a></p>
 <p>@tomduncalf’s answer</p>
 <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I found <span class="operator">a</span> fix <span class="keyword">for</span> this issue over <span class="keyword">at</span> <span class="operator">the</span> iTerm <span class="number">2</span> issue tracker: <span class="keyword">https</span>://code.google.com/p/iterm2/issues/detail?id=<span class="number">2000</span> - basically, go <span class="built_in">to</span> Preferences -&gt; Profile -&gt; Keys <span class="operator">and</span> <span class="built_in">load</span> <span class="operator">the</span> <span class="string">"xterm with numeric keypad"</span> preset. Not sure why this isn<span class="string">'t the default!</span></span><br></pre></td></tr></table></figure>]]></content>
@@ -1273,7 +1283,7 @@
     <link href="http://bumaociyuan.github.io/ios/2014/12/04/cocoapods-empty-reply-form-server.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/12/04/cocoapods-empty-reply-form-server.html</id>
     <published>2014-12-03T17:38:41.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>When run <code>pod install</code></p>
 <p>Get error message </p>
 <figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal <span class="keyword">error</span> blabla <span class="literal">empty</span> reply form <span class="built_in">server</span></span><br></pre></td></tr></table></figure>
@@ -1298,7 +1308,7 @@
     <link href="http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</id>
     <published>2014-12-03T15:58:24.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>#Update May 28, 2015</p>
 <p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
@@ -1334,7 +1344,7 @@
     <link href="http://bumaociyuan.github.io/git/2014/11/26/tfs-via-git.html"/>
     <id>http://bumaociyuan.github.io/git/2014/11/26/tfs-via-git.html</id>
     <published>2014-11-26T14:09:19.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://www.2cto.com/os/201209/157713.html" target="_blank" rel="external">Mac下配置Git-TF来连接TFS2012</a></p>
 <p><a href="http://mikepilat.com/2011/05/adding-a-certificate-authority-to-the-java-runtime.html" target="_blank" rel="external">Adding a certificate authority to the Java runtime</a></p>
 <p><a href="http://hamidshahid.blogspot.com/2014/02/git-for-tfvc-users.html" target="_blank" rel="external">Git For TFVC Users</a></p>
@@ -1383,7 +1393,7 @@
     <link href="http://bumaociyuan.github.io/ios/2014/11/26/cocoapods-update-error.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/11/26/cocoapods-update-error.html</id>
     <published>2014-11-25T20:18:07.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>Run <code>pod install</code></p>
 <p>Get message like below</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[!] From now on <span class="operator"><span class="keyword">use</span> <span class="string">`abc.xcworkspace`</span>.</span><br><span class="line"></span><br><span class="line">[!] The <span class="keyword">use</span> <span class="keyword">of</span> implicit sources has been deprecated. <span class="keyword">To</span> continue <span class="keyword">using</span> all <span class="keyword">of</span> the sources currently <span class="keyword">on</span> your machine, <span class="keyword">add</span> the <span class="keyword">following</span> <span class="keyword">to</span> the top <span class="keyword">of</span> your Podfile:</span><br><span class="line"></span><br><span class="line">    <span class="keyword">source</span> <span class="string">'https://github.com/CocoaPods/Specs.git'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[!] The <span class="string">`abc [Debug]`</span> target overrides the <span class="string">`OTHER_LDFLAGS`</span> <span class="keyword">build</span> setting defined <span class="keyword">in</span> <span class="string">`Pods/Target Support Files/Pods/Pods.debug.xcconfig'. This can lead to problems with the CocoaPods installation</span><br><span class="line">    - Use the `</span>$(inherited)<span class="string">` flag, or</span><br><span class="line">    - Remove the build settings from the target.</span><br><span class="line"></span><br><span class="line">[!] The `</span>abc [<span class="keyword">Release</span>]<span class="string">` target overrides the `</span>OTHER_LDFLAGS<span class="string">` build setting defined in `</span>Pods/Target Support Files/Pods/Pods.<span class="keyword">release</span>.xcconfig<span class="string">'. This can lead to problems with the CocoaPods installation</span><br><span class="line">    - Use the `$(inherited)` flag, or</span><br><span class="line">    - Remove the build settings from the target.</span></span></span><br></pre></td></tr></table></figure>
@@ -1409,7 +1419,7 @@
     <link href="http://bumaociyuan.github.io/ios/2014/11/26/ios-backwards-compatibility-faq.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/11/26/ios-backwards-compatibility-faq.html</id>
     <published>2014-11-25T19:34:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<h1 id="xcode_download_addresses"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html">xcode download addresses</a></h1><h1 id="multiple_xcode_coexist"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html">multiple xcode coexist</a></h1><h1 id="Storyboard_build_error">Storyboard build error</h1><p>Error message</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This <span class="property">version</span> <span class="keyword">does</span> <span class="keyword">not</span> support constraints <span class="keyword">to</span> layout margins. Open this document <span class="keyword">with</span> Xcode <span class="number">6.0</span> <span class="keyword">or</span> later.</span><br></pre></td></tr></table></figure>
 <ol>
@@ -1434,7 +1444,7 @@
     <link href="http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html"/>
     <id>http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html</id>
     <published>2014-11-25T14:15:36.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/24005297/can-xcode-6-and-xcode-5-coexist-on-the-same-computer" target="_blank" rel="external">Can Xcode 6 and Xcode 5 coexist on the same computer?</a></p>
 <ol>
 <li>Rename the origin <code>Xcode</code> to <code>Xcode6</code>.</li>
@@ -1455,7 +1465,7 @@
     <link href="http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html"/>
     <id>http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html</id>
     <published>2014-11-25T14:07:04.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/10335747/how-to-download-xcode-4-5-6-and-get-the-dmg-file" target="_blank" rel="external">How to download Xcode 4 / 5 / 6 and get the DMG file?</a></p>
 <p><a href="https://developer.apple.com/downloads/" target="_blank" rel="external">https://developer.apple.com/downloads/</a></p>
 <ul>
@@ -1500,7 +1510,7 @@
     <link href="http://bumaociyuan.github.io/git/2014/11/23/git-note-2.html"/>
     <id>http://bumaociyuan.github.io/git/2014/11/23/git-note-2.html</id>
     <published>2014-11-23T02:56:19.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git archive -o latest<span class="class">.zip</span> HEAD</span><br></pre></td></tr></table></figure>
 <p><strong>How many lines of code differs between two commits?</strong></p>
@@ -1643,7 +1653,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/git/2014/11/21/svn-via-git.html"/>
     <id>http://bumaociyuan.github.io/git/2014/11/21/svn-via-git.html</id>
     <published>2014-11-20T22:40:16.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://www.cppblog.com/niewenlong/archive/2013/06/04/200791.html" target="_blank" rel="external">git-svn 简单教程</a></p>
 <p><a href="http://www.hitripod.com/blog/2013/02/use-git-to-manage-svn-repo/" target="_blank" rel="external">使用 Git 管理 SVN Repository</a></p>
 <p><a href="http://www.360doc.com/content/10/0214/19/155970_15832832.shtml" target="_blank" rel="external">SVN+GIT=鱼与熊掌兼得</a></p>
@@ -1665,7 +1675,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/breakwall/2014/11/19/google-hosts.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2014/11/19/google-hosts.html</id>
     <published>2014-11-18T17:46:36.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/bumaociyuan/googleHosts" target="_blank" rel="external">https://github.com/bumaociyuan/googleHosts</a></p>
 ]]></content>
     <summary type="html">
@@ -1684,7 +1694,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/terminal/2014/11/18/go2shell-using-iterm2.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/11/18/go2shell-using-iterm2.html</id>
     <published>2014-11-17T20:41:15.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">open</span> -<span class="operator">a</span> Go2Shell <span class="comment">--args config</span></span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre>]]>
@@ -1703,7 +1713,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/mac/2014/11/17/install-Homebrew-Cask.html"/>
     <id>http://bumaociyuan.github.io/mac/2014/11/17/install-Homebrew-Cask.html</id>
     <published>2014-11-17T15:34:47.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/caskroom/homebrew-cask" target="_blank" rel="external">caskroom/homebrew-cask</a></p>
 <p>install</p>
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install caskroom/cask/<span class="keyword">brew-cask</span></span><br></pre></td></tr></table></figure>
@@ -1725,7 +1735,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/hybird/2014/11/14/PhoneGap-note.html"/>
     <id>http://bumaociyuan.github.io/hybird/2014/11/14/PhoneGap-note.html</id>
     <published>2014-11-13T19:13:24.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://phonegap.com/install/" target="_blank" rel="external">Install PhoneGap</a></p>
 <p><a href="http://nodejs.org" target="_blank" rel="external">Install NodeJS</a> </p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -<span class="keyword">g</span> phonegap</span><br><span class="line">phonegap create my-<span class="keyword">app</span></span><br><span class="line"><span class="keyword">cd</span> my-<span class="keyword">app</span></span><br><span class="line">phonegap <span class="keyword">run</span> ios</span><br></pre></td></tr></table></figure>
@@ -1748,7 +1758,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/python/2014/11/09/scrapy-note.html"/>
     <id>http://bumaociyuan.github.io/python/2014/11/09/scrapy-note.html</id>
     <published>2014-11-09T15:34:18.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://doc.scrapy.org/en/latest/intro/tutorial.html" target="_blank" rel="external">http://doc.scrapy.org</a></p>
 <p>install <code>pip</code> <a href="https://pip.pypa.io/en/latest/installing.html#install-pip" target="_blank" rel="external">click here</a></p>
 <h2 id="install_scrapy">install scrapy</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> scrapy </span><br><span class="line"><span class="keyword">or</span></span><br><span class="line">sudo easy_install Scrapy</span><br></pre></td></tr></table></figure>
@@ -1801,7 +1811,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/11/04/app-extension-note.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/11/04/app-extension-note.html</id>
     <published>2014-11-03T19:24:53.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/bumaociyuan/iphoneExtension" target="_blank" rel="external">demo</a></p>
 <p>remove the default margin of widget</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#pragma mark - NCWidgetProviding</span></span><br><span class="line">- (<span class="built_in">UIEdgeInsets</span>)widgetMarginInsetsForProposedMarginInsets:(<span class="built_in">UIEdgeInsets</span>)defaultMarginInsets &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1824,7 +1834,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/iphone/2014/11/02/a1528-4g.html"/>
     <id>http://bumaociyuan.github.io/iphone/2014/11/02/a1528-4g.html</id>
     <published>2014-11-02T02:10:45.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>—2014.11.05—</p>
 <p>发现imessage 不能发图片的问题<br>cydia 更新 <code>Pangu 8.0-8.1.x Untether</code></p>
 <p>—2014.11.01—</p>
@@ -1859,7 +1869,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html</id>
     <published>2014-10-31T14:44:25.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>You can cancel animation by subclassing UISearchDisplayController and adding this:</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)setActive:(<span class="built_in">BOOL</span>)visible animated:(<span class="built_in">BOOL</span>)animated</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">self</span><span class="variable">.active</span> == visible) <span class="keyword">return</span>;</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.searchContentsController</span><span class="variable">.navigationController</span> setNavigationBarHidden:<span class="literal">YES</span> animated:<span class="literal">NO</span>];</span><br><span class="line">    [<span class="keyword">super</span> setActive:visible animated:animated];</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.searchContentsController</span><span class="variable">.navigationController</span> setNavigationBarHidden:<span class="literal">NO</span> animated:<span class="literal">NO</span>];</span><br><span class="line">    <span class="keyword">if</span> (visible) &#123;</span><br><span class="line">        [<span class="keyword">self</span><span class="variable">.searchBar</span> becomeFirstResponder];</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        [<span class="keyword">self</span><span class="variable">.searchBar</span> resignFirstResponder];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
@@ -1878,7 +1888,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/10/31/customize-tabbar-icon-and-text-color.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/10/31/customize-tabbar-icon-and-text-color.html</id>
     <published>2014-10-30T19:41:32.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)configTabBar &#123;</span><br><span class="line">    <span class="built_in">UIColor</span> *greenColor = [<span class="built_in">UIColor</span> colorWithRed:<span class="number">0.213</span></span><br><span class="line">                                          green:<span class="number">0.898</span></span><br><span class="line">                                           blue:<span class="number">0.573</span></span><br><span class="line">                                          alpha:<span class="number">1.000</span>];</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.tabBar</span><span class="variable">.items</span></span><br><span class="line">     enumerateObjectsUsingBlock:^(<span class="built_in">UITabBarItem</span> *obj, <span class="built_in">NSUInteger</span> idx, <span class="built_in">BOOL</span> *stop) &#123;</span><br><span class="line">         [obj  setTitleTextAttributes:@&#123;</span><br><span class="line">                                        <span class="built_in">NSForegroundColorAttributeName</span>: [<span class="built_in">UIColor</span> whiteColor],</span><br><span class="line">                                        &#125;</span><br><span class="line">                             forState:<span class="built_in">UIControlStateNormal</span>];</span><br><span class="line">         [obj  setTitleTextAttributes:@&#123;</span><br><span class="line">                                        <span class="built_in">NSForegroundColorAttributeName</span>: greenColor,</span><br><span class="line">                                        &#125;</span><br><span class="line">                             forState:<span class="built_in">UIControlStateSelected</span>];</span><br><span class="line">         obj<span class="variable">.image</span> = [[<span class="built_in">UIImage</span> imageNamed:<span class="string">@"tabbar_icon"</span><span class="variable">.addInt</span>(idx)] imageWithRenderingMode:<span class="built_in">UIImageRenderingModeAlwaysOriginal</span>];</span><br><span class="line">         obj<span class="variable">.selectedImage</span> = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@"tabbar_icon"</span><span class="variable">.addInt</span>(idx)];</span><br><span class="line">     &#125;];</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span ]]>
@@ -1895,7 +1905,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ruby/2014/10/28/ruby-note.html"/>
     <id>http://bumaociyuan.github.io/ruby/2014/10/28/ruby-note.html</id>
     <published>2014-10-27T17:59:15.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://bumaociyuan.github.io/ruby/2014/10/27/ruby-note.html">link</a></p>
 <p><a href="http://www.w3cschool.cc/ruby/ruby-class.html" target="_blank" rel="external">w3cschool tutorial</a></p>
 <hr>
@@ -2250,7 +2260,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/terminal/2014/10/26/automator-pass-arg-to-shell-script.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/10/26/automator-pass-arg-to-shell-script.html</id>
     <published>2014-10-26T05:31:09.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/resources/2014/10/26/1.jpg" alt="Drawing" style="width: 800px;"></p>
 <p>pic says every thing</p>
 ]]></content>
@@ -2273,7 +2283,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/terminal/2014/10/26/shell-script-create-post-template.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/10/26/shell-script-create-post-template.html</id>
     <published>2014-10-26T04:37:43.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://gist.github.com/bumaociyuan/fb1a5ba9d29f22bb0709" target="_blank" rel="external">script</a></p>
 ]]></content>
     <summary type="html">
@@ -2292,7 +2302,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/jekyll/2014/10/23/jekyll-blog-theme.html"/>
     <id>http://bumaociyuan.github.io/jekyll/2014/10/23/jekyll-blog-theme.html</id>
     <published>2014-10-23T14:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://themes.jekyllbootstrap.com" target="_blank" rel="external">http://themes.jekyllbootstrap.com</a></p>
 <p><a href="http://jekyllbootstrap.com/usage/jekyll-quick-start.html" target="_blank" rel="external">http://jekyllbootstrap.com/usage/jekyll-quick-start.html</a></p>
 <p>##Find Themes</p>
@@ -2325,7 +2335,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/10/22/ios-app-%E5%AE%89%E8%A3%85%E6%9C%BA%E5%88%B6.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/10/22/ios-app-安装机制.html</id>
     <published>2014-10-21T17:39:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>iphone 上安装app最正规的途径 是 App Store 下载 ，本文是讨论的是<strong>非主流安装机制</strong></p>
 <p>iphone 上安装app的非主流安装机制 有以下几种</p>
 <ol>
@@ -2378,7 +2388,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/git/2014/10/21/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%88%A9%E7%94%A8GitHub.html"/>
     <id>http://bumaociyuan.github.io/git/2014/10/21/如何高效利用GitHub.html</id>
     <published>2014-10-20T22:26:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://www.yangzhiping.com/tech/github.html" target="_blank" rel="external">link</a></p>
 ]]></content>
     <summary type="html">
@@ -2397,7 +2407,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/10/19/app-store-short-url.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/10/19/app-store-short-url.html</id>
     <published>2014-10-19T02:39:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/library/ios/qa/qa1633/_index.html" target="_blank" rel="external">link</a></p>
 <p>##Company Name</p>
 <ul>
@@ -2429,7 +2439,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/terminal/2014/10/17/run-shell-script-by-double-click.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/10/17/run-shell-script-by-double-click.html</id>
     <published>2014-10-16T18:38:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>file name as <code>auto_synch_this_path.command</code></p>
 <p>content as </p>
 <pre><code><span class="title">cd</span> `dirname <span class="variable">$0</span>`;<span class="title">git</span> status;<span class="title">git</span> add -A;<span class="title">git</span> commit -m <span class="string">'zx'</span>;<span class="title">git</span> pull;<span class="title">git</span> push
@@ -2451,7 +2461,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/10/16/code-format.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/10/16/code-format.html</id>
     <published>2014-10-15T19:07:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>#download BBUncrustifyPlugin</p>
 <ul>
 <li><p><a href="https://github.com/benoitsan/BBUncrustifyPlugin-Xcode" target="_blank" rel="external">download</a> BBUncrustifyPlugin and install</p>
@@ -2490,7 +2500,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/python/2014/10/11/python-setting-on-windows7.html"/>
     <id>http://bumaociyuan.github.io/python/2014/10/11/python-setting-on-windows7.html</id>
     <published>2014-10-11T14:56:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>下载 Python:<a href="http://www.python.org/getit/" target="_blank" rel="external">http://www.python.org/getit/</a></li>
 <li>Python环境变量 右键我的电脑，高级设置找到环境变量</li>
@@ -2517,7 +2527,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/10/10/url-schemes.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/10/10/url-schemes.html</id>
     <published>2014-10-09T18:13:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>—2014.11.03—</p>
 <ul>
 <li>Personal Hotspot (prefs:root=INTERNET_TETHERING)</li>
@@ -2583,7 +2593,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/mac/2014/10/01/custom-keyboard-shortcuts.html"/>
     <id>http://bumaociyuan.github.io/mac/2014/10/01/custom-keyboard-shortcuts.html</id>
     <published>2014-10-01T02:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>很多menu item 没得原生快捷键 比如<code>Xcode</code> 的 <code>Archive</code></p>
 <ul>
 <li><code>System Preferences</code> -&gt; <code>Keyboard</code> -&gt; <code>Shortcuts</code> -&gt; <code>App Shortcuts</code> -&gt; plus button</li>
@@ -2606,7 +2616,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/terminal/2014/09/30/chmod.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/09/30/chmod.html</id>
     <published>2014-09-29T21:38:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://havee.me/linux/2009-08/chmod.html" target="_blank" rel="external">link</a></p>
 <p>###方式一：<br>语法格式： chmod [-vR] mode 文件名</p>
 <p>参数说明:</p>
@@ -2652,7 +2662,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
     <link href="http://bumaociyuan.github.io/ios/2014/09/29/block-note.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/09/29/block-note.html</id>
     <published>2014-09-29T15:13:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><strong>use block as local var</strong></p>
 <pre><code><span class="keyword">void</span> (^someBlock)(<span class="built_in">NSMutableArray</span> *,<span class="keyword">id</span>) = ^(<span class="built_in">NSMutableArray</span> *items,<span class="built_in">NSString</span> *item) {
        <span class="comment">//do some thing</span>
@@ -2693,7 +2703,7 @@ e.g.
     <link href="http://bumaociyuan.github.io/mac/2014/09/26/spotlight-no-result.html"/>
     <id>http://bumaociyuan.github.io/mac/2014/09/26/spotlight-no-result.html</id>
     <published>2014-09-26T15:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://blog.cnrainbird.com/index.php/2013/02/14/osx_zhong_jian_spotlight_suo_yin/" target="_blank" rel="external">link</a></p>
 <pre><code><span class="variable">$sudo</span> mdutil -E /Volumes/Macintosh\ HD/
 <span class="variable">$sudo</span> mdutil -a -i on
@@ -2712,7 +2722,7 @@ e.g.
     <link href="http://bumaociyuan.github.io/terminal/2014/09/16/curl-note.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/09/16/curl-note.html</id>
     <published>2014-09-16T13:55:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>抓取页面内容到一个文件中</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -O file<span class="class">.html</span>  http:<span class="comment">//www.baidu.com</span></span><br></pre></td></tr></table></figure>
 <p>download</p>
@@ -2735,7 +2745,7 @@ e.g.
     <link href="http://bumaociyuan.github.io/ios/2014/09/16/project-cannot-build-on-iphone5s.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/09/16/project-cannot-build-on-iphone5s.html</id>
     <published>2014-09-15T18:19:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><strong>No architectures to compile for (ONLY_ACTIVE_ARCH=YES, active arch=arm64, VALID_ARCHS=armv7 armv7s).</strong></p>
 <p><a href="http://stackoverflow.com/questions/22328882/xcode-5-1-no-architectures-to-compile-for-only-active-arch-yes-active-arch-x" target="_blank" rel="external">Xcode 5.1 - No architectures to compile for (ONLY_ACTIVE_ARCH=YES, active arch=x86_64, VALID_ARCHS=i386)</a></p>
 <ol>
@@ -2759,7 +2769,7 @@ e.g.
     <link href="http://bumaociyuan.github.io/ios/2014/09/10/ios-bug.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/09/10/ios-bug.html</id>
     <published>2014-09-10T13:54:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>Bug: ios7中使用UISearchDisplayController进行搜索 输入内容然后滑动searchResultsTableView然后取消 再次点击搜索 输入内容之后点search 然后在取消 这样重复几次UISearchDisplayController的contentSize就会不正确的能向下滑动很长 </p>
 <p>Solution:</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#pragma mark - UISearchDisplayDelegate</span></span><br><span class="line">- (<span class="keyword">void</span>)searchDisplayController:(<span class="built_in">UISearchDisplayController</span> *)controller 	willShowSearchResultsTableView:(<span class="built_in">UITableView</span> *)tableView &#123;</span><br><span class="line"> 	  tableView<span class="variable">.contentInset</span> = <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line"> 	  tableView<span class="variable">.scrollIndicatorInsets</span> = <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -2785,7 +2795,7 @@ e.g.
     <link href="http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html</id>
     <published>2014-09-05T13:41:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://www.kuqin.com/upimg/allimg/091229/1454420.png" alt="image"></p>
 <p>update February 11, 2015</p>
 <p><a href="http://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/" target="_blank" rel="external">HowTo: Save A File In Vim / Vi Without Root Permission</a></p>
@@ -2947,7 +2957,7 @@ vimtutor
     <link href="http://bumaociyuan.github.io/terminal/2014/09/05/shell-note.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/09/05/shell-note.html</id>
     <published>2014-09-04T20:41:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>February 2, 2015</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caffeinate -t <span class="number">3600</span></span><br></pre></td></tr></table></figure>
 <p>Where 3600 is the number of seconds in one hour. You may modify it to any number of seconds, or alternatively just enter caffeinate without a timer to disable sleep mode until that terminal window is closed.</p>
@@ -3050,7 +3060,7 @@ vimtutor
     <link href="http://bumaociyuan.github.io/ios/2014/08/30/make-a-cocoapods-lib.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/08/30/make-a-cocoapods-lib.html</id>
     <published>2014-08-29T17:54:52.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>—2015.08.02—</p>
 <p><strong>error</strong><code>- ERROR | [watchOS] Returned an unsuccessful exit code.</code> blabla</p>
 <p>add flowing code in podspec</p>
@@ -3099,7 +3109,7 @@ vimtutor
     <link href="http://bumaociyuan.github.io/ios/2014/08/28/disable-uisearchbar-begin-editing-animation.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/08/28/disable-uisearchbar-begin-editing-animation.html</id>
     <published>2014-08-28T13:24:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li>Do not use searchBar as tableHeaderView</li>
 <li>That’s all.</li>
@@ -3122,7 +3132,7 @@ vimtutor
     <link href="http://bumaociyuan.github.io/ios/2014/08/25/enable-php-on-mac.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/08/25/enable-php-on-mac.html</id>
     <published>2014-08-25T01:07:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://osxfactor.com/2009/08/30/how-to-enable-php-mysql-in-snow-leopard/" target="_blank" rel="external">link</a></p>
 <ol>
 <li>Navigate to <code>/etc/apache2</code></li>
@@ -3166,7 +3176,7 @@ vimtutor
     <link href="http://bumaociyuan.github.io/ios/2014/08/20/afnetworking-issue.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/08/20/afnetworking-issue.html</id>
     <published>2014-08-19T18:28:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>error :</p>
 <p><code>Request failed: unacceptable content-type: text/html</code></p>
 <p>or</p>
@@ -3193,7 +3203,7 @@ NSMutableSet *<span class="keyword">set</span> = manager.responseSerializer.acce
     <link href="http://bumaociyuan.github.io/ios/2014/08/12/baidu-map-issue.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/08/12/baidu-map-issue.html</id>
     <published>2014-08-12T13:58:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>关于百度地图IOS API 2.3.0 不显示地图的解决方法。</p>
 <p>在AppDelegate里面init BMapManager以后。<br>设为属性<br>不然会出各种问题</p>
 ]]></content>
@@ -3212,7 +3222,7 @@ NSMutableSet *<span class="keyword">set</span> = manager.responseSerializer.acce
     <link href="http://bumaociyuan.github.io/ios/2014/08/08/navigation-bar-customize-back-button.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/08/08/navigation-bar-customize-back-button.html</id>
     <published>2014-08-08T15:09:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>July 21, 2015<br><a href="http://blog.csdn.net/justinjing0612/article/details/42294329" target="_blank" rel="external">iOS开发的一些奇巧淫技</a></p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.leftBarButtonItem</span> = [[<span class="built_in">UIBarButtonItem</span> alloc]</span><br><span class="line"></span><br><span class="line">                                         initWithImage:img</span><br><span class="line"></span><br><span class="line">                                         style:<span class="built_in">UIBarButtonItemStylePlain</span></span><br><span class="line"></span><br><span class="line">                                         target:<span class="keyword">self</span></span><br><span class="line"></span><br><span class="line">                                         action:<span class="keyword">@selector</span>(onBack:)];</span><br><span class="line"></span><br><span class="line"><span class="keyword">self</span><span class="variable">.navigationController</span><span class="variable">.interactivePopGestureRecognizer</span><span class="variable">.delegate</span> = (<span class="keyword">id</span>)<span class="keyword">self</span>;</span><br></pre></td></tr></table></figure>
 <p>December 27, 2014 update<br><a href="http://www.jianshu.com/p/50b63a221f09" target="_blank" rel="external">link</a></p>
@@ -3241,7 +3251,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/ios/2014/08/02/ios-webview-bottom-black.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/08/02/ios-webview-bottom-black.html</id>
     <published>2014-08-01T18:09:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span><span class="variable">.webView</span><span class="variable">.opaque</span> = <span class="literal">NO</span>;</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><spa]]>
@@ -3258,7 +3268,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/ios/2014/07/29/ios-webview-block-detect-iphone-number.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/07/29/ios-webview-block-detect-iphone-number.html</id>
     <published>2014-07-29T15:25:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>add this in html head tag</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta content=<span class="string">"telephone=no"</span> <span class="property">name</span>=<span class="string">"format-detection"</span> /&gt;</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
@@ -3275,7 +3285,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/ios/2014/07/26/group-style-tableview-background-color-in-ios-7.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/07/26/group-style-tableview-background-color-in-ios-7.html</id>
     <published>2014-07-25T21:14:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>#get color with</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UIColor</span> *result = <span class="keyword">self</span><span class="variable">.tableView</span><span class="variable">.backgroundColor</span>;</span><br></pre></td></tr></table></figure>
 <p>#group style tableview background color in ios 7</p>
@@ -3297,7 +3307,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/ios/2014/07/23/hide-static-tableview-section.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/07/23/hide-static-tableview-section.html</id>
     <published>2014-07-23T13:08:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>主要是实现以下几个方法</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">-(<span class="built_in">UIView</span>*)tableView:(<span class="built_in">UITableView</span> *)tableView viewForHeaderInSection:(<span class="built_in">NSInteger</span>)section</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(section == <span class="number">1</span> &amp;&amp; hideTableSection)</span><br><span class="line">        <span class="keyword">return</span> [[<span class="built_in">UIView</span> alloc] initWithFrame:<span class="built_in">CGRectZero</span>];   </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">nil</span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView heightForHeaderInSection:(<span class="built_in">NSInteger</span>)section</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(section == <span class="number">1</span> &amp;&amp; hideTableSection)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">32</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView heightForFooterInSection:(<span class="built_in">NSInteger</span>)section</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(section == <span class="number">1</span> &amp;&amp; hideTableSection)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">16</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-(<span class="built_in">UIView</span>*)tableView:(<span class="built_in">UITableView</span> *)tableView viewForFooterInSection:(<span class="built_in">NSInteger</span>)section</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(section == <span class="number">1</span> &amp;&amp; hideTableSection)</span><br><span class="line">        <span class="keyword">return</span> [[<span class="built_in">UIView</span> alloc] initWithFrame:<span class="built_in">CGRectZero</span>];    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">nil</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="built_in">NSInteger</span>)tableView:(<span class="built_in">UITableView</span> *)tableView numberOfRowsInSection:(<span class="built_in">NSInteger</span>)section</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(section == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(hideTableSection)</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
@@ -3316,7 +3326,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/other/2014/07/23/haha.html"/>
     <id>http://bumaociyuan.github.io/other/2014/07/23/haha.html</id>
     <published>2014-07-22T23:39:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>今天macbook pro 到了 心情大好<br>发个blog 纪念一哈<br>屌丝的电脑<br>哈哈哈</p>
 ]]></content>
     <summary type="html">
@@ -3333,7 +3343,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/git/2014/06/26/github-fork-a-repo-branch.html"/>
     <id>http://bumaociyuan.github.io/git/2014/06/26/github-fork-a-repo-branch.html</id>
     <published>2014-06-26T13:23:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/9227873/fork-from-a-branch-in-github" target="_blank" rel="external">link</a><br>I don’t know a native way yet, but you can do it following this recipe:</p>
 <ul>
 <li>Fork the repository in question (called ‘upstream’) on the GitHub website to your workspace there.</li>
@@ -3385,7 +3395,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/git/2014/06/25/git-on-google-drive.html"/>
     <id>http://bumaociyuan.github.io/git/2014/06/25/git-on-google-drive.html</id>
     <published>2014-06-25T14:51:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://www.iexplain.org/using-git-with-google-drive-a-tutorial/" target="_blank" rel="external">link</a></p>
 <ul>
 <li>Now, create a folder in your Google Drive folder called “git”. You want this folder as git produces a lot of files and you may want other stuff on your google drive besides your code repository.</li>
@@ -3426,7 +3436,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
     <link href="http://bumaociyuan.github.io/ios/2014/06/20/ios-style-guide.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/06/20/ios-style-guide.html</id>
     <published>2014-06-20T12:47:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<h1 id="命名">命名</h1><h2 id="0-文件命名">0.文件命名</h2><pre><code><span class="title">Tip</span>
 文件名须反映出其实现了什么类 – 包括大小写。遵循你所参与项目的约定。
 </code></pre><p>类别的文件名应该包含被扩展的类名，如：GTMNSString+Utils.h 或<code>GTMNSTextView+Autocomplete.h</code>。</p>
@@ -3488,7 +3498,7 @@ NSDictionary *message<span class="comment">;</span>
     <link href="http://bumaociyuan.github.io/ios/2014/06/20/xcode-errors.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/06/20/xcode-errors.html</id>
     <published>2014-06-19T22:28:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<hr>
 <p>February 4, 2015</p>
 <p><strong>Showing first 200 notices only</strong><br>静态库重复</p>
@@ -3523,7 +3533,7 @@ NSDictionary *message<span class="comment">;</span>
     <link href="http://bumaociyuan.github.io/breakwall/2014/06/18/google-addresses.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2014/06/18/google-addresses.html</id>
     <published>2014-06-18T15:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>—2014.10.23—</p>
 <p><a href="http://173.194.121.28/webhp?tab=ww&amp;ei=fJBCVNbtFarjsASixYDwCA&amp;ved=0CBMQ1S4" target="_blank" rel="external">http://173.194.121.28/</a></p>
 <p><a href="https://github.com/bumaociyuan/wiki" target="_blank" rel="external">https://github.com/bumaociyuan/wiki</a></p>
@@ -3602,7 +3612,7 @@ NSDictionary *message<span class="comment">;</span>
     <link href="http://bumaociyuan.github.io/terminal/2014/06/18/delete-DS_Store.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/06/18/delete-DS_Store.html</id>
     <published>2014-06-17T16:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<pre><code><span class="built_in">find</span> <span class="built_in">dir</span>-<span class="built_in">path</span> -name .DS_Store -delete
 </code></pre><p><strong>or cd to the path</strong></p>
 <pre><code><span class="keyword">find</span> . -name .DS_Store -<span class="keyword">delete</span>
@@ -3621,7 +3631,7 @@ NSDictionary *message<span class="comment">;</span>
     <link href="http://bumaociyuan.github.io/git/2014/06/17/git-note.html"/>
     <id>http://bumaociyuan.github.io/git/2014/06/17/git-note.html</id>
     <published>2014-06-16T23:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://git-scm.com/download/mac" target="_blank" rel="external">download OSX latest git</a></p>
 <p><strong>init</strong></p>
 <pre><code><span class="title">git</span> init
@@ -3711,7 +3721,7 @@ git <span class="keyword">push</span> --all origin                 <span class="
     <link href="http://bumaociyuan.github.io/ruby/2014/06/17/ruby-change-source.html"/>
     <id>http://bumaociyuan.github.io/ruby/2014/06/17/ruby-change-source.html</id>
     <published>2014-06-16T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<pre><code>$ gem sources --remove https://rubygems.org/
 $ gem sources -a http://ruby.taobao.org/
 $ gem sources -l
@@ -3739,7 +3749,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/jekyll/2014/06/14/jekyll-blog-deploy-github-pages.html"/>
     <id>http://bumaociyuan.github.io/jekyll/2014/06/14/jekyll-blog-deploy-github-pages.html</id>
     <published>2014-06-13T16:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://jekyllcn.com" target="_blank" rel="external">document cn</a></p>
 <p><a href="http://themes.jekyllbootstrap.com/preview/the-minimum/lessons/2011/12/29/jekyll-introduction/" target="_blank" rel="external">Jekyll Introduction</a></p>
 <p><a href="https://github.com/jekyll/jekyll/wiki/Sites" target="_blank" rel="external">sites using jekyll</a></p>
@@ -3776,7 +3786,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2014/03/27/name-from-images-xcassets.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/03/27/name-from-images-xcassets.html</id>
     <published>2014-03-26T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>LaunchImage-700@2x~iphone</li>
 <li>LaunchImage-700-568h@2x~iphone</li>
@@ -3810,7 +3820,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/android/2014/03/17/mi-tv-install-3rd-part-apk.html"/>
     <id>http://bumaociyuan.github.io/android/2014/03/17/mi-tv-install-3rd-part-apk.html</id>
     <published>2014-03-16T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://4back.tv/?c=index&amp;a=detail&amp;id=4" target="_blank" rel="external">视频</a></p>
 <p>下载 <a href="http://www.baidu.com/baidu?ie=utf-8&amp;tn=myie2dg&amp;ch=15&amp;word=Google%20ADB%E8%A7%A3%E9%94%81%E5%B7%A5%E5%85%B7%E5%8C%85" target="_blank" rel="external">Google ADB解锁工具包</a></p>
 <p><img src="http://www.dasdoc.com/uploads/origin/201403/161456466.jpg" alt="image"></p>
@@ -3833,7 +3843,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2014/03/15/ios-7-sharesdk.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/03/15/ios-7-sharesdk.html</id>
     <published>2014-03-14T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>修改 build settings<br><img src="http://www.dasdoc.com/uploads/origin/201403/141541016.png" alt="image"></p>
 ]]></content>
     <summary type="html">
@@ -3850,7 +3860,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2014/03/15/ios-7-drop-box-download.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/03/15/ios-7-drop-box-download.html</id>
     <published>2014-03-14T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/20276907/enterprise-app-deployment-doesnt-work-on-ios-7-1/22325916#22325916" target="_blank" rel="external">reference</a></p>
 <p>upload your app.plist to dropbox<br>get shared link of app.plist, like <a href="https://www.dropbox.com/s/qgknrfngaxazm38/app.plist" target="_blank" rel="external">https://www.dropbox.com/s/qgknrfngaxazm38/app.plist</a><br>replace www.dropbox.com with dl.dropboxusercontent.com in the link, like<a href="https://dl.dropboxusercontent.com/s/qgknrfngaxazm38/app.plist" target="_blank" rel="external">https://dl.dropboxusercontent.com/s/qgknrfngaxazm38/app.plist</a><br>write your download.html like INSTALL!!<br>upload the download.html to dropbox<br>get shared link of download.html, like <a href="https://www.dropbox.com/s/gnoctp7n9g0l3hx/download.html" target="_blank" rel="external">https://www.dropbox.com/s/gnoctp7n9g0l3hx/download.html</a><br>replace www.dropbox.com with dl.dropboxusercontent.com in the second link as well, like<a href="https://dl.dropboxusercontent.com/s/gnoctp7n9g0l3hx/download.html" target="_blank" rel="external">https://dl.dropboxusercontent.com/s/gnoctp7n9g0l3hx/download.html</a><br>Now, visit <a href="https://dl.dropboxusercontent.com/s/gnoctp7n9g0l3hx/download.html" target="_blank" rel="external">https://dl.dropboxusercontent.com/s/gnoctp7n9g0l3hx/download.html</a> in your device, you can install the app like before.</p>
 <p>WHAT A WONDERFUL WORLD！</p>
@@ -3868,7 +3878,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2014/01/08/mac-reinstall-system.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/01/08/mac-reinstall-system.html</id>
     <published>2014-01-07T21:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://product.pconline.com.cn/itbk/software/osx/1208/2894364.html" target="_blank" rel="external">http://product.pconline.com.cn/itbk/software/osx/1208/2894364.html</a></p>
 ]]></content>
     <summary type="html">
@@ -3884,7 +3894,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2014/01/07/baidu-appkey-register.html"/>
     <id>http://bumaociyuan.github.io/ios/2014/01/07/baidu-appkey-register.html</id>
     <published>2014-01-06T21:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://lbsyun.baidu.com/apiconsole/key" target="_blank" rel="external">http://lbsyun.baidu.com/apiconsole/key</a><br>百度的app key 申请中心，需要先注册<br><img src="http://www.dasdoc.com/uploads/origin/201401/061825246.png" alt="image"></p>
 <p>点击</p>
 <p><img src="http://www.dasdoc.com/uploads/origin/201401/061830106.png" alt="image"></p>
@@ -3907,7 +3917,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2013/12/19/baidu-map-2.1-bug.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/12/19/baidu-map-2.1-bug.html</id>
     <published>2013-12-18T21:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>error occur at;</p>
 <p><code>_mapManager = [[BMKMapManager alloc]init];</code></p>
 <p>error message:</p>
@@ -3931,7 +3941,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/vb/2013/12/10/vb-based-browser.html"/>
     <id>http://bumaociyuan.github.io/vb/2013/12/10/vb-based-browser.html</id>
     <published>2013-12-09T21:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>参考视频教学 <a href="https://www.youtube.com/watch?v=48Wjvd1vQ4U" target="_blank" rel="external">youtube</a></p>
 <p>需要两个三方库 sourceCode<br><a href="http://www.dasdoc.com/uploads/origin/201312/091920306.rar" target="_blank" rel="external">ChromeBasedWebBrowser.rar</a><br>,<a href="http://ishare.iask.sina.com.cn/f/63101622.html?sudaref=www.baidu.com&amp;retcode=0" target="_blank" rel="external">xulrunner-1.9.en-US.win32.zip</a></p>
 <p>1，新建一个class 继承 <code>Skybound.Gecko.GeckoWebBrowser</code></p>
@@ -3973,7 +3983,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2013/12/10/ad-hoc-3.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/12/10/ad-hoc-3.html</id>
     <published>2013-12-09T21:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>Ad hoc 是苹果的内测机制，可以给所有注册的device 安装内测ipa。</p>
 <ul>
 <li>首先申请ad hoc 证书</li>
@@ -4024,7 +4034,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2013/11/16/ios-unlimited-args-method.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/11/16/ios-unlimited-args-method.html</id>
     <published>2013-11-15T21:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<pre><code>- (<span class="keyword">void</span>)showErrorWithTitle:(<span class="built_in">NSString</span> *)title message:(<span class="built_in">NSString</span> *)message
      cancelButtonTitle:(<span class="built_in">NSString</span> *)cancelButtonTitle
      otherButtonTitles:(<span class="built_in">NSString</span> *)otherButtonTitles, ... {
@@ -4059,7 +4069,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2013/10/26/ad-hoc-2.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/10/26/ad-hoc-2.html</id>
     <published>2013-10-25T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>通过iPhone 浏览器 下载证书<code>.mobileprovision</code></li>
 <li>选择安装</li>
@@ -4087,7 +4097,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/breakwall/2013/10/24/free-vpn.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2013/10/24/free-vpn.html</id>
     <published>2013-10-23T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>download <code>Onavo</code> app</p>
 <p>运行，按指示操作，安装provision 文件进入系统设置-&gt;通用-&gt;VPN选 圈i 关闭按需连接ok需要用的时候 ，进入系统设置 打开VPN就 可以使用了。</p>
 ]]></content>
@@ -4106,7 +4116,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2013/10/23/ad-hoc-1.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/10/23/ad-hoc-1.html</id>
     <published>2013-10-22T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>流程参考 <a href="/ios/2013/09/06/苹果开发证书申请.html">苹果开发证书申请</a><br>在Devices 加入 测试机 UDID<br>生成Provisioning Profiles    选择Ad Hoc<br>在测试机上 安装 生成的Ad Hoc provision 文件<br>打包ipa时选择ad Hoc </p>
 ]]></content>
     <summary type="html">
@@ -4122,7 +4132,7 @@ $ gem sources -l
     <link href="http://bumaociyuan.github.io/ios/2013/10/14/introduction-to-cocoapods.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/10/14/introduction-to-cocoapods.html</id>
     <published>2013-10-13T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>references: <a href="http://www.raywenderlich.com/12139/introduction-to-cocoapods" target="_blank" rel="external">raywenderlich</a></p>
 <pre><code>sudo gem <span class="operator"><span class="keyword">install</span> cocoapods
 
@@ -4152,7 +4162,7 @@ pod <span class="keyword">update</span> --<span class="keyword">verbose</span> -
     <link href="http://bumaociyuan.github.io/ios/2013/10/12/2013-10-1-xcode-find-replace-with-regex.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/10/12/2013-10-1-xcode-find-replace-with-regex.html</id>
     <published>2013-10-11T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>##update July 6, 2015<br>replace code with Automator<br><a href="http://stackoverflow.com/questions/13495102/editing-text-in-automator" target="_blank" rel="external">Editing text in Automator</a></p>
 <p>Add shortcut for services<br><code>Keyboard</code> -&gt; <code>Shortcuts</code> -&gt; <code>Services</code> -&gt; <code>The new Service</code> add shortcut<br>in Xcode many shortcuts not working<br><code>cmd+shift+X</code> works well</p>
 <hr>
@@ -4181,7 +4191,7 @@ pod <span class="keyword">update</span> --<span class="keyword">verbose</span> -
     <link href="http://bumaociyuan.github.io/ios/2013/09/19/iconSize.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/09/19/iconSize.html</id>
     <published>2013-09-18T20:06:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/bumaociyuan/ios-image-scripts" target="_blank" rel="external">ios-icon-generator-scripts</a></p>
 <p>Icon<br>Icon-Small.png               29*29 </p>
 <p>Icon-Small@2x.png            58*58</p>
@@ -4210,7 +4220,7 @@ pod <span class="keyword">update</span> --<span class="keyword">verbose</span> -
     <link href="http://bumaociyuan.github.io/ios/2013/09/06/%E8%8B%B9%E6%9E%9C%E5%BC%80%E5%8F%91%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/09/06/苹果开发证书申请.html</id>
     <published>2013-09-06T14:58:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>首先登陆developer.apple.com<br>点击 certificates开始创建新cer<br>选择证书类型：开发证书好像只能请一个，第二个是推送的开发证书，production的第一个就是发布证书<br><img src="http://www.dasdoc.com/uploads/origin/201309/061143136.png" alt="image"></p>
 <p>然后生成certSigningRequest， 点击keychain 如下图<br><img src="http://www.dasdoc.com/uploads/origin/201309/061127556.png" alt="image"></p>
 <p>然后<br><img src="http://www.dasdoc.com/uploads/origin/201309/061131486.png" alt="image"></p>
@@ -4237,7 +4247,7 @@ pod <span class="keyword">update</span> --<span class="keyword">verbose</span> -
     <link href="http://bumaociyuan.github.io/ios/2013/08/21/%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95.html"/>
     <id>http://bumaociyuan.github.io/ios/2013/08/21/真机调试.html</id>
     <published>2013-08-21T14:58:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>申请证书，双击加入系统钥匙串，右键从秘钥里面到处.p12 文件</li>
 <li>双击加入钥匙串，首次需要设置密码，输入密码确认。</li>
@@ -4262,7 +4272,7 @@ pod <span class="keyword">update</span> --<span class="keyword">verbose</span> -
     <link href="http://bumaociyuan.github.io/breakwall/2013/07/26/apple-script.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2013/07/26/apple-script.html</id>
     <published>2013-07-26T15:58:50.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-18T02:40:20.000Z</updated>
     <content type="html"><![CDATA[<p>—2014.10.27—</p>
 <ul>
 <li><code>Automator</code>-&gt;<code>Application</code>-&gt;<code>Run Shell Script</code><br>如下图<br><img src="/resources/2014/10/27/1.png" alt="Drawing" style="width: 800px;"><br>click <code>cmd+s</code> </li>
