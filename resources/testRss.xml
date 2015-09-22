@@ -178,9 +178,16 @@
     <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
     <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-09-22T08:58:20.000Z</updated>
     <content type="html"><![CDATA[<p>Add a bash script</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osascript -l JavaScript &lt;&lt;<span class="string">"EOF"</span></span><br><span class="line"></span><br><span class="line"><span class="tag">var</span> app = <span class="function"><span class="title">Application</span><span class="params">(<span class="string">'Finder'</span>)</span></span></span><br><span class="line">app.<span class="function"><span class="title">activate</span><span class="params">()</span></span></span><br><span class="line">app<span class="class">.includeStandardAdditions</span> = true</span><br><span class="line">app.<span class="function"><span class="title">displayAlert</span><span class="params">(<span class="string">'wow'</span>)</span></span></span><br><span class="line"></span><br><span class="line">FOE</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osascript -l JavaScript &lt;&lt;<span class="string">"EOF"</span></span><br><span class="line"></span><br><span class="line"><span class="tag">var</span> app = <span class="function"><span class="title">Application</span><span class="params">(<span class="string">'Finder'</span>)</span></span></span><br><span class="line">app.<span class="function"><span class="title">activate</span><span class="params">()</span></span></span><br><span class="line">app<span class="class">.includeStandardAdditions</span> = true</span><br><span class="line">app.<span class="function"><span class="title">displayAlert</span><span class="params">(<span class="string">'wow'</span>)</span></span></span><br><span class="line"></span><br><span class="line">FOE</span><br></pre></td></tr></table></figure>
+<p><strong>Nice</strong></p>
+<blockquote>
+<p>Alfred v2.8</p>
+<p>21st Sep 2015</p>
+<p> •JavaScript is now available as a scripting language within Alfred Workflows (OS X 10.10+, using osascript)</p>
+</blockquote>
+]]></content>
     <summary type="html">
     <![CDATA[<p>Add a bash script</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="lin]]>
