@@ -59,7 +59,7 @@ Ad hoc 证书打包 参考官方文档                             #苹果官方
 企业级证书打包              #申请企业级证书 打包ipa 并安装
 
 第三方应用商店安装（">
-<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
+<meta property="og:updated_time" content="2015-09-22T08:48:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ios app 安装机制">
 <meta name="twitter:description" content="iphone 上安装app最正规的途径 是 App Store 下载 ，本文是讨论的是非主流安装机制
@@ -298,11 +298,13 @@ clicky_site_ids.push(100784435);
 </ol>
 <p>##<strong>问题来了</strong></p>
 <p>开发时如何简单的打包ipa，并通过ota安装到手机？</p>
-<p>有以下两种方式</p>
+<p>有以下3种方式</p>
 <ol>
 <li><p>用IIS或者<a href="https://github.com/bumaociyuan/https-server" target="_blank" rel="external">python脚本</a>配置一个https的服务器（不推荐），推荐使用github的raw功能<a href="https://raw.githubusercontent.com/bumaociyuan/test/master/test.plist" target="_blank" rel="external">参考demo-plist</a>，将plist文件（<a href="http://bumaociyuan.github.io/ios/2013/12/09/ad-hoc-3.html">plist字段详解</a>）放在服务器上，通过写一个页面，或者应用内部打开，手动在Safari地址栏输入<code>itms-services://?action=download-manifest&amp;url=plistUrl</code>,完成安装</p>
 </li>
 <li><p>在Mac上直接使用<code>terminal</code>cd到ipa目录，并用<code>python -m SimpleHTTPServer 端口号</code>建立一个SimpleHTTPServer，通过iphone访问本机ip加端口号，下载ipa到手机用<code>安装方式2</code>完成安装</p>
+</li>
+<li><p><a href="https://github.com/bumaociyuan/zxIpaServer" target="_blank" rel="external">快速生成自签名HTTPS服务器，局域网安装ipa</a></p>
 </li>
 </ol>
 </span>
