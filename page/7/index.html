@@ -200,6 +200,122 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/python/2014/11/09/scrapy-note.html" itemprop="url">
+                scrapy note
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-11-09T10:34:18-05:00" content="2014-11-09">
+            2014-11-09
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/python/" itemprop="url" rel="index">
+                  <span itemprop="name">python</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/python/2014/11/09/scrapy-note.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="python/2014/11/09/scrapy-note.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://doc.scrapy.org/en/latest/intro/tutorial.html" target="_blank" rel="external">http://doc.scrapy.org</a></p>
+<p>install <code>pip</code> <a href="https://pip.pypa.io/en/latest/installing.html#install-pip" target="_blank" rel="external">click here</a></p>
+<h2 id="install_scrapy">install scrapy</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> scrapy </span><br><span class="line"><span class="keyword">or</span></span><br><span class="line">sudo easy_install Scrapy</span><br></pre></td></tr></table></figure>
+<h2 id="tutorial_project">tutorial project</h2><ul>
+<li>set up a new Scrapy project</li>
+</ul>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">scrapy</span> startproject proName</span><br></pre></td></tr></table></figure>
+<ul>
+<li>This will create a tutorial directory with the following contents:</li>
+</ul>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tutorial/</span><br><span class="line">   	scrapy<span class="class">.cfg</span></span><br><span class="line">   	tutorial/</span><br><span class="line">        __init__<span class="class">.py</span></span><br><span class="line">        items<span class="class">.py</span></span><br><span class="line">        pipelines<span class="class">.py</span></span><br><span class="line">        settings<span class="class">.py</span></span><br><span class="line">        spiders/</span><br><span class="line">            __init__<span class="class">.py</span></span><br><span class="line">           ...</span><br></pre></td></tr></table></figure>
+<ul>
+<li>we edit items.py, found in the tutorial directory. Our Item class looks like this:</li>
+</ul>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class <span class="function"><span class="title">DmozItem</span><span class="params">(scrapy.Item)</span></span>:</span><br><span class="line">    title = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    link = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    desc = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="xpath">xpath</h2><ol>
+<li><p><code>/html/head/title</code> : selects the <code>&lt;title&gt;</code> element, inside the <code>&lt;head&gt;</code> element of a HTML document</p>
+</li>
+<li><p><code>/html/head/title/text()</code> : selects the text inside the aforementioned <code>&lt;title&gt;</code> element</p>
+</li>
+<li><p><code>//td</code> : selectes all the <code>&lt;td&gt;</code> elements</p>
+</li>
+<li><p><code>//div[@class=&quot;mine&quot;]</code> : selects all <code>&lt;div&gt;</code> elements which contains an     attribute <code>class=&quot;mine&quot;</code></p>
+</li>
+</ol>
+<ul>
+<li>This is the code for our first Spider; save it in a file named <code>dmoz_spider.py</code> under the <code>tutorial/spiders</code> directory:</li>
+</ul>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">from tutorial<span class="class">.items</span> import DmozItem</span><br><span class="line"></span><br><span class="line">class <span class="function"><span class="title">DmozSpider</span><span class="params">(scrapy.Spider)</span></span>:</span><br><span class="line">    name = <span class="string">"dmoz"</span></span><br><span class="line">    allowed_domains = [<span class="string">"dmoz.org"</span>]</span><br><span class="line">    start_urls = [</span><br><span class="line">        <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span>,</span><br><span class="line">        <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"</span></span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line">    def <span class="function"><span class="title">parse</span><span class="params">(self, response)</span></span>:</span><br><span class="line">        <span class="keyword">for</span> sel <span class="keyword">in</span> response.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'//ul/li'</span>)</span></span>:</span><br><span class="line">            item = <span class="function"><span class="title">DmozItem</span><span class="params">()</span></span></span><br><span class="line">            item[<span class="string">'title'</span>] = sel.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'a/text()'</span>)</span></span>.<span class="function"><span class="title">extract</span><span class="params">()</span></span></span><br><span class="line">            item[<span class="string">'link'</span>] = sel.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'a/@href'</span>)</span></span>.<span class="function"><span class="title">extract</span><span class="params">()</span></span></span><br><span class="line">            item[<span class="string">'desc'</span>] = sel.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'text()'</span>)</span></span>.<span class="function"><span class="title">extract</span><span class="params">()</span></span></span><br><span class="line">           yield item</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Storing the scraped data</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">scrapy</span> <span class="tag">crawl</span> <span class="tag">dmoz</span> <span class="tag">-o</span> <span class="tag">items</span><span class="class">.json</span></span><br></pre></td></tr></table></figure>
+<h2 id="Trying_Selectors_in_the_Shell">Trying Selectors in the Shell</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy <span class="built_in">shell</span> <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span></span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2014/11/04/app-extension-note.html" itemprop="url">
                 app extension note
               </a>
@@ -1347,90 +1463,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/git/2014/10/21/如何高效利用GitHub.html" itemprop="url">
-                【转】如何高效利用GitHub
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-10-20T18:26:50-04:00" content="2014-10-20">
-            2014-10-20
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/git/" itemprop="url" rel="index">
-                  <span itemprop="name">git</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/git/2014/10/21/如何高效利用GitHub.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="git/2014/10/21/如何高效利用GitHub.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://www.yangzhiping.com/tech/github.html" target="_blank" rel="external">link</a></p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1469,7 +1501,7 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">123</span>
+              <span class="site-state-item-count">124</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
