@@ -56,7 +56,7 @@
     <link href="http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html"/>
     <id>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</id>
     <published>2015-09-14T18:45:55.000Z</published>
-    <updated>2015-09-25T08:28:54.000Z</updated>
+    <updated>2015-09-29T06:28:09.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Basic">Basic</h1><blockquote>
 <p><code>ngrok.com</code> has been GFWed</p>
 </blockquote>
@@ -100,7 +100,10 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">09</span>/<span class="number">23</span>/<span class="number">15</span> <span class="number">01</span>:<span class="number">42</span>:<span class="number">27</span>] [INFO] [tun:<span class="number">2</span>a8cef20]New connection from ***.***.**.**:<span class="number">54043</span></span><br><span class="line">[<span class="number">09</span>/<span class="number">23</span>/<span class="number">15</span> <span class="number">01</span>:<span class="number">42</span>:<span class="number">27</span>] [DEBG] [tun:<span class="number">2</span>a8cef20] Waiting to read message</span><br><span class="line">[<span class="number">09</span>/<span class="number">23</span>/<span class="number">15</span> <span class="number">01</span>:<span class="number">42</span>:<span class="number">27</span>] [WARN] [tun:<span class="number">2</span>a8cef20] Failed to read message: remote error: bad certificate</span><br><span class="line">[<span class="number">09</span>/<span class="number">23</span>/<span class="number">15</span> <span class="number">01</span>:<span class="number">42</span>:<span class="number">27</span>] [DEBG] [tun:<span class="number">2</span>a8cef20] Closing</span><br></pre></td></tr></table></figure>
 <p><a href="https://github.com/inconshreveable/ngrok/issues/84" target="_blank" rel="external">Self Hosted ngrokd fails to allow client to connect</a></p>
 <p>Solution</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>bin/ngrokd -tlsKey=<span class="string">"assets/server/tls/snakeoil.key"</span> -tlsCrt=<span class="string">"assets/server/tls/snakeoil.crt"</span> -domain=<span class="string">"yourdomain.com"</span></span><br><span class="line"><span class="comment"># compile client with the same certificate</span></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>bin/ngrokd -tlsKey=<span class="string">"assets/server/tls/snakeoil.key"</span> -tlsCrt=<span class="string">"assets/server/tls/snakeoil.crt"</span> -domain=<span class="string">"yourdomain.com"</span></span><br><span class="line"><span class="comment"># compile client with the same certificate</span></span><br></pre></td></tr></table></figure>
+<h2 id="Add_ngrok_start_up">Add ngrok start up</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/rc.<span class="keyword">local</span></span><br></pre></td></tr></table></figure>
+<p>add line before exit</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ngrok-<span class="built_in">path</span>&gt;/ngrok -config config.cfg <span class="built_in">start</span> http ssh</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<h1 id="Basic">Basic</h1><blockquote>
 <p><code>ngrok.com</code> has been GFWed</p>
