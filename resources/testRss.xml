@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-09-16T05:50:04.000Z</updated>
+  <updated>2015-09-29T06:31:33.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -13,6 +13,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[3DS-note]]></title>
+    <link href="http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html"/>
+    <id>http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html</id>
+    <published>2015-09-26T00:40:08.000Z</published>
+    <updated>2015-09-29T06:31:33.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Backup_and_Restore_System">Backup and Restore System</h1><p><a href="http://bbs.duowan.com/thread-38341386-1-1.html" target="_blank" rel="external">参考</a></p>
+<p>14，如何备份虚拟系统？如果我要转移到更大的SD卡上又要怎么做？</p>
+<p>以GW为例， 简单的，只要三步（前提是第一个虚拟系统是由GW制作的，虚拟系统头部信息是GW样式，下面那个emuNANDtool工具才能用）：<br><a id="more"></a></p>
+<ol>
+<li><p>4G卡连电脑，用emuNANDtool备份4G卡中的虚拟系统到电脑上（Extract emuNAND按钮，文件名默认是emunand.bin）；</p>
+</li>
+<li><p>8G卡连电脑，把GW固件Launcher.dat拷到卡根目录，放回3ds里，按住L键点击“DS用设定”进GW菜单，执行FORMAT EMUNAND，<code>格式化完成后长按电源按钮关机</code>；</p>
+</li>
+<li><p>8G卡再连电脑，用emuNANDtool将刚才备份的恢复到8G卡上（Inject NAND to emuNAND），待进度条100%后（注意，别急着去试虚拟系统），先将4G卡里的所有文档拷到8G卡上，就是Nintendo等文件夹还有*.sav那些存档文件，再插回机器里启动虚拟系统。（<code>未拷入Nintendo 3DS文件夹前，别先运行新SD卡上的虚拟系统，不然有可能不认之前的旧卡的内容</code>）<br>OK，搬运完成。 emuNANDtool下载地址：</p>
+<p>旧版仅支持旧版3DS的GW虚拟系统   <a href="/resources/2015/9/25/emuNANDTool_1.0.1.zip">emuNANDTool_1.0.1.zip</a> </p>
+</li>
+</ol>
+<h1 id="How_to_Setup_&amp;_Install_Gateway-3DS_(9-2-0_&amp;_Below)_[2015_Tutorial]">How to Setup &amp; Install Gateway-3DS (9.2.0 &amp; Below) [2015 Tutorial]</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/xGmr-2cyJE4" frameborder="0" allowfullscreen></iframe>
+
+<h1 id="Emulators">Emulators</h1><p><a href="http://buildbot.libretro.com/nightly/nintendo/3ds/" target="_blank" rel="external">http://buildbot.libretro.com/nightly/nintendo/3ds/</a></p>
+<h1 id="Convert_3DS_to_CIA">Convert 3DS to CIA</h1><ol>
+<li><p><a href="http://bbs.duowan.com/forum.php?mod=viewthread&amp;tid=41421856&amp;fromuid=3846499" target="_blank" rel="external">[教程] 【想要自转CIA的同学注意】CIA “首发帝工具”+“NEW CIA v5.00汉化”简易说明</a></p>
+</li>
+<li><p><a href="http://bbs.duowan.com/thread-42209040-1-1.html" target="_blank" rel="external">[教程] （图文教程）我教你们如何把SAV存档转成CIA存档</a></p>
+</li>
+<li><p><a href="http://bbs.duowan.com/forum.php?mod=viewthread&amp;tid=41823264&amp;extra=" target="_blank" rel="external">[教程]  关于CIA游戏存档的备份、恢复及保存问题<del>为了我大CIA帝国</del> </a></p>
+</li>
+</ol>
+<h1 id="CIA_games">CIA games</h1><p><a href="http://bbs.duowan.com/forum.php?mod=viewthread&amp;tid=42056068&amp;extra=page%3D1%26filter%3Dreply%26orderby%3Dreplies%26typeid%3D7745%26typeid%3D7745%26orderby%3Dreplies" target="_blank" rel="external">目标全ROM制霸，3DS、CIA双格式分享，已完成0001-1200（除1162、1177） </a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Backup_and_Restore_System">Backup and Restore System</h1><p><a href="http://bbs.duowan.com/thread-38341386-1-1.html">参考</a></p>
+<p>14，如何备份虚拟系统？如果我要转移到更大的SD卡上又要怎么做？</p>
+<p>以GW为例， 简单的，只要三步（前提是第一个虚拟系统是由GW制作的，虚拟系统头部信息是GW样式，下面那个emuNANDtool工具才能用）：<br>]]>
+    
+    </summary>
+    
+      <category term="3ds" scheme="http://bumaociyuan.github.io/tags/3ds/"/>
+    
+      <category term="game" scheme="http://bumaociyuan.github.io/categories/game/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[zelda link between worlds]]></title>
@@ -180,30 +224,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
-    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
-    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
-    <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><]]>
-    </summary>
-    
-      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
-    
-      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
-    
-      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[alfred run a jxa script]]></title>
     <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
@@ -228,6 +248,30 @@
       <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
     
       <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
+    
+      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
+    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
+    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
+    <published>2015-09-07T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><]]>
+    </summary>
+    
+      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
+    
+      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
     
       <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
     
@@ -1264,12 +1308,13 @@
     <link href="http://bumaociyuan.github.io/ios/2015/01/12/d-u-n-s-profile-lookup.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/01/12/d-u-n-s-profile-lookup.html</id>
     <published>2015-01-12T05:00:00.000Z</published>
-    <updated>2015-09-18T07:02:16.000Z</updated>
-    <content type="html"><![CDATA[<p><del><a href="https://developer.apple.com/ios/enroll/dunsLookupForm.action" target="_blank" rel="external">D-U-N-S Profile Lookup</a></del></p>
-<p><a href="http://fedgov.dnb.com/webform" target="_blank" rel="external">http://fedgov.dnb.com/webform</a></p>
+    <updated>2015-09-29T06:47:04.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://developer.apple.com/ios/enroll/dunsLookupForm.action" target="_blank" rel="external">D-U-N-S Profile Lookup</a></p>
+<p><del><a href="http://fedgov.dnb.com/webform" target="_blank" rel="external">http://fedgov.dnb.com/webform</a></del></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><del><a href="https://developer.apple.com/ios/enroll/dunsLookupForm.action" target="_blank" rel="external">D-U-N-S Profile Lookup</a></de]]>
+    <![CDATA[<p><a href="https://developer.apple.com/ios/enroll/dunsLookupForm.action" target="_blank" rel="external">D-U-N-S Profile Lookup</a></p>
+<p><]]>
     </summary>
     
       <category term="duns" scheme="http://bumaociyuan.github.io/tags/duns/"/>

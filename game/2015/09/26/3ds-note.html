@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+  <meta name="keywords" content="3ds," />
 
 
 
@@ -39,34 +39,22 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="抓取页面内容到一个文件中
-1$ curl -O file.html  http://www.baidu.com
-download
-1$ curl -O http://www.baidu.com/index.html
-1curl -Lb &amp;lt;cookies-file&amp;gt; &amp;lt;URL&amp;gt;
-#aria2
-#wget1$ wget --load-cookies=&amp;lt;cookies-fi">
+<meta name="description" content="Backup and Restore System参考
+14，如何备份虚拟系统？如果我要转移到更大的SD卡上又要怎么做？
+以GW为例， 简单的，只要三步（前提是第一个虚拟系统是由GW制作的，虚拟系统头部信息是GW样式，下面那个emuNANDtool工具才能用）：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="curl note">
-<meta property="og:url" content="http://bumaociyuan.github.io/terminal/2014/09/16/curl-note.html">
+<meta property="og:title" content="3DS-note">
+<meta property="og:url" content="http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html">
 <meta property="og:site_name" content="不毛次元">
-<meta property="og:description" content="抓取页面内容到一个文件中
-1$ curl -O file.html  http://www.baidu.com
-download
-1$ curl -O http://www.baidu.com/index.html
-1curl -Lb &amp;lt;cookies-file&amp;gt; &amp;lt;URL&amp;gt;
-#aria2
-#wget1$ wget --load-cookies=&amp;lt;cookies-fi">
-<meta property="og:updated_time" content="2015-09-14T01:45:41.000Z">
+<meta property="og:description" content="Backup and Restore System参考
+14，如何备份虚拟系统？如果我要转移到更大的SD卡上又要怎么做？
+以GW为例， 简单的，只要三步（前提是第一个虚拟系统是由GW制作的，虚拟系统头部信息是GW样式，下面那个emuNANDtool工具才能用）：">
+<meta property="og:updated_time" content="2015-09-29T06:31:33.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="curl note">
-<meta name="twitter:description" content="抓取页面内容到一个文件中
-1$ curl -O file.html  http://www.baidu.com
-download
-1$ curl -O http://www.baidu.com/index.html
-1curl -Lb &amp;lt;cookies-file&amp;gt; &amp;lt;URL&amp;gt;
-#aria2
-#wget1$ wget --load-cookies=&amp;lt;cookies-fi">
+<meta name="twitter:title" content="3DS-note">
+<meta name="twitter:description" content="Backup and Restore System参考
+14，如何备份虚拟系统？如果我要转移到更大的SD卡上又要怎么做？
+以GW为例， 简单的，只要三步（前提是第一个虚拟系统是由GW制作的，虚拟系统头部信息是GW样式，下面那个emuNANDtool工具才能用）：">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -76,7 +64,7 @@ download
   };
 </script>
 
-  <title> curl note | 不毛次元 </title>
+  <title> 3DS-note | 不毛次元 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -217,7 +205,7 @@ clicky_site_ids.push(100784435);
           
           
             
-              curl note
+              3DS-note
             
           
         </h1>
@@ -226,8 +214,8 @@ clicky_site_ids.push(100784435);
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2014-09-16T21:55:50+08:00" content="2014-09-16">
-            2014-09-16
+          <time itemprop="dateCreated" datetime="2015-09-26T08:40:08+08:00" content="2015-09-25">
+            2015-09-25
           </time>
         </span>
 
@@ -236,8 +224,8 @@ clicky_site_ids.push(100784435);
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/terminal/" itemprop="url" rel="index">
-                  <span itemprop="name">terminal</span>
+                <a href="/categories/game/" itemprop="url" rel="index">
+                  <span itemprop="name">game</span>
                 </a>
               </span>
 
@@ -252,8 +240,8 @@ clicky_site_ids.push(100784435);
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/terminal/2014/09/16/curl-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="terminal/2014/09/16/curl-note.html" itemprop="commentsCount"></span>
+            <a href="/game/2015/09/26/3ds-note.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="game/2015/09/26/3ds-note.html" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -267,31 +255,52 @@ clicky_site_ids.push(100784435);
       
 
       
-        <span itemprop="articleBody"><p>抓取页面内容到一个文件中</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -O file<span class="class">.html</span>  http:<span class="comment">//www.baidu.com</span></span><br></pre></td></tr></table></figure>
-<p>download</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>curl -<span class="constant">O</span> <span class="symbol">http:</span>/<span class="regexp">/www.baidu.com/index</span>.html</span><br></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -Lb <span class="tag">&lt;<span class="title">cookies-file</span>&gt;</span> <span class="tag">&lt;<span class="title">URL</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>#<a href="http://aria2.sourceforge.net/" target="_blank" rel="external">aria2</a></p>
-<p>#wget<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget --load-cookies=<span class="variable">&lt;cookies-file&gt;</span> <span class="variable">&lt;URL&gt;</span> --header=<span class="string">"User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0"</span></span><br></pre></td></tr></table></figure></p>
+        <span itemprop="articleBody"><h1 id="Backup_and_Restore_System">Backup and Restore System</h1><p><a href="http://bbs.duowan.com/thread-38341386-1-1.html" target="_blank" rel="external">参考</a></p>
+<p>14，如何备份虚拟系统？如果我要转移到更大的SD卡上又要怎么做？</p>
+<p>以GW为例， 简单的，只要三步（前提是第一个虚拟系统是由GW制作的，虚拟系统头部信息是GW样式，下面那个emuNANDtool工具才能用）：<br><a id="more"></a></p>
+<ol>
+<li><p>4G卡连电脑，用emuNANDtool备份4G卡中的虚拟系统到电脑上（Extract emuNAND按钮，文件名默认是emunand.bin）；</p>
+</li>
+<li><p>8G卡连电脑，把GW固件Launcher.dat拷到卡根目录，放回3ds里，按住L键点击“DS用设定”进GW菜单，执行FORMAT EMUNAND，<code>格式化完成后长按电源按钮关机</code>；</p>
+</li>
+<li><p>8G卡再连电脑，用emuNANDtool将刚才备份的恢复到8G卡上（Inject NAND to emuNAND），待进度条100%后（注意，别急着去试虚拟系统），先将4G卡里的所有文档拷到8G卡上，就是Nintendo等文件夹还有*.sav那些存档文件，再插回机器里启动虚拟系统。（<code>未拷入Nintendo 3DS文件夹前，别先运行新SD卡上的虚拟系统，不然有可能不认之前的旧卡的内容</code>）<br>OK，搬运完成。 emuNANDtool下载地址：</p>
+<p>旧版仅支持旧版3DS的GW虚拟系统   <a href="/resources/2015/9/25/emuNANDTool_1.0.1.zip">emuNANDTool_1.0.1.zip</a> </p>
+</li>
+</ol>
+<h1 id="How_to_Setup_&amp;_Install_Gateway-3DS_(9-2-0_&amp;_Below)_[2015_Tutorial]">How to Setup &amp; Install Gateway-3DS (9.2.0 &amp; Below) [2015 Tutorial]</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/xGmr-2cyJE4" frameborder="0" allowfullscreen></iframe>
+
+<h1 id="Emulators">Emulators</h1><p><a href="http://buildbot.libretro.com/nightly/nintendo/3ds/" target="_blank" rel="external">http://buildbot.libretro.com/nightly/nintendo/3ds/</a></p>
+<h1 id="Convert_3DS_to_CIA">Convert 3DS to CIA</h1><ol>
+<li><p><a href="http://bbs.duowan.com/forum.php?mod=viewthread&amp;tid=41421856&amp;fromuid=3846499" target="_blank" rel="external">[教程] 【想要自转CIA的同学注意】CIA “首发帝工具”+“NEW CIA v5.00汉化”简易说明</a></p>
+</li>
+<li><p><a href="http://bbs.duowan.com/thread-42209040-1-1.html" target="_blank" rel="external">[教程] （图文教程）我教你们如何把SAV存档转成CIA存档</a></p>
+</li>
+<li><p><a href="http://bbs.duowan.com/forum.php?mod=viewthread&amp;tid=41823264&amp;extra=" target="_blank" rel="external">[教程]  关于CIA游戏存档的备份、恢复及保存问题<del>为了我大CIA帝国</del> </a></p>
+</li>
+</ol>
+<h1 id="CIA_games">CIA games</h1><p><a href="http://bbs.duowan.com/forum.php?mod=viewthread&amp;tid=42056068&amp;extra=page%3D1%26filter%3Dreply%26orderby%3Dreplies%26typeid%3D7745%26typeid%3D7745%26orderby%3Dreplies" target="_blank" rel="external">目标全ROM制霸，3DS、CIA双格式分享，已完成0001-1200（除1162、1177） </a></p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/3ds/" rel="tag">#3ds</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/mac/2014/09/26/spotlight-no-result.html" rel="prev">spotlight no result</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/ios/2014/09/16/project-cannot-build-on-iphone5s.html" rel="next">project cannot build on iphone5s</a>
+              <a href="/game/2015/09/17/zelda-link-between-worlds.html" rel="next">zelda link between worlds</a>
             
           </div>
         </div>
@@ -416,7 +425,7 @@ clicky_site_ids.push(100784435);
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Backup_and_Restore_System"><span class="nav-number">1.</span> <span class="nav-text">Backup and Restore System</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How_to_Setup_&_Install_Gateway-3DS_(9-2-0_&_Below)_[2015_Tutorial]"><span class="nav-number">2.</span> <span class="nav-text">How to Setup & Install Gateway-3DS (9.2.0 & Below) [2015 Tutorial]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Emulators"><span class="nav-number">3.</span> <span class="nav-text">Emulators</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Convert_3DS_to_CIA"><span class="nav-number">4.</span> <span class="nav-text">Convert 3DS to CIA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CIA_games"><span class="nav-number">5.</span> <span class="nav-text">CIA games</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -470,9 +479,9 @@ clicky_site_ids.push(100784435);
 
     <script type="text/javascript">
       var disqus_shortname = 'bumaociyuan';
-      var disqus_identifier = 'terminal/2014/09/16/curl-note.html';
-      var disqus_title = 'curl note';
-      var disqus_url = 'http://bumaociyuan.github.io/terminal/2014/09/16/curl-note.html';
+      var disqus_identifier = 'game/2015/09/26/3ds-note.html';
+      var disqus_title = '3DS-note';
+      var disqus_url = 'http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
