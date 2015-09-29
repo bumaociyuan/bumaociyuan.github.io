@@ -55,7 +55,7 @@ ngrok.com has been GFWed
 Installation
 https://ngrok.com/download
 unzip ngrok.zip">
-<meta property="og:updated_time" content="2015-09-29T06:28:09.000Z">
+<meta property="og:updated_time" content="2015-09-29T09:02:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ngrok note">
 <meta name="twitter:description" content="Basic
@@ -310,7 +310,7 @@ clicky_site_ids.push(100784435);
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>bin/ngrokd -tlsKey=<span class="string">"assets/server/tls/snakeoil.key"</span> -tlsCrt=<span class="string">"assets/server/tls/snakeoil.crt"</span> -domain=<span class="string">"yourdomain.com"</span></span><br><span class="line"><span class="comment"># compile client with the same certificate</span></span><br></pre></td></tr></table></figure>
 <h2 id="Add_ngrok_start_up">Add ngrok start up</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/rc.<span class="keyword">local</span></span><br></pre></td></tr></table></figure>
 <p>add line before exit</p>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ngrok-<span class="built_in">path</span>&gt;/ngrok -config config.cfg <span class="built_in">start</span> http ssh</span><br></pre></td></tr></table></figure></span>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ngrok-path&gt;/ngrok -config config.cfg <span class="built_in">start</span> <span class="keyword">http</span> ssh &gt; /dev/<span class="constant">null</span> &amp;</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
