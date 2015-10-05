@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-10-05T09:13:06.000Z</updated>
+  <updated>2015-10-05T16:09:48.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html"/>
     <id>http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html</id>
     <published>2015-09-26T00:40:08.000Z</published>
-    <updated>2015-10-05T09:13:06.000Z</updated>
+    <updated>2015-10-05T16:09:48.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Backup_and_Restore_System">Backup and Restore System</h1><p><a href="http://bbs.duowan.com/thread-38341386-1-1.html" target="_blank" rel="external">参考</a></p>
 <p>14，如何备份虚拟系统？如果我要转移到更大的SD卡上又要怎么做？</p>
 <p>以GW为例， 简单的，只要三步（前提是第一个虚拟系统是由GW制作的，虚拟系统头部信息是GW样式，下面那个emuNANDtool工具才能用）：<br><a id="more"></a></p>
@@ -54,8 +54,8 @@
 <p>if (<code>CTR card</code> is broken then)</p>
 <ul>
 <li>关闭 3DS 电源，取出 SD 卡，在电脑上把 “你要转换的 3DS/3DZ 的游戏编码.sav”（*）重命名为 000400000FF40A00.sav</li>
-<li>进入虚拟系统，按 SELECT 键加载 3DS/3DZ，之后打开 SaveDataFiler，在 User 栏目中，找到 CTR card，按 Y 导出存档</li>
-<li>在 SD 栏目中，找到你刚导出的存档，按 R+A 键导入存档至 CIA （**）</li>
+<li>进入虚拟系统，按 <code>SELECT</code> 键加载 3DS/3DZ，之后打开 <code>SaveDataFiler</code>，在 <code>User</code> 栏目中，找到 <code>CTR card</code>，按 <code>Y</code> 导出存档</li>
+<li>在 <code>SD</code> 栏目中，找到你刚导出的存档，按<code>R+A</code> 键导入存档至 CIA （**）</li>
 </ul>
 <p>else </p>
 <ul>
@@ -64,6 +64,27 @@
 </ul>
 <p>end if</p>
 <h1 id="CIA_games">CIA games</h1><p><a href="http://bbs.duowan.com/forum.php?mod=viewthread&amp;tid=42056068&amp;extra=page%3D1%26filter%3Dreply%26orderby%3Dreplies%26typeid%3D7745%26typeid%3D7745%26orderby%3Dreplies" target="_blank" rel="external">目标全ROM制霸，3DS、CIA双格式分享，已完成0001-1200（除1162、1177） </a></p>
+<h1 id="太鼓达人_咚咔的时空大冒险">太鼓达人 咚咔的时空大冒险</h1><p><a href="http://bbs.duowan.com/thread-41556613-1-1.html" target="_blank" rel="external">[DLC] 【全套34DLC】【日版】0976-太鼓达人 咚咔的时空大冒险 日版 V150605 </a></p>
+<p><a href="http://bbs.tgbus.com/thread-5462545-1-1.html" target="_blank" rel="external">太鼓达人 咚咔的时空大冒险</a></p>
+<h1 id="game_save_list">game save list</h1><p><a href="http://www.3dsdb.com/" target="_blank" rel="external">http://www.3dsdb.com/</a></p>
+<table>
+<thead>
+<tr>
+<th>game</th>
+<th>save</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>巨人战争2</td>
+<td>0004000000144400</td>
+</tr>
+<tr>
+<td>太鼓达人咚咔的时空大冒险</td>
+<td>0004000000102F00</td>
+</tr>
+</tbody>
+</table>
 ]]></content>
     <summary type="html">
     <![CDATA[<h1 id="Backup_and_Restore_System">Backup and Restore System</h1><p><a href="http://bbs.duowan.com/thread-38341386-1-1.html">参考</a></p>
