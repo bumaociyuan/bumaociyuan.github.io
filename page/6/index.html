@@ -200,6 +200,120 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/git/2014/11/26/tfs-via-git.html" itemprop="url">
+                tfs via git
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-11-26T09:09:19-05:00" content="2014-11-26">
+            2014-11-26
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/git/" itemprop="url" rel="index">
+                  <span itemprop="name">git</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/git/2014/11/26/tfs-via-git.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="git/2014/11/26/tfs-via-git.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://www.2cto.com/os/201209/157713.html" target="_blank" rel="external">Mac下配置Git-TF来连接TFS2012</a></p>
+<p><a href="http://mikepilat.com/2011/05/adding-a-certificate-authority-to-the-java-runtime.html" target="_blank" rel="external">Adding a certificate authority to the Java runtime</a></p>
+<p><a href="http://hamidshahid.blogspot.com/2014/02/git-for-tfvc-users.html" target="_blank" rel="external">Git For TFVC Users</a></p>
+<ol>
+<li>Download <a href="https://gittf.codeplex.com/" target="_blank" rel="external">latest release of git tf</a></li>
+<li>Extract the contents of git-tf-2.0.3.20131219.zip to a folder on your local machine, i.e. <code>/Users/[ME]/git-tf/</code> on mac.</li>
+<li>Add the path where you extracted Git-TF (i.e. <code>/Users/[ME]/git-tf/</code>) to your PATH environment variable.</li>
+</ol>
+<p>open ~/.profile</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export PATH=<span class="string">"/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/"</span>:<span class="variable">$PATH</span></span><br><span class="line">export PATH=<span class="string">"/Users/[ME]/git-tf/"</span>:<span class="variable">$PATH</span></span><br><span class="line">export JAVA_HOME=<span class="string">"/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"</span></span><br><span class="line"></span><br><span class="line">$ source .profile</span><br></pre></td></tr></table></figure>
+<ol>
+<li>add user name and password</li>
+</ol>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global git-tf.server.username username</span><br><span class="line">git config --global git-tf.server.password <span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>install ca.cer</li>
+</ol>
+<p>required java version “1.6.0_65” (must)</p>
+<p><a href="http://support.apple.com/kb/DL1572" target="_blank" rel="external">download Java for OS X 2014-001</a></p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo keytool -import -trustcacerts -file zztxca.cer -<span class="keyword">alias</span> <span class="constant">CompanyCA</span> -keystore  /<span class="constant">System</span>/<span class="constant">Library</span>/<span class="constant">Java</span>/<span class="constant">JavaVirtualMachines</span>/<span class="number">1.6</span>.<span class="number">0</span>.jdk/<span class="constant">Contents</span>/<span class="constant">Home</span>/<span class="class"><span class="keyword">lib</span>/<span class="title">security</span>/<span class="title">cacerts</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">#the default password for the cacerts keystore is `changeit`</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#When asked Trust this certificate? by keytool, answer yes</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>clone project</li>
+</ol>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">tf</span> clone http<span class="variable">s:</span>//server.<span class="keyword">com</span>/tfs $/projectName</span><br></pre></td></tr></table></figure>
+<ol>
+<li>pull</li>
+</ol>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git tf pull</span><br><span class="line"><span class="escape">``</span><span class="escape">` </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">8</span>. checkin</span><br></pre></td></tr></table></figure>
+<p>git tf configure <a href="http://myserver:8080/tfs/mycollection" target="_blank" rel="external">http://myserver:8080/tfs/mycollection</a> $/TeamProjectA/Main<br>git tf pull<br>git commit -a -m “merge commit”<br>git tf checkin<br>git push</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">9.</span> recommended git settings</span><br></pre></td></tr></table></figure>
+<p>git config [–global] core.autocrlf false<br>git config [–global] core.ignorecase true<br>```</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2014/11/26/cocoapods-update-error.html" itemprop="url">
                 cocoapods update error
               </a>
@@ -1120,92 +1234,6 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/hybird/2014/11/14/PhoneGap-note.html" itemprop="url">
-                PhoneGap note
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-11-13T14:13:24-05:00" content="2014-11-13">
-            2014-11-13
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/hybird/" itemprop="url" rel="index">
-                  <span itemprop="name">hybird</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/hybird/2014/11/14/PhoneGap-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="hybird/2014/11/14/PhoneGap-note.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://phonegap.com/install/" target="_blank" rel="external">Install PhoneGap</a></p>
-<p><a href="http://nodejs.org" target="_blank" rel="external">Install NodeJS</a> </p>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -<span class="keyword">g</span> phonegap</span><br><span class="line">phonegap create my-<span class="keyword">app</span></span><br><span class="line"><span class="keyword">cd</span> my-<span class="keyword">app</span></span><br><span class="line">phonegap <span class="keyword">run</span> ios</span><br></pre></td></tr></table></figure>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1244,7 +1272,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">124</span>
+              <span class="site-state-item-count">125</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1258,7 +1286,7 @@ git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&l
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">52</span>
+              <span class="site-state-item-count">53</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

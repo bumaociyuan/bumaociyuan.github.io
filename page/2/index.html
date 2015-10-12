@@ -200,6 +200,94 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/terminal/2015/08/17/open-application-in-terminal.html" itemprop="url">
+                open application in terminal
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-08-17T00:00:00-04:00" content="2015-08-17">
+            2015-08-17
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/terminal/" itemprop="url" rel="index">
+                  <span itemprop="name">terminal</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/terminal/2015/08/17/open-application-in-terminal.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="terminal/2015/08/17/open-application-in-terminal.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>I found solution of <a href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html">open sublime in terminal</a>, but how can I open others app in terminal ?</p>
+<p>##Copy  following lines into  <code>~/.bashrc</code> or  <code>~/.zshrc</code></p>
+<figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># -------</span><span class="preprocessor"></span><br><span class="line"># Function</span><span class="preprocessor"></span><br><span class="line"># -------</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">google</span>(</span>) &#123; open <span class="string">"https://www.google.com/search?q=$*&amp;gws_rd=ssl"</span>; &#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">baidu</span>(</span>) &#123; open <span class="string">"https://www.baidu.com/s?ie=UTF-8&amp;wd=$*"</span>; &#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">github</span>(</span>) &#123; open <span class="string">"https://github.com/search?utf8=%E2%9C%93&amp;q=$*"</span>; &#125;<span class="preprocessor"></span><br><span class="line"></span><br><span class="line"># -------</span><span class="preprocessor"></span><br><span class="line"># Aliases</span><span class="preprocessor"></span><br><span class="line"># -------</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">chrome</span>=<span class="comment">'open -a /Applications/Google\ Chrome.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">sublime</span>=<span class="comment">'open -a /Applications/Sublime\ Text\ 3.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">xcode</span>=<span class="comment">'open -a /Applications/Xcode.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">mou</span>=<span class="comment">'open -a /Applications/Mou.app'</span></span><br><span class="line">...<span class="literal">and</span> so on</span><br></pre></td></tr></table></figure>
+<p>##Make sure <code>~/bash_profile</code> contains following line<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="operator">-f</span> ~/.bashrc ]; <span class="keyword">then</span> . ~/.bashrc; <span class="keyword">fi</span></span><br></pre></td></tr></table></figure></p>
+<p>#Usage<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>github bumaociyuan</span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>chrome <span class="symbol">http:</span>/<span class="regexp">/bumaociyuan.github.io/terminal</span><span class="regexp">/2015/</span>08/<span class="number">17</span>/open-application-<span class="keyword">in</span>-terminal.html</span><br></pre></td></tr></table></figure></p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/terminal/2015/08/14/oh-my-zsh-update-failed.html" itemprop="url">
                 oh my zsh update failed
               </a>
@@ -257,6 +345,89 @@ clicky_site_ids.push(100784435);
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">blabla <span class="string">https:</span><span class="comment">//...... certificate .... fail </span></span><br><span class="line">:D</span><br></pre></td></tr></table></figure>
 <p>##Solution</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>vim <span class="variable">$ZSH</span>/.git/config</span><br><span class="line"><span class="comment">#replace origin url with 'git<span class="doctag">@github</span>.com:robbyrussell/oh-my-zsh.git'</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>upgrade_oh_my_zsh</span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/mac/2015/08/10/open-sublime-in-terminal.html" itemprop="url">
+                open sublime in terminal
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-08-10T00:00:00-04:00" content="2015-08-10">
+            2015-08-10
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/mac/" itemprop="url" rel="index">
+                  <span itemprop="name">mac</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/mac/2015/08/10/open-sublime-in-terminal.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/08/10/open-sublime-in-terminal.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure></span>
         
       
     </div>
@@ -346,89 +517,6 @@ clicky_site_ids.push(100784435);
 <p>into <code>~/.proxychains/proxychains.conf</code></p>
 <p>##usage</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ proxychains4 youtube-<span class="tag">dl</span> -o funny_video<span class="class">.flv</span> https:<span class="comment">//www.youtube.com/funny_video</span></span><br><span class="line">#<span class="id">#youtube-dl</span> supported site https:<span class="comment">//github.com/rg3/youtube-dl/blob/master/docs/supportedsites.md :D</span></span><br></pre></td></tr></table></figure></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/mac/2015/08/10/open-sublime-in-terminal.html" itemprop="url">
-                open sublime in terminal
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-08-10T00:00:00-04:00" content="2015-08-10">
-            2015-08-10
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/mac/" itemprop="url" rel="index">
-                  <span itemprop="name">mac</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/mac/2015/08/10/open-sublime-in-terminal.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/08/10/open-sublime-in-terminal.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure></span>
         
       
     </div>
@@ -723,6 +811,76 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/2015/06/29/lucky-seven.html" itemprop="url">
+                Lucky Seven
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-06-29T00:00:00-04:00" content="2015-06-29">
+            2015-06-29
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/06/29/lucky-seven.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/06/29/lucky-seven.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><img src="https://cloud.githubusercontent.com/assets/4977911/8399384/fc26c938-1e3f-11e5-8d99-6834219e53fa.jpg"></p>
+<p>777</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2015/06/29/reactive-cocoa-note.html" itemprop="url">
                 reactive cocoa note
               </a>
@@ -780,76 +938,6 @@ clicky_site_ids.push(100784435);
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
 <p>Combine two signals</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/06/29/lucky-seven.html" itemprop="url">
-                Lucky Seven
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-06-29T00:00:00-04:00" content="2015-06-29">
-            2015-06-29
-          </time>
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/06/29/lucky-seven.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/2015/06/29/lucky-seven.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><img src="https://cloud.githubusercontent.com/assets/4977911/8399384/fc26c938-1e3f-11e5-8d99-6834219e53fa.jpg"></p>
-<p>777</p>
-</span>
         
       
     </div>
@@ -958,90 +1046,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/java/2015/05/28/install-java-7.html" itemprop="url">
-                install java 7
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-05-28T00:00:00-04:00" content="2015-05-28">
-            2015-05-28
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/java/" itemprop="url" rel="index">
-                  <span itemprop="name">java</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/java/2015/05/28/install-java-7.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="java/2015/05/28/install-java-7.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" rel="external">Installed Java 7 on Mac OS X but Terminal is still using version 6</a></p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1080,7 +1084,7 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">124</span>
+              <span class="site-state-item-count">125</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1094,7 +1098,7 @@ clicky_site_ids.push(100784435);
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">52</span>
+              <span class="site-state-item-count">53</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

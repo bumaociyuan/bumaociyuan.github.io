@@ -200,6 +200,107 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2015/03/23/multiple-targets-building.html" itemprop="url">
+                multiple targets building
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-03-23T00:00:00-04:00" content="2015-03-23">
+            2015-03-23
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2015/03/23/multiple-targets-building.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/03/23/multiple-targets-building.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://samwize.com/2014/05/22/create-multiple-targets-slash-apps-for-1-xcode-project/" target="_blank" rel="external">link</a><br><a href="http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme" target="_blank" rel="external">stackoverflow.com 233</a> </p>
+<h1 id="Create_New_Target">Create New Target</h1><ol>
+<li>select project target </li>
+<li>right click </li>
+<li><code>Duplicate</code></li>
+</ol>
+<p>#Rename Target,Scheme And Product</p>
+<ol>
+<li><code>Manage Schemes</code></li>
+<li>select target , slow click or return key</li>
+<li>scheme , <a href="http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme" target="_blank" rel="external">stackoverflow.com 233</a> </li>
+<li>build target, in <code>Edit Scheme...</code> <code>Build</code> tab if there are multiple targets, remove useless targets with unchecking all checkboxes and delete them</li>
+<li><code>Build Setting</code> change <code>Product Name</code> from <code>xxx copy</code> to <code>newName</code></li>
+</ol>
+<p>#Info.plist<br>rename info.plist ,in <code>Build Settings</code> <code>General</code> tag select new plist file</p>
+<p>#Preprocessor<br>Select “Awesome Lite” target &gt; Build Settings &gt; Preprocessing &gt; Preprocessor Macros &gt; Add TARGET_LITE to each of the configuration (eg both Debug and Release configurations).</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#if defined(TARGET_LITE)</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Lite version"</span>);</span><br><span class="line"><span class="preprocessor">#else</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Original version"</span>);</span><br><span class="line"><span class="preprocessor">#endif</span></span><br></pre></td></tr></table></figure>
+<p>#Resources, Images and Assets Catalog<br>Select the resource &gt; File Inspector &gt; Target Membership &gt; check the targets intended.</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2015/03/06/swift-lazy-initialization.html" itemprop="url">
                 swift lazy initialization
               </a>
@@ -812,6 +913,95 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html" itemprop="url">
+                Mac mini upgrade ssd and memory
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-01-29T00:00:00-05:00" content="2015-01-29">
+            2015-01-29
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/mac/" itemprop="url" rel="index">
+                  <span itemprop="name">mac</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
+<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
+<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
+<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/breakwall/2015/01/29/bandwagon-note.html" itemprop="url">
                 bandwagon note
               </a>
@@ -910,181 +1100,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html" itemprop="url">
-                Mac mini upgrade ssd and memory
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-01-29T00:00:00-05:00" content="2015-01-29">
-            2015-01-29
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/mac/" itemprop="url" rel="index">
-                  <span itemprop="name">mac</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
-<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
-<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
-<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2015/01/21/nsassert-note.html" itemprop="url">
-                NSAssert note
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-01-21T00:00:00-05:00" content="2015-01-21">
-            2015-01-21
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2015/01/21/nsassert-note.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2015/01/21/nsassert-note.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSAssert</span>(condition, desc, ...)</span><br><span class="line"><span class="comment">//if condition is true ,app will crash , log outputs desc</span></span><br></pre></td></tr></table></figure>
-<p>disable NSAssert in <code>release</code> mode</p>
-<p>in <code>Build Settings</code> -&gt; <code>Preprocessor Macros</code> add <code>NS_BLOCK_ASSERTIONS</code> to <code>release</code> section</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1123,7 +1138,7 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">124</span>
+              <span class="site-state-item-count">125</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1137,7 +1152,7 @@ clicky_site_ids.push(100784435);
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">52</span>
+              <span class="site-state-item-count">53</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -200,6 +200,92 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/hybird/2014/11/14/PhoneGap-note.html" itemprop="url">
+                PhoneGap note
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-11-13T14:13:24-05:00" content="2014-11-13">
+            2014-11-13
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/hybird/" itemprop="url" rel="index">
+                  <span itemprop="name">hybird</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/hybird/2014/11/14/PhoneGap-note.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="hybird/2014/11/14/PhoneGap-note.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://phonegap.com/install/" target="_blank" rel="external">Install PhoneGap</a></p>
+<p><a href="http://nodejs.org" target="_blank" rel="external">Install NodeJS</a> </p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -<span class="keyword">g</span> phonegap</span><br><span class="line">phonegap create my-<span class="keyword">app</span></span><br><span class="line"><span class="keyword">cd</span> my-<span class="keyword">app</span></span><br><span class="line">phonegap <span class="keyword">run</span> ios</span><br></pre></td></tr></table></figure>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/python/2014/11/09/scrapy-note.html" itemprop="url">
                 scrapy note
               </a>
@@ -1343,126 +1429,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2014/10/22/ios-app-安装机制.html" itemprop="url">
-                ios app 安装机制
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-10-21T13:39:52-04:00" content="2014-10-21">
-            2014-10-21
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2014/10/22/ios-app-安装机制.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/10/22/ios-app-安装机制.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>iphone 上安装app最正规的途径 是 App Store 下载 ，本文是讨论的是<strong>非主流安装机制</strong></p>
-<p>iphone 上安装app的非主流安装机制 有以下几种</p>
-<ol>
-<li><p>Ad hoc 证书打包 <a href="https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html" target="_blank" rel="external">参考官方文档</a>                             #苹果官方提供给ios 开发者的内测机制</p>
-</li>
-<li><p>企业级证书打包              #申请企业级证书 打包ipa 并安装</p>
-</li>
-<li><p>第三方应用商店安装（越狱和非越狱两种，<code>本文暂不讨论</code>）</p>
-</li>
-</ol>
-<p>##打包机制讨论：</p>
-<ol>
-<li><p>Ad hoc 证书打包，只能为Apple Developer Center 里面注册的设备（至多100个设备）安装app</p>
-</li>
-<li><p>企业级 证书打包（无设备数量限制）</p>
-</li>
-</ol>
-<p>##安装方式：</p>
-<ol>
-<li><p>用户下载ipa文件至电脑，通过iTunes（或者三方手机助手pc端）的同步app功能，把ipa同步到手机，完成安装</p>
-</li>
-<li><p>用户下载ipa文件至手机，通过第三方手机助手iphone端（如<a href="http://tui.tongbu.com" target="_blank" rel="external">同步推</a>）的选择用同步推打开，并点击安装，完成安装</p>
-</li>
-<li><p>远程安装通过苹果提供的<code>itms-services</code>协议,完成安装。（参考<a href="http://bumaociyuan.github.io/ios/2013/12/09/ad-hoc-3.html">Ad hoc 教程 3 ==&gt; ipa 的远程安装</a>）</p>
-</li>
-</ol>
-<p>##<strong>问题来了</strong></p>
-<p>开发时如何简单的打包ipa，并通过ota安装到手机？</p>
-<p>有以下3种方式</p>
-<ol>
-<li><p>用IIS或者<a href="https://github.com/bumaociyuan/https-server" target="_blank" rel="external">python脚本</a>配置一个https的服务器（不推荐），推荐使用github的raw功能<a href="https://raw.githubusercontent.com/bumaociyuan/test/master/test.plist" target="_blank" rel="external">参考demo-plist</a>，将plist文件（<a href="http://bumaociyuan.github.io/ios/2013/12/09/ad-hoc-3.html">plist字段详解</a>）放在服务器上，通过写一个页面，或者应用内部打开，手动在Safari地址栏输入<code>itms-services://?action=download-manifest&amp;url=plistUrl</code>,完成安装</p>
-</li>
-<li><p>在Mac上直接使用<code>terminal</code>cd到ipa目录，并用<code>python -m SimpleHTTPServer 端口号</code>建立一个SimpleHTTPServer，通过iphone访问本机ip加端口号，下载ipa到手机用<code>安装方式2</code>完成安装</p>
-</li>
-<li><p><a href="https://github.com/bumaociyuan/zxIpaServer" target="_blank" rel="external">快速生成自签名HTTPS服务器，局域网安装ipa</a></p>
-</li>
-</ol>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1501,7 +1467,7 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">124</span>
+              <span class="site-state-item-count">125</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1515,7 +1481,7 @@ clicky_site_ids.push(100784435);
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">52</span>
+              <span class="site-state-item-count">53</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

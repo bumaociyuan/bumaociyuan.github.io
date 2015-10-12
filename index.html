@@ -200,6 +200,109 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/android/2015/10/13/remote-control-android-device.html" itemprop="url">
+                remote control android device
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-10-12T15:09:37-04:00" content="2015-10-12">
+            2015-10-12
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/android/" itemprop="url" rel="index">
+                  <span itemprop="name">android</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/android/2015/10/13/remote-control-android-device.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="android/2015/10/13/remote-control-android-device.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
+<p><a href="https://openstf.io/" target="_blank" rel="external">Control and manage Android devices from your browser.</a></p>
+<h1 id="Demo">Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>
+<h1 id="Requirements">Requirements</h1><p><a href="https://github.com/openstf/stf#requirements" target="_blank" rel="external">Install</a></p>
+<h1 id="Installation">Installation</h1><p><a href="https://github.com/openstf/stf#installation" target="_blank" rel="external">link</a></p>
+<h1 id="Problems">Problems</h1><h2 id="USB_connection">USB connection</h2><p><a href="https://github.com/apkudo/adbusbini" target="_blank" rel="external">ADB hasn’t whitelisted the manufacturer’s vendor ID</a></p>
+<p><a href="http://blog.csdn.net/zhaoxy_thu/article/details/11857697" target="_blank" rel="external">mac OSX上eclipse adb无法识别（调试）小米的解决方案</a></p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>echo <span class="string">"0x2717"</span> &gt; ~<span class="regexp">/.android/adb</span>_usb.ini  </span><br><span class="line"><span class="variable">$ </span>adb kill-server</span><br></pre></td></tr></table></figure>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># output likes below</span></span><br><span class="line">List of devices attached</span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f		unauthorized</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f	    offline</span><br></pre></td></tr></table></figure>
+<p>Solution</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ adb <span class="keyword">version</span>  </span><br><span class="line"># Android Debug Bridge <span class="keyword">version</span> <span class="number">1.0</span>.<span class="number">32</span></span><br><span class="line"># lowwer <span class="keyword">version</span> adb should <span class="keyword">be</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure>
+<p><a href="http://stackoverflow.com/questions/18011685/cant-connect-nexus-4-to-adb-unauthorized" target="_blank" rel="external">Can’t connect Nexus 4 to adb: unauthorized</a> Vasudev’s answer</p>
+<ol>
+<li>Make sure adb is running</li>
+<li>In device go to Settings -&gt; developer options -&gt; <code>Revoke USB debugging authorities</code></li>
+<li>Disconnect device</li>
+<li>In adb shell type &gt; adb kill-server</li>
+<li>In adb shell type &gt; adb start-server</li>
+<li>Connect device</li>
+</ol>
+<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ stf <span class="keyword">local</span> <span class="comment">--allow-remote</span></span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/game/2015/09/26/3ds-note.html" itemprop="url">
                 3DS-note
               </a>
@@ -1010,94 +1113,6 @@ clicky_site_ids.push(100784435);
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/terminal/2015/08/17/open-application-in-terminal.html" itemprop="url">
-                open application in terminal
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-08-17T00:00:00-04:00" content="2015-08-17">
-            2015-08-17
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/terminal/" itemprop="url" rel="index">
-                  <span itemprop="name">terminal</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/terminal/2015/08/17/open-application-in-terminal.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="terminal/2015/08/17/open-application-in-terminal.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>I found solution of <a href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html">open sublime in terminal</a>, but how can I open others app in terminal ?</p>
-<p>##Copy  following lines into  <code>~/.bashrc</code> or  <code>~/.zshrc</code></p>
-<figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># -------</span><span class="preprocessor"></span><br><span class="line"># Function</span><span class="preprocessor"></span><br><span class="line"># -------</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">google</span>(</span>) &#123; open <span class="string">"https://www.google.com/search?q=$*&amp;gws_rd=ssl"</span>; &#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">baidu</span>(</span>) &#123; open <span class="string">"https://www.baidu.com/s?ie=UTF-8&amp;wd=$*"</span>; &#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">github</span>(</span>) &#123; open <span class="string">"https://github.com/search?utf8=%E2%9C%93&amp;q=$*"</span>; &#125;<span class="preprocessor"></span><br><span class="line"></span><br><span class="line"># -------</span><span class="preprocessor"></span><br><span class="line"># Aliases</span><span class="preprocessor"></span><br><span class="line"># -------</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">chrome</span>=<span class="comment">'open -a /Applications/Google\ Chrome.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">sublime</span>=<span class="comment">'open -a /Applications/Sublime\ Text\ 3.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">xcode</span>=<span class="comment">'open -a /Applications/Xcode.app'</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">mou</span>=<span class="comment">'open -a /Applications/Mou.app'</span></span><br><span class="line">...<span class="literal">and</span> so on</span><br></pre></td></tr></table></figure>
-<p>##Make sure <code>~/bash_profile</code> contains following line<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="operator">-f</span> ~/.bashrc ]; <span class="keyword">then</span> . ~/.bashrc; <span class="keyword">fi</span></span><br></pre></td></tr></table></figure></p>
-<p>#Usage<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>github bumaociyuan</span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>chrome <span class="symbol">http:</span>/<span class="regexp">/bumaociyuan.github.io/terminal</span><span class="regexp">/2015/</span>08/<span class="number">17</span>/open-application-<span class="keyword">in</span>-terminal.html</span><br></pre></td></tr></table></figure></p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1136,7 +1151,7 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">124</span>
+              <span class="site-state-item-count">125</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1150,7 +1165,7 @@ clicky_site_ids.push(100784435);
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">52</span>
+              <span class="site-state-item-count">53</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

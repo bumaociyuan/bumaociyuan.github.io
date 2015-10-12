@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-10-08T01:01:23.000Z</updated>
+  <updated>2015-10-12T07:30:31.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -13,6 +13,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[remote control android device]]></title>
+    <link href="http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html"/>
+    <id>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</id>
+    <published>2015-10-12T19:09:37.000Z</published>
+    <updated>2015-10-12T07:30:31.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
+<p><a href="https://openstf.io/" target="_blank" rel="external">Control and manage Android devices from your browser.</a></p>
+<h1 id="Demo">Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>
+<h1 id="Requirements">Requirements</h1><p><a href="https://github.com/openstf/stf#requirements" target="_blank" rel="external">Install</a></p>
+<h1 id="Installation">Installation</h1><p><a href="https://github.com/openstf/stf#installation" target="_blank" rel="external">link</a></p>
+<h1 id="Problems">Problems</h1><h2 id="USB_connection">USB connection</h2><p><a href="https://github.com/apkudo/adbusbini" target="_blank" rel="external">ADB hasn’t whitelisted the manufacturer’s vendor ID</a></p>
+<p><a href="http://blog.csdn.net/zhaoxy_thu/article/details/11857697" target="_blank" rel="external">mac OSX上eclipse adb无法识别（调试）小米的解决方案</a></p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>echo <span class="string">"0x2717"</span> &gt; ~<span class="regexp">/.android/adb</span>_usb.ini  </span><br><span class="line"><span class="variable">$ </span>adb kill-server</span><br></pre></td></tr></table></figure>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># output likes below</span></span><br><span class="line">List of devices attached</span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f		unauthorized</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f	    offline</span><br></pre></td></tr></table></figure>
+<p>Solution</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ adb <span class="keyword">version</span>  </span><br><span class="line"># Android Debug Bridge <span class="keyword">version</span> <span class="number">1.0</span>.<span class="number">32</span></span><br><span class="line"># lowwer <span class="keyword">version</span> adb should <span class="keyword">be</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure>
+<p><a href="http://stackoverflow.com/questions/18011685/cant-connect-nexus-4-to-adb-unauthorized" target="_blank" rel="external">Can’t connect Nexus 4 to adb: unauthorized</a> Vasudev’s answer</p>
+<ol>
+<li>Make sure adb is running</li>
+<li>In device go to Settings -&gt; developer options -&gt; <code>Revoke USB debugging authorities</code></li>
+<li>Disconnect device</li>
+<li>In adb shell type &gt; adb kill-server</li>
+<li>In adb shell type &gt; adb start-server</li>
+<li>Connect device</li>
+</ol>
+<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ stf <span class="keyword">local</span> <span class="comment">--allow-remote</span></span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
+<p><a href="]]>
+    </summary>
+    
+      <category term="stf" scheme="http://bumaociyuan.github.io/tags/stf/"/>
+    
+      <category term="android" scheme="http://bumaociyuan.github.io/categories/android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[3DS-note]]></title>
@@ -441,6 +479,25 @@
   </entry>
   
   <entry>
+    <title><![CDATA[open sublime in terminal]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
+    <published>2015-08-10T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
+    </summary>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
+    
+      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[using shadowsocks in terminal]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html</id>
@@ -462,25 +519,6 @@
       <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[open sublime in terminal]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
-    <published>2015-08-10T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
-    </summary>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
-    
-      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   
@@ -552,24 +590,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[reactive cocoa note]]></title>
-    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
-    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
-    <published>2015-06-29T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
-<p>Combine two signals</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
-    </summary>
-    
-      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Lucky Seven]]></title>
     <link href="http://bumaociyuan.github.io//2015/06/29/lucky-seven.html"/>
     <id>http://bumaociyuan.github.io//2015/06/29/lucky-seven.html</id>
@@ -585,6 +605,24 @@
     </summary>
     
       <category term="other" scheme="http://bumaociyuan.github.io/tags/other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[reactive cocoa note]]></title>
+    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
+    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
+    <published>2015-06-29T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
+<p>Combine two signals</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
+    </summary>
+    
+      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
     
   </entry>
   
@@ -1187,6 +1225,32 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
+    <published>2015-01-29T05:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
+<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
+<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
+<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
+    </summary>
+    
+      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
+    
+      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[bandwagon note]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</id>
@@ -1230,32 +1294,6 @@
       <category term="tutorial" scheme="http://bumaociyuan.github.io/tags/tutorial/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
-    <published>2015-01-29T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
-<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
-<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
-<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
-    </summary>
-    
-      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
-    
-      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   
