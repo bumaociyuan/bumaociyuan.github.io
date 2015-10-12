@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-10-12T07:33:27.000Z</updated>
+  <updated>2015-10-12T08:23:42.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[remote control android device]]></title>
+    <title><![CDATA[Remote control android device]]></title>
     <link href="http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html"/>
     <id>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</id>
     <published>2015-10-12T19:09:37.000Z</published>
-    <updated>2015-10-12T07:33:27.000Z</updated>
+    <updated>2015-10-12T08:23:42.000Z</updated>
     <content type="html"><![CDATA[<h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
 <p><a href="https://openstf.io/" target="_blank" rel="external">Control and manage Android devices from your browser.</a></p>
 <h1 id="Demo">Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>
@@ -41,7 +41,9 @@
 <li>In adb shell type &gt; adb start-server</li>
 <li>Connect device</li>
 </ol>
-<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ stf <span class="keyword">local</span> <span class="comment">--allow-remote</span></span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># usb connect device</span></span><br><span class="line"><span class="variable">$ </span>adb tcpip <span class="number">5555</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># disconnect usb</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>adb connect ip</span><br><span class="line"><span class="variable">$ </span>stf local --allow-remote</span><br></pre></td></tr></table></figure>
+<h2 id="Launch_tcp_in_boot">Launch tcp in boot</h2><p><a href="http://droidcore.blogspot.com/2012/12/how-to-edit-initrc-in-android.html" target="_blank" rel="external">How to edit the init.rc in android</a> 不敢尝试，感觉风险很大</p>
+]]></content>
     <summary type="html">
     <![CDATA[<h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf">Source Code</a></p>
 <p><a href="https://openstf.io/">Control and manage Android devices from your browser.</a></p>

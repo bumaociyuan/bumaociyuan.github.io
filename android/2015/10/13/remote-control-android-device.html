@@ -43,16 +43,16 @@
 Control and manage Android devices from your browser.
 Demo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="remote control android device">
+<meta property="og:title" content="Remote control android device">
 <meta property="og:url" content="http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html">
 <meta property="og:site_name" content="不毛次元">
 <meta property="og:description" content="About STFSource Code
 Control and manage Android devices from your browser.
 Demo">
 <meta property="og:image" content="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif">
-<meta property="og:updated_time" content="2015-10-12T07:33:27.000Z">
+<meta property="og:updated_time" content="2015-10-12T08:23:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="remote control android device">
+<meta name="twitter:title" content="Remote control android device">
 <meta name="twitter:description" content="About STFSource Code
 Control and manage Android devices from your browser.
 Demo">
@@ -65,7 +65,7 @@ Demo">
   };
 </script>
 
-  <title> remote control android device | 不毛次元 </title>
+  <title> Remote control android device | 不毛次元 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@ clicky_site_ids.push(100784435);
           
           
             
-              remote control android device
+              Remote control android device
             
           
         </h1>
@@ -277,7 +277,9 @@ clicky_site_ids.push(100784435);
 <li>In adb shell type &gt; adb start-server</li>
 <li>Connect device</li>
 </ol>
-<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ stf <span class="keyword">local</span> <span class="comment">--allow-remote</span></span><br></pre></td></tr></table></figure></span>
+<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># usb connect device</span></span><br><span class="line"><span class="variable">$ </span>adb tcpip <span class="number">5555</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># disconnect usb</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>adb connect ip</span><br><span class="line"><span class="variable">$ </span>stf local --allow-remote</span><br></pre></td></tr></table></figure>
+<h2 id="Launch_tcp_in_boot">Launch tcp in boot</h2><p><a href="http://droidcore.blogspot.com/2012/12/how-to-edit-initrc-in-android.html" target="_blank" rel="external">How to edit the init.rc in android</a> 不敢尝试，感觉风险很大</p>
+</span>
       
     </div>
 
@@ -423,7 +425,7 @@ clicky_site_ids.push(100784435);
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#About_STF"><span class="nav-number">1.</span> <span class="nav-text">About STF</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Requirements"><span class="nav-number">3.</span> <span class="nav-text">Requirements</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation"><span class="nav-number">4.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Problems"><span class="nav-number">5.</span> <span class="nav-text">Problems</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#USB_connection"><span class="nav-number">5.1.</span> <span class="nav-text">USB connection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Wireless_connection"><span class="nav-number">5.2.</span> <span class="nav-text">Wireless connection</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#About_STF"><span class="nav-number">1.</span> <span class="nav-text">About STF</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Requirements"><span class="nav-number">3.</span> <span class="nav-text">Requirements</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation"><span class="nav-number">4.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Problems"><span class="nav-number">5.</span> <span class="nav-text">Problems</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#USB_connection"><span class="nav-number">5.1.</span> <span class="nav-text">USB connection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Wireless_connection"><span class="nav-number">5.2.</span> <span class="nav-text">Wireless connection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Launch_tcp_in_boot"><span class="nav-number">5.3.</span> <span class="nav-text">Launch tcp in boot</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -478,7 +480,7 @@ clicky_site_ids.push(100784435);
     <script type="text/javascript">
       var disqus_shortname = 'bumaociyuan';
       var disqus_identifier = 'android/2015/10/13/remote-control-android-device.html';
-      var disqus_title = 'remote control android device';
+      var disqus_title = 'Remote control android device';
       var disqus_url = 'http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html';
 
       function run_disqus_script(disqus_script){
