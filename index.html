@@ -253,27 +253,14 @@ clicky_site_ids.push(100784435);
 
       
         
-          <span itemprop="articleBody"><h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
-<p><a href="https://openstf.io/" target="_blank" rel="external">Control and manage Android devices from your browser.</a></p>
+          <h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf">Source Code</a></p>
+<p><a href="https://openstf.io/">Control and manage Android devices from your browser.</a></p>
 <h1 id="Demo">Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>
-<h1 id="Requirements">Requirements</h1><p><a href="https://github.com/openstf/stf#requirements" target="_blank" rel="external">Install</a></p>
-<h1 id="Installation">Installation</h1><p><a href="https://github.com/openstf/stf#installation" target="_blank" rel="external">link</a></p>
-<h1 id="Problems">Problems</h1><h2 id="USB_connection">USB connection</h2><p><a href="https://github.com/apkudo/adbusbini" target="_blank" rel="external">ADB hasn’t whitelisted the manufacturer’s vendor ID</a></p>
-<p><a href="http://blog.csdn.net/zhaoxy_thu/article/details/11857697" target="_blank" rel="external">mac OSX上eclipse adb无法识别（调试）小米的解决方案</a></p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>echo <span class="string">"0x2717"</span> &gt; ~<span class="regexp">/.android/adb</span>_usb.ini  </span><br><span class="line"><span class="variable">$ </span>adb kill-server</span><br></pre></td></tr></table></figure>
-<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># output likes below</span></span><br><span class="line">List of devices attached</span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f		unauthorized</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f	    offline</span><br></pre></td></tr></table></figure>
-<p>Solution</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ adb <span class="keyword">version</span>  </span><br><span class="line"># Android Debug Bridge <span class="keyword">version</span> <span class="number">1.0</span>.<span class="number">32</span></span><br><span class="line"># lowwer <span class="keyword">version</span> adb should <span class="keyword">be</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure>
-<p><a href="http://stackoverflow.com/questions/18011685/cant-connect-nexus-4-to-adb-unauthorized" target="_blank" rel="external">Can’t connect Nexus 4 to adb: unauthorized</a> Vasudev’s answer</p>
-<ol>
-<li>Make sure adb is running</li>
-<li>In device go to Settings -&gt; developer options -&gt; <code>Revoke USB debugging authorities</code></li>
-<li>Disconnect device</li>
-<li>In adb shell type &gt; adb kill-server</li>
-<li>In adb shell type &gt; adb start-server</li>
-<li>Connect device</li>
-</ol>
-<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ stf <span class="keyword">local</span> <span class="comment">--allow-remote</span></span><br></pre></td></tr></table></figure></span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/android/2015/10/13/remote-control-android-device.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>

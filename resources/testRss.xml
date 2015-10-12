@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-10-12T07:30:31.000Z</updated>
+  <updated>2015-10-12T07:33:27.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -19,10 +19,11 @@
     <link href="http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html"/>
     <id>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</id>
     <published>2015-10-12T19:09:37.000Z</published>
-    <updated>2015-10-12T07:30:31.000Z</updated>
+    <updated>2015-10-12T07:33:27.000Z</updated>
     <content type="html"><![CDATA[<h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
 <p><a href="https://openstf.io/" target="_blank" rel="external">Control and manage Android devices from your browser.</a></p>
 <h1 id="Demo">Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>
+<a id="more"></a>
 <h1 id="Requirements">Requirements</h1><p><a href="https://github.com/openstf/stf#requirements" target="_blank" rel="external">Install</a></p>
 <h1 id="Installation">Installation</h1><p><a href="https://github.com/openstf/stf#installation" target="_blank" rel="external">link</a></p>
 <h1 id="Problems">Problems</h1><h2 id="USB_connection">USB connection</h2><p><a href="https://github.com/apkudo/adbusbini" target="_blank" rel="external">ADB hasn’t whitelisted the manufacturer’s vendor ID</a></p>
@@ -42,8 +43,10 @@
 </ol>
 <h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ stf <span class="keyword">local</span> <span class="comment">--allow-remote</span></span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
-<p><a href="]]>
+    <![CDATA[<h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf">Source Code</a></p>
+<p><a href="https://openstf.io/">Control and manage Android devices from your browser.</a></p>
+<h1 id="Demo">Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>]]>
+    
     </summary>
     
       <category term="stf" scheme="http://bumaociyuan.github.io/tags/stf/"/>
