@@ -1476,15 +1476,15 @@
     <link href="http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</id>
     <published>2014-12-03T15:58:24.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
+    <updated>2015-10-15T03:14:45.000Z</updated>
     <content type="html"><![CDATA[<p>#Update May 28, 2015</p>
 <p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
 <li><p>Install <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline/fonts</a></p>
 </li>
-<li><p>change iterm2 font to <code>Ubuntu Mono Derivative Powerline</code> <a href="https://medium.com/@genealabs/agnoster-theme-on-os-x-391d60effaf6" target="_blank" rel="external">reference</a></p>
+<li><p>Change iterm2 font to <code>Ubuntu Mono Derivative Powerline</code> <a href="https://medium.com/@genealabs/agnoster-theme-on-os-x-391d60effaf6" target="_blank" rel="external">reference</a></p>
 </li>
-<li><p>hide <code>username@localhost</code></p>
+<li><p>Add <code>DEFAULT_USER=zx</code> in <code>~/.zshrc</code> to hide <code>username@localhost</code></p>
 </li>
 </ol>
 <hr>
