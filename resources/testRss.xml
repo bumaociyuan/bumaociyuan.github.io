@@ -1476,7 +1476,7 @@
     <link href="http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</id>
     <published>2014-12-03T15:58:24.000Z</published>
-    <updated>2015-10-15T15:38:05.000Z</updated>
+    <updated>2015-10-15T15:58:52.000Z</updated>
     <content type="html"><![CDATA[<p>#Update May 28, 2015</p>
 <p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
@@ -1486,7 +1486,10 @@
 </li>
 <li><p>Add <code>DEFAULT_USER=zx</code> in <code>~/.zshrc</code> to hide <code>username@localhost</code></p>
 </li>
-<li>Colors <code>wget https://raw.github.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors</code> <code>iTerm</code>-&gt;<code>Profiles</code>-&gt;<code>Colors</code>-&gt;<code>Load Presets...</code>-&gt;<code>Import...</code>-&gt;<code>Solarized Dark.itermcolors</code></li>
+<li><p>Make theme like screenshot<br> <img src="https://camo.githubusercontent.com/a862b8b4a84524c727b6e912be2d70a5571ef2de/687474703a2f2f6935392e74696e797069632e636f6d2f327631356475722e706e67" alt="image"></p>
+ <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>wget <span class="symbol">https:</span>/<span class="regexp">/raw.github.com/altercation</span><span class="regexp">/solarized/master</span><span class="regexp">/iterm2-colors-solarized/</span><span class="constant">Solarized</span><span class="variable">%20Dark</span>.itermcolors</span><br></pre></td></tr></table></figure>
+<p><code>iTerm</code> -&gt; <code>Profiles</code> -&gt; <code>Colors</code> -&gt;<br><code>Load Presets...</code> -&gt; <code>Import...</code> -&gt; <code>Solarized Dark.itermcolors</code></p>
+</li>
 </ol>
 <hr>
 <p>Install <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a> by running follow command</p>
