@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="zsh," />
+  <meta name="keywords" content="Hexo,next" />
 
 
 
@@ -39,49 +39,31 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="#Update May 28, 2015
-Using agnoster
-
-Install powerline/fonts
-
-Change iterm2 font to Ubuntu Mono Derivative Powerline reference
-
-Add DEFAULT_USER=zx in ~/.zshrc to hide username@localhost
-
-
-
-Install oh">
+<meta name="description" content="error occur at;
+_mapManager = [[BMKMapManager alloc]init];
+error message:
+-[__NSCFString stringFromMD5]: unrecognized selector sent to instance 0x145925d0
+resolve:
+other linker  flags 添加 -Objc 或者-all_">
 <meta property="og:type" content="article">
-<meta property="og:title" content="use zsh">
-<meta property="og:url" content="http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html">
+<meta property="og:title" content="百度地图SDK2.1 bug">
+<meta property="og:url" content="http://bumaociyuan.github.io/ios/2013/12/19/baidu-map-2.1-bug.html">
 <meta property="og:site_name" content="不毛次元">
-<meta property="og:description" content="#Update May 28, 2015
-Using agnoster
-
-Install powerline/fonts
-
-Change iterm2 font to Ubuntu Mono Derivative Powerline reference
-
-Add DEFAULT_USER=zx in ~/.zshrc to hide username@localhost
-
-
-
-Install oh">
-<meta property="og:updated_time" content="2015-10-15T03:14:45.000Z">
+<meta property="og:description" content="error occur at;
+_mapManager = [[BMKMapManager alloc]init];
+error message:
+-[__NSCFString stringFromMD5]: unrecognized selector sent to instance 0x145925d0
+resolve:
+other linker  flags 添加 -Objc 或者-all_">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="use zsh">
-<meta name="twitter:description" content="#Update May 28, 2015
-Using agnoster
-
-Install powerline/fonts
-
-Change iterm2 font to Ubuntu Mono Derivative Powerline reference
-
-Add DEFAULT_USER=zx in ~/.zshrc to hide username@localhost
-
-
-
-Install oh">
+<meta name="twitter:title" content="百度地图SDK2.1 bug">
+<meta name="twitter:description" content="error occur at;
+_mapManager = [[BMKMapManager alloc]init];
+error message:
+-[__NSCFString stringFromMD5]: unrecognized selector sent to instance 0x145925d0
+resolve:
+other linker  flags 添加 -Objc 或者-all_">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -91,7 +73,7 @@ Install oh">
   };
 </script>
 
-  <title> use zsh | 不毛次元 </title>
+  <title> 百度地图SDK2.1 bug | 不毛次元 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -232,7 +214,7 @@ clicky_site_ids.push(100784435);
           
           
             
-              use zsh
+              百度地图SDK2.1 bug
             
           
         </h1>
@@ -241,8 +223,8 @@ clicky_site_ids.push(100784435);
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2014-12-03T23:58:24+08:00" content="2014-12-03">
-            2014-12-03
+          <time itemprop="dateCreated" datetime="2013-12-19T05:06:50+08:00" content="2013-12-18">
+            2013-12-18
           </time>
         </span>
 
@@ -251,8 +233,8 @@ clicky_site_ids.push(100784435);
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/terminal/" itemprop="url" rel="index">
-                  <span itemprop="name">terminal</span>
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
                 </a>
               </span>
 
@@ -267,8 +249,8 @@ clicky_site_ids.push(100784435);
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/terminal/2014/12/03/use-zsh.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="terminal/2014/12/03/use-zsh.html" itemprop="commentsCount"></span>
+            <a href="/ios/2013/12/19/baidu-map-2.1-bug.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2013/12/19/baidu-map-2.1-bug.html" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -282,47 +264,30 @@ clicky_site_ids.push(100784435);
       
 
       
-        <span itemprop="articleBody"><p>#Update May 28, 2015</p>
-<p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
-<ol>
-<li><p>Install <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline/fonts</a></p>
-</li>
-<li><p>Change iterm2 font to <code>Ubuntu Mono Derivative Powerline</code> <a href="https://medium.com/@genealabs/agnoster-theme-on-os-x-391d60effaf6" target="_blank" rel="external">reference</a></p>
-</li>
-<li><p>Add <code>DEFAULT_USER=zx</code> in <code>~/.zshrc</code> to hide <code>username@localhost</code></p>
-</li>
-</ol>
-<hr>
-<p>Install <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a> by running follow command</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="string">git:</span><span class="comment">//github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh</span></span><br><span class="line"></span><br><span class="line">cp <span class="regexp">~/.oh-my-zsh/</span>templates<span class="regexp">/zshrc.zsh-template ~/</span>.zshrc</span><br><span class="line"></span><br><span class="line">chsh -s <span class="regexp">/bin/</span>zsh</span><br></pre></td></tr></table></figure>
-<p>Instead I went to <code>iTerm2</code> -&gt; <code>Preferences</code> -&gt; <code>Profiles</code> -&gt; <code>Default</code> and in the <code>General</code> Tab set the <code>Command</code> to <code>/bin/zsh</code> instead of Login shell</p>
-<p>显示中文</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">vi .zshrc</span><br><span class="line">/en_US</span><br><span class="line"><span class="comment">#remove the #</span></span><br><span class="line">:wq</span><br><span class="line"><span class="built_in">source</span> .zshrc</span><br></pre></td></tr></table></figure>
-<p>install autojump</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git clone gi<span class="variable">t:</span>//github.<span class="keyword">com</span>/joelthelion/autojump.git</span><br><span class="line"><span class="keyword">cd</span> autojump</span><br><span class="line">./install.<span class="keyword">py</span></span><br><span class="line"><span class="keyword">vi</span> ~/.zshrc</span><br><span class="line"></span><br><span class="line">#paste </span><br><span class="line">	[[ -<span class="keyword">s</span> /Users/[ME]]/.autojump/etc/<span class="keyword">profile</span>.<span class="keyword">d</span>/autojump.<span class="keyword">sh</span> ]] &amp;&amp; <span class="keyword">source</span> /Users/[ME]/.autojump/etc/<span class="keyword">profile</span>.<span class="keyword">d</span>/autojump.<span class="keyword">sh</span></span><br><span class="line"># <span class="keyword">to</span> the <span class="keyword">last</span> of .zshrc</span><br><span class="line">#Please restart terminal(<span class="keyword">s</span>) before running autojump.</span><br></pre></td></tr></table></figure></span>
+        <span itemprop="articleBody"><p>error occur at;</p>
+<p><code>_mapManager = [[BMKMapManager alloc]init];</code></p>
+<p>error message:</p>
+<p><code>-[__NSCFString stringFromMD5]: unrecognized selector sent to instance 0x145925d0</code></p>
+<p>resolve:</p>
+<p>other linker  flags 添加 -Objc 或者-all_load<br> Project -&gt;build settings -&gt;linking-&gt;Other Linker flags</p>
+</span>
       
     </div>
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/zsh/" rel="tag">#zsh</a>
-          
-        </div>
       
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/ios/2014/12/04/cocoapods-empty-reply-form-server.html" rel="prev">cocoapods empty reply form server</a>
+              <a href="/ios/2014/01/07/baidu-appkey-register.html" rel="prev">百度appkey 申请流程</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/git/2014/11/26/tfs-via-git.html" rel="next">tfs via git</a>
+              <a href="/vb/2013/12/10/vb-based-browser.html" rel="next">vb based browser</a>
             
           </div>
         </div>
@@ -508,9 +473,9 @@ clicky_site_ids.push(100784435);
 
     <script type="text/javascript">
       var disqus_shortname = 'bumaociyuan';
-      var disqus_identifier = 'terminal/2014/12/03/use-zsh.html';
-      var disqus_title = 'use zsh';
-      var disqus_url = 'http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html';
+      var disqus_identifier = 'ios/2013/12/19/baidu-map-2.1-bug.html';
+      var disqus_title = '百度地图SDK2.1 bug';
+      var disqus_url = 'http://bumaociyuan.github.io/ios/2013/12/19/baidu-map-2.1-bug.html';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
