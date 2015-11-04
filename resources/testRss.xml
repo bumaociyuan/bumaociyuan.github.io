@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2015-10-12T08:23:42.000Z</updated>
+  <updated>2015-11-04T05:45:38.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -13,6 +13,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[fixed brew slow problem]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</id>
+    <published>2015-11-04T18:40:35.000Z</published>
+    <updated>2015-11-04T05:45:38.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="修改镜像源">修改镜像源</h1><p><a href="https://www.logcg.com/archives/1301.html" target="_blank" rel="external">brew update 慢 解决办法 镜像更新源</a></p>
+<ul>
+<li>中科大brew镜像源</li>
+<li>清华brew镜像源</li>
+</ul>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd /usr/local</span><br><span class="line">$ git remote <span class="keyword">set</span>-url origin git:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/homebrew.git</span></span><br><span class="line"><span class="preprocessor"># 清华镜像源</span></span><br><span class="line">$ git remote <span class="keyword">set</span>-url origin http:<span class="comment">//mirrors.ustc.edu.cn/homebrew.git</span></span><br><span class="line"><span class="preprocessor"># 中科大镜像源</span></span><br><span class="line"><span class="preprocessor"># 二者选其一即可更新</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>cd ~</span><br><span class="line"><span class="variable">$ </span>mkdir tmp</span><br><span class="line"><span class="variable">$ </span>cd tmp</span><br><span class="line"><span class="comment"># 以下要与你选择的镜像源相同</span></span><br><span class="line"><span class="variable">$ </span>git clone <span class="symbol">git:</span>/<span class="regexp">/mirrors.tuna.tsinghua.edu.cn/homebrew</span>.git</span><br><span class="line"><span class="variable">$ </span>git clone <span class="symbol">http:</span>/<span class="regexp">/mirrors.ustc.edu.cn/homebrew</span>.git</span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>sudo rm -rf /usr/local/.git</span><br><span class="line"><span class="variable">$ </span>sudo rm -rf /usr/local/<span class="constant">Library</span></span><br><span class="line"><span class="variable">$ </span>sudo cp -<span class="constant">R</span> homebrew/.git /usr/local/</span><br><span class="line"><span class="variable">$ </span>sudo cp -<span class="constant">R</span> homebrew/<span class="constant">Library</span> /usr/local/</span><br></pre></td></tr></table></figure>
+<p><strong><em>if</em></strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fatal: Unable to <span class="operator"><span class="keyword">create</span> <span class="string">'/usr/local/.git/index.lock'</span>: Permission denied</span><br><span class="line">Cannot <span class="keyword">save</span> the <span class="keyword">current</span> <span class="keyword">index</span> state</span><br><span class="line"><span class="keyword">Error</span>: <span class="keyword">Failure</span> <span class="keyword">while</span> executing: git stash <span class="keyword">save</span> <span class="comment">--include-untracked --quiet</span></span></span><br></pre></td></tr></table></figure>
+<p><strong><em>then</em></strong></p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo chgrp -R admin /usr/<span class="keyword">local</span></span><br><span class="line"><span class="comment"># 确保目录归属管理组</span></span><br><span class="line">$ sudo <span class="keyword">chmod</span> -R g+w /usr/<span class="keyword">local</span></span><br><span class="line"><span class="comment"># 确保管理组可读</span></span><br></pre></td></tr></table></figure>
+<p><strong><em>endif</em></strong></p>
+<h1 id="用ss">用ss</h1><p><a href="http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html">using shadowsocks in terminal
+</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="修改镜像源">修改镜像源</h1><p><a href="https://www.logcg.com/archives/1301.html" target="_blank" rel="external">brew update 慢 解决办法 镜像更新源</a></]]>
+    </summary>
+    
+      <category term="homebrew" scheme="http://bumaociyuan.github.io/tags/homebrew/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Remote control android device]]></title>
@@ -508,25 +539,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[open sublime in terminal]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
-    <published>2015-08-10T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
-    </summary>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
-    
-      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[using shadowsocks in terminal]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html</id>
@@ -548,6 +560,25 @@
       <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[open sublime in terminal]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
+    <published>2015-08-10T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
+    </summary>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
+    
+      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   
@@ -619,6 +650,24 @@
   </entry>
   
   <entry>
+    <title><![CDATA[reactive cocoa note]]></title>
+    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
+    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
+    <published>2015-06-29T04:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
+<p>Combine two signals</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
+    </summary>
+    
+      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Lucky Seven]]></title>
     <link href="http://bumaociyuan.github.io//2015/06/29/lucky-seven.html"/>
     <id>http://bumaociyuan.github.io//2015/06/29/lucky-seven.html</id>
@@ -634,24 +683,6 @@
     </summary>
     
       <category term="other" scheme="http://bumaociyuan.github.io/tags/other/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[reactive cocoa note]]></title>
-    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
-    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
-    <published>2015-06-29T04:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
-<p>Combine two signals</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
-    </summary>
-    
-      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
     
   </entry>
   
@@ -1254,32 +1285,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
-    <published>2015-01-29T05:00:00.000Z</published>
-    <updated>2015-09-14T01:45:41.000Z</updated>
-    <content type="html"><![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
-<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
-<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
-<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
-    </summary>
-    
-      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
-    
-      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[bandwagon note]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</id>
@@ -1323,6 +1328,32 @@
       <category term="tutorial" scheme="http://bumaociyuan.github.io/tags/tutorial/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
+    <published>2015-01-29T05:00:00.000Z</published>
+    <updated>2015-09-14T01:45:41.000Z</updated>
+    <content type="html"><![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
+<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
+<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
+<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
+    </summary>
+    
+      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
+    
+      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   

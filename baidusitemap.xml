@@ -3,6 +3,26 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
+    <lastmod>2015-11-04T05:45:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>fixed brew slow problem</title>
+        <pubTime>2015-11-04T18:40:35.000Z</pubTime>
+        
+        <tag>homebrew </tag>
+         
+         
+           
+             
+              <breadCrumb title="mac" url="http://bumaociyuan.github.io/categories/mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</loc>
     <lastmod>2015-10-21T09:11:02.000Z</lastmod>
     <data>
@@ -1204,26 +1224,6 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html</loc>
-    <lastmod>2015-09-14T01:45:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>turn off uisearchbar animation</title>
-        <pubTime>2014-10-31T14:44:25.000Z</pubTime>
-        
-        <tag>code snippet </tag>
-         
-         
-           
-             
-              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://bumaociyuan.github.io/terminal/2015/08/14/oh-my-zsh-update-failed.html</loc>
     <lastmod>2015-09-14T01:45:41.000Z</lastmod>
     <data>
@@ -1237,6 +1237,26 @@
            
              
               <breadCrumb title="terminal" url="http://bumaociyuan.github.io/categories/terminal/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/31/customize-tabbar-icon-and-text-color.html</loc>
+    <lastmod>2015-09-14T01:45:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>customize tabbar icon and text color</title>
+        <pubTime>2014-10-30T19:41:32.000Z</pubTime>
+        
+        <tag>code snippet </tag>
+         
+         
+           
+             
+              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
           
         </display>
     </data>
@@ -2383,12 +2403,12 @@
     
     
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/31/customize-tabbar-icon-and-text-color.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html</loc>
     <lastmod>2015-09-14T01:45:41.000Z</lastmod>
     <data>
         <display>
-        <title>customize tabbar icon and text color</title>
-        <pubTime>2014-10-30T19:41:32.000Z</pubTime>
+        <title>turn off uisearchbar animation</title>
+        <pubTime>2014-10-31T14:44:25.000Z</pubTime>
         
         <tag>code snippet </tag>
          

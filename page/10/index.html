@@ -200,6 +200,98 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2014/08/20/afnetworking-issue.html" itemprop="url">
+                AFNetworking issues
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-08-19T14:28:00-04:00" content="2014-08-19">
+            2014-08-19
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2014/08/20/afnetworking-issue.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/08/20/afnetworking-issue.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>error :</p>
+<p><code>Request failed: unacceptable content-type: text/html</code></p>
+<p>or</p>
+<p><code>The operation couldn’t be completed (Cocoa error 3840 )</code></p>
+<p>fix this issue</p>
+<pre><code> AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager <span class="keyword">new</span>];
+NSMutableSet *<span class="keyword">set</span> = manager.responseSerializer.acceptableContentTypes.mutableCopy;
+[<span class="keyword">set</span> addObjec<span class="variable">t:</span>@<span class="string">"text/html"</span>];
+   manager.responseSerializer.acceptableContentTypes = <span class="keyword">set</span>;
+</code></pre></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2014/08/12/baidu-map-issue.html" itemprop="url">
                 baidu map issues
               </a>
@@ -1018,134 +1110,6 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2014/06/20/ios-style-guide.html" itemprop="url">
-                iOS style guide
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-06-20T08:47:50-04:00" content="2014-06-20">
-            2014-06-20
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2014/06/20/ios-style-guide.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/06/20/ios-style-guide.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h1 id="命名">命名</h1><h2 id="0-文件命名">0.文件命名</h2><pre><code><span class="title">Tip</span>
-文件名须反映出其实现了什么类 – 包括大小写。遵循你所参与项目的约定。
-</code></pre><p>类别的文件名应该包含被扩展的类名，如：GTMNSString+Utils.h 或<code>GTMNSTextView+Autocomplete.h</code>。</p>
-<h2 id="1-_变量命名">1. 变量命名</h2><pre><code><span class="title">Tip</span>
-方法名应该以小写字母开头，并混合驼峰格式。每个具名参数也应该以小写字母开头。
-</code></pre><p>变量命名需要能明白两点</p>
-<ul>
-<li>变量意思</li>
-<li>变量类型</li>
-</ul>
-<h3 id="BOOL型">BOOL型</h3><p><strong>以 <code>is</code>开头</strong></p>
-<p>如：</p>
-<pre><code><span class="comment">//GOOD</span>
-<span class="built_in">BOOL</span> isShouldReload;
-<span class="built_in">BOOL</span> isLoading;
-
-<span class="comment">//AVOID</span>
-<span class="built_in">BOOL</span> k;
-</code></pre><h3 id="Array_型">Array 型</h3><p><strong>以 <code>s</code> 结尾</strong> 或者 <code>Array</code> </p>
-<p>如：</p>
-<pre><code>NSArray <span class="keyword">*</span>users;
-NSArray <span class="keyword">*</span>messages
-</code></pre><h3 id="Dictionary">Dictionary</h3><p>以 <code>Dic</code> 结尾  或服务器返回对象</p>
-<pre><code>NSDictionary *dateDic<span class="comment">;</span>
-NSDictionary *message<span class="comment">;</span>
-</code></pre><h3 id="String">String</h3><p>以 <code>String</code> 结尾 ，字段可以不用<code>String</code> 结尾</p>
-<pre><code><span class="built_in">NSString</span> *urlString;
-
-<span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSString</span> * topId;<span class="comment">//尽量与服务器统一</span>
-</code></pre><h3 id="UI_Class">UI Class</h3><p><strong>以 <code>class</code> 结尾</strong> 尽量不使用<code>btn</code> <code>tv</code>等简写</p>
-<p>如：</p>
-<pre><code><span class="comment">//GOOD</span>
-<span class="built_in">UIButton</span> *loginButton
-<span class="built_in">UITextField</span> *passwordTextField;
-
-<span class="comment">//AVOID</span>
-<span class="built_in">UIButton</span> *login;
-<span class="built_in">UITextField</span> *password;
-</code></pre><h3 id="Block">Block</h3><p>以 <code>on</code> 开头</p>
-<pre><code><span class="title">typedef</span> void(^OnCompletion)(API *, id value);
-<span class="title">typedef</span> void(^OnFailed)(API *, id <span class="built_in">error</span>);
-
-<span class="title">OnCompletion</span>  <span class="built_in">on</span>Completion;
-<span class="title">OnFailed</span>      <span class="built_in">on</span>Failed;
-</code></pre><h2 id="2-_方法命名">2. 方法命名</h2><p><em>fds</em>  </p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1184,7 +1148,7 @@ NSDictionary *message<span class="comment">;</span>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">125</span>
+              <span class="site-state-item-count">126</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
