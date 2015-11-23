@@ -3,6 +3,26 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/ruby/2014/06/17/ruby-change-source.html</loc>
+    <lastmod>2015-11-23T03:04:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>ruby change source</title>
+        <pubTime>2014-06-16T20:06:50.000Z</pubTime>
+        
+        <tag>cocoapods </tag>
+         
+         
+           
+             
+              <breadCrumb title="ruby" url="http://bumaociyuan.github.io/categories/ruby/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
     <lastmod>2015-11-04T05:48:15.000Z</lastmod>
     <data>
@@ -301,24 +321,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html</loc>
-    <lastmod>2015-09-14T01:45:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>self signed certificates in iOS</title>
-        <pubTime>2015-07-17T04:00:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://bumaociyuan.github.io/ios/2015/07/15/uitextview-text-length-limitation.html</loc>
@@ -1972,19 +1974,21 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/ruby/2014/06/17/ruby-change-source.html</loc>
+    <loc>http://bumaociyuan.github.io/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html</loc>
     <lastmod>2015-09-14T01:45:41.000Z</lastmod>
     <data>
         <display>
-        <title>ruby change source</title>
-        <pubTime>2014-06-16T20:06:50.000Z</pubTime>
+        <title>share internet connection from mac to mobile device</title>
+        <pubTime>2015-08-08T04:00:00.000Z</pubTime>
         
-        <tag>cocoapods </tag>
+        <tag>iphone </tag>
+         
+        <tag>mac </tag>
          
          
            
              
-              <breadCrumb title="ruby" url="http://bumaociyuan.github.io/categories/ruby/"/>
+              <breadCrumb title="mac" url="http://bumaociyuan.github.io/categories/mac/"/>
           
         </display>
     </data>
@@ -2378,21 +2382,17 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html</loc>
     <lastmod>2015-09-14T01:45:41.000Z</lastmod>
     <data>
         <display>
-        <title>share internet connection from mac to mobile device</title>
-        <pubTime>2015-08-08T04:00:00.000Z</pubTime>
+        <title>self signed certificates in iOS</title>
+        <pubTime>2015-07-17T04:00:00.000Z</pubTime>
         
-        <tag>iphone </tag>
-         
-        <tag>mac </tag>
-         
          
            
              
-              <breadCrumb title="mac" url="http://bumaociyuan.github.io/categories/mac/"/>
+              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
           
         </display>
     </data>

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://bumaociyuan.github.io/ruby/2014/06/17/ruby-change-source.html</loc>
+    <lastmod>2015-11-23T03:04:55.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
     <lastmod>2015-11-04T05:48:15.000Z</lastmod>
   </url>
@@ -79,11 +84,6 @@
   <url>
     <loc>http://bumaociyuan.github.io/404.html</loc>
     <lastmod>2015-09-14T02:56:41.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html</loc>
-    <lastmod>2015-09-14T01:45:41.000Z</lastmod>
   </url>
   
   <url>
@@ -522,7 +522,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ruby/2014/06/17/ruby-change-source.html</loc>
+    <loc>http://bumaociyuan.github.io/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html</loc>
     <lastmod>2015-09-14T01:45:41.000Z</lastmod>
   </url>
   
@@ -632,7 +632,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html</loc>
     <lastmod>2015-09-14T01:45:41.000Z</lastmod>
   </url>
   
