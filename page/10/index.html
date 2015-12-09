@@ -258,10 +258,10 @@ clicky_site_ids.push(100784435);
 <p>or</p>
 <p><code>The operation couldn’t be completed (Cocoa error 3840 )</code></p>
 <p>fix this issue</p>
-<pre><code> AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager <span class="keyword">new</span>];
-NSMutableSet *<span class="keyword">set</span> = manager.responseSerializer.acceptableContentTypes.mutableCopy;
-[<span class="keyword">set</span> addObjec<span class="variable">t:</span>@<span class="string">"text/html"</span>];
-   manager.responseSerializer.acceptableContentTypes = <span class="keyword">set</span>;
+<pre><code> AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager new];
+NSMutableSet *set = manager.responseSerializer.acceptableContentTypes.mutableCopy;
+[set addObject:@&quot;text/html&quot;];
+   manager.responseSerializer.acceptableContentTypes = set;
 </code></pre></span>
         
       
@@ -433,16 +433,16 @@ NSMutableSet *<span class="keyword">set</span> = manager.responseSerializer.acce
           <span itemprop="articleBody"><p>July 21, 2015<br><a href="http://blog.csdn.net/justinjing0612/article/details/42294329" target="_blank" rel="external">iOS开发的一些奇巧淫技</a></p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.leftBarButtonItem</span> = [[<span class="built_in">UIBarButtonItem</span> alloc]</span><br><span class="line"></span><br><span class="line">                                         initWithImage:img</span><br><span class="line"></span><br><span class="line">                                         style:<span class="built_in">UIBarButtonItemStylePlain</span></span><br><span class="line"></span><br><span class="line">                                         target:<span class="keyword">self</span></span><br><span class="line"></span><br><span class="line">                                         action:<span class="keyword">@selector</span>(onBack:)];</span><br><span class="line"></span><br><span class="line"><span class="keyword">self</span><span class="variable">.navigationController</span><span class="variable">.interactivePopGestureRecognizer</span><span class="variable">.delegate</span> = (<span class="keyword">id</span>)<span class="keyword">self</span>;</span><br></pre></td></tr></table></figure>
 <p>December 27, 2014 update<br><a href="http://www.jianshu.com/p/50b63a221f09" target="_blank" rel="external">link</a></p>
-<pre><code><span class="attr_selector">[[UIBarButtonItem appearance]</span> <span class="rule"><span class="attribute">setBackButtonTitlePositionAdjustment</span>:<span class="value"><span class="function">UIOffsetMake</span>(<span class="number">0</span>, -<span class="number">60</span>)
-                                                   forBarMetrics:UIBarMetricsDefault]</span></span>;
+<pre><code>[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                   forBarMetrics:UIBarMetricsDefault];
 </code></pre><hr>
 <p>in <code>AppDelegate.m</code></p>
-<pre><code><span class="built_in">UINavigationBar</span> * bar = [<span class="built_in">UINavigationBar</span> appearance];
-bar<span class="variable">.backIndicatorImage</span> = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@"navBackButton"</span>];
-bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@"navBackButton"</span>];
+<pre><code>UINavigationBar * bar = [UINavigationBar appearance];
+bar.backIndicatorImage = [UIImage imageNamed:@&quot;navBackButton&quot;];
+bar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@&quot;navBackButton&quot;];
 </code></pre><p>in <code>BaseViewController.m</code> -viewdidload</p>
-<pre><code><span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.leftItemsSupplementBackButton</span> = <span class="literal">YES</span>;
-<span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.backBarButtonItem</span> = [<span class="keyword">self</span> textBarButtonItemWithText:<span class="string">@""</span>];
+<pre><code>self.navigationItem.leftItemsSupplementBackButton = YES;
+self.navigationItem.backBarButtonItem = [self textBarButtonItemWithText:@&quot;&quot;];
 </code></pre><p><strong>cannot handle the back bar button item click event</strong></p>
 </span>
         
@@ -957,16 +957,16 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
 <li>Run the GitHub desktop application and clone the repository onto your PC.</li>
 <li>Use the GitHub desktop application to open a shell in the repository. (The git commands are not available from the default PowerShell unless you configure that manually.)</li>
 <li><p>Set the source repository as upstream:</p>
-<pre><code>git remote <span class="built_ins">add</span> upstream https://github.com/{<span class="built_ins">user</span>}/{source-repo}.git
+<pre><code>git remote add upstream https://github.com/{user}/{source-repo}.git
 </code></pre></li>
 </ul>
 <ul>
 <li><p>Fetch the full upstream repository. (Right now, you only have a copy of its master branch.)</p>
-<pre><code><span class="title">git</span> fetch upstream
+<pre><code>git fetch upstream
 </code></pre></li>
 <li><p>Make your file system copy the branch you want and give it any name:</p>
-<pre><code><span class="label">git</span> checkout upstream/{<span class="keyword">branch-in-question}
-</span><span class="label">git</span> checkout -<span class="keyword">b </span>temporary
+<pre><code>git checkout upstream/{branch-in-question}
+git checkout -b temporary
 </code></pre></li>
 <li><p>Publish your repo using the GitHub desktop application.</p>
 </li>
@@ -975,10 +975,10 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
 <li>Change the “Default branch” to ‘temporary’. (Just change the drop-down menu, you don’t need to click the “Rename” button.)</li>
 <li>Go back to your repository, go to the ‘branches’ tab, now you can delete the “master” branch.</li>
 <li><p>Delete the master branch on your shell and make a new master branch:</p>
-<pre><code><span class="label">git</span> <span class="keyword">branch </span>-d master
-<span class="label">git</span> <span class="keyword">branch </span>master
-<span class="label">git</span> checkout master
-<span class="label">git</span> -d temporary
+<pre><code>git branch -d master
+git branch master
+git checkout master
+git -d temporary
 </code></pre></li>
 <li><p>Once more, publish your repo using the GitHub desktop application.</p>
 </li>
@@ -1091,7 +1091,7 @@ bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span clas
 <ul>
 <li>To checkout this project from another machine, you simply make sure you have google drive on that machine and type</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /the_location_I_want_to_checkout_the_repo</span><br><span class="line">git <span class="built_in">clone</span> /Users/JoeUser/Google\ Drive/git/project1.git</span><br></pre></td></tr></table></figure></span>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /the_location_I_want_to_checkout_the_repo</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">/Users</span>/JoeUser/Google\ Drive/git/project1.git</span><br></pre></td></tr></table></figure></span>
         
       
     </div>

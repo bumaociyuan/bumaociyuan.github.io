@@ -55,7 +55,7 @@ or
 The operation couldn’t be completed (Cocoa error 3840 )
 fix this issue
  AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperation">
-<meta property="og:updated_time" content="2015-09-14T01:45:41.000Z">
+<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AFNetworking issues">
 <meta name="twitter:description" content="error :
@@ -269,10 +269,10 @@ clicky_site_ids.push(100784435);
 <p>or</p>
 <p><code>The operation couldn’t be completed (Cocoa error 3840 )</code></p>
 <p>fix this issue</p>
-<pre><code> AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager <span class="keyword">new</span>];
-NSMutableSet *<span class="keyword">set</span> = manager.responseSerializer.acceptableContentTypes.mutableCopy;
-[<span class="keyword">set</span> addObjec<span class="variable">t:</span>@<span class="string">"text/html"</span>];
-   manager.responseSerializer.acceptableContentTypes = <span class="keyword">set</span>;
+<pre><code> AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager new];
+NSMutableSet *set = manager.responseSerializer.acceptableContentTypes.mutableCopy;
+[set addObject:@&quot;text/html&quot;];
+   manager.responseSerializer.acceptableContentTypes = set;
 </code></pre></span>
       
     </div>

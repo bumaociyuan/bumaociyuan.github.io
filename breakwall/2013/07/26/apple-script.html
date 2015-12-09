@@ -55,7 +55,7 @@ File Format as Application如下图
 System Preferences-&amp;gt;Usres &amp;amp; Groups-&amp;gt;Login Items-&amp;gt;plus button-&amp;gt;select the app y">
 <meta property="og:image" content="http://bumaociyuan.github.io/resources/2014/10/27/1.png">
 <meta property="og:image" content="http://bumaociyuan.github.io/resources/2014/10/27/2.png">
-<meta property="og:updated_time" content="2015-09-14T01:45:41.000Z">
+<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用apple script写自动开启wallproxy的命令">
 <meta name="twitter:description" content="—2014.10.27—
@@ -271,10 +271,10 @@ clicky_site_ids.push(100784435);
 </ul>
 <p>—2013-07-26—</p>
 <p>打开 as编辑器</p>
-<pre><code>tell <span class="operator">the</span> application <span class="string">"Terminal"</span>
-<span class="built_in">do</span> script <span class="string">"python /Users/noteant-3/Documents/    wallproxy-master/local/startup.py"</span>
-<span class="built_in">close</span> <span class="operator">the</span> <span class="number">1</span>st window
-<span class="function"><span class="keyword">end</span> <span class="title">tell</span></span>
+<pre><code>tell the application &quot;Terminal&quot;
+do script &quot;python /Users/noteant-3/Documents/    wallproxy-master/local/startup.py&quot;
+close the 1st window
+end tell
 quit
 </code></pre><p>save as app</p>
 <p>右键显示包内容可以修改 icon<br>icon binder 可以简单生成 icon<br>最后在login items 加入 wallproxy app 就ok了</p>

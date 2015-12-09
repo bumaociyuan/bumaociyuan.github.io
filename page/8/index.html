@@ -262,14 +262,14 @@ clicky_site_ids.push(100784435);
 <ul>
 <li><p>just add </p>
 <p>  [submodule “_theme_packages/theme-name”]<br>  path = _theme_packages/theme-name<br>  url = <a href="https://github.com/theme-name/theme-name.git" target="_blank" rel="external">https://github.com/theme-name/theme-name.git</a></p>
-<pre><code><span class="attribute">ignore </span>=<span class="string"> dirty</span>
+<pre><code>ignore = dirty
 </code></pre></li>
 <li><p>cd the submodule’s directory, run <code>git submodule init</code>, then <code>git submodule update</code>.</p>
 </li>
 <li>commit and push your changes to trigger another build on our servers.</li>
 </ul>
 <p>##Switch Themes</p>
-<pre><code>rake <span class="string">theme:</span><span class="keyword">switch</span> name=<span class="string">"the-program"</span>
+<pre><code>rake theme:switch name=&quot;the-program&quot;
 </code></pre></span>
         
       
@@ -658,7 +658,7 @@ clicky_site_ids.push(100784435);
         
           <span itemprop="articleBody"><p>file name as <code>auto_synch_this_path.command</code></p>
 <p>content as </p>
-<pre><code><span class="title">cd</span> `dirname <span class="variable">$0</span>`;<span class="title">git</span> status;<span class="title">git</span> add -A;<span class="title">git</span> commit -m <span class="string">'zx'</span>;<span class="title">git</span> pull;<span class="title">git</span> push
+<pre><code>cd `dirname $0`;git status;git add -A;git commit -m &apos;zx&apos;;git pull;git push
 </code></pre><p>$ <code>chmod a+x auto_synch_this_path.command</code></p>
 <p>now can run this script by double click</p>
 </span>
@@ -757,7 +757,7 @@ clicky_site_ids.push(100784435);
 <li><p>set shortcut for <code>Format Active File</code> with <a href="http://bumaociyuan.github.io/mac/2014/10/01/custom-keyboard-shortcuts.html">this article</a></p>
 </li>
 </ul>
-<h2 id="download_UncrustifyX">download UncrustifyX</h2><ul>
+<h2 id="download_UncrustifyX"><a href="#download_UncrustifyX" class="headerlink" title="download UncrustifyX"></a>download UncrustifyX</h2><ul>
 <li>download <a href="https://github.com/ryanmaxwell/UncrustifyX/releases/download/0.4.3/UncrustifyX-0.4.3.zip" target="_blank" rel="external">UncrustifyX</a></li>
 </ul>
 <p>UncrustifyX allows importing and exporting of Uncrustify .cfg files, and provides a GUI to run a configuration set on a list of files, or direct source code input.</p>
@@ -1176,9 +1176,9 @@ clicky_site_ids.push(100784435);
 </ul>
 <p>例：</p>
 <p>我们要将当前目录下name这个文件的权限修为所有用户拥有该文件的读取、写入、执行的权限。</p>
-<pre><code>$ chmod a+rwx <span class="property">name</span>
+<pre><code>$ chmod a+rwx name
 </code></pre><p>或者使用</p>
-<pre><code>$ chmod ugo+rwx <span class="property">name</span>
+<pre><code>$ chmod ugo+rwx name
 </code></pre><p>###方式二：<br>语法格式： chmod [-vR] [No] 文件名<br>参数说明:</p>
 <ul>
 <li>No 三位代表相应权限的数字</li>
