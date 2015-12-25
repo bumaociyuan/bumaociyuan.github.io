@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</loc>
+    <lastmod>2015-12-25T02:09:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>bandwagon note</title>
+        <pubTime>2015-01-29T05:00:00.000Z</pubTime>
+        
+        <tag>bandwagon</tag>
+         
+        <tag>tutorial</tag>
+         
+         
+           
+             
+              <breadCrumb title="breakwall" url="http://bumaociyuan.github.io/categories/breakwall/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/ios/2015/03/06/swift-lazy-initialization.html</loc>
     <lastmod>2015-12-16T03:02:39.000Z</lastmod>
     <data>
@@ -59,26 +81,6 @@
            
              
               <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</loc>
-    <lastmod>2015-12-09T03:44:17.000Z</lastmod>
-    <data>
-        <display>
-        <title>zelda link between worlds</title>
-        <pubTime>2015-09-16T17:14:56.000Z</pubTime>
-        
-        <tag>3ds</tag>
-         
-         
-           
-             
-              <breadCrumb title="game" url="http://bumaociyuan.github.io/categories/game/"/>
           
         </display>
     </data>
@@ -775,21 +777,19 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</loc>
+    <loc>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>bandwagon note</title>
-        <pubTime>2015-01-29T05:00:00.000Z</pubTime>
+        <title>zelda link between worlds</title>
+        <pubTime>2015-09-16T17:14:56.000Z</pubTime>
         
-        <tag>bandwagon</tag>
-         
-        <tag>tutorial</tag>
+        <tag>3ds</tag>
          
          
            
              
-              <breadCrumb title="breakwall" url="http://bumaociyuan.github.io/categories/breakwall/"/>
+              <breadCrumb title="game" url="http://bumaociyuan.github.io/categories/game/"/>
           
         </display>
     </data>
