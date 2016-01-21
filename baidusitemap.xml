@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</loc>
+    <lastmod>2016-01-21T06:13:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>use zsh</title>
+        <pubTime>2014-12-03T15:58:24.000Z</pubTime>
+        
+        <tag>zsh</tag>
+         
+         
+           
+             
+              <breadCrumb title="terminal" url="http://bumaociyuan.github.io/categories/terminal/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</loc>
     <lastmod>2015-12-25T02:09:36.000Z</lastmod>
     <data>
@@ -81,24 +101,6 @@
            
              
               <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html</loc>
-    <lastmod>2015-12-09T03:44:17.000Z</lastmod>
-    <data>
-        <display>
-        <title>docker note</title>
-        <pubTime>2015-09-16T03:32:56.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="docker" url="http://bumaociyuan.github.io/categories/docker/"/>
           
         </display>
     </data>
@@ -947,19 +949,17 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</loc>
+    <loc>http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>use zsh</title>
-        <pubTime>2014-12-03T15:58:24.000Z</pubTime>
+        <title>docker note</title>
+        <pubTime>2015-09-16T03:32:56.000Z</pubTime>
         
-        <tag>zsh</tag>
-         
          
            
              
-              <breadCrumb title="terminal" url="http://bumaociyuan.github.io/categories/terminal/"/>
+              <breadCrumb title="docker" url="http://bumaociyuan.github.io/categories/docker/"/>
           
         </display>
     </data>

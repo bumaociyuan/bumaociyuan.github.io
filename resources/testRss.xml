@@ -1539,7 +1539,7 @@
     <link href="http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</id>
     <published>2014-12-03T15:58:24.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
+    <updated>2016-01-21T06:13:47.000Z</updated>
     <content type="html"><![CDATA[<p>#Update May 28, 2015</p>
 <p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
@@ -1556,7 +1556,8 @@
 </ol>
 <hr>
 <p>Install <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a> by running follow command</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="string">git:</span><span class="comment">//github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh</span></span><br><span class="line"></span><br><span class="line">cp <span class="regexp">~/.oh-my-zsh/</span>templates<span class="regexp">/zshrc.zsh-template ~/</span>.zshrc</span><br><span class="line"></span><br><span class="line">chsh -s <span class="regexp">/bin/</span>zsh</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># via curl</span></span><br><span class="line">$ sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># via wget</span></span><br><span class="line">$ sh -c <span class="string">"<span class="variable">$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://www.iterm2.com/" target="_blank" rel="external">Download iTerm2</a></p>
 <p>Instead I went to <code>iTerm2</code> -&gt; <code>Preferences</code> -&gt; <code>Profiles</code> -&gt; <code>Default</code> and in the <code>General</code> Tab set the <code>Command</code> to <code>/bin/zsh</code> instead of Login shell</p>
 <p>显示中文</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">vi .zshrc</span><br><span class="line">/en_US</span><br><span class="line"><span class="comment">#remove the #</span></span><br><span class="line">:wq</span><br><span class="line"><span class="built_in">source</span> .zshrc</span><br></pre></td></tr></table></figure>
