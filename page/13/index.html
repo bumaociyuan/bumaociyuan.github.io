@@ -200,6 +200,90 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2013/10/23/ad-hoc-1.html" itemprop="url">
+                Ad hoc 教程 1 ==> 生成证书
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2013-10-22T16:06:50-04:00" content="2013-10-22">
+            2013-10-22
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2013/10/23/ad-hoc-1.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2013/10/23/ad-hoc-1.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>流程参考 <a href="/ios/2013/09/06/苹果开发证书申请.html">苹果开发证书申请</a><br>在Devices 加入 测试机 UDID<br>生成Provisioning Profiles    选择Ad Hoc<br>在测试机上 安装 生成的Ad Hoc provision 文件<br>打包ipa时选择ad Hoc </p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2013/10/14/introduction-to-cocoapods.html" itemprop="url">
                 Introduction to CocoaPods
               </a>
@@ -254,15 +338,15 @@ clicky_site_ids.push(100784435);
       
         
           <span itemprop="articleBody"><p>references: <a href="http://www.raywenderlich.com/12139/introduction-to-cocoapods" target="_blank" rel="external">raywenderlich</a></p>
-<pre><code>sudo gem install cocoapods
+<pre><code>sudo gem <span class="operator"><span class="keyword">install</span> cocoapods
 
-sudo gem update cocoapods
+sudo gem <span class="keyword">update</span> cocoapods</span>
 </code></pre><p>error:<br><img src="http://www.dasdoc.com/uploads/origin/201310/131615156.png" alt="image"></p>
 <p>To solve this error<br>run this command :</p>
-<pre><code>sudo xcode-select -switch /Applications/Xcode.app
+<pre><code><span class="label">sudo</span> xcode-<span class="keyword">select </span>-<span class="keyword">switch </span>/Applications/Xcode.app
 </code></pre><p><code>platform :ios, &quot;7.0&quot;</code></p>
-<pre><code>pod install --verbose --no-repo-update
-pod update --verbose --no-repo-update
+<pre><code>pod install --<span class="keyword">verbose</span> --<span class="keyword">no</span>-repo-<span class="keyword">update</span>
+pod <span class="keyword">update</span> --<span class="keyword">verbose</span> --<span class="keyword">no</span>-repo-<span class="keyword">update</span>
 </code></pre></span>
         
       
@@ -732,10 +816,10 @@ pod update --verbose --no-repo-update
 </ul>
 <p>—2013-07-26—</p>
 <p>打开 as编辑器</p>
-<pre><code>tell the application &quot;Terminal&quot;
-do script &quot;python /Users/noteant-3/Documents/    wallproxy-master/local/startup.py&quot;
-close the 1st window
-end tell
+<pre><code>tell <span class="operator">the</span> application <span class="string">"Terminal"</span>
+<span class="built_in">do</span> script <span class="string">"python /Users/noteant-3/Documents/    wallproxy-master/local/startup.py"</span>
+<span class="built_in">close</span> <span class="operator">the</span> <span class="number">1</span>st window
+<span class="function"><span class="keyword">end</span> <span class="title">tell</span></span>
 quit
 </code></pre><p>save as app</p>
 <p>右键显示包内容可以修改 icon<br>icon binder 可以简单生成 icon<br>最后在login items 加入 wallproxy app 就ok了</p>
@@ -796,21 +880,21 @@ quit
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-count">127</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">53</span>
+              <span class="site-state-item-count">56</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -61,7 +61,7 @@ someBlock(items, item);
 use block as type
 1
 @property (nonatomic, s">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="block note">
 <meta name="twitter:description" content="use block as local var
@@ -274,28 +274,28 @@ clicky_site_ids.push(100784435);
 
       
         <span itemprop="articleBody"><p><strong>use block as local var</strong></p>
-<pre><code>void (^someBlock)(NSMutableArray *,id) = ^(NSMutableArray *items,NSString *item) {
-       //do some thing
+<pre><code><span class="keyword">void</span> (^someBlock)(<span class="built_in">NSMutableArray</span> *,<span class="keyword">id</span>) = ^(<span class="built_in">NSMutableArray</span> *items,<span class="built_in">NSString</span> *item) {
+       <span class="comment">//do some thing</span>
 };
 
 someBlock(items, item);
 </code></pre><p><strong>use block as type</strong></p>
 <p>1</p>
-<pre><code>@property (nonatomic, strong) returnType(^propertyName)(arguments);
+<pre><code><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) returnType(^propertyName)(arguments);
 
-e.g.
-@property (nonatomic, strong) void(^onSelectedCustomer)(NSArray *customers);
+e<span class="variable">.g</span>.
+<span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) <span class="keyword">void</span>(^onSelectedCustomer)(<span class="built_in">NSArray</span> *customers);
 </code></pre><p>2</p>
-<pre><code>typedef returnType(^name)(arguments);
+<pre><code><span class="keyword">typedef</span> returnType(^name)(arguments);
 
-e.g.
-typedef void(^BlockType)(id);
-@property (nonatomic, strong) BlockType block;
+e<span class="variable">.g</span>.
+<span class="keyword">typedef</span> <span class="keyword">void</span>(^BlockType)(<span class="keyword">id</span>);
+<span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) BlockType block;
 </code></pre><p><strong>use block as method parameter</strong></p>
-<pre><code>- (void)methodWithBlock:(returnType(^)(arguments))block
+<pre><code>- (<span class="typename">void</span>)<span class="string">methodWithBlock:</span>(returnType(^)(arguments))block
 
 e.g.
-- (void)loginAnimated:(BOOL)animated completion:(void(^)(void))completion failed:(void(^)(void))failed;
+- (<span class="typename">void</span>)<span class="string">loginAnimated:</span>(BOOL)animated <span class="string">completion:</span>(<span class="typename">void</span>(^)(<span class="typename">void</span>))completion <span class="string">failed:</span>(<span class="typename">void</span>(^)(<span class="typename">void</span>))failed;
 </code></pre></span>
       
     </div>
@@ -385,21 +385,21 @@ e.g.
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-count">127</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">53</span>
+              <span class="site-state-item-count">56</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

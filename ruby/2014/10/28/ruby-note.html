@@ -79,7 +79,7 @@ end
 Ruby 类中的变量
 
 局部变量：局部变量是在方法中定义的变量。局">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ruby note">
 <meta name="twitter:description" content="link
@@ -312,8 +312,8 @@ clicky_site_ids.push(100784435);
 </ul>
 <hr>
 <p><strong>类</strong><br>在 Ruby 中，类总是以关键字 class 开始，后跟类的名称。类名的首字母应该大写。类 Customer 如下所示：    </p>
-<pre><code>class Customer
-end
+<pre><code><span class="class"><span class="keyword">class</span> <span class="title">Customer</span></span>
+<span class="keyword">end</span>
 </code></pre><hr>
 <p><strong>Ruby 类中的变量</strong></p>
 <ul>
@@ -364,7 +364,7 @@ end
 <hr>
 <p><strong>返回值</strong></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def test</span><br><span class="line">   i = <span class="number">100</span></span><br><span class="line">   j = <span class="number">10</span></span><br><span class="line">   k = <span class="number">0</span></span><br><span class="line">end <span class="preprocessor">#返回最后一个声明的变量 k</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">OR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">12</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">OR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">OR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> x,y <span class="comment">#自带tuple like python</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">OR</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">12</span></span><br><span class="line"></span><br><span class="line">OR</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line"></span><br><span class="line">OR</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> x,y <span class="preprocessor">#自带tuple like python</span></span><br></pre></td></tr></table></figure>
 <p>可变数量的参数 like python</p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def <span class="keyword">sample</span> (*<span class="keyword">test</span>)</span><br><span class="line">   puts <span class="string">"The number of parameters is #&#123;test.length&#125;"</span></span><br><span class="line">   <span class="keyword">for</span> i <span class="keyword">in</span> 0...<span class="keyword">test</span>.<span class="literal">length</span></span><br><span class="line">      puts <span class="string">"The parameters are #&#123;test[i]&#125;"</span></span><br><span class="line">   end</span><br><span class="line">end</span><br><span class="line"><span class="keyword">sample</span> <span class="string">"Zara"</span>, <span class="string">"6"</span>, <span class="string">"F"</span></span><br><span class="line"><span class="keyword">sample</span> <span class="string">"Mac"</span>, <span class="string">"36"</span>, <span class="string">"M"</span>, <span class="string">"MCA"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">list</span> = [<span class="string">"Zara"</span>, <span class="string">"6"</span>, <span class="string">"F"</span>] #也可以使用 array 加* 前缀</span><br><span class="line"><span class="keyword">sample</span>(*<span class="keyword">list</span>)</span><br></pre></td></tr></table></figure>
 <hr>
@@ -636,7 +636,7 @@ end
 <p><strong>正则表达式</strong></p>
 <p><a href="http://www.w3cschool.cc/ruby/ruby-regular-expressions.html" target="_blank" rel="external">语法</a></p>
 <p>正则表达式从字面上看是一种介于斜杠之间或介于跟在 %r 后的任意分隔符之间的模式，如下所示：</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/pattern/</span></span><br><span class="line"><span class="regexp">/pattern/im</span>    <span class="comment"># 可以指定选项</span></span><br><span class="line">%r!/usr/local! <span class="comment"># 一般的分隔的正则表达式</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/pattern/</span><br><span class="line"><span class="regexp">/pattern/im</span>    <span class="comment"># 可以指定选项</span></span><br><span class="line"><span class="variable">%r</span>!<span class="regexp">/usr/local</span>! <span class="comment"># 一般的分隔的正则表达式</span></span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
@@ -726,21 +726,21 @@ end
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-count">127</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">53</span>
+              <span class="site-state-item-count">56</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -200,6 +200,109 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/git/2014/06/25/git-on-google-drive.html" itemprop="url">
+                git on google drive
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-06-25T10:51:50-04:00" content="2014-06-25">
+            2014-06-25
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/git/" itemprop="url" rel="index">
+                  <span itemprop="name">git</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/git/2014/06/25/git-on-google-drive.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="git/2014/06/25/git-on-google-drive.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://www.iexplain.org/using-git-with-google-drive-a-tutorial/" target="_blank" rel="external">link</a></p>
+<ul>
+<li>Now, create a folder in your Google Drive folder called “git”. You want this folder as git produces a lot of files and you may want other stuff on your google drive besides your code repository.</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>CD yourself to your project folder (or whatever folder you want to have git control over).</li>
+</ul>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> \my-project-<span class="built_in">path</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Now, in the projects folder, perform the following git commands</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"first commit"</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Now we go to Google Drive and create a bare git repo (note that the backslash between Google and Drive should be exactly there)</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br><span class="line">git init --bare my-project.git</span><br><span class="line">cd <span class="command">\my</span>-project-path</span><br><span class="line">git remote add origin /Users/JoeUser/Google<span class="command">\ </span>Drive/git/my-project.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<ul>
+<li>To checkout this project from another machine, you simply make sure you have google drive on that machine and type</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /the_location_I_want_to_checkout_the_repo</span><br><span class="line">git <span class="built_in">clone</span> /Users/JoeUser/Google\ Drive/git/project1.git</span><br></pre></td></tr></table></figure></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2014/06/20/ios-style-guide.html" itemprop="url">
                 iOS style guide
               </a>
@@ -253,51 +356,51 @@ clicky_site_ids.push(100784435);
 
       
         
-          <span itemprop="articleBody"><h1 id="u547D_u540D"><a href="#u547D_u540D" class="headerlink" title="命名"></a>命名</h1><h2 id="0-_u6587_u4EF6_u547D_u540D"><a href="#0-_u6587_u4EF6_u547D_u540D" class="headerlink" title="0.文件命名"></a>0.文件命名</h2><pre><code>Tip
+          <span itemprop="articleBody"><h1 id="命名">命名</h1><h2 id="0-文件命名">0.文件命名</h2><pre><code><span class="title">Tip</span>
 文件名须反映出其实现了什么类 – 包括大小写。遵循你所参与项目的约定。
 </code></pre><p>类别的文件名应该包含被扩展的类名，如：GTMNSString+Utils.h 或<code>GTMNSTextView+Autocomplete.h</code>。</p>
-<h2 id="1-__u53D8_u91CF_u547D_u540D"><a href="#1-__u53D8_u91CF_u547D_u540D" class="headerlink" title="1. 变量命名"></a>1. 变量命名</h2><pre><code>Tip
+<h2 id="1-_变量命名">1. 变量命名</h2><pre><code><span class="title">Tip</span>
 方法名应该以小写字母开头，并混合驼峰格式。每个具名参数也应该以小写字母开头。
 </code></pre><p>变量命名需要能明白两点</p>
 <ul>
 <li>变量意思</li>
 <li>变量类型</li>
 </ul>
-<h3 id="BOOL_u578B"><a href="#BOOL_u578B" class="headerlink" title="BOOL型"></a>BOOL型</h3><p><strong>以 <code>is</code>开头</strong></p>
+<h3 id="BOOL型">BOOL型</h3><p><strong>以 <code>is</code>开头</strong></p>
 <p>如：</p>
-<pre><code>//GOOD
-BOOL isShouldReload;
-BOOL isLoading;
+<pre><code><span class="comment">//GOOD</span>
+<span class="built_in">BOOL</span> isShouldReload;
+<span class="built_in">BOOL</span> isLoading;
 
-//AVOID
-BOOL k;
-</code></pre><h3 id="Array__u578B"><a href="#Array__u578B" class="headerlink" title="Array 型"></a>Array 型</h3><p><strong>以 <code>s</code> 结尾</strong> 或者 <code>Array</code> </p>
+<span class="comment">//AVOID</span>
+<span class="built_in">BOOL</span> k;
+</code></pre><h3 id="Array_型">Array 型</h3><p><strong>以 <code>s</code> 结尾</strong> 或者 <code>Array</code> </p>
 <p>如：</p>
-<pre><code>NSArray *users;
-NSArray *messages
-</code></pre><h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary"></a>Dictionary</h3><p>以 <code>Dic</code> 结尾  或服务器返回对象</p>
-<pre><code>NSDictionary *dateDic;
-NSDictionary *message;
-</code></pre><h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><p>以 <code>String</code> 结尾 ，字段可以不用<code>String</code> 结尾</p>
-<pre><code>NSString *urlString;
+<pre><code>NSArray <span class="keyword">*</span>users;
+NSArray <span class="keyword">*</span>messages
+</code></pre><h3 id="Dictionary">Dictionary</h3><p>以 <code>Dic</code> 结尾  或服务器返回对象</p>
+<pre><code>NSDictionary *dateDic<span class="comment">;</span>
+NSDictionary *message<span class="comment">;</span>
+</code></pre><h3 id="String">String</h3><p>以 <code>String</code> 结尾 ，字段可以不用<code>String</code> 结尾</p>
+<pre><code><span class="built_in">NSString</span> *urlString;
 
-@property (nonatomic,strong) NSString * topId;//尽量与服务器统一
-</code></pre><h3 id="UI_Class"><a href="#UI_Class" class="headerlink" title="UI Class"></a>UI Class</h3><p><strong>以 <code>class</code> 结尾</strong> 尽量不使用<code>btn</code> <code>tv</code>等简写</p>
+<span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSString</span> * topId;<span class="comment">//尽量与服务器统一</span>
+</code></pre><h3 id="UI_Class">UI Class</h3><p><strong>以 <code>class</code> 结尾</strong> 尽量不使用<code>btn</code> <code>tv</code>等简写</p>
 <p>如：</p>
-<pre><code>//GOOD
-UIButton *loginButton
-UITextField *passwordTextField;
+<pre><code><span class="comment">//GOOD</span>
+<span class="built_in">UIButton</span> *loginButton
+<span class="built_in">UITextField</span> *passwordTextField;
 
-//AVOID
-UIButton *login;
-UITextField *password;
-</code></pre><h3 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h3><p>以 <code>on</code> 开头</p>
-<pre><code>typedef void(^OnCompletion)(API *, id value);
-typedef void(^OnFailed)(API *, id error);
+<span class="comment">//AVOID</span>
+<span class="built_in">UIButton</span> *login;
+<span class="built_in">UITextField</span> *password;
+</code></pre><h3 id="Block">Block</h3><p>以 <code>on</code> 开头</p>
+<pre><code><span class="title">typedef</span> void(^OnCompletion)(API *, id value);
+<span class="title">typedef</span> void(^OnFailed)(API *, id <span class="built_in">error</span>);
 
-OnCompletion  onCompletion;
-OnFailed      onFailed;
-</code></pre><h2 id="2-__u65B9_u6CD5_u547D_u540D"><a href="#2-__u65B9_u6CD5_u547D_u540D" class="headerlink" title="2. 方法命名"></a>2. 方法命名</h2><p><em>fds</em>  </p>
+<span class="title">OnCompletion</span>  <span class="built_in">on</span>Completion;
+<span class="title">OnFailed</span>      <span class="built_in">on</span>Failed;
+</code></pre><h2 id="2-_方法命名">2. 方法命名</h2><p><em>fds</em>  </p>
 </span>
         
       
@@ -624,9 +727,9 @@ OnFailed      onFailed;
 
       
         
-          <span itemprop="articleBody"><pre><code>find dir-path -name .DS_Store -delete
+          <span itemprop="articleBody"><pre><code><span class="built_in">find</span> <span class="built_in">dir</span>-<span class="built_in">path</span> -name .DS_Store -delete
 </code></pre><p><strong>or cd to the path</strong></p>
-<pre><code>find . -name .DS_Store -delete
+<pre><code><span class="keyword">find</span> . -name .DS_Store -<span class="keyword">delete</span>
 </code></pre></span>
         
       
@@ -712,77 +815,77 @@ OnFailed      onFailed;
         
           <span itemprop="articleBody"><p><a href="http://git-scm.com/download/mac" target="_blank" rel="external">download OSX latest git</a></p>
 <p><strong>init</strong></p>
-<pre><code>git init
+<pre><code><span class="title">git</span> init
 </code></pre><p><strong>add remote url</strong></p>
-<pre><code>git remote add origin repo-url
+<pre><code><span class="label">git</span> remote <span class="keyword">add </span>origin repo-url
 </code></pre><p><strong>delete remote url</strong></p>
-<pre><code>git remote rm origin
+<pre><code><span class="title">git</span> remote rm origin
 </code></pre><p><strong>clone from remote</strong></p>
-<pre><code>git clone repo-url
+<pre><code>git <span class="built_in">clone</span> repo-url
 </code></pre><p><strong>check status</strong></p>
-<pre><code>git status
+<pre><code>git <span class="keyword">status</span>
 </code></pre><p><strong>add all changes</strong></p>
-<pre><code>git add .     #add all file in current folder
+<pre><code>git add .     <span class="hexcolor">#add</span> all file <span class="keyword">in</span> current folder
 git add -A    #git
 </code></pre><p><strong>add some file</strong></p>
-<pre><code>git add file-path
+<pre><code>git <span class="built_in">add</span> <span class="built_in">file</span>-path
 </code></pre><p><strong>commit to repo</strong></p>
-<pre><code>git commit -m &apos;comment&apos;
+<pre><code>git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">'comment'</span></span>
 </code></pre><p><strong>remove all commits not in origin/master</strong></p>
-<pre><code>git reset --hard origin/master
+<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard origin/master</span></span>
 </code></pre><p><strong>push to remote</strong></p>
-<pre><code>git push 
+<pre><code><span class="label">git</span> <span class="keyword">push </span>
 </code></pre><p><strong>log</strong></p>
-<pre><code>git log                 #查看最近 提交
-git log -10         #查看最近 提交 -10
-git log --graph     #查看最近 提交 --graph
-gitk                #GUI查看提交记录，需要用homebrew 升级git
-gitk file-path        #GUI查看filefile-path提交记录
+<pre><code>git <span class="command">log</span>                 <span class="comment">#查看最近 提交</span>
+git <span class="command">log</span> -<span class="number">10</span>         <span class="comment">#查看最近 提交 -10</span>
+git <span class="command">log</span> <span class="comment">--graph     #查看最近 提交 --graph</span>
+gitk                <span class="comment">#GUI查看提交记录，需要用homebrew 升级git</span>
+gitk <span class="type">file</span>-path        <span class="comment">#GUI查看filefile-path提交记录</span>
 
-git log --decorate
-git log --decorate --all --oneline --graph
+git <span class="command">log</span> <span class="comment">--decorate</span>
+git <span class="command">log</span> <span class="comment">--decorate --all --oneline --graph</span>
 </code></pre><p><strong>checkout</strong></p>
 <pre><code>git checkout .
 git checkout &lt;commit number&gt; &lt;filename&gt;  #**常用**
-git checkout 3f33b7959ff97715d69e418620895d98b811f8cb folder-name/* #恢复某folder-name下所有文件到 3f33b7959ff97715d69e418620895d98b811f8cb
+git checkout <span class="number">3f33b7959</span>ff<span class="number">97715d69e41</span><span class="number">8620895d98</span>b811f8cb folder-name/* #恢复某folder-name下所有文件到 <span class="number">3f33b7959</span>ff<span class="number">97715d69e41</span><span class="number">8620895d98</span>b811f8cb
 </code></pre><p><strong>撤销提交</strong></p>
-<pre><code>git revert 
+<pre><code><span class="label">git</span> <span class="keyword">revert </span>
 </code></pre><p><strong>view branches</strong></p>
-<pre><code>git branch             #查看本地分支
-git branch -a         #查看本地和服务器分支
+<pre><code>git branch             <span class="comment">#查看本地分支</span>
+git branch <span class="operator">-a</span>         <span class="comment">#查看本地和服务器分支</span>
 </code></pre><p><strong>create new branch</strong></p>
-<pre><code>git branch new-branch-name
+<pre><code>git branch <span class="keyword">new</span>-branch-name
 </code></pre><p><strong>switch branch</strong></p>
-<pre><code>git checkout branch-name         #切换到branch-name
+<pre><code>git checkout branch-<span class="property">name</span>         <span class="comment">#切换到branch-name</span>
 </code></pre><p><strong>git merge from dev to master</strong></p>
 <pre><code>git checkout master
-git merge dev
+git <span class="built_in">merge</span> dev
 </code></pre><p><strong>delete branch</strong></p>
-<pre><code>git branch -D branch-name                     #删除本地分支branch-name
-
-git push origin --delete branch-name       #删除服务器分支branch-name
+<pre><code><span class="label">git</span> <span class="keyword">branch </span>-D <span class="keyword">branch-name </span>                    #删除本地分支<span class="keyword">branch-name
+</span>
+<span class="label">git</span> <span class="keyword">push </span>origin --delete <span class="keyword">branch-name </span>      #删除服务器分支<span class="keyword">branch-name</span>
 </code></pre><p><strong>基于远程跟踪分支创建本地分支</strong></p>
-<pre><code>git checkout --track -b branch-name-on-local origin/branch-name-on-server
+<pre><code><span class="title">git</span> checkout --track -b branch-name-<span class="built_in">on</span>-local origin/branch-name-<span class="built_in">on</span>-server
 </code></pre><p><strong>diff</strong></p>
-<pre><code>git diff master origin/master             # 比较 master(本地) 和服务器 master 的差异
+<pre><code><span class="title">git</span> diff master origin/master             <span class="comment"># 比较 master(本地) 和服务器 master 的差异</span>
 </code></pre><p><strong>push to server</strong></p>
-<pre><code>git push origin branch-name-on-server
+<pre><code>git push origin branch-<span class="property">name</span>-<span class="function_start"><span class="keyword">on</span></span>-server
 </code></pre><p><strong>tag</strong></p>
-<pre><code>git tag                                 #查看所有标签
-git tag v0.1.2-light                    #创建轻量标签
-git tag -a v0.1.2 -m “0.1.2版本”        #创建附注标签
+<pre><code>git tag                                 <span class="preprocessor">#查看所有标签</span>
+git tag v0<span class="number">.1</span><span class="number">.2</span>-light                    <span class="preprocessor">#创建轻量标签</span>
+git tag -a v0<span class="number">.1</span><span class="number">.2</span> -m “<span class="number">0.1</span><span class="number">.2</span>版本”        <span class="preprocessor">#创建附注标签</span>
 
 git checkout tag-name
-git tag -d v0.1.2                     #删除标签
-git tag -a v0.1.1 9fbc3d0             #补打标签
+git tag -d v0<span class="number">.1</span><span class="number">.2</span>                     <span class="preprocessor">#删除标签</span>
+git tag -a v0<span class="number">.1</span><span class="number">.1</span> <span class="number">9f</span>bc3d0             <span class="preprocessor">#补打标签</span>
 
 git push --tags
 </code></pre><p><code>通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：</code></p>
-<pre><code>git push origin tag-name             #将tag-name标签提交到git服务器
-git push origin –tags                 #将本地所有标签一次性提交到git服务器
+<pre><code>git <span class="keyword">push</span> origin tag-name             <span class="preprocessor">#将tag-name标签提交到git服务器</span>
+git <span class="keyword">push</span> origin –tags                 <span class="preprocessor">#将本地所有标签一次性提交到git服务器</span>
 </code></pre><p><strong>push all</strong></p>
-<pre><code>git push --all                         #push 所有branch
-git push --all origin                 #push 所有tag 和所有branch到服务器
+<pre><code>git <span class="keyword">push</span> --all                         <span class="preprocessor">#push 所有branch</span>
+git <span class="keyword">push</span> --all origin                 <span class="preprocessor">#push 所有tag 和所有branch到服务器</span>
 </code></pre></span>
         
       
@@ -869,10 +972,10 @@ git push --all origin                 #push 所有tag 和所有branch到服务�
           <span itemprop="articleBody"><pre><code>$ gem sources --remove https://rubygems.org/
 $ gem sources -a https://ruby.taobao.org/
 $ gem sources -l
-*** CURRENT SOURCES ***
+<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span> CURRENT SOURCES <span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>
 
 https://ruby.taobao.org
-# 请确保只有 ruby.taobao.org
+<span class="comment"># 请确保只有 ruby.taobao.org</span>
 $ gem install rails
 </code></pre></span>
         
@@ -1185,90 +1288,6 @@ $ gem install rails
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/ios/2014/03/15/ios-7-sharesdk.html" itemprop="url">
-                iOS 7.1 sharesdk 兼容
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-03-14T16:06:50-04:00" content="2014-03-14">
-            2014-03-14
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/ios/" itemprop="url" rel="index">
-                  <span itemprop="name">ios</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/ios/2014/03/15/ios-7-sharesdk.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/03/15/ios-7-sharesdk.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>修改 build settings<br><img src="http://www.dasdoc.com/uploads/origin/201403/141541016.png" alt="image"></p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1307,21 +1326,21 @@ $ gem install rails
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-count">127</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">53</span>
+              <span class="site-state-item-count">56</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

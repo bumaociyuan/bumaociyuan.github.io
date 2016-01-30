@@ -200,6 +200,116 @@ clicky_site_ids.push(100784435);
           
           
             
+              <a class="post-title-link" href="/ios/2014/08/25/enable-php-on-mac.html" itemprop="url">
+                Enable php on mac
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2014-08-24T21:07:00-04:00" content="2014-08-24">
+            2014-08-24
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/ios/" itemprop="url" rel="index">
+                  <span itemprop="name">ios</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/ios/2014/08/25/enable-php-on-mac.html#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ios/2014/08/25/enable-php-on-mac.html" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><a href="http://osxfactor.com/2009/08/30/how-to-enable-php-mysql-in-snow-leopard/" target="_blank" rel="external">link</a></p>
+<ol>
+<li>Navigate to <code>/etc/apache2</code></li>
+<li>Do a search for “php”. You should see the following line:<code>#LoadModule php5_module        libexec/apache2/libphp5.so</code>Remove the “#”</li>
+<li>Save the file. You may need to authenticate upon saving.</li>
+<li>run <code>sudo apachectl restart</code> to restart apache</li>
+<li>visit <code>localhost</code> you will see <strong>It works!</strong></li>
+<li><code>/etc/apache2/httpd.conf</code>Search for “virtual” in your text editor. You should see the following lines:</li>
+</ol>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#Virtual hosts</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">Include</span> /private/etc/apache2/	extra/httpd-</span></span><br></pre></td></tr></table></figure>
+<p>Uncomment the second line that starts with “#Include” by removing the “#”. We now need to modify httpd-vhosts.conf file to add our virtual hosts.</p>
+<ol>
+<li>open<code>/etc/apache2/extra/httpd-vhosts.conf</code></li>
+</ol>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword"><span class="common">DocumentRoot</span></span> <span class="string">"/Users/username/Sites/Website"</span></span><br><span class="line"><span class="keyword"><span class="common">ServerName</span></span> yourwebsitename</span><br></pre></td></tr></table></figure>
+<h3 id="Another_tutorial">Another tutorial</h3><ul>
+<li>Install : XAMPP Mac OS X 1.7.3 <a href="http://www.apachefriends.org/download.php?xampp-macosx-1.7.3.dmg" target="_blank" rel="external">download</a></li>
+<li><code>sudo su</code></li>
+<li><code>/Applications/XAMPP/xamppfiles/xampp start</code></li>
+</ul>
+<p>if you see </p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">XAMPP:</span> Starting ProFTPD...<span class="regexp">/Applications/</span>XAMPP<span class="regexp">/xamppfiles/</span><span class="string">xampp:</span> line <span class="number">184</span>: <span class="regexp">/Applications/</span>XAMPP<span class="regexp">/xamppfiles/</span><span class="regexp">/var/</span>proftpd/start.<span class="string">err:</span> No such file or directory fail.  </span><br><span class="line">Contents of <span class="string">"/Applications/XAMPP/xamppfiles//var/proftpd/start.err"</span>:  		<span class="string">cat:</span> <span class="regexp">/Applications/</span>XAMPP<span class="regexp">/xamppfiles/</span><span class="regexp">/var/</span>proftpd/start.<span class="string">err:</span> No such file or directory</span><br></pre></td></tr></table></figure>
+<p>do these commands</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">`sudo mkdir <span class="regexp">/Applications/</span>XAMPP<span class="regexp">/xamppfiles/</span>var<span class="regexp">/proftpd/</span>`</span><br><span class="line"></span><br><span class="line">`touch <span class="regexp">/Applications/</span>XAMPP<span class="regexp">/xamppfiles/</span>var<span class="regexp">/proftpd/</span>start.err`</span><br><span class="line"></span><br><span class="line">`sudo <span class="regexp">/Applications/</span>XAMPP<span class="regexp">/xamppfiles/</span>xampp fix_rights`</span><br><span class="line"></span><br><span class="line">then redo the `<span class="regexp">/Applications/</span>XAMPP<span class="regexp">/xamppfiles/</span>xampp start` cmd</span><br></pre></td></tr></table></figure>
+<ul>
+<li>in <a href="http://localhost" target="_blank" rel="external">http://localhost</a> you can see the test site</li>
+</ul>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/ios/2014/08/20/afnetworking-issue.html" itemprop="url">
                 AFNetworking issues
               </a>
@@ -258,10 +368,10 @@ clicky_site_ids.push(100784435);
 <p>or</p>
 <p><code>The operation couldn’t be completed (Cocoa error 3840 )</code></p>
 <p>fix this issue</p>
-<pre><code> AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager new];
-NSMutableSet *set = manager.responseSerializer.acceptableContentTypes.mutableCopy;
-[set addObject:@&quot;text/html&quot;];
-   manager.responseSerializer.acceptableContentTypes = set;
+<pre><code> AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager <span class="keyword">new</span>];
+NSMutableSet *<span class="keyword">set</span> = manager.responseSerializer.acceptableContentTypes.mutableCopy;
+[<span class="keyword">set</span> addObjec<span class="variable">t:</span>@<span class="string">"text/html"</span>];
+   manager.responseSerializer.acceptableContentTypes = <span class="keyword">set</span>;
 </code></pre></span>
         
       
@@ -433,16 +543,16 @@ NSMutableSet *set = manager.responseSerializer.acceptableContentTypes.mutableCop
           <span itemprop="articleBody"><p>July 21, 2015<br><a href="http://blog.csdn.net/justinjing0612/article/details/42294329" target="_blank" rel="external">iOS开发的一些奇巧淫技</a></p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.leftBarButtonItem</span> = [[<span class="built_in">UIBarButtonItem</span> alloc]</span><br><span class="line"></span><br><span class="line">                                         initWithImage:img</span><br><span class="line"></span><br><span class="line">                                         style:<span class="built_in">UIBarButtonItemStylePlain</span></span><br><span class="line"></span><br><span class="line">                                         target:<span class="keyword">self</span></span><br><span class="line"></span><br><span class="line">                                         action:<span class="keyword">@selector</span>(onBack:)];</span><br><span class="line"></span><br><span class="line"><span class="keyword">self</span><span class="variable">.navigationController</span><span class="variable">.interactivePopGestureRecognizer</span><span class="variable">.delegate</span> = (<span class="keyword">id</span>)<span class="keyword">self</span>;</span><br></pre></td></tr></table></figure>
 <p>December 27, 2014 update<br><a href="http://www.jianshu.com/p/50b63a221f09" target="_blank" rel="external">link</a></p>
-<pre><code>[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
-                                                   forBarMetrics:UIBarMetricsDefault];
+<pre><code><span class="attr_selector">[[UIBarButtonItem appearance]</span> <span class="rule"><span class="attribute">setBackButtonTitlePositionAdjustment</span>:<span class="value"><span class="function">UIOffsetMake</span>(<span class="number">0</span>, -<span class="number">60</span>)
+                                                   forBarMetrics:UIBarMetricsDefault]</span></span>;
 </code></pre><hr>
 <p>in <code>AppDelegate.m</code></p>
-<pre><code>UINavigationBar * bar = [UINavigationBar appearance];
-bar.backIndicatorImage = [UIImage imageNamed:@&quot;navBackButton&quot;];
-bar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@&quot;navBackButton&quot;];
+<pre><code><span class="built_in">UINavigationBar</span> * bar = [<span class="built_in">UINavigationBar</span> appearance];
+bar<span class="variable">.backIndicatorImage</span> = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@"navBackButton"</span>];
+bar<span class="variable">.backIndicatorTransitionMaskImage</span> = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@"navBackButton"</span>];
 </code></pre><p>in <code>BaseViewController.m</code> -viewdidload</p>
-<pre><code>self.navigationItem.leftItemsSupplementBackButton = YES;
-self.navigationItem.backBarButtonItem = [self textBarButtonItemWithText:@&quot;&quot;];
+<pre><code><span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.leftItemsSupplementBackButton</span> = <span class="literal">YES</span>;
+<span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.backBarButtonItem</span> = [<span class="keyword">self</span> textBarButtonItemWithText:<span class="string">@""</span>];
 </code></pre><p><strong>cannot handle the back bar button item click event</strong></p>
 </span>
         
@@ -957,16 +1067,16 @@ self.navigationItem.backBarButtonItem = [self textBarButtonItemWithText:@&quot;&
 <li>Run the GitHub desktop application and clone the repository onto your PC.</li>
 <li>Use the GitHub desktop application to open a shell in the repository. (The git commands are not available from the default PowerShell unless you configure that manually.)</li>
 <li><p>Set the source repository as upstream:</p>
-<pre><code>git remote add upstream https://github.com/{user}/{source-repo}.git
+<pre><code>git remote <span class="built_ins">add</span> upstream https://github.com/{<span class="built_ins">user</span>}/{source-repo}.git
 </code></pre></li>
 </ul>
 <ul>
 <li><p>Fetch the full upstream repository. (Right now, you only have a copy of its master branch.)</p>
-<pre><code>git fetch upstream
+<pre><code><span class="title">git</span> fetch upstream
 </code></pre></li>
 <li><p>Make your file system copy the branch you want and give it any name:</p>
-<pre><code>git checkout upstream/{branch-in-question}
-git checkout -b temporary
+<pre><code><span class="label">git</span> checkout upstream/{<span class="keyword">branch-in-question}
+</span><span class="label">git</span> checkout -<span class="keyword">b </span>temporary
 </code></pre></li>
 <li><p>Publish your repo using the GitHub desktop application.</p>
 </li>
@@ -975,10 +1085,10 @@ git checkout -b temporary
 <li>Change the “Default branch” to ‘temporary’. (Just change the drop-down menu, you don’t need to click the “Rename” button.)</li>
 <li>Go back to your repository, go to the ‘branches’ tab, now you can delete the “master” branch.</li>
 <li><p>Delete the master branch on your shell and make a new master branch:</p>
-<pre><code>git branch -d master
-git branch master
-git checkout master
-git -d temporary
+<pre><code><span class="label">git</span> <span class="keyword">branch </span>-d master
+<span class="label">git</span> <span class="keyword">branch </span>master
+<span class="label">git</span> checkout master
+<span class="label">git</span> -d temporary
 </code></pre></li>
 <li><p>Once more, publish your repo using the GitHub desktop application.</p>
 </li>
@@ -989,109 +1099,6 @@ git -d temporary
 </ul>
 <p>This should be what you were looking for. Perhaps GitHub will provide a more convenient way to do this in future (e.g., clicking “Fork” from a project’s branch results in exactly this behaviour).</p>
 </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/git/2014/06/25/git-on-google-drive.html" itemprop="url">
-                git on google drive
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2014-06-25T10:51:50-04:00" content="2014-06-25">
-            2014-06-25
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/git/" itemprop="url" rel="index">
-                  <span itemprop="name">git</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/git/2014/06/25/git-on-google-drive.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="git/2014/06/25/git-on-google-drive.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p><a href="http://www.iexplain.org/using-git-with-google-drive-a-tutorial/" target="_blank" rel="external">link</a></p>
-<ul>
-<li>Now, create a folder in your Google Drive folder called “git”. You want this folder as git produces a lot of files and you may want other stuff on your google drive besides your code repository.</li>
-</ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>CD yourself to your project folder (or whatever folder you want to have git control over).</li>
-</ul>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> \my-project-<span class="built_in">path</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>Now, in the projects folder, perform the following git commands</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"first commit"</span></span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>Now we go to Google Drive and create a bare git repo (note that the backslash between Google and Drive should be exactly there)</li>
-</ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br><span class="line">git init --bare my-project.git</span><br><span class="line">cd <span class="command">\my</span>-project-path</span><br><span class="line">git remote add origin /Users/JoeUser/Google<span class="command">\ </span>Drive/git/my-project.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-<ul>
-<li>To checkout this project from another machine, you simply make sure you have google drive on that machine and type</li>
-</ul>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /the_location_I_want_to_checkout_the_repo</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">/Users</span>/JoeUser/Google\ Drive/git/project1.git</span><br></pre></td></tr></table></figure></span>
         
       
     </div>
@@ -1148,21 +1155,21 @@ git -d temporary
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-count">127</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">53</span>
+              <span class="site-state-item-count">56</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

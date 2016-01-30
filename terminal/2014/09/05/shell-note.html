@@ -51,7 +51,7 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 Where 3600 is the number of seconds in one hour. You may modify it to any number of seconds, or alternatively just enter caffeinate without a timer to disable slee">
 <meta property="og:image" content="http://www.92csz.com/study/linux/images/12_7.png">
 <meta property="og:image" content="http://www.92csz.com/study/linux/images/12_8.png">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="shell note">
 <meta name="twitter:description" content="February 2, 2015
@@ -290,28 +290,28 @@ clicky_site_ids.push(100784435);
 </ul>
 <figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">array</span>=($&#123;<span class="built_in">string</span><span class="comment">//,/&#125;)</span></span><br><span class="line">printf <span class="attribute">-v</span> <span class="built_in">var</span> <span class="string">"%s-"</span> <span class="string">"$&#123;array[@]&#125;"</span></span><br><span class="line"><span class="built_in">var</span>=$&#123;<span class="built_in">var</span>%?&#125;</span><br></pre></td></tr></table></figure>
 <p>—–2014-09-04——-</p>
-<h4 id="1-__u8BB0_u5F55_u547D_u4EE4_u5386_u53F2"><a href="#1-__u8BB0_u5F55_u547D_u4EE4_u5386_u53F2" class="headerlink" title="1. 记录命令历史"></a>1. 记录命令历史</h4><ul>
+<h4 id="1-_记录命令历史">1. 记录命令历史</h4><ul>
 <li><code>!! （”连续两个”!”），表示执行上一条指令</code></li>
 <li>!n（这里的n是数字），表示执行命令历史中第n条指令，例如”!100”表示执行命令历史中第100个命令</li>
 <li><code>!字符串（字符串大于等于1），例如!ta，表示执行命令历史中最近一次以ta为开头的指令。</code></li>
 </ul>
-<h4 id="2-__u6307_u4EE4_u548C_u6587_u4EF6_u540D_u8865_u5168"><a href="#2-__u6307_u4EE4_u548C_u6587_u4EF6_u540D_u8865_u5168" class="headerlink" title="2. 指令和文件名补全"></a>2. 指令和文件名补全</h4><ul>
+<h4 id="2-_指令和文件名补全">2. 指令和文件名补全</h4><ul>
 <li><code>按tab键，它可以帮你补全一个指令，也可以帮你补全一个路径或者一个文件名。连续按两次tab键，系统则会把所有的指令或者文件名都列出来。</code></li>
 </ul>
-<h4 id="3-__u522B_u540D_alias"><a href="#3-__u522B_u540D_alias" class="headerlink" title="3. 别名 alias"></a>3. 别名 alias</h4><p><img src="http://www.92csz.com/study/linux/images/12_7.png" alt="image"></p>
+<h4 id="3-_别名_alias">3. 别名 alias</h4><p><img src="http://www.92csz.com/study/linux/images/12_7.png" alt="image"></p>
 <ul>
 <li>alias语法很简单，alias [命令别名]=[’具体的命令’]。</li>
 </ul>
-<h4 id="4-__u901A_u914D_u7B26"><a href="#4-__u901A_u914D_u7B26" class="headerlink" title="4. 通配符"></a>4. 通配符</h4><ul>
+<h4 id="4-_通配符">4. 通配符</h4><ul>
 <li>在bash下，可以使用*来匹配零个或多个字符，而用?匹配一个字符。<br><img src="http://www.92csz.com/study/linux/images/12_8.png" alt="image"></li>
 </ul>
-<h4 id="5-__u7BA1_u9053_u7B26"><a href="#5-__u7BA1_u9053_u7B26" class="headerlink" title="5. 管道符"></a>5. 管道符</h4><ul>
+<h4 id="5-_管道符">5. 管道符</h4><ul>
 <li><code>前面已经提过过管道符”|”，就是把前面的命令运行的结果丢给后面的命令。</code></li>
 </ul>
-<h4 id="6-__u4F5C_u4E1A_u63A7_u5236"><a href="#6-__u4F5C_u4E1A_u63A7_u5236" class="headerlink" title="6. 作业控制"></a>6. 作业控制</h4><ul>
+<h4 id="6-_作业控制">6. 作业控制</h4><ul>
 <li>当运行一个进程时，<code>你可以使它暂停（按Ctrl+z），然后使用fg命令恢复它</code>，利用bg命令使他到后台运行，你也可以使它终止（按Ctrl+c）。</li>
 </ul>
-<h4 id="7-__u53D8_u91CF"><a href="#7-__u53D8_u91CF" class="headerlink" title="7. 变量"></a>7. 变量</h4><ul>
+<h4 id="7-_变量">7. 变量</h4><ul>
 <li>前面章节中笔者曾经介绍过环境变量PATH，这个环境变量就是shell预设的一个变量，通常shell预设的变量都是大写的。变量，说简单点就是使用一个较简单的字符串来替代某些具有特殊意义的设定以及数据。就拿PATH来讲，这个PATH就代替了所有常用命令的绝对路径的设定。因为有了PATH这个变量，所以我们运行某个命令时不再去输入全局路径，直接敲命令名即可。你可以使用echo命令显示变量的值。</li>
 <li>使用env命令即可全部列出系统预设的全部系统变量了。不过登录的用户不一样这些环境变量的值也不一样。当前显示的就是root这个账户的环境变量了。下面笔者简单介绍一下常见的环境变量：</li>
 </ul>
@@ -320,7 +320,7 @@ clicky_site_ids.push(100784435);
 <li>set不仅可以显示系统预设的变量，也可以连同用户自定义的变量显示出来。用户自定义变量？是的，用户自己同样可以定义变量</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">myname=zx //不能有空格 myname='first name'</span><br><span class="line"><span class="operator"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zx</span><br><span class="line"></span><br><span class="line">myname=<span class="string">"$myname"</span>dddd //变量内容可以累加其他变量的内容，需要**加双引号**</span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zxdddd</span><br><span class="line"></span><br><span class="line"><span class="keyword">work</span>=/<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday/</span><br><span class="line">cd $<span class="keyword">work</span></span><br><span class="line">pwd //<span class="keyword">output</span> : /<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday</span></span><br></pre></td></tr></table></figure>
-<h4 id="8-__u7279_u6B8A_u7B26_u53F7"><a href="#8-__u7279_u6B8A_u7B26_u53F7" class="headerlink" title="8. 特殊符号"></a>8. 特殊符号</h4><ol>
+<h4 id="8-_特殊符号">8. 特殊符号</h4><ol>
 <li>* ：代表零个或多个字符或数字。</li>
 <li>? ：只代表一个任意的字符</li>
 <li># ：这个符号在linux中表示注释说明的意思，即”#”后面的内容linux忽略掉。</li>
@@ -427,21 +427,21 @@ clicky_site_ids.push(100784435);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-count">127</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">53</span>
+              <span class="site-state-item-count">56</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -493,7 +493,7 @@ clicky_site_ids.push(100784435);
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-__u8BB0_u5F55_u547D_u4EE4_u5386_u53F2"><span class="nav-number">1.</span> <span class="nav-text">1. 记录命令历史</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-__u6307_u4EE4_u548C_u6587_u4EF6_u540D_u8865_u5168"><span class="nav-number">2.</span> <span class="nav-text">2. 指令和文件名补全</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-__u522B_u540D_alias"><span class="nav-number">3.</span> <span class="nav-text">3. 别名 alias</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-__u901A_u914D_u7B26"><span class="nav-number">4.</span> <span class="nav-text">4. 通配符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-__u7BA1_u9053_u7B26"><span class="nav-number">5.</span> <span class="nav-text">5. 管道符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-__u4F5C_u4E1A_u63A7_u5236"><span class="nav-number">6.</span> <span class="nav-text">6. 作业控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-__u53D8_u91CF"><span class="nav-number">7.</span> <span class="nav-text">7. 变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-__u7279_u6B8A_u7B26_u53F7"><span class="nav-number">8.</span> <span class="nav-text">8. 特殊符号</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-_记录命令历史"><span class="nav-number">1.</span> <span class="nav-text">1. 记录命令历史</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-_指令和文件名补全"><span class="nav-number">2.</span> <span class="nav-text">2. 指令和文件名补全</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-_别名_alias"><span class="nav-number">3.</span> <span class="nav-text">3. 别名 alias</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-_通配符"><span class="nav-number">4.</span> <span class="nav-text">4. 通配符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-_管道符"><span class="nav-number">5.</span> <span class="nav-text">5. 管道符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-_作业控制"><span class="nav-number">6.</span> <span class="nav-text">6. 作业控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-_变量"><span class="nav-number">7.</span> <span class="nav-text">7. 变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-_特殊符号"><span class="nav-number">8.</span> <span class="nav-text">8. 特殊符号</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

@@ -67,7 +67,7 @@ git clone repo-url
 check status
 git status
 add all changes">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git note">
 <meta name="twitter:description" content="download OSX latest git
@@ -284,77 +284,77 @@ clicky_site_ids.push(100784435);
       
         <span itemprop="articleBody"><p><a href="http://git-scm.com/download/mac" target="_blank" rel="external">download OSX latest git</a></p>
 <p><strong>init</strong></p>
-<pre><code>git init
+<pre><code><span class="title">git</span> init
 </code></pre><p><strong>add remote url</strong></p>
-<pre><code>git remote add origin repo-url
+<pre><code><span class="label">git</span> remote <span class="keyword">add </span>origin repo-url
 </code></pre><p><strong>delete remote url</strong></p>
-<pre><code>git remote rm origin
+<pre><code><span class="title">git</span> remote rm origin
 </code></pre><p><strong>clone from remote</strong></p>
-<pre><code>git clone repo-url
+<pre><code>git <span class="built_in">clone</span> repo-url
 </code></pre><p><strong>check status</strong></p>
-<pre><code>git status
+<pre><code>git <span class="keyword">status</span>
 </code></pre><p><strong>add all changes</strong></p>
-<pre><code>git add .     #add all file in current folder
+<pre><code>git add .     <span class="hexcolor">#add</span> all file <span class="keyword">in</span> current folder
 git add -A    #git
 </code></pre><p><strong>add some file</strong></p>
-<pre><code>git add file-path
+<pre><code>git <span class="built_in">add</span> <span class="built_in">file</span>-path
 </code></pre><p><strong>commit to repo</strong></p>
-<pre><code>git commit -m &apos;comment&apos;
+<pre><code>git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">'comment'</span></span>
 </code></pre><p><strong>remove all commits not in origin/master</strong></p>
-<pre><code>git reset --hard origin/master
+<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard origin/master</span></span>
 </code></pre><p><strong>push to remote</strong></p>
-<pre><code>git push 
+<pre><code><span class="label">git</span> <span class="keyword">push </span>
 </code></pre><p><strong>log</strong></p>
-<pre><code>git log                 #查看最近 提交
-git log -10         #查看最近 提交 -10
-git log --graph     #查看最近 提交 --graph
-gitk                #GUI查看提交记录，需要用homebrew 升级git
-gitk file-path        #GUI查看filefile-path提交记录
+<pre><code>git <span class="command">log</span>                 <span class="comment">#查看最近 提交</span>
+git <span class="command">log</span> -<span class="number">10</span>         <span class="comment">#查看最近 提交 -10</span>
+git <span class="command">log</span> <span class="comment">--graph     #查看最近 提交 --graph</span>
+gitk                <span class="comment">#GUI查看提交记录，需要用homebrew 升级git</span>
+gitk <span class="type">file</span>-path        <span class="comment">#GUI查看filefile-path提交记录</span>
 
-git log --decorate
-git log --decorate --all --oneline --graph
+git <span class="command">log</span> <span class="comment">--decorate</span>
+git <span class="command">log</span> <span class="comment">--decorate --all --oneline --graph</span>
 </code></pre><p><strong>checkout</strong></p>
 <pre><code>git checkout .
 git checkout &lt;commit number&gt; &lt;filename&gt;  #**常用**
-git checkout 3f33b7959ff97715d69e418620895d98b811f8cb folder-name/* #恢复某folder-name下所有文件到 3f33b7959ff97715d69e418620895d98b811f8cb
+git checkout <span class="number">3f33b7959</span>ff<span class="number">97715d69e41</span><span class="number">8620895d98</span>b811f8cb folder-name/* #恢复某folder-name下所有文件到 <span class="number">3f33b7959</span>ff<span class="number">97715d69e41</span><span class="number">8620895d98</span>b811f8cb
 </code></pre><p><strong>撤销提交</strong></p>
-<pre><code>git revert 
+<pre><code><span class="label">git</span> <span class="keyword">revert </span>
 </code></pre><p><strong>view branches</strong></p>
-<pre><code>git branch             #查看本地分支
-git branch -a         #查看本地和服务器分支
+<pre><code>git branch             <span class="comment">#查看本地分支</span>
+git branch <span class="operator">-a</span>         <span class="comment">#查看本地和服务器分支</span>
 </code></pre><p><strong>create new branch</strong></p>
-<pre><code>git branch new-branch-name
+<pre><code>git branch <span class="keyword">new</span>-branch-name
 </code></pre><p><strong>switch branch</strong></p>
-<pre><code>git checkout branch-name         #切换到branch-name
+<pre><code>git checkout branch-<span class="property">name</span>         <span class="comment">#切换到branch-name</span>
 </code></pre><p><strong>git merge from dev to master</strong></p>
 <pre><code>git checkout master
-git merge dev
+git <span class="built_in">merge</span> dev
 </code></pre><p><strong>delete branch</strong></p>
-<pre><code>git branch -D branch-name                     #删除本地分支branch-name
-
-git push origin --delete branch-name       #删除服务器分支branch-name
+<pre><code><span class="label">git</span> <span class="keyword">branch </span>-D <span class="keyword">branch-name </span>                    #删除本地分支<span class="keyword">branch-name
+</span>
+<span class="label">git</span> <span class="keyword">push </span>origin --delete <span class="keyword">branch-name </span>      #删除服务器分支<span class="keyword">branch-name</span>
 </code></pre><p><strong>基于远程跟踪分支创建本地分支</strong></p>
-<pre><code>git checkout --track -b branch-name-on-local origin/branch-name-on-server
+<pre><code><span class="title">git</span> checkout --track -b branch-name-<span class="built_in">on</span>-local origin/branch-name-<span class="built_in">on</span>-server
 </code></pre><p><strong>diff</strong></p>
-<pre><code>git diff master origin/master             # 比较 master(本地) 和服务器 master 的差异
+<pre><code><span class="title">git</span> diff master origin/master             <span class="comment"># 比较 master(本地) 和服务器 master 的差异</span>
 </code></pre><p><strong>push to server</strong></p>
-<pre><code>git push origin branch-name-on-server
+<pre><code>git push origin branch-<span class="property">name</span>-<span class="function_start"><span class="keyword">on</span></span>-server
 </code></pre><p><strong>tag</strong></p>
-<pre><code>git tag                                 #查看所有标签
-git tag v0.1.2-light                    #创建轻量标签
-git tag -a v0.1.2 -m “0.1.2版本”        #创建附注标签
+<pre><code>git tag                                 <span class="preprocessor">#查看所有标签</span>
+git tag v0<span class="number">.1</span><span class="number">.2</span>-light                    <span class="preprocessor">#创建轻量标签</span>
+git tag -a v0<span class="number">.1</span><span class="number">.2</span> -m “<span class="number">0.1</span><span class="number">.2</span>版本”        <span class="preprocessor">#创建附注标签</span>
 
 git checkout tag-name
-git tag -d v0.1.2                     #删除标签
-git tag -a v0.1.1 9fbc3d0             #补打标签
+git tag -d v0<span class="number">.1</span><span class="number">.2</span>                     <span class="preprocessor">#删除标签</span>
+git tag -a v0<span class="number">.1</span><span class="number">.1</span> <span class="number">9f</span>bc3d0             <span class="preprocessor">#补打标签</span>
 
 git push --tags
 </code></pre><p><code>通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：</code></p>
-<pre><code>git push origin tag-name             #将tag-name标签提交到git服务器
-git push origin –tags                 #将本地所有标签一次性提交到git服务器
+<pre><code>git <span class="keyword">push</span> origin tag-name             <span class="preprocessor">#将tag-name标签提交到git服务器</span>
+git <span class="keyword">push</span> origin –tags                 <span class="preprocessor">#将本地所有标签一次性提交到git服务器</span>
 </code></pre><p><strong>push all</strong></p>
-<pre><code>git push --all                         #push 所有branch
-git push --all origin                 #push 所有tag 和所有branch到服务器
+<pre><code>git <span class="keyword">push</span> --all                         <span class="preprocessor">#push 所有branch</span>
+git <span class="keyword">push</span> --all origin                 <span class="preprocessor">#push 所有tag 和所有branch到服务器</span>
 </code></pre></span>
       
     </div>
@@ -438,21 +438,21 @@ git push --all origin                 #push 所有tag 和所有branch到服务�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-count">127</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">53</span>
+              <span class="site-state-item-count">56</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
