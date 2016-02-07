@@ -40,18 +40,18 @@
 
 
 <meta name="description" content="Five Tips for Using Self Signed SSL Certificates with iOSCreate a HTTPS Server to install ipa locally
-123456789101112131415openssl genrsa -out myselfsigned.key 2048openssl req -new -x509 -key myselfsi">
+123456# example # openssl genrsa -out myselfsigned.key 2048# openssl req -new -x509 -key myselfsig">
 <meta property="og:type" content="article">
 <meta property="og:title" content="self signed certificates in iOS">
 <meta property="og:url" content="http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html">
 <meta property="og:site_name" content="不毛次元">
 <meta property="og:description" content="Five Tips for Using Self Signed SSL Certificates with iOSCreate a HTTPS Server to install ipa locally
-123456789101112131415openssl genrsa -out myselfsigned.key 2048openssl req -new -x509 -key myselfsi">
-<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
+123456# example # openssl genrsa -out myselfsigned.key 2048# openssl req -new -x509 -key myselfsig">
+<meta property="og:updated_time" content="2016-02-07T17:38:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="self signed certificates in iOS">
 <meta name="twitter:description" content="Five Tips for Using Self Signed SSL Certificates with iOSCreate a HTTPS Server to install ipa locally
-123456789101112131415openssl genrsa -out myselfsigned.key 2048openssl req -new -x509 -key myselfsi">
+123456# example # openssl genrsa -out myselfsigned.key 2048# openssl req -new -x509 -key myselfsig">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -253,7 +253,8 @@ clicky_site_ids.push(100784435);
 
       
         <span itemprop="articleBody"><p><a href="http://blog.httpwatch.com/2013/12/12/five-tips-for-using-self-signed-ssl-certificates-with-ios/" target="_blank" rel="external">Five Tips for Using Self Signed SSL Certificates with iOS</a><br><a href="https://github.com/bumaociyuan/zxIpaServer" target="_blank" rel="external">Create a HTTPS Server to install ipa locally</a></p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">openssl genrsa -out myselfsigned<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -new -x509 -key myselfsigned<span class="class">.key</span> -out myselfsigned<span class="class">.cer</span> -days <span class="number">365</span> -subj /CN=www<span class="class">.mysite</span><span class="class">.com</span></span><br><span class="line"></span><br><span class="line">openssl pkcs12 -export -out myselfsigned<span class="class">.pfx</span> -inkey myselfsigned<span class="class">.key</span> -<span class="keyword">in</span> myselfsigned<span class="class">.cer</span></span><br><span class="line"></span><br><span class="line">openssl genrsa -out myCA<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -x509 -new -key myCA<span class="class">.key</span> -out myCA<span class="class">.cer</span> -days <span class="number">730</span> -subj /CN=<span class="string">"My Custom CA"</span></span><br><span class="line"></span><br><span class="line">openssl genrsa -out mycert1<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -new -out mycert1<span class="class">.req</span> -key mycert1<span class="class">.key</span> -subj /CN=www2<span class="class">.mysite</span><span class="class">.com</span></span><br><span class="line"></span><br><span class="line">openssl x509 -req -<span class="keyword">in</span> mycert1<span class="class">.req</span> -out mycert1<span class="class">.cer</span> -CAkey myCA<span class="class">.key</span> -CA myCA<span class="class">.cer</span> -days <span class="number">365</span> -CAcreateserial -CAserial serial</span><br></pre></td></tr></table></figure>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># example </span></span><br><span class="line"><span class="preprocessor"># openssl genrsa -out myselfsigned.key 2048</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># openssl req -new -x509 -key myselfsigned.key -out myselfsigned.cer -days 365 -subj /CN=www.mysite.com</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># openssl pkcs12 -export -out myselfsigned.pfx -inkey myselfsigned.key -in myselfsigned.cer</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">openssl genrsa -out myCA<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -x509 -new -key myCA<span class="class">.key</span> -out myCA<span class="class">.cer</span> -days <span class="number">730</span> -subj /CN=<span class="string">"My Custom CA"</span></span><br><span class="line"></span><br><span class="line">openssl genrsa -out mycert1<span class="class">.key</span> <span class="number">2048</span></span><br><span class="line"></span><br><span class="line">openssl req -new -out mycert1<span class="class">.req</span> -key mycert1<span class="class">.key</span> -subj /CN=www2<span class="class">.mysite</span><span class="class">.com</span></span><br><span class="line"></span><br><span class="line">openssl x509 -req -<span class="keyword">in</span> mycert1<span class="class">.req</span> -out mycert1<span class="class">.cer</span> -CAkey myCA<span class="class">.key</span> -CA myCA<span class="class">.cer</span> -days <span class="number">365</span> -CAcreateserial -CAserial serial</span><br></pre></td></tr></table></figure>
 <p>www.mysite.com 可以是ip</p>
 <ul>
 <li>服务器使用<code>mycert1.cer</code> <code>mycert1.key</code> 创建https服务</li>
@@ -349,14 +350,14 @@ clicky_site_ids.push(100784435);
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">56</span>
+              <span class="site-state-item-count">55</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
