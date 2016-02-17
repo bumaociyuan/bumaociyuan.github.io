@@ -1,45 +1,12 @@
-<!doctype html>
-<html class="theme-next use-motion theme-next-mist">
+<!DOCTYPE html>
+<html>
 <head>
+  <meta charset="utf-8">
   
-
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-
-
-  <meta name="keywords" content="iphone,mac," />
-
-
-
-  <link rel="alternate" href="/resources/testRss.xml" title="不毛次元" type="application/atom+xml" />
-
-
-
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
-
-
-<meta name="description" content="Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>share internet connection from mac to mobile device | 不毛次元</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth
 In order to do this in Yosemite, you’ll need to go back to the main screen of System Preferences and click on the Sharing preference">
 <meta property="og:type" content="article">
 <meta property="og:title" content="share internet connection from mac to mobile device">
@@ -47,652 +14,343 @@ In order to do this in Yosemite, you’ll need to go back to the main screen of 
 <meta property="og:site_name" content="不毛次元">
 <meta property="og:description" content="Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth
 In order to do this in Yosemite, you’ll need to go back to the main screen of System Preferences and click on the Sharing preference">
-<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
+<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="share internet connection from mac to mobile device">
 <meta name="twitter:description" content="Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth
 In order to do this in Yosemite, you’ll need to go back to the main screen of System Preferences and click on the Sharing preference">
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post'
-  };
-</script>
-
-  <title> share internet connection from mac to mobile device | 不毛次元 </title>
+  
+    <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://avatars1.githubusercontent.com/u/4977911?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
-  
+		<hgroup>
+		  <h1 class="header-author"><a href="/">bumaociyuan</a></h1>
+		</hgroup>
 
+		
 
-<script type="text/javascript">
-var clicky_site_ids = clicky_site_ids || [];
-clicky_site_ids.push(100784435);
-(function() {
-  var s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.async = true;
-  s.src = '//static.getclicky.com/js';
-  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-})();
-</script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784435ns.gif" /></p></noscript>
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
 
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">Home</a></li>
+				        
+							<li><a href="/archives">Archives</a></li>
+				        
+							<li><a href="/categories">Categories</a></li>
+				        
+							<li><a href="/tags">Tags</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/bumaociyuan" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="http://bumaociyuan.github.io/resources/testRss.xml" title="rss">rss</a>
+					        
+								<a class="twitter" target="_blank" href="https://twitter.com/bumaociyuan" title="twitter">twitter</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/3ds/" style="font-size: 12.5px;">3ds</a> <a href="/tags/Go2Shell/" style="font-size: 10px;">Go2Shell</a> <a href="/tags/Parallels/" style="font-size: 10px;">Parallels</a> <a href="/tags/alfred/" style="font-size: 10px;">alfred</a> <a href="/tags/alias/" style="font-size: 10px;">alias</a> <a href="/tags/app-extension/" style="font-size: 10px;">app extension</a> <a href="/tags/applescript/" style="font-size: 15px;">applescript</a> <a href="/tags/automator/" style="font-size: 12.5px;">automator</a> <a href="/tags/bandwagon/" style="font-size: 10px;">bandwagon</a> <a href="/tags/black-magic/" style="font-size: 10px;">black magic</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/cocoapods/" style="font-size: 17.5px;">cocoapods</a> <a href="/tags/code-snippet/" style="font-size: 15px;">code snippet</a> <a href="/tags/download/" style="font-size: 10px;">download</a> <a href="/tags/duns/" style="font-size: 10px;">duns</a> <a href="/tags/emoji/" style="font-size: 10px;">emoji</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/faq/" style="font-size: 10px;">faq</a> <a href="/tags/google/" style="font-size: 15px;">google</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/homebrew/" style="font-size: 12.5px;">homebrew</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/iphone/" style="font-size: 10px;">iphone</a> <a href="/tags/iterm/" style="font-size: 10px;">iterm</a> <a href="/tags/jailbreak/" style="font-size: 10px;">jailbreak</a> <a href="/tags/japan/" style="font-size: 10px;">japan</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/jxa/" style="font-size: 12.5px;">jxa</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/openemu/" style="font-size: 10px;">openemu</a> <a href="/tags/other/" style="font-size: 12.5px;">other</a> <a href="/tags/phoneGap/" style="font-size: 10px;">phoneGap</a> <a href="/tags/playstation/" style="font-size: 10px;">playstation</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/reblog/" style="font-size: 10px;">reblog</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/scrapy/" style="font-size: 10px;">scrapy</a> <a href="/tags/shadowsocks/" style="font-size: 10px;">shadowsocks</a> <a href="/tags/shell/" style="font-size: 12.5px;">shell</a> <a href="/tags/spotlight/" style="font-size: 10px;">spotlight</a> <a href="/tags/ssd/" style="font-size: 10px;">ssd</a> <a href="/tags/starflyer/" style="font-size: 10px;">starflyer</a> <a href="/tags/stf/" style="font-size: 10px;">stf</a> <a href="/tags/sublime/" style="font-size: 12.5px;">sublime</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swift/" style="font-size: 12.5px;">swift</a> <a href="/tags/terminal/" style="font-size: 12.5px;">terminal</a> <a href="/tags/tfs/" style="font-size: 10px;">tfs</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unicode/" style="font-size: 10px;">unicode</a> <a href="/tags/upgrade/" style="font-size: 10px;">upgrade</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/xcode/" style="font-size: 12.5px;">xcode</a> <a href="/tags/zsh/" style="font-size: 15px;">zsh</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://kuanglijun312.github.io">kuanglijun312</a>
+			        
+			        </div>
+				</section>
+				
 
-  <div class="container one-column page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
-      <span class="site-title">不毛次元</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">不毛次元</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
 </div>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu menu-left">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            <i class="menu-item-icon icon-next-categories"></i> <br />
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
-            标签
-          </a>
-        </li>
-      
-
-      
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  
-  <form class="site-search-form">
-    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-  </form>
-
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', '-_7jUD3ZLESxqgmJsXFx','2.0.0');
-</script>
-
-
-
     </div>
-  
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">bumaociyuan</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="https://avatars1.githubusercontent.com/u/4977911?v=3&amp;s=460" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">bumaociyuan</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">Home</a></li>
+		        
+					<li><a href="/archives">Archives</a></li>
+		        
+					<li><a href="/categories">Categories</a></li>
+		        
+					<li><a href="/tags">Tags</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/bumaociyuan" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="http://bumaociyuan.github.io/resources/testRss.xml" title="rss">rss</a>
+			        
+						<a class="twitter" target="_blank" href="https://twitter.com/bumaociyuan" title="twitter">twitter</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
 </nav>
 
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div id="content" class="content"> 
-
-  <div id="posts" class="posts-expand">
+      <div class="body-wrap"><article id="post-share-internet-connection-from-mac-to-mobile-device" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html" class="article-date">
+  	<time datetime="2015-08-08T04:00:00.000Z" itemprop="datePublished">2015-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      share internet connection from mac to mobile device
+    </h1>
+  
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
+      </header>
       
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              share internet connection from mac to mobile device
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-08-08T12:00:00+08:00" content="2015-08-08">
-            2015-08-08
-          </time>
-        </span>
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iphone/">iphone</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac/">mac</a></li></ul>
+	</div>
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/mac/" itemprop="url" rel="index">
-                  <span itemprop="name">mac</span>
-                </a>
-              </span>
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/mac/">mac</a>
+	</div>
 
-              
-              
 
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
+        <div class="clearfix"></div>
       </div>
-    </header>
-
-    <div class="post-body">
-
       
+    
+    <div class="article-entry" itemprop="articleBody">
       
-
-      
-        <span itemprop="articleBody"><p><a href="http://apple.stackexchange.com/questions/180578/reverse-tether-share-osx-yosemite-wifi-connection-over-bluetooth" target="_blank" rel="external">Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth</a></p>
+        <p><a href="http://apple.stackexchange.com/questions/180578/reverse-tether-share-osx-yosemite-wifi-connection-over-bluetooth" target="_blank" rel="external">Reverse Tether - Share OSX Yosemite Wifi Connection Over Bluetooth</a></p>
 <p>In order to do this in Yosemite, you’ll need to go back to the main screen of System Preferences and click on the <code>Sharing</code> preference pane. In the sidebar, there will be an Internet Sharing option. Click on this to view its settings.</p>
 <p>Now set the “Share your connection from” drop down to <code>Wi-Fi</code> and then check the <code>Bluetooth PAN</code> checkbox in the menu below. Next just make sure to check the box next Internet Sharing in the sidebar.</p>
 <p>Once this is done your Mac should be sharing its Wi-Fi connection to devices in your Bluetooth PAN.</p>
-</span>
+
       
     </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/iphone/" rel="tag">#iphone</a>
-          
-            <a href="/tags/mac/" rel="tag">#mac</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/breakwall/2015/08/10/using-shadowsocks-in-terminal.html" rel="prev">using shadowsocks in terminal</a>
-            
-          </div>
-
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/ios/2015/07/17/self-signed-certificates-in-ios.html" rel="next">self signed certificates in iOS</a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
+    
   </div>
-
- </div>
-
+  
+    
+<nav id="article-nav">
+  
+    <a href="/breakwall/2015/08/10/using-shadowsocks-in-terminal.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
-
-        
-          <div class="comments" id="comments">
-            
-              <div id="disqus_thread">
-                <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              </div>
-            
-          </div>
+          using shadowsocks in terminal
         
       </div>
-
-      
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="https://avatars1.githubusercontent.com/u/4977911?v=3&s=460" alt="bumaociyuan" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">bumaociyuan</p>
-        </div>
-        <p class="site-description motion-element" itemprop="description"></p>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">127</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">22</span>
-              <span class="site-state-item-name">分类</span>
-              </a>
-          </div>
-
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">55</span>
-              <span class="site-state-item-name">标签</span>
-              </a>
-          </div>
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/resources/testRss.xml" rel="alternate">
-              <i class="menu-item-icon icon-next-feed"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/bumaociyuan" target="_blank">GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/bumaociyuan" target="_blank">Twitter</a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-
-        <div class="links-of-author motion-element">
-          
-            <p class="site-author-name">友情链接</p>
-            
-              <span class="links-of-author-item">
-              <a href="http://kuanglijun312.github.io" target="_blank">kuanglijun312</a>
-              </span>
-            
-          
-        </div>
-
-      </section>
-
-      
-        <section class="post-toc-wrap sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator"></div>
-          <div class="post-toc">
-            
-            
-              <p class="post-toc-empty">此文章未包含目录</p>
-            
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
-        </section>
-      
-
-    </div>
-  </aside>
-
-
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
-  
-  &copy; &nbsp;  2013 - 
-  <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
-    <i class="icon-next-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">bumaociyuan</span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-
- </div>
-    </footer>
-
-    <div class="back-to-top"></div>
-  </div>
-
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
+    </a>
   
   
+    <a href="/ios/2015/07/17/self-signed-certificates-in-ios.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">self signed certificates in iOS</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
-    
-    
+</nav>
 
   
+</article>
 
+
+
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
     <script type="text/javascript">
-      var disqus_shortname = 'bumaociyuan';
-      var disqus_identifier = 'mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html';
-      var disqus_title = 'share internet connection from mac to mobile device';
-      var disqus_url = 'http://bumaociyuan.github.io/mac/2015/08/08/share-internet-connection-from-mac-to-mobile-device.html';
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'bumaociyuan'; // required: replace example with your forum shortname
 
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
-      run_disqus_script('count.js');
-      
-        run_disqus_script('embed.js');
-      
-    </script>
-  
-
-
-  
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
-  
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 bumaociyuan
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
 
 
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
 
 
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
 
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
+});
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 0.4 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
 </script>
 
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    var $tocContent = $('.post-toc-content');
-    if (isDesktop() && CONFIG.sidebar === 'post') {
-      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-        displaySidebar();
-      }
-    }
-  });
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
-
-  
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
+  </div>
 </body>
 </html>
