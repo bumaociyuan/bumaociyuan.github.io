@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html</loc>
+    <lastmod>2016-02-18T03:07:12.000Z</lastmod>
+    <data>
+        <display>
+        <title>极路由安装shadowsocks</title>
+        <pubTime>2016-02-18T14:35:47.000Z</pubTime>
+        
+        <tag>shadowsocks</tag>
+         
+        <tag>极路由</tag>
+         
+         
+           
+             
+              <breadCrumb title="breakwall" url="http://bumaociyuan.github.io/categories/breakwall/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/ios/2015/07/17/self-signed-certificates-in-ios.html</loc>
     <lastmod>2016-02-17T03:07:38.000Z</lastmod>
     <data>
@@ -338,19 +360,19 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</loc>
+    <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>Remote control android device</title>
-        <pubTime>2015-10-12T19:09:37.000Z</pubTime>
+        <title>解决 brew 慢的问题</title>
+        <pubTime>2015-11-04T18:40:35.000Z</pubTime>
         
-        <tag>stf</tag>
+        <tag>homebrew</tag>
          
          
            
              
-              <breadCrumb title="android" url="http://bumaociyuan.github.io/categories/android/"/>
+              <breadCrumb title="mac" url="http://bumaociyuan.github.io/categories/mac/"/>
           
         </display>
     </data>
@@ -631,19 +653,19 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html</loc>
+    <loc>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>3DS-note</title>
-        <pubTime>2015-09-26T00:40:08.000Z</pubTime>
+        <title>Remote control android device</title>
+        <pubTime>2015-10-12T19:09:37.000Z</pubTime>
         
-        <tag>3ds</tag>
+        <tag>stf</tag>
          
          
            
              
-              <breadCrumb title="game" url="http://bumaociyuan.github.io/categories/game/"/>
+              <breadCrumb title="android" url="http://bumaociyuan.github.io/categories/android/"/>
           
         </display>
     </data>
@@ -782,12 +804,12 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</loc>
+    <loc>http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>zelda link between worlds</title>
-        <pubTime>2015-09-16T17:14:56.000Z</pubTime>
+        <title>3DS-note</title>
+        <pubTime>2015-09-26T00:40:08.000Z</pubTime>
         
         <tag>3ds</tag>
          
@@ -952,17 +974,19 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html</loc>
+    <loc>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>docker note</title>
-        <pubTime>2015-09-16T03:32:56.000Z</pubTime>
+        <title>zelda link between worlds</title>
+        <pubTime>2015-09-16T17:14:56.000Z</pubTime>
         
+        <tag>3ds</tag>
+         
          
            
              
-              <breadCrumb title="docker" url="http://bumaociyuan.github.io/categories/docker/"/>
+              <breadCrumb title="game" url="http://bumaociyuan.github.io/categories/game/"/>
           
         </display>
     </data>
@@ -1254,21 +1278,17 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/iphone/2014/11/02/a1528-4g.html</loc>
+    <loc>http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>a1528-4g</title>
-        <pubTime>2014-11-02T02:10:45.000Z</pubTime>
+        <title>docker note</title>
+        <pubTime>2015-09-16T03:32:56.000Z</pubTime>
         
-        <tag>jailbreak</tag>
-         
-        <tag>tutorial</tag>
-         
          
            
              
-              <breadCrumb title="iphone" url="http://bumaociyuan.github.io/categories/iphone/"/>
+              <breadCrumb title="docker" url="http://bumaociyuan.github.io/categories/docker/"/>
           
         </display>
     </data>
@@ -1276,19 +1296,19 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>解决 brew 慢的问题</title>
-        <pubTime>2015-11-04T18:40:35.000Z</pubTime>
+        <title>turn off uisearchbar animation</title>
+        <pubTime>2014-10-31T14:44:25.000Z</pubTime>
         
-        <tag>homebrew</tag>
+        <tag>code snippet</tag>
          
          
            
              
-              <breadCrumb title="mac" url="http://bumaociyuan.github.io/categories/mac/"/>
+              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
           
         </display>
     </data>
@@ -2426,19 +2446,21 @@
     
     
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html</loc>
+    <loc>http://bumaociyuan.github.io/iphone/2014/11/02/a1528-4g.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>turn off uisearchbar animation</title>
-        <pubTime>2014-10-31T14:44:25.000Z</pubTime>
+        <title>a1528-4g</title>
+        <pubTime>2014-11-02T02:10:45.000Z</pubTime>
         
-        <tag>code snippet</tag>
+        <tag>jailbreak</tag>
+         
+        <tag>tutorial</tag>
          
          
            
              
-              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
+              <breadCrumb title="iphone" url="http://bumaociyuan.github.io/categories/iphone/"/>
           
         </display>
     </data>

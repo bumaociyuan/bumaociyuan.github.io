@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>极路由安装shadowsocks | 不毛次元</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="为了打PS4可以快一点买了个极路由
+开启root权限
+官方开启root方法：[公告] 【开发者模式功能开放公告】我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了
+安装开发者模式插件
+
+ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口为1022，密码为后台登陆密码。 ssh能登录就万能了
+安装ss123cd /tmp &amp;a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="极路由安装shadowsocks">
+<meta property="og:url" content="http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html">
+<meta property="og:site_name" content="不毛次元">
+<meta property="og:description" content="为了打PS4可以快一点买了个极路由
+开启root权限
+官方开启root方法：[公告] 【开发者模式功能开放公告】我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了
+安装开发者模式插件
+
+ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口为1022，密码为后台登陆密码。 ssh能登录就万能了
+安装ss123cd /tmp &amp;a">
+<meta property="og:updated_time" content="2016-02-18T03:07:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="极路由安装shadowsocks">
+<meta name="twitter:description" content="为了打PS4可以快一点买了个极路由
+开启root权限
+官方开启root方法：[公告] 【开发者模式功能开放公告】我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了
+安装开发者模式插件
+
+ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口为1022，密码为后台登陆密码。 ssh能登录就万能了
+安装ss123cd /tmp &amp;a">
+  
+    <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/avatar.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">bumaociyuan</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">Home</a></li>
+				        
+							<li><a href="/archives">Archives</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/bumaociyuan" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="http://bumaociyuan.github.io/resources/testRss.xml" title="rss">rss</a>
+					        
+								<a class="twitter" target="_blank" href="https://twitter.com/bumaociyuan" title="twitter">twitter</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/3ds/" style="font-size: 12.5px;">3ds</a> <a href="/tags/Go2Shell/" style="font-size: 10px;">Go2Shell</a> <a href="/tags/Parallels/" style="font-size: 10px;">Parallels</a> <a href="/tags/alfred/" style="font-size: 10px;">alfred</a> <a href="/tags/alias/" style="font-size: 10px;">alias</a> <a href="/tags/app-extension/" style="font-size: 10px;">app extension</a> <a href="/tags/applescript/" style="font-size: 15px;">applescript</a> <a href="/tags/automator/" style="font-size: 12.5px;">automator</a> <a href="/tags/bandwagon/" style="font-size: 10px;">bandwagon</a> <a href="/tags/black-magic/" style="font-size: 10px;">black magic</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/cocoapods/" style="font-size: 17.5px;">cocoapods</a> <a href="/tags/code-snippet/" style="font-size: 15px;">code snippet</a> <a href="/tags/download/" style="font-size: 10px;">download</a> <a href="/tags/duns/" style="font-size: 10px;">duns</a> <a href="/tags/emoji/" style="font-size: 10px;">emoji</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/faq/" style="font-size: 10px;">faq</a> <a href="/tags/google/" style="font-size: 15px;">google</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/homebrew/" style="font-size: 12.5px;">homebrew</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/iphone/" style="font-size: 10px;">iphone</a> <a href="/tags/iterm/" style="font-size: 10px;">iterm</a> <a href="/tags/jailbreak/" style="font-size: 10px;">jailbreak</a> <a href="/tags/japan/" style="font-size: 10px;">japan</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/jxa/" style="font-size: 12.5px;">jxa</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/openemu/" style="font-size: 10px;">openemu</a> <a href="/tags/other/" style="font-size: 12.5px;">other</a> <a href="/tags/phoneGap/" style="font-size: 10px;">phoneGap</a> <a href="/tags/playstation/" style="font-size: 10px;">playstation</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/reblog/" style="font-size: 10px;">reblog</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/scrapy/" style="font-size: 10px;">scrapy</a> <a href="/tags/shadowsocks/" style="font-size: 12.5px;">shadowsocks</a> <a href="/tags/shell/" style="font-size: 12.5px;">shell</a> <a href="/tags/spotlight/" style="font-size: 10px;">spotlight</a> <a href="/tags/ssd/" style="font-size: 10px;">ssd</a> <a href="/tags/starflyer/" style="font-size: 10px;">starflyer</a> <a href="/tags/stf/" style="font-size: 10px;">stf</a> <a href="/tags/sublime/" style="font-size: 12.5px;">sublime</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swift/" style="font-size: 12.5px;">swift</a> <a href="/tags/terminal/" style="font-size: 12.5px;">terminal</a> <a href="/tags/tfs/" style="font-size: 10px;">tfs</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unicode/" style="font-size: 10px;">unicode</a> <a href="/tags/upgrade/" style="font-size: 10px;">upgrade</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/xcode/" style="font-size: 12.5px;">xcode</a> <a href="/tags/zsh/" style="font-size: 15px;">zsh</a> <a href="/tags/极路由/" style="font-size: 10px;">极路由</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://kuanglijun312.github.io">kuanglijun312</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">bumaociyuan</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/avatar.png" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">bumaociyuan</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">Home</a></li>
+		        
+					<li><a href="/archives">Archives</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/bumaociyuan" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="http://bumaociyuan.github.io/resources/testRss.xml" title="rss">rss</a>
+			        
+						<a class="twitter" target="_blank" href="https://twitter.com/bumaociyuan" title="twitter">twitter</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-gee-router-ss" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/breakwall/2016/02/18/gee-router-ss.html" class="article-date">
+  	<time datetime="2016-02-18T14:35:47.000Z" itemprop="datePublished">2016-02-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      极路由安装shadowsocks
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shadowsocks/">shadowsocks</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/极路由/">极路由</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/breakwall/">breakwall</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>为了打PS4可以快一点买了个极路由</p>
+<h1 id="u5F00_u542Froot_u6743_u9650"><a href="#u5F00_u542Froot_u6743_u9650" class="headerlink" title="开启root权限"></a>开启root权限</h1><ul>
+<li>官方开启root方法：<a href="http://bbs.hiwifi.com/thread-74899-1-1.html" target="_blank" rel="external">[公告] 【开发者模式功能开放公告】</a>我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了</li>
+<li>安装开发者模式插件</li>
+</ul>
+<h1 id="ssh__u767B_u5F55"><a href="#ssh__u767B_u5F55" class="headerlink" title="ssh 登录"></a>ssh 登录</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@<span class="number">192.168</span><span class="number">.199</span><span class="number">.1</span> -p <span class="number">1022</span> <span class="preprocessor">#使用root帐号连接路由，端口为<span class="number">1022</span>，密码为后台登陆密码。 ssh能登录就万能了</span></span><br></pre></td></tr></table></figure>
+<h1 id="u5B89_u88C5ss"><a href="#u5B89_u88C5ss" class="headerlink" title="安装ss"></a>安装ss</h1><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /tmp &amp;&amp; wget http<span class="variable">s:</span>//gist.githubusercontent.<span class="keyword">com</span>/bumaociyuan/<span class="number">8945</span>f34046c296c9a66b/raw/<span class="number">1924</span>c8bc6a648ebdf99c2d924276bc64da6ef89f/shadow.<span class="keyword">sh</span> &amp;&amp; <span class="keyword">sh</span> shadow.<span class="keyword">sh</span> &amp;&amp; rm shadow.<span class="keyword">sh</span></span><br><span class="line"></span><br><span class="line"># 我把参考blog的脚本<span class="built_in">copy</span>了一份放到gist上</span><br></pre></td></tr></table></figure>
+<h1 id="u5F00_u542Fss"><a href="#u5F00_u542Fss" class="headerlink" title="开启ss"></a>开启ss</h1><ul>
+<li>重新登录极路由的后台的高级设置，会发现shadowsocks加速的选项，在表单中填写SS帐号密码和加密方式，选择智能模式，保存，只要提示运行中 已加速就表示已经成功连上SS了</li>
+<li><strong>注意不要升级路由器系统</strong></li>
+<li>若shadowsocks选项显示的是：{ “msg”: “请求的接口不存在.”, “code”: 560 }，请重启路由器。</li>
+</ul>
+<a id="more"></a>
+<p>以下还未尝试</p>
+<h1 id="u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868"><a href="#u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868" class="headerlink" title="一键更新路由表"></a>一键更新路由表</h1><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/g</span>w-redsocks<span class="regexp">/gw-shadowsocks &amp;&amp; wget http:/</span><span class="regexp">/this.is26.com/</span>download<span class="regexp">/gfw.txt &amp;&amp; cat gfw.txt &gt;&gt; gw-shadowsocks.dnslist &amp;&amp; /</span>etc<span class="regexp">/init.d/</span>dnsmasq restart</span><br></pre></td></tr></table></figure>
+<h1 id="u52A0_u901F"><a href="#u52A0_u901F" class="headerlink" title="加速"></a>加速</h1><ul>
+<li><a href="https://github.com/shadowsocks/shadowsocks/wiki/Setup-a-Shadowsocks-relay" target="_blank" rel="external">Setup a Shadowsocks relay</a></li>
+<li><a href="https://smileawei.com/shadowsocks-haproxy/" target="_blank" rel="external">使用haproxy实现shadowsocks 国内中转加速</a></li>
+<li><a href="http://www.jianshu.com/p/475182d8c503/comments/468732" target="_blank" rel="external">提速 Shadowsocks</a></li>
+</ul>
+<h1 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://luolei.org/hiwifi-shadowsocks/" target="_blank" rel="external">极路由Shadowsocks家庭无痛翻墙实践</a></li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/travel/2016/01/31/starflyer.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">星悦航空</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'bumaociyuan'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 bumaociyuan
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+
+clicky_site_ids.push( 100784435 );
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784435ns.gif" /></p></noscript>
+<!-- End Google Analytics -->
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

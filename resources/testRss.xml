@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2016-02-02T07:07:00.000Z</updated>
+  <updated>2016-02-18T03:07:12.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -13,6 +13,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[极路由安装shadowsocks]]></title>
+    <link href="http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html"/>
+    <id>http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html</id>
+    <published>2016-02-18T14:35:47.000Z</published>
+    <updated>2016-02-18T03:07:12.000Z</updated>
+    <content type="html"><![CDATA[<p>为了打PS4可以快一点买了个极路由</p>
+<h1 id="u5F00_u542Froot_u6743_u9650"><a href="#u5F00_u542Froot_u6743_u9650" class="headerlink" title="开启root权限"></a>开启root权限</h1><ul>
+<li>官方开启root方法：<a href="http://bbs.hiwifi.com/thread-74899-1-1.html" target="_blank" rel="external">[公告] 【开发者模式功能开放公告】</a>我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了</li>
+<li>安装开发者模式插件</li>
+</ul>
+<h1 id="ssh__u767B_u5F55"><a href="#ssh__u767B_u5F55" class="headerlink" title="ssh 登录"></a>ssh 登录</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@<span class="number">192.168</span><span class="number">.199</span><span class="number">.1</span> -p <span class="number">1022</span> <span class="preprocessor">#使用root帐号连接路由，端口为<span class="number">1022</span>，密码为后台登陆密码。 ssh能登录就万能了</span></span><br></pre></td></tr></table></figure>
+<h1 id="u5B89_u88C5ss"><a href="#u5B89_u88C5ss" class="headerlink" title="安装ss"></a>安装ss</h1><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /tmp &amp;&amp; wget http<span class="variable">s:</span>//gist.githubusercontent.<span class="keyword">com</span>/bumaociyuan/<span class="number">8945</span>f34046c296c9a66b/raw/<span class="number">1924</span>c8bc6a648ebdf99c2d924276bc64da6ef89f/shadow.<span class="keyword">sh</span> &amp;&amp; <span class="keyword">sh</span> shadow.<span class="keyword">sh</span> &amp;&amp; rm shadow.<span class="keyword">sh</span></span><br><span class="line"></span><br><span class="line"># 我把参考blog的脚本<span class="built_in">copy</span>了一份放到gist上</span><br></pre></td></tr></table></figure>
+<h1 id="u5F00_u542Fss"><a href="#u5F00_u542Fss" class="headerlink" title="开启ss"></a>开启ss</h1><ul>
+<li>重新登录极路由的后台的高级设置，会发现shadowsocks加速的选项，在表单中填写SS帐号密码和加密方式，选择智能模式，保存，只要提示运行中 已加速就表示已经成功连上SS了</li>
+<li><strong>注意不要升级路由器系统</strong></li>
+<li>若shadowsocks选项显示的是：{ “msg”: “请求的接口不存在.”, “code”: 560 }，请重启路由器。</li>
+</ul>
+<a id="more"></a>
+<p>以下还未尝试</p>
+<h1 id="u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868"><a href="#u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868" class="headerlink" title="一键更新路由表"></a>一键更新路由表</h1><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/g</span>w-redsocks<span class="regexp">/gw-shadowsocks &amp;&amp; wget http:/</span><span class="regexp">/this.is26.com/</span>download<span class="regexp">/gfw.txt &amp;&amp; cat gfw.txt &gt;&gt; gw-shadowsocks.dnslist &amp;&amp; /</span>etc<span class="regexp">/init.d/</span>dnsmasq restart</span><br></pre></td></tr></table></figure>
+<h1 id="u52A0_u901F"><a href="#u52A0_u901F" class="headerlink" title="加速"></a>加速</h1><ul>
+<li><a href="https://github.com/shadowsocks/shadowsocks/wiki/Setup-a-Shadowsocks-relay" target="_blank" rel="external">Setup a Shadowsocks relay</a></li>
+<li><a href="https://smileawei.com/shadowsocks-haproxy/" target="_blank" rel="external">使用haproxy实现shadowsocks 国内中转加速</a></li>
+<li><a href="http://www.jianshu.com/p/475182d8c503/comments/468732" target="_blank" rel="external">提速 Shadowsocks</a></li>
+</ul>
+<h1 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://luolei.org/hiwifi-shadowsocks/" target="_blank" rel="external">极路由Shadowsocks家庭无痛翻墙实践</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>为了打PS4可以快一点买了个极路由</p>
+<h1 id="u5F00_u542Froot_u6743_u9650"><a href="#u5F00_u542Froot_u6743_u9650" class="headerlink" title="开启root权限"></a>开启root权限</h1><ul>
+<li>官方开启root方法：<a href="http://bbs.hiwifi.com/thread-74899-1-1.html">[公告] 【开发者模式功能开放公告】</a>我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了</li>
+<li>安装开发者模式插件</li>
+</ul>
+<h1 id="ssh__u767B_u5F55"><a href="#ssh__u767B_u5F55" class="headerlink" title="ssh 登录"></a>ssh 登录</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@<span class="number">192.168</span><span class="number">.199</span><span class="number">.1</span> -p <span class="number">1022</span> <span class="preprocessor">#使用root帐号连接路由，端口为<span class="number">1022</span>，密码为后台登陆密码。 ssh能登录就万能了</span></span><br></pre></td></tr></table></figure>
+<h1 id="u5B89_u88C5ss"><a href="#u5B89_u88C5ss" class="headerlink" title="安装ss"></a>安装ss</h1><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /tmp &amp;&amp; wget http<span class="variable">s:</span>//gist.githubusercontent.<span class="keyword">com</span>/bumaociyuan/<span class="number">8945</span>f34046c296c9a66b/raw/<span class="number">1924</span>c8bc6a648ebdf99c2d924276bc64da6ef89f/shadow.<span class="keyword">sh</span> &amp;&amp; <span class="keyword">sh</span> shadow.<span class="keyword">sh</span> &amp;&amp; rm shadow.<span class="keyword">sh</span></span><br><span class="line"></span><br><span class="line"># 我把参考blog的脚本<span class="built_in">copy</span>了一份放到gist上</span><br></pre></td></tr></table></figure>
+<h1 id="u5F00_u542Fss"><a href="#u5F00_u542Fss" class="headerlink" title="开启ss"></a>开启ss</h1><ul>
+<li>重新登录极路由的后台的高级设置，会发现shadowsocks加速的选项，在表单中填写SS帐号密码和加密方式，选择智能模式，保存，只要提示运行中 已加速就表示已经成功连上SS了</li>
+<li><strong>注意不要升级路由器系统</strong></li>
+<li>若shadowsocks选项显示的是：{ “msg”: “请求的接口不存在.”, “code”: 560 }，请重启路由器。</li>
+</ul>]]>
+    
+    </summary>
+    
+      <category term="shadowsocks" scheme="http://bumaociyuan.github.io/tags/shadowsocks/"/>
+    
+      <category term="极路由" scheme="http://bumaociyuan.github.io/tags/%E6%9E%81%E8%B7%AF%E7%94%B1/"/>
+    
+      <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[星悦航空]]></title>
@@ -396,6 +450,34 @@
   </entry>
   
   <entry>
+    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
+    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
+    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
+    <published>2015-09-07T04:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html" target="_blank" rel="external">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
+<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
+<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
+    
+      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
+    
+      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[alfred run a jxa script]]></title>
     <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
@@ -422,34 +504,6 @@
       <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
     
       <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
-    
-      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
-    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
-    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
-    <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html" target="_blank" rel="external">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
-<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
-<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>]]>
-    
-    </summary>
-    
-      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
-    
-      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
     
       <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
     
@@ -697,24 +751,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[reactive cocoa note]]></title>
-    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
-    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
-    <published>2015-06-29T04:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
-<p>Combine two signals</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
-    </summary>
-    
-      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Lucky Seven]]></title>
     <link href="http://bumaociyuan.github.io//2015/06/29/lucky-seven.html"/>
     <id>http://bumaociyuan.github.io//2015/06/29/lucky-seven.html</id>
@@ -734,18 +770,20 @@
   </entry>
   
   <entry>
-    <title><![CDATA[install java 7]]></title>
-    <link href="http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html"/>
-    <id>http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html</id>
-    <published>2015-05-28T04:00:00.000Z</published>
+    <title><![CDATA[reactive cocoa note]]></title>
+    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
+    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
+    <published>2015-06-29T04:00:00.000Z</published>
     <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" rel="external">Installed Java 7 on Mac OS X but Terminal is still using version 6</a></p>
-]]></content>
+    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
+<p>Combine two signals</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
-    <![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" ]]>
+    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
     </summary>
     
-      <category term="java" scheme="http://bumaociyuan.github.io/categories/java/"/>
+      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
     
   </entry>
   
@@ -783,6 +821,22 @@
     </summary>
     
       <category term="other" scheme="http://bumaociyuan.github.io/tags/other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[install java 7]]></title>
+    <link href="http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html"/>
+    <id>http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html</id>
+    <published>2015-05-28T04:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" rel="external">Installed Java 7 on Mac OS X but Terminal is still using version 6</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" ]]>
+    </summary>
+    
+      <category term="java" scheme="http://bumaociyuan.github.io/categories/java/"/>
     
   </entry>
   
