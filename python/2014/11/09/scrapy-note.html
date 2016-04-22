@@ -28,7 +28,7 @@ set up a new Scrapy project
 1scrapy startproject proName
 
 This will c">
-<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
+<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="scrapy note">
 <meta name="twitter:description" content="http://doc.scrapy.org
@@ -237,8 +237,8 @@ This will c">
       
         <p><a href="http://doc.scrapy.org/en/latest/intro/tutorial.html" target="_blank" rel="external">http://doc.scrapy.org</a></p>
 <p>install <code>pip</code> <a href="https://pip.pypa.io/en/latest/installing.html#install-pip" target="_blank" rel="external">click here</a></p>
-<h2 id="install_scrapy">install scrapy</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> scrapy </span><br><span class="line"><span class="keyword">or</span></span><br><span class="line">sudo easy_install Scrapy</span><br></pre></td></tr></table></figure>
-<h2 id="tutorial_project">tutorial project</h2><ul>
+<h2 id="install_scrapy"><a href="#install_scrapy" class="headerlink" title="install scrapy"></a>install scrapy</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> scrapy </span><br><span class="line"><span class="keyword">or</span></span><br><span class="line">sudo easy_install Scrapy</span><br></pre></td></tr></table></figure>
+<h2 id="tutorial_project"><a href="#tutorial_project" class="headerlink" title="tutorial project"></a>tutorial project</h2><ul>
 <li>set up a new Scrapy project</li>
 </ul>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">scrapy</span> startproject proName</span><br></pre></td></tr></table></figure>
@@ -250,7 +250,7 @@ This will c">
 <li>we edit items.py, found in the tutorial directory. Our Item class looks like this:</li>
 </ul>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class <span class="function"><span class="title">DmozItem</span><span class="params">(scrapy.Item)</span></span>:</span><br><span class="line">    title = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    link = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    desc = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="xpath">xpath</h2><ol>
+<h2 id="xpath"><a href="#xpath" class="headerlink" title="xpath"></a>xpath</h2><ol>
 <li><p><code>/html/head/title</code> : selects the <code>&lt;title&gt;</code> element, inside the <code>&lt;head&gt;</code> element of a HTML document</p>
 </li>
 <li><p><code>/html/head/title/text()</code> : selects the text inside the aforementioned <code>&lt;title&gt;</code> element</p>
@@ -268,7 +268,7 @@ This will c">
 <li>Storing the scraped data</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">scrapy</span> <span class="tag">crawl</span> <span class="tag">dmoz</span> <span class="tag">-o</span> <span class="tag">items</span><span class="class">.json</span></span><br></pre></td></tr></table></figure>
-<h2 id="Trying_Selectors_in_the_Shell">Trying Selectors in the Shell</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy <span class="built_in">shell</span> <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Trying_Selectors_in_the_Shell"><a href="#Trying_Selectors_in_the_Shell" class="headerlink" title="Trying Selectors in the Shell"></a>Trying Selectors in the Shell</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy <span class="built_in">shell</span> <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span></span><br></pre></td></tr></table></figure>
       
     </div>
     

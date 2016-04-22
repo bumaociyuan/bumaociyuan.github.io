@@ -27,7 +27,7 @@ update vim
 pratical vim
 update 2014.12">
 <meta property="og:image" content="http://www.kuqin.com/upimg/allimg/091229/1454420.png">
-<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
+<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim note">
 <meta name="twitter:description" content="update February 11, 2015
@@ -242,8 +242,8 @@ update 2014.12">
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install mercurial</span><br><span class="line"><span class="keyword">brew </span>install vim</span><br></pre></td></tr></table></figure>
 <p>pratical vim</p>
 <p>update 2014.12.07</p>
-<pre><code><span class="symbol">:%s/targetWord/relpaceWord/g</span> &lt;<span class="constant">Enter</span>&gt;
-<span class="symbol">:%s/targetWord/relpaceWord/gc</span> &lt;<span class="constant">Enter</span>&gt;
+<pre><code>:%s/targetWord/relpaceWord/g &lt;Enter&gt;
+:%s/targetWord/relpaceWord/gc &lt;Enter&gt;
 
 vimtutor
 </code></pre><p>###vim基本命令<br>1.<br><code>i</code><br>#按一下i键,下端显示 –INSERT–<br>#插入命令,在vim中可能任意字符都有作用</p>
@@ -359,7 +359,7 @@ vimtutor
 <p>:wq 或 ZZ 或 :x         保存文件并退出 vi</p>
 <p>:q!                   不保存文件，退出 vi</p>
 <p>:e!                   放弃所有修改，从上次保存文件开始再编辑</p>
-<h3 id="shell_转义命令">shell 转义命令</h3><p>:!command             执行 shell 的 command 命令，如 :!ls</p>
+<h3 id="shell__u8F6C_u4E49_u547D_u4EE4"><a href="#shell__u8F6C_u4E49_u547D_u4EE4" class="headerlink" title="shell 转义命令"></a>shell 转义命令</h3><p>:!command             执行 shell 的 command 命令，如 :!ls</p>
 <p>:!!                         执行前一个 shell 命令</p>
 <p>:r!command            读取 command 命令的输入并插入，如 :r!ls 会先执行 ls，然后读入内容</p>
 <p>:w!command            将当前已编辑文件作为 command 命令的标准输入并执行 command 命令，如 :w!grep all</p>

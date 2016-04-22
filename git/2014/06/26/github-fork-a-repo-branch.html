@@ -18,7 +18,7 @@ Run the GitHub desktop a">
 
 Fork the repository in question (called ‘upstream’) on the GitHub website to your workspace there.
 Run the GitHub desktop a">
-<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
+<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github fork a repo branch">
 <meta name="twitter:description" content="linkI don’t know a native way yet, but you can do it following this recipe:
@@ -222,16 +222,16 @@ Run the GitHub desktop a">
 <li>Run the GitHub desktop application and clone the repository onto your PC.</li>
 <li>Use the GitHub desktop application to open a shell in the repository. (The git commands are not available from the default PowerShell unless you configure that manually.)</li>
 <li><p>Set the source repository as upstream:</p>
-<pre><code>git remote <span class="built_ins">add</span> upstream https://github.com/{<span class="built_ins">user</span>}/{source-repo}.git
+<pre><code>git remote add upstream https://github.com/{user}/{source-repo}.git
 </code></pre></li>
 </ul>
 <ul>
 <li><p>Fetch the full upstream repository. (Right now, you only have a copy of its master branch.)</p>
-<pre><code><span class="title">git</span> fetch upstream
+<pre><code>git fetch upstream
 </code></pre></li>
 <li><p>Make your file system copy the branch you want and give it any name:</p>
-<pre><code><span class="label">git</span> checkout upstream/{<span class="keyword">branch-in-question}
-</span><span class="label">git</span> checkout -<span class="keyword">b </span>temporary
+<pre><code>git checkout upstream/{branch-in-question}
+git checkout -b temporary
 </code></pre></li>
 <li><p>Publish your repo using the GitHub desktop application.</p>
 </li>
@@ -240,10 +240,10 @@ Run the GitHub desktop a">
 <li>Change the “Default branch” to ‘temporary’. (Just change the drop-down menu, you don’t need to click the “Rename” button.)</li>
 <li>Go back to your repository, go to the ‘branches’ tab, now you can delete the “master” branch.</li>
 <li><p>Delete the master branch on your shell and make a new master branch:</p>
-<pre><code><span class="label">git</span> <span class="keyword">branch </span>-d master
-<span class="label">git</span> <span class="keyword">branch </span>master
-<span class="label">git</span> checkout master
-<span class="label">git</span> -d temporary
+<pre><code>git branch -d master
+git branch master
+git checkout master
+git -d temporary
 </code></pre></li>
 <li><p>Once more, publish your repo using the GitHub desktop application.</p>
 </li>
