@@ -18,7 +18,7 @@ How many lines of code differs between two commits?
 1git archive -o latest.zip HEAD
 How many lines of code differs between two commits?
 1git diff --shortstat c">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git note 2">
 <meta name="twitter:description" content="Create a Zip archive that contains the contents of the latest commit on the current branch. 
@@ -227,122 +227,122 @@ How many lines of code differs between two commits?
 <p><strong>fetch from origin with deleted remote branches</strong></p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> fetch -p</span><br></pre></td></tr></table></figure>
 <p><strong>revert git commit on server</strong><br><a href="http://stackoverflow.com/questions/1270514/undoing-a-git-push" target="_blank" rel="external">Undoing a git push</a></p>
-<pre><code>git reset --hard &lt;commit&gt;
-git push -f origin &lt;commit&gt;:&lt;branch&gt;
-#reset local and origin &lt;branch&gt; to &lt;commit&gt;
+<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard &lt;commit&gt;</span>
+git push -<span class="keyword">f</span> origin &lt;<span class="keyword">commit</span>&gt;:&lt;branch&gt;
+#<span class="keyword">reset</span> <span class="keyword">local</span> <span class="keyword">and</span> origin &lt;branch&gt; <span class="keyword">to</span> &lt;<span class="keyword">commit</span>&gt;</span>
 </code></pre><p><strong>reduce git repository size</strong></p>
-<pre><code>git reflog expire --all --expire=now
-git gc --prune=now --aggressive
+<pre><code><span class="comment">git</span> <span class="comment">reflog</span> <span class="comment">expire</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">all</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">expire=now</span>
+<span class="comment">git</span> <span class="comment">gc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">prune=now</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">aggressive</span>
 </code></pre><p><strong>git total count</strong></p>
-<pre><code>git rev-list HEAD --count
+<pre><code>git rev-<span class="type">list</span> HEAD <span class="comment">--count</span>
 </code></pre><p><strong>git rebase</strong></p>
-<pre><code>git rebase --onto &lt;newbase&gt; &lt;since&gt; &lt;till&gt;
+<pre><code>git rebase --onto <span class="tag">&lt;<span class="title">newbase</span>&gt;</span> <span class="tag">&lt;<span class="title">since</span>&gt;</span> <span class="tag">&lt;<span class="title">till</span>&gt;</span>
 
- git rebase -i &lt;newbase&gt;    
+ git rebase -i <span class="tag">&lt;<span class="title">newbase</span>&gt;</span>    
 </code></pre><p><strong>git help config</strong></p>
-<pre><code>git help config
+<pre><code>git <span class="built_in">help</span> config
 </code></pre><p><strong>git checkout</strong></p>
-<pre><code>git checkout 
+<pre><code><span class="title">git</span> checkout 
 </code></pre><p><strong>git reset</strong></p>
-<pre><code>git reset --soft &lt;commit&gt;    # 不修改工作区和暂存区，只重置master
-git reset --hard &lt;commit&gt;    # 替换工作区，暂存区，master &lt;commit&gt;
-git reset --mixed 
+<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--soft &lt;commit&gt;    # 不修改工作区和暂存区，只重置master</span>
+git <span class="keyword">reset</span> <span class="comment">--hard &lt;commit&gt;    # 替换工作区，暂存区，master &lt;commit&gt;</span>
+git <span class="keyword">reset</span> <span class="comment">--mixed </span></span>
 </code></pre><p><strong>git reset <commit> <path></path></commit></strong></p>
 <pre><code>git add .
-git reset HEAD .    # 撤销 git add .
+git <span class="operator"><span class="keyword">reset</span> <span class="keyword">HEAD</span> .    # 撤销 git <span class="keyword">add</span> .
 
-git reset &lt;commit&gt; &lt;paths&gt; # 重置暂存区为&lt;commit&gt;
+git <span class="keyword">reset</span> &lt;<span class="keyword">commit</span>&gt; &lt;paths&gt; # 重置暂存区为&lt;<span class="keyword">commit</span>&gt;</span>
 </code></pre><p><strong>git reflog</strong></p>
-<pre><code>git reflog             #查看之前几次修改 SHA1值
-git reset --hard HEAD@{num} 
+<pre><code>git reflog             <span class="comment">#查看之前几次修改 SHA1值</span>
+git <span class="keyword">reset</span> --hard HEAD<span class="variable">@{num}</span> 
 </code></pre><p><strong>commit count</strong></p>
-<pre><code>git rev-list HEAD --count
+<pre><code>git rev-<span class="type">list</span> HEAD <span class="comment">--count</span>
 </code></pre><p><strong>git clean</strong></p>
-<pre><code>git clean -f -d 
+<pre><code>git clean <span class="operator">-f</span> <span class="operator">-d</span> 
 </code></pre><p><strong>git stash</strong></p>
-<pre><code># 保存当前工作状态
-git add .                     # 加入index
-git stash                     # 保存 ,当前工作区所有
+<pre><code><span class="preprocessor"># 保存当前工作状态</span>
+git <span class="keyword">add</span> .                     <span class="preprocessor"># 加入index</span>
+git stash                     <span class="preprocessor"># 保存 ,当前工作区所有</span>
 
-git stash list                 # 查看 stash list
+git stash list                 <span class="preprocessor"># 查看 stash list</span>
 git checkout -b new_branch
 
-# do some thing ...
+<span class="preprocessor"># do some thing ...</span>
 
 git checkout master
-git stash pop               # 多个stash 使用git stash pop stash@{num}
+git stash <span class="keyword">pop</span>               <span class="preprocessor"># 多个stash 使用git stash pop stash@{num}</span>
 </code></pre><p><strong>后悔药</strong></p>
 <pre><code>git checkout HEAD^ -- &lt;file path&gt;
 
 HEAD^         后悔一步
 HEAD^^         后悔两步
 HEAD^^^     ...
-HEAD^4        ...
-HEAD^5        以此类推
+HEAD^<span class="number">4</span>        ...
+HEAD^<span class="number">5</span>        以此类推
 </code></pre><p>角色： 最近六次提交分别是ABCDEF</p>
-<pre><code>$git log --online -6
-XXXXXXX modify hello.h                        # F    XXXXXXX add hello.h                            # E
-XXXXXXX ignore object files                    # D
-XXXXXXX move .file outside also works.        # C
-XXXXXXX Hello world initialized                # B
-XXXXXXX README is frome welcome.txt        # A
+<pre><code>$git <span class="command">log</span> <span class="comment">--online -6</span>
+XXXXXXX modify hello.h                        <span class="comment"># F    XXXXXXX add hello.h                            # E</span>
+XXXXXXX ignore object files                    <span class="comment"># D</span>
+XXXXXXX move .<span class="type">file</span> outside also works.        <span class="comment"># C</span>
+XXXXXXX Hello world initialized                <span class="comment"># B</span>
+XXXXXXX README <span class="keyword">is</span> frome welcome.txt        <span class="comment"># A</span>
 </code></pre><p>坏蛋： 提交 D。</p>
 <p>目的就是：干掉提交D<br>需要拣选指令–<code>git cherry-pick</code><br>含义是从众多的提交中挑选出一个提交应用在当前的工作分支中。该命令需要提供一个提交ID作为参数，操作过程相当于讲该提交到出为补丁文件，然后在当前HEAD上重放，形成无论内容还是提交说明都一致的提提交<br>首先对版本库要‘参演’的角色进行标记，使用<code>git tag</code> 命令</p>
-<pre><code>git tag F
-git tag E HEAD^
-git tag D HEAD^^
-git tag C HEAD^^^
-git tag B HEAD^4
-git tag A HEAD^5
+<pre><code>git <span class="built_in">tag</span> F
+git <span class="built_in">tag</span> E HEAD^
+git <span class="built_in">tag</span> D HEAD^^
+git <span class="built_in">tag</span> C HEAD^^^
+git <span class="built_in">tag</span> B HEAD^<span class="number">4</span>
+git <span class="built_in">tag</span> A HEAD^<span class="number">5</span>
 </code></pre><p>1.第一幕干掉坏蛋 D<br>(1) 执行 git checkout ,暂时将 HEAD 头指针切换到 C。<br>切换过程显示非跟踪状态的警告，没有关系，因为剧情需要。</p>
-<pre><code>$git checkout C
-$git checkout -b new_branch_name
+<pre><code><span class="variable">$git</span> checkout C
+<span class="variable">$git</span> checkout -b new_branch_name
 </code></pre><p>(2) 执行拣选操作将 E 提交在    </p>
 <p><strong>change some history comment</strong></p>
-<pre><code>git rebase -i &lt;commit number&gt;
+<pre><code>git rebase -<span class="tag">i</span> &lt;commit number&gt;
 </code></pre><p><strong>change last comment</strong></p>
-<pre><code>git commit --amend    
+<pre><code>git <span class="operator"><span class="keyword">commit</span> <span class="comment">--amend    </span></span>
 </code></pre><p><strong>安装自动补全命令</strong></p>
-<pre><code>brew install bash-completion
+<pre><code><span class="keyword">brew </span>install <span class="keyword">bash-completion</span>
 </code></pre><p><strong>.gitignore</strong></p>
-<pre><code># 这是注释行 -- 被忽略
-*.a         # 忽略所有以 .a 为扩展名的文件。
-!lib.a        # 但是 lib.a 文件或者目录不要忽略，即使前面设置了对 *.a 的忽略。
-/TODO         # 只忽略此目录下的 TODO 文件，子目录的 TODO 文件不忽略。
-build/      # 忽略所有 build/ 目录下的文件
-doc/*.txt     # 忽略文件如 doc/notes.txt，但是文件如 doc/server/arch.txt 不被忽略。
+<pre><code><span class="comment"># 这是注释行 -- 被忽略</span>
+*.a         <span class="comment"># 忽略所有以 .a 为扩展名的文件。</span>
+!<span class="class"><span class="keyword">lib</span>.<span class="title">a</span>        <span class="comment"># 但是 lib.a 文件或者目录不要忽略，即使前面设置了对 *.a 的忽略。</span></span>
+/<span class="constant">TODO</span>         <span class="comment"># 只忽略此目录下的 TODO 文件，子目录的 TODO 文件不忽略。</span>
+build/      <span class="comment"># 忽略所有 build/ 目录下的文件</span>
+doc/*.txt     <span class="comment"># 忽略文件如 doc/notes.txt，但是文件如 doc/server/arch.txt 不被忽略。</span>
 
-“# a comment - this is ignored
-# no .a files
+“<span class="comment"># a comment - this is ignored</span>
+<span class="comment"># no .a files</span>
 *.a
-# but do track lib.a, even though you&apos;re ignoring .a files above
-!lib.a
-# only ignore the root TODO file, not subdir/TODO
-/TODO
-# ignore all files in the build/ directory
+<span class="comment"># but do track lib.a, even though you're ignoring .a files above</span>
+!<span class="class"><span class="keyword">lib</span>.<span class="title">a</span></span>
+<span class="comment"># only ignore the root TODO file, not subdir/TODO</span>
+/<span class="constant">TODO</span>
+<span class="comment"># ignore all files in the build/ directory</span>
 build/
-# ignore doc/notes.txt, but not doc/server/arch.txt
+<span class="comment"># ignore doc/notes.txt, but not doc/server/arch.txt</span>
 doc/*.txt
-# ignore all .txt files in the doc/ directory
-doc/**/*.txt”
+<span class="comment"># ignore all .txt files in the doc/ directory</span>
+doc/**<span class="regexp">/*.txt”</span>
 </code></pre><p><strong>remove ignored files</strong></p>
 <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm -r <span class="comment">--cached . </span></span><br><span class="line">git <span class="built_in">add</span> .</span><br><span class="line">git commit -am <span class="string">"Remove ignored files"</span></span><br></pre></td></tr></table></figure>
 <p><strong>git rev-list HEAD | wc -l</strong></p>
-<pre><code>git rev-list HEAD | wc -l   # 查看历史提交次数
+<pre><code>git rev-<span class="type">list</span> HEAD | wc -l   <span class="comment"># 查看历史提交次数</span>
 </code></pre><p><strong>git diff</strong></p>
-<pre><code>git diff B A             # 比较里程碑 B 和里程碑 A
-git diff A                # 比较工作区和里程碑 A
-git diff --cached A     # 比较暂存区和里程碑 A
-git diff --cached        # 比较工作区和暂存区
-git diff HEAD             # 比较工作区和HEAD
+<pre><code>git diff B A             <span class="comment"># 比较里程碑 B 和里程碑 A</span>
+git diff A                <span class="comment"># 比较工作区和里程碑 A</span>
+git diff --cached A     <span class="comment"># 比较暂存区和里程碑 A</span>
+git diff --cached        <span class="comment"># 比较工作区和暂存区</span>
+git diff HEAD             <span class="comment"># 比较工作区和HEAD</span>
 
 若只有一个参数就是比较工作区和 这个参数
 两个参数就是比较两个参数
 参数可以是 里程碑 commitId 工作区 等等
 
-git diff &lt;commit1&gt; &lt;commit2&gt; -- &lt;paths&gt;
+git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&lt;commit2&gt;</span> -- <span class="variable">&lt;paths&gt;</span>
 </code></pre><p><strong>git blame</strong></p>
-<pre><code>git blame &lt;file path&gt;     # 文件追溯
+<pre><code>git blame &lt;<span class="type">file</span> path&gt;     <span class="comment"># 文件追溯</span>
 </code></pre>
       
     </div>

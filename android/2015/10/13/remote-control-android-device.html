@@ -17,7 +17,7 @@ Demo">
 Control and manage Android devices from your browser.
 Demo">
 <meta property="og:image" content="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-10-15T14:55:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Remote control android device">
 <meta name="twitter:description" content="About STFSource Code
@@ -218,13 +218,13 @@ Demo">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="About_STF"><a href="#About_STF" class="headerlink" title="About STF"></a>About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
+        <h1 id="About_STF">About STF</h1><p><a href="https://github.com/openstf/stf" target="_blank" rel="external">Source Code</a></p>
 <p><a href="https://openstf.io/" target="_blank" rel="external">Control and manage Android devices from your browser.</a></p>
-<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>
+<h1 id="Demo">Demo</h1><p><img src="https://raw.githubusercontent.com/openstf/stf/master/doc/7s_usage.gif" alt="image"></p>
 <a id="more"></a>
-<h1 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h1><p><a href="https://github.com/openstf/stf#requirements" target="_blank" rel="external">Install</a></p>
-<h1 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h1><p><a href="https://github.com/openstf/stf#installation" target="_blank" rel="external">link</a></p>
-<h1 id="Problems"><a href="#Problems" class="headerlink" title="Problems"></a>Problems</h1><h2 id="USB_connection"><a href="#USB_connection" class="headerlink" title="USB connection"></a>USB connection</h2><p><a href="https://github.com/apkudo/adbusbini" target="_blank" rel="external">ADB hasn’t whitelisted the manufacturer’s vendor ID</a></p>
+<h1 id="Requirements">Requirements</h1><p><a href="https://github.com/openstf/stf#requirements" target="_blank" rel="external">Install</a></p>
+<h1 id="Installation">Installation</h1><p><a href="https://github.com/openstf/stf#installation" target="_blank" rel="external">link</a></p>
+<h1 id="Problems">Problems</h1><h2 id="USB_connection">USB connection</h2><p><a href="https://github.com/apkudo/adbusbini" target="_blank" rel="external">ADB hasn’t whitelisted the manufacturer’s vendor ID</a></p>
 <p><a href="http://blog.csdn.net/zhaoxy_thu/article/details/11857697" target="_blank" rel="external">mac OSX上eclipse adb无法识别（调试）小米的解决方案</a></p>
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>echo <span class="string">"0x2717"</span> &gt; ~<span class="regexp">/.android/adb</span>_usb.ini  </span><br><span class="line"><span class="variable">$ </span>adb kill-server</span><br></pre></td></tr></table></figure>
 <figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># output likes below</span></span><br><span class="line">List of devices attached</span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f		unauthorized</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">4<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>some-number<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>f	    offline</span><br></pre></td></tr></table></figure>
@@ -239,8 +239,8 @@ Demo">
 <li>In adb shell type &gt; adb start-server</li>
 <li>Connect device</li>
 </ol>
-<h2 id="Wireless_connection"><a href="#Wireless_connection" class="headerlink" title="Wireless connection"></a>Wireless connection</h2><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># usb connect device</span></span><br><span class="line"><span class="variable">$ </span>adb tcpip <span class="number">5555</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># disconnect usb</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>adb connect ip</span><br><span class="line"><span class="variable">$ </span>stf local --allow-remote</span><br></pre></td></tr></table></figure>
-<h2 id="Launch_tcp_in_boot"><a href="#Launch_tcp_in_boot" class="headerlink" title="Launch tcp in boot"></a>Launch tcp in boot</h2><p><a href="http://droidcore.blogspot.com/2012/12/how-to-edit-initrc-in-android.html" target="_blank" rel="external">How to edit the init.rc in android</a> 不敢尝试，感觉风险很大</p>
+<h2 id="Wireless_connection">Wireless connection</h2><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># usb connect device</span></span><br><span class="line"><span class="variable">$ </span>adb tcpip <span class="number">5555</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># disconnect usb</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>adb connect ip</span><br><span class="line"><span class="variable">$ </span>stf local --allow-remote</span><br></pre></td></tr></table></figure>
+<h2 id="Launch_tcp_in_boot">Launch tcp in boot</h2><p><a href="http://droidcore.blogspot.com/2012/12/how-to-edit-initrc-in-android.html" target="_blank" rel="external">How to edit the init.rc in android</a> 不敢尝试，感觉风险很大</p>
 
       
     </div>

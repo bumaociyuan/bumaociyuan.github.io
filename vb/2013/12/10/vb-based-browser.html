@@ -22,7 +22,7 @@ Public Class FasterBrowser
 Imports Skybound.Gecko
 Public Class FasterBrowser
     Inherits Ge">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vb based browser">
 <meta name="twitter:description" content="参考视频教学 youtube
@@ -226,28 +226,28 @@ Public Class FasterBrowser
 <p>需要两个三方库 sourceCode<br><a href="http://www.dasdoc.com/uploads/origin/201312/091920306.rar" target="_blank" rel="external">ChromeBasedWebBrowser.rar</a><br>,<a href="http://ishare.iask.sina.com.cn/f/63101622.html?sudaref=www.baidu.com&amp;retcode=0" target="_blank" rel="external">xulrunner-1.9.en-US.win32.zip</a></p>
 <p>1，新建一个class 继承 <code>Skybound.Gecko.GeckoWebBrowser</code></p>
 <pre><code>Imports Skybound.Gecko
-Public Class FasterBrowser
+<span class="keyword">Public</span> <span class="class"><span class="keyword">Class</span> <span class="title">FasterBrowser</span></span>
     Inherits GeckoWebBrowser
-End Class
+<span class="keyword">End</span> <span class="class"><span class="keyword">Class</span></span>
 </code></pre><p>2，在ui 上加入 new class</p>
 <p>3，</p>
-<pre><code>Imports Skybound.Gecko
+<pre><code><span class="keyword">Imports</span> Skybound.Gecko
 
-Public Class Form1
+<span class="keyword">Public</span> <span class="keyword">Class</span> Form1
 
-    Sub New()
+    <span class="keyword">Sub</span> <span class="keyword">New</span>()
         InitializeComponent()
 
-        Xpcom.Initialize(Environment.CurrentDirectory + &quot;lrunner&quot;)
+        Xpcom.Initialize(Environment.CurrentDirectory + <span class="string">"lrunner"</span>)
 
 
-    End Sub
+    <span class="keyword">End</span> <span class="keyword">Sub</span>
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        FasterBrowser1.Navigate(&quot;http://www.zmaitech.com&quot;)
-    End Sub
+    <span class="keyword">Private</span> <span class="keyword">Sub</span> Button1_Click(<span class="keyword">ByVal</span> sender <span class="keyword">As</span> System.<span class="built_in">Object</span>, <span class="keyword">ByVal</span> e <span class="keyword">As</span> System.EventArgs) <span class="keyword">Handles</span> Button1.Click
+        FasterBrowser1.Navigate(<span class="string">"http://www.zmaitech.com"</span>)
+    <span class="keyword">End</span> <span class="keyword">Sub</span>
 
-End Class
+<span class="keyword">End</span> <span class="keyword">Class</span>
 </code></pre>
       
     </div>
