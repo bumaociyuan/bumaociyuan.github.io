@@ -3092,8 +3092,11 @@ $sudo mdutil -a -i on
     <link href="http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html</id>
     <published>2014-09-05T13:41:50.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://www.kuqin.com/upimg/allimg/091229/1454420.png" alt="image"></p>
+    <updated>2016-05-03T02:24:16.000Z</updated>
+    <content type="html"><![CDATA[<p>update 2016.5.3</p>
+<p><a href="https://github.com/bumaociyuan/macDev/wiki/Vim-Skills" target="_blank" rel="external">vim-skill</a></p>
+<hr>
+<p><img src="http://www.kuqin.com/upimg/allimg/091229/1454420.png" alt="image"></p>
 <p>update February 11, 2015</p>
 <p><a href="http://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/" target="_blank" rel="external">HowTo: Save A File In Vim / Vi Without Root Permission</a></p>
 <figure class="highlight erlang-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:<span class="function_or_atom">w</span> <span class="exclamation_mark">!</span><span class="function_or_atom">sudo</span> <span class="function_or_atom">tee</span> <span class="comment">%</span></span><br></pre></td></tr></table></figure>
@@ -3238,9 +3241,9 @@ vimtutor
 <p>:set sw=n             将移动宽度设置为 n 个字符<br>n&gt;                   使 n 行都向右移动一个宽度，例如 3&gt;&gt; 就将接下来的三行每行都向右移动一个移动宽度</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://www.kuqin.com/upimg/allimg/091229/1454420.png" alt="image"></p>
-<p>update February 11, 2015</p>
-<p><a href="http://www.c]]>
+    <![CDATA[<p>update 2016.5.3</p>
+<p><a href="https://github.com/bumaociyuan/macDev/wiki/Vim-Skills" target="_blank" rel="external">vim-skill</a></p>
+<]]>
     </summary>
     
       <category term="vim" scheme="http://bumaociyuan.github.io/tags/vim/"/>

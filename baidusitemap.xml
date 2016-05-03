@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html</loc>
+    <lastmod>2016-05-03T02:24:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>vim note</title>
+        <pubTime>2014-09-05T13:41:50.000Z</pubTime>
+        
+        <tag>vim</tag>
+         
+         
+           
+             
+              <breadCrumb title="terminal" url="http://bumaociyuan.github.io/categories/terminal/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html</loc>
     <lastmod>2016-04-22T06:25:36.000Z</lastmod>
     <data>
@@ -121,24 +141,6 @@
            
              
               <breadCrumb title="hexo" url="http://bumaociyuan.github.io/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
-    <lastmod>2015-12-09T03:44:17.000Z</lastmod>
-    <data>
-        <display>
-        <title>ngrok note</title>
-        <pubTime>2015-09-14T18:45:55.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="ngrok" url="http://bumaociyuan.github.io/categories/ngrok/"/>
           
         </display>
     </data>
@@ -1640,19 +1642,17 @@
 
     
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html</loc>
+    <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
     <data>
         <display>
-        <title>vim note</title>
-        <pubTime>2014-09-05T13:41:50.000Z</pubTime>
+        <title>ngrok note</title>
+        <pubTime>2015-09-14T18:45:55.000Z</pubTime>
         
-        <tag>vim</tag>
-         
          
            
              
-              <breadCrumb title="terminal" url="http://bumaociyuan.github.io/categories/terminal/"/>
+              <breadCrumb title="ngrok" url="http://bumaociyuan.github.io/categories/ngrok/"/>
           
         </display>
     </data>

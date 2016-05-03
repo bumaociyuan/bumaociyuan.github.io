@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html</loc>
+    <lastmod>2016-05-03T02:24:16.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html</loc>
     <lastmod>2016-04-22T06:25:36.000Z</lastmod>
   </url>
@@ -29,11 +34,6 @@
   <url>
     <loc>http://bumaociyuan.github.io/hexo/2015/09/10/Migrate-from-Jekyll-to-Hexo.html</loc>
     <lastmod>2015-12-09T06:11:41.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
-    <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
@@ -427,7 +427,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/09/05/vim-note.html</loc>
+    <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
