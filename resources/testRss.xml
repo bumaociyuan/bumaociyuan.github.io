@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2016-04-22T06:25:36.000Z</updated>
+  <updated>2016-05-06T03:25:53.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html</id>
     <published>2016-02-18T14:35:47.000Z</published>
-    <updated>2016-04-22T06:25:36.000Z</updated>
+    <updated>2016-05-06T03:25:53.000Z</updated>
     <content type="html"><![CDATA[<p>为了打PS4可以快一点买了个极路由</p>
 <h1 id="u5F00_u542Froot_u6743_u9650"><a href="#u5F00_u542Froot_u6743_u9650" class="headerlink" title="开启root权限"></a>开启root权限</h1><ul>
 <li>官方开启root方法：<a href="http://bbs.hiwifi.com/thread-74899-1-1.html" target="_blank" rel="external">[公告] 【开发者模式功能开放公告】</a>我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了</li>
@@ -33,8 +33,6 @@
 <li>若shadowsocks选项显示的是：{ “msg”: “请求的接口不存在.”, “code”: 560 }，请重启路由器。</li>
 </ul>
 <a id="more"></a>
-<p>以下还未尝试</p>
-<h1 id="u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868"><a href="#u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868" class="headerlink" title="一键更新路由表"></a>一键更新路由表</h1><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/g</span>w-redsocks<span class="regexp">/gw-shadowsocks &amp;&amp; wget http:/</span><span class="regexp">/this.is26.com/</span>download<span class="regexp">/gfw.txt &amp;&amp; cat gfw.txt &gt;&gt; gw-shadowsocks.dnslist &amp;&amp; /</span>etc<span class="regexp">/init.d/</span>dnsmasq restart</span><br></pre></td></tr></table></figure>
 <h1 id="u81EA_u5B9A_u4E49pac"><a href="#u81EA_u5B9A_u4E49pac" class="headerlink" title="自定义pac"></a>自定义pac</h1><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="regexp">/etc/g</span>w-redsocks<span class="regexp">/gw-shadowsocks/g</span>w-shadowsocks.dnslist</span><br></pre></td></tr></table></figure>
 <h1 id="u52A0_u901F"><a href="#u52A0_u901F" class="headerlink" title="加速"></a>加速</h1><ul>
 <li><a href="https://github.com/shadowsocks/shadowsocks/wiki/Setup-a-Shadowsocks-relay" target="_blank" rel="external">Setup a Shadowsocks relay</a></li>

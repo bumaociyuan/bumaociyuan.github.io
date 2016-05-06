@@ -24,7 +24,7 @@ ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口
 
 ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口为1022，密码为后台登陆密码。 ssh能登录就万能了
 安装ss123cd /tmp &amp;a">
-<meta property="og:updated_time" content="2016-04-22T06:25:36.000Z">
+<meta property="og:updated_time" content="2016-05-06T03:25:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="极路由安装shadowsocks">
 <meta name="twitter:description" content="为了打PS4可以快一点买了个极路由
@@ -242,8 +242,6 @@ ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口
 <li>若shadowsocks选项显示的是：{ “msg”: “请求的接口不存在.”, “code”: 560 }，请重启路由器。</li>
 </ul>
 <a id="more"></a>
-<p>以下还未尝试</p>
-<h1 id="u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868"><a href="#u4E00_u952E_u66F4_u65B0_u8DEF_u7531_u8868" class="headerlink" title="一键更新路由表"></a>一键更新路由表</h1><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/g</span>w-redsocks<span class="regexp">/gw-shadowsocks &amp;&amp; wget http:/</span><span class="regexp">/this.is26.com/</span>download<span class="regexp">/gfw.txt &amp;&amp; cat gfw.txt &gt;&gt; gw-shadowsocks.dnslist &amp;&amp; /</span>etc<span class="regexp">/init.d/</span>dnsmasq restart</span><br></pre></td></tr></table></figure>
 <h1 id="u81EA_u5B9A_u4E49pac"><a href="#u81EA_u5B9A_u4E49pac" class="headerlink" title="自定义pac"></a>自定义pac</h1><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="regexp">/etc/g</span>w-redsocks<span class="regexp">/gw-shadowsocks/g</span>w-shadowsocks.dnslist</span><br></pre></td></tr></table></figure>
 <h1 id="u52A0_u901F"><a href="#u52A0_u901F" class="headerlink" title="加速"></a>加速</h1><ul>
 <li><a href="https://github.com/shadowsocks/shadowsocks/wiki/Setup-a-Shadowsocks-relay" target="_blank" rel="external">Setup a Shadowsocks relay</a></li>
