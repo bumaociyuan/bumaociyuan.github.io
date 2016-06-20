@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2016-05-06T03:25:53.000Z</updated>
+  <updated>2016-06-20T08:07:23.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -15,11 +15,66 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[SwiftLint tutorial]]></title>
+    <link href="http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html"/>
+    <id>http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html</id>
+    <published>2016-06-20T19:31:34.000Z</published>
+    <updated>2016-06-20T08:07:23.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="SwiftLint__u662F_u4EC0_u4E48"><a href="#SwiftLint__u662F_u4EC0_u4E48" class="headerlink" title="SwiftLint 是什么"></a>SwiftLint 是什么</h1><p>A tool to enforce Swift style and conventions, loosely based on <a href="https://github.com/github/swift-style-guide" target="_blank" rel="external"> GitHub’s Swift Style Guide </a>.</p>
+<h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><p><a href="https://github.com/realm/SwiftLint" target="_blank" rel="external">GitHub 地址</a></p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install <span class="keyword">swiftlint</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="Xcode"><a href="#Xcode" class="headerlink" title="Xcode"></a>Xcode</h2><h3 id="SwiftLintXcode"><a href="#SwiftLintXcode" class="headerlink" title="SwiftLintXcode"></a>SwiftLintXcode</h3><p>插件自动在保存文件时运行 <code>swiftlint</code><br><a href="https://github.com/ypresto/SwiftLintXcode" target="_blank" rel="external">SwiftLintXcode</a></p>
+<h3 id="Run_Script_Phase"><a href="#Run_Script_Phase" class="headerlink" title="Run Script Phase"></a>Run Script Phase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">which</span> swiftlint &gt;/dev/null; <span class="keyword">then</span></span><br><span class="line">swiftlint</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"warning: SwiftLint not installed, install use `brew install swiftlint`</span><br><span class="line">fi</span></span><br></pre></td></tr></table></figure>
+<div style="width: 70%;"><br><img src="https://github.com/realm/SwiftLint/raw/master/assets/runscript.png" alt=""><br></div>
+
+
+<h2 id="git_hook"><a href="#git_hook" class="headerlink" title="git hook"></a>git hook</h2><p><code>git commit</code> 时自动格式化加入stage的代码</p>
+<ul>
+<li>将下面代码写入git仓库根目录 <code>pre-commit.sh</code> 文件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line"><span class="comment"># 这是一个pre-commit 的脚本</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Run SwiftLint</span></span><br><span class="line">START_DATE=$(date +<span class="string">" %s"</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$START_DATE</span></span><br><span class="line"></span><br><span class="line">SWIFT_LINT=/usr/<span class="built_in">local</span>/bin/swiftlint</span><br><span class="line"></span><br><span class="line"><span class="comment"># Run SwiftLint for given filename</span></span><br><span class="line"><span class="function"><span class="title">run_swiftlint</span></span>() &#123;</span><br><span class="line"><span class="built_in">local</span> filename=<span class="string">"<span class="variable">$&#123;1&#125;</span>"</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="string">"<span class="variable">$&#123;filename##*.&#125;</span>"</span> == <span class="string">"swift"</span> ]]; <span class="keyword">then</span></span><br><span class="line"><span class="comment"># echo $&#123;filename&#125;</span></span><br><span class="line"><span class="variable">$&#123;SWIFT_LINT&#125;</span> autocorrect --path <span class="string">"<span class="variable">$&#123;filename&#125;</span>"</span></span><br><span class="line">git add -- <span class="string">"<span class="variable">$&#123;filename&#125;</span>"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># check lint</span></span><br><span class="line"><span class="comment"># $&#123;SWIFT_LINT&#125; lint --path "$&#123;filename&#125;"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [[ <span class="operator">-e</span> <span class="string">"<span class="variable">$&#123;SWIFT_LINT&#125;</span>"</span> ]]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"SwiftLint version: <span class="variable">$($&#123;SWIFT_LINT&#125; version)</span>"</span></span><br><span class="line"><span class="comment"># Run for unstaged</span></span><br><span class="line"><span class="comment"># git diff --name-only | while read filename; do run_swiftlint "$&#123;filename&#125;"; done</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Run for staged</span></span><br><span class="line">git diff --cached --name-only | <span class="keyword">while</span> <span class="built_in">read</span> filename; <span class="keyword">do</span> run_swiftlint <span class="string">"<span class="variable">$&#123;filename&#125;</span>"</span>; <span class="keyword">done</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$&#123;SWIFT_LINT&#125;</span> is not installed."</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Plz install swiftlint use brew"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"brew install swiftlint"</span></span><br><span class="line"><span class="built_in">exit</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">END_DATE=$(date +<span class="string">"%s"</span>)</span><br><span class="line"></span><br><span class="line">DIFF=$((<span class="variable">$END_DATE</span> - <span class="variable">$START_DATE</span>))</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"SwiftLint took <span class="variable">$(($DIFF / 60)</span>) minutes and <span class="variable">$(($DIFF % 60)</span>) seconds to complete."</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成link</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ln</span> -<span class="keyword">s</span> <span class="keyword">pre</span>-commit.<span class="keyword">sh</span> .git/hooks/<span class="keyword">pre</span>-commit</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改权限<br>-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod ug+x .git<span class="regexp">/hooks/</span>pre-commit</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="u4FEE_u6539_u89C4_u5219"><a href="#u4FEE_u6539_u89C4_u5219" class="headerlink" title="修改规则"></a>修改规则</h2><ul>
+<li><code>swiftlint rules</code> 查看所有规则</li>
+<li><code>swiftlint rules rule_name</code> 查看规则详情</li>
+</ul>
+<p>在git仓库根目录新建文件 <code>.swiftlint.yml</code> 作用于整个项目</p>
+<ul>
+<li>disabled_rules: Disable rules from the default enabled set.</li>
+<li>opt_in_rules: Some rules are opt-in.</li>
+<li>whitelist_rules: Can not be specified alongside disabled_rules or opt_in_rules. Acts as a whitelist, only the rules specified in this list will be enabled.</li>
+</ul>
+<p>官方sample<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">disabled_rules: # rule identifiers to exclude from running</span><br><span class="line">  - colon</span><br><span class="line">  - comma</span><br><span class="line">  - control_statement</span><br><span class="line">opt_in_rules: # some rules are only opt-in</span><br><span class="line">  - empty_count</span><br><span class="line">  - missing_docs</span><br><span class="line">  # Find all the available rules by running:</span><br><span class="line">  # swiftlint rules</span><br><span class="line">included: # paths to include during linting. `<span class="comment">--path` is ignored if present.</span></span><br><span class="line">  - Source</span><br><span class="line">excluded: # paths to ignore during linting. Takes precedence over `included`.</span><br><span class="line">  - Carthage</span><br><span class="line">  - Pods</span><br><span class="line">  - Source/ExcludedFolder</span><br><span class="line">  - Source/ExcludedFile.swift</span><br><span class="line"></span><br><span class="line"># configurable rules can be customized from this configuration file</span><br><span class="line"># binary rules can <span class="operator"><span class="keyword">set</span> their severity <span class="keyword">level</span></span><br><span class="line">force_cast: <span class="keyword">warning</span> # implicitly</span><br><span class="line">force_try:</span><br><span class="line">  severity: <span class="keyword">warning</span> # explicitly</span><br><span class="line"># <span class="keyword">rules</span> that have <span class="keyword">both</span> <span class="keyword">warning</span> <span class="keyword">and</span> <span class="keyword">error</span> <span class="keyword">levels</span>, can <span class="keyword">set</span> just the <span class="keyword">warning</span> <span class="keyword">level</span></span><br><span class="line"># implicitly</span><br><span class="line">line_length: <span class="number">110</span></span><br><span class="line"># they can <span class="keyword">set</span> <span class="keyword">both</span> implicitly <span class="keyword">with</span> an <span class="built_in">array</span></span><br><span class="line">type_body_length:</span><br><span class="line">  - <span class="number">300</span> # <span class="keyword">warning</span></span><br><span class="line">  - <span class="number">400</span> # <span class="keyword">error</span></span><br><span class="line"># <span class="keyword">or</span> they can <span class="keyword">set</span> <span class="keyword">both</span> explicitly</span><br><span class="line">file_length:</span><br><span class="line">  <span class="keyword">warning</span>: <span class="number">500</span></span><br><span class="line">  <span class="keyword">error</span>: <span class="number">1200</span></span><br><span class="line"># naming <span class="keyword">rules</span> can <span class="keyword">set</span> <span class="keyword">warnings</span>/<span class="keyword">errors</span> <span class="keyword">for</span> min_length <span class="keyword">and</span> max_length</span><br><span class="line"># additionally they can <span class="keyword">set</span> excluded <span class="keyword">names</span></span><br><span class="line">type_name:</span><br><span class="line">  min_length: <span class="number">4</span> # <span class="keyword">only</span> <span class="keyword">warning</span></span><br><span class="line">  max_length: # <span class="keyword">warning</span> <span class="keyword">and</span> <span class="keyword">error</span></span><br><span class="line">    <span class="keyword">warning</span>: <span class="number">40</span></span><br><span class="line">    <span class="keyword">error</span>: <span class="number">50</span></span><br><span class="line">  excluded: iPhone # excluded via <span class="keyword">string</span></span><br><span class="line">variable_name:</span><br><span class="line">  min_length: # <span class="keyword">only</span> min_length</span><br><span class="line">    <span class="keyword">error</span>: <span class="number">4</span> # <span class="keyword">only</span> <span class="keyword">error</span></span><br><span class="line">  excluded: # excluded via <span class="keyword">string</span> <span class="built_in">array</span></span><br><span class="line">    - <span class="keyword">id</span></span><br><span class="line">    - <span class="keyword">URL</span></span><br><span class="line">    - GlobalAPIKey</span><br><span class="line">reporter: <span class="string">"xcode"</span> # reporter <span class="keyword">type</span> (xcode, <span class="keyword">json</span>, csv, checkstyle)</span></span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="SwiftLint__u662F_u4EC0_u4E48"><a href="#SwiftLint__u662F_u4EC0_u4E48" class="headerlink" title="SwiftLint 是什么"></a>SwiftLint 是什么</h1><p>A tool to enforce Swift style and conventions, loosely based on <a href="https://github.com/github/swift-style-guide"> GitHub’s Swift Style Guide </a>.</p>
+<h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><p><a href="https://github.com/realm/SwiftLint">GitHub 地址</a></p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install <span class="keyword">swiftlint</span></span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="swift" scheme="http://bumaociyuan.github.io/tags/swift/"/>
+    
+      <category term="xcode" scheme="http://bumaociyuan.github.io/tags/xcode/"/>
+    
+      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[极路由安装shadowsocks]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html</id>
     <published>2016-02-18T14:35:47.000Z</published>
-    <updated>2016-05-06T03:25:53.000Z</updated>
+    <updated>2016-05-10T01:34:24.000Z</updated>
     <content type="html"><![CDATA[<p>为了打PS4可以快一点买了个极路由</p>
 <h1 id="u5F00_u542Froot_u6743_u9650"><a href="#u5F00_u542Froot_u6743_u9650" class="headerlink" title="开启root权限"></a>开启root权限</h1><ul>
 <li>官方开启root方法：<a href="http://bbs.hiwifi.com/thread-74899-1-1.html" target="_blank" rel="external">[公告] 【开发者模式功能开放公告】</a>我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了</li>
@@ -410,6 +465,34 @@
   </entry>
   
   <entry>
+    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
+    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
+    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
+    <published>2015-09-07T04:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html" target="_blank" rel="external">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
+<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
+<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
+    
+      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
+    
+      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[alfred run a jxa script]]></title>
     <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
@@ -436,34 +519,6 @@
       <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
     
       <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
-    
-      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
-    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
-    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
-    <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html" target="_blank" rel="external">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
-<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
-<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>]]>
-    
-    </summary>
-    
-      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
-    
-      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
     
       <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
     
@@ -711,24 +766,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[reactive cocoa note]]></title>
-    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
-    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
-    <published>2015-06-29T04:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
-<p>Combine two signals</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
-    </summary>
-    
-      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Lucky Seven]]></title>
     <link href="http://bumaociyuan.github.io//2015/06/29/lucky-seven.html"/>
     <id>http://bumaociyuan.github.io//2015/06/29/lucky-seven.html</id>
@@ -748,18 +785,20 @@
   </entry>
   
   <entry>
-    <title><![CDATA[install java 7]]></title>
-    <link href="http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html"/>
-    <id>http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html</id>
-    <published>2015-05-28T04:00:00.000Z</published>
+    <title><![CDATA[reactive cocoa note]]></title>
+    <link href="http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html"/>
+    <id>http://bumaociyuan.github.io/ios/2015/06/29/reactive-cocoa-note.html</id>
+    <published>2015-06-29T04:00:00.000Z</published>
     <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" rel="external">Installed Java 7 on Mac OS X but Terminal is still using version 6</a></p>
-]]></content>
+    <content type="html"><![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
+<p>Combine two signals</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>]]></content>
     <summary type="html">
-    <![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" ]]>
+    <![CDATA[<p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p]]>
     </summary>
     
-      <category term="java" scheme="http://bumaociyuan.github.io/categories/java/"/>
+      <category term="ios" scheme="http://bumaociyuan.github.io/categories/ios/"/>
     
   </entry>
   
@@ -797,6 +836,22 @@
     </summary>
     
       <category term="other" scheme="http://bumaociyuan.github.io/tags/other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[install java 7]]></title>
+    <link href="http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html"/>
+    <id>http://bumaociyuan.github.io/java/2015/05/28/install-java-7.html</id>
+    <published>2015-05-28T04:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" rel="external">Installed Java 7 on Mac OS X but Terminal is still using version 6</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://stackoverflow.com/questions/12757558/installed-java-7-on-mac-os-x-but-terminal-is-still-using-version-6" target="_blank" ]]>
+    </summary>
+    
+      <category term="java" scheme="http://bumaociyuan.github.io/categories/java/"/>
     
   </entry>
   

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>SwiftLint tutorial | 不毛次元</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="SwiftLint 是什么A tool to enforce Swift style and conventions, loosely based on  GitHub’s Swift Style Guide .
+安装GitHub 地址
+1brew install swiftlint">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SwiftLint tutorial">
+<meta property="og:url" content="http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html">
+<meta property="og:site_name" content="不毛次元">
+<meta property="og:description" content="SwiftLint 是什么A tool to enforce Swift style and conventions, loosely based on  GitHub’s Swift Style Guide .
+安装GitHub 地址
+1brew install swiftlint">
+<meta property="og:image" content="https://github.com/realm/SwiftLint/raw/master/assets/runscript.png">
+<meta property="og:updated_time" content="2016-06-20T08:07:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SwiftLint tutorial">
+<meta name="twitter:description" content="SwiftLint 是什么A tool to enforce Swift style and conventions, loosely based on  GitHub’s Swift Style Guide .
+安装GitHub 地址
+1brew install swiftlint">
+  
+    <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/avatar.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">不毛次元</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">Home</a></li>
+				        
+							<li><a href="/archives">Archives</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/bumaociyuan" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="http://bumaociyuan.github.io/resources/testRss.xml" title="rss">rss</a>
+					        
+								<a class="twitter" target="_blank" href="https://twitter.com/bumaociyuan" title="twitter">twitter</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/3ds/" style="font-size: 12.5px;">3ds</a> <a href="/tags/Go2Shell/" style="font-size: 10px;">Go2Shell</a> <a href="/tags/Parallels/" style="font-size: 10px;">Parallels</a> <a href="/tags/alfred/" style="font-size: 10px;">alfred</a> <a href="/tags/alias/" style="font-size: 10px;">alias</a> <a href="/tags/app-extension/" style="font-size: 10px;">app extension</a> <a href="/tags/applescript/" style="font-size: 15px;">applescript</a> <a href="/tags/automator/" style="font-size: 12.5px;">automator</a> <a href="/tags/bandwagon/" style="font-size: 10px;">bandwagon</a> <a href="/tags/black-magic/" style="font-size: 10px;">black magic</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/cocoapods/" style="font-size: 17.5px;">cocoapods</a> <a href="/tags/code-snippet/" style="font-size: 15px;">code snippet</a> <a href="/tags/download/" style="font-size: 10px;">download</a> <a href="/tags/duns/" style="font-size: 10px;">duns</a> <a href="/tags/emoji/" style="font-size: 10px;">emoji</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/faq/" style="font-size: 10px;">faq</a> <a href="/tags/google/" style="font-size: 15px;">google</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/homebrew/" style="font-size: 12.5px;">homebrew</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/iphone/" style="font-size: 10px;">iphone</a> <a href="/tags/iterm/" style="font-size: 10px;">iterm</a> <a href="/tags/jailbreak/" style="font-size: 10px;">jailbreak</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/jxa/" style="font-size: 12.5px;">jxa</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/openemu/" style="font-size: 10px;">openemu</a> <a href="/tags/other/" style="font-size: 12.5px;">other</a> <a href="/tags/phoneGap/" style="font-size: 10px;">phoneGap</a> <a href="/tags/playstation/" style="font-size: 10px;">playstation</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/reblog/" style="font-size: 10px;">reblog</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a> <a href="/tags/scrapy/" style="font-size: 10px;">scrapy</a> <a href="/tags/shadowsocks/" style="font-size: 12.5px;">shadowsocks</a> <a href="/tags/shell/" style="font-size: 12.5px;">shell</a> <a href="/tags/spotlight/" style="font-size: 10px;">spotlight</a> <a href="/tags/ssd/" style="font-size: 10px;">ssd</a> <a href="/tags/stf/" style="font-size: 10px;">stf</a> <a href="/tags/sublime/" style="font-size: 12.5px;">sublime</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swift/" style="font-size: 15px;">swift</a> <a href="/tags/terminal/" style="font-size: 12.5px;">terminal</a> <a href="/tags/tfs/" style="font-size: 10px;">tfs</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unicode/" style="font-size: 10px;">unicode</a> <a href="/tags/upgrade/" style="font-size: 10px;">upgrade</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/xcode/" style="font-size: 15px;">xcode</a> <a href="/tags/zsh/" style="font-size: 15px;">zsh</a> <a href="/tags/极路由/" style="font-size: 10px;">极路由</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://kuanglijun312.github.io">kuanglijun312</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">不毛次元</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/avatar.png" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">不毛次元</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">Home</a></li>
+		        
+					<li><a href="/archives">Archives</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/bumaociyuan" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="http://bumaociyuan.github.io/resources/testRss.xml" title="rss">rss</a>
+			        
+						<a class="twitter" target="_blank" href="https://twitter.com/bumaociyuan" title="twitter">twitter</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-SwiftLint-tutorial" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/ios/2016/06/21/SwiftLint-tutorial.html" class="article-date">
+  	<time datetime="2016-06-20T19:31:34.000Z" itemprop="datePublished">2016-06-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      SwiftLint tutorial
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/swift/">swift</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xcode/">xcode</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/ios/">ios</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="SwiftLint__u662F_u4EC0_u4E48"><a href="#SwiftLint__u662F_u4EC0_u4E48" class="headerlink" title="SwiftLint 是什么"></a>SwiftLint 是什么</h1><p>A tool to enforce Swift style and conventions, loosely based on <a href="https://github.com/github/swift-style-guide" target="_blank" rel="external"> GitHub’s Swift Style Guide </a>.</p>
+<h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><p><a href="https://github.com/realm/SwiftLint" target="_blank" rel="external">GitHub 地址</a></p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install <span class="keyword">swiftlint</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="Xcode"><a href="#Xcode" class="headerlink" title="Xcode"></a>Xcode</h2><h3 id="SwiftLintXcode"><a href="#SwiftLintXcode" class="headerlink" title="SwiftLintXcode"></a>SwiftLintXcode</h3><p>插件自动在保存文件时运行 <code>swiftlint</code><br><a href="https://github.com/ypresto/SwiftLintXcode" target="_blank" rel="external">SwiftLintXcode</a></p>
+<h3 id="Run_Script_Phase"><a href="#Run_Script_Phase" class="headerlink" title="Run Script Phase"></a>Run Script Phase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">which</span> swiftlint &gt;/dev/null; <span class="keyword">then</span></span><br><span class="line">swiftlint</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"warning: SwiftLint not installed, install use `brew install swiftlint`</span><br><span class="line">fi</span></span><br></pre></td></tr></table></figure>
+<div style="width: 70%;"><br><img src="https://github.com/realm/SwiftLint/raw/master/assets/runscript.png" alt=""><br></div>
+
+
+<h2 id="git_hook"><a href="#git_hook" class="headerlink" title="git hook"></a>git hook</h2><p><code>git commit</code> 时自动格式化加入stage的代码</p>
+<ul>
+<li>将下面代码写入git仓库根目录 <code>pre-commit.sh</code> 文件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line"><span class="comment"># 这是一个pre-commit 的脚本</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Run SwiftLint</span></span><br><span class="line">START_DATE=$(date +<span class="string">" %s"</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$START_DATE</span></span><br><span class="line"></span><br><span class="line">SWIFT_LINT=/usr/<span class="built_in">local</span>/bin/swiftlint</span><br><span class="line"></span><br><span class="line"><span class="comment"># Run SwiftLint for given filename</span></span><br><span class="line"><span class="function"><span class="title">run_swiftlint</span></span>() &#123;</span><br><span class="line"><span class="built_in">local</span> filename=<span class="string">"<span class="variable">$&#123;1&#125;</span>"</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="string">"<span class="variable">$&#123;filename##*.&#125;</span>"</span> == <span class="string">"swift"</span> ]]; <span class="keyword">then</span></span><br><span class="line"><span class="comment"># echo $&#123;filename&#125;</span></span><br><span class="line"><span class="variable">$&#123;SWIFT_LINT&#125;</span> autocorrect --path <span class="string">"<span class="variable">$&#123;filename&#125;</span>"</span></span><br><span class="line">git add -- <span class="string">"<span class="variable">$&#123;filename&#125;</span>"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># check lint</span></span><br><span class="line"><span class="comment"># $&#123;SWIFT_LINT&#125; lint --path "$&#123;filename&#125;"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [[ <span class="operator">-e</span> <span class="string">"<span class="variable">$&#123;SWIFT_LINT&#125;</span>"</span> ]]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"SwiftLint version: <span class="variable">$($&#123;SWIFT_LINT&#125; version)</span>"</span></span><br><span class="line"><span class="comment"># Run for unstaged</span></span><br><span class="line"><span class="comment"># git diff --name-only | while read filename; do run_swiftlint "$&#123;filename&#125;"; done</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Run for staged</span></span><br><span class="line">git diff --cached --name-only | <span class="keyword">while</span> <span class="built_in">read</span> filename; <span class="keyword">do</span> run_swiftlint <span class="string">"<span class="variable">$&#123;filename&#125;</span>"</span>; <span class="keyword">done</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$&#123;SWIFT_LINT&#125;</span> is not installed."</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Plz install swiftlint use brew"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"brew install swiftlint"</span></span><br><span class="line"><span class="built_in">exit</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">END_DATE=$(date +<span class="string">"%s"</span>)</span><br><span class="line"></span><br><span class="line">DIFF=$((<span class="variable">$END_DATE</span> - <span class="variable">$START_DATE</span>))</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"SwiftLint took <span class="variable">$(($DIFF / 60)</span>) minutes and <span class="variable">$(($DIFF % 60)</span>) seconds to complete."</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成link</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ln</span> -<span class="keyword">s</span> <span class="keyword">pre</span>-commit.<span class="keyword">sh</span> .git/hooks/<span class="keyword">pre</span>-commit</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改权限<br>-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod ug+x .git<span class="regexp">/hooks/</span>pre-commit</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="u4FEE_u6539_u89C4_u5219"><a href="#u4FEE_u6539_u89C4_u5219" class="headerlink" title="修改规则"></a>修改规则</h2><ul>
+<li><code>swiftlint rules</code> 查看所有规则</li>
+<li><code>swiftlint rules rule_name</code> 查看规则详情</li>
+</ul>
+<p>在git仓库根目录新建文件 <code>.swiftlint.yml</code> 作用于整个项目</p>
+<ul>
+<li>disabled_rules: Disable rules from the default enabled set.</li>
+<li>opt_in_rules: Some rules are opt-in.</li>
+<li>whitelist_rules: Can not be specified alongside disabled_rules or opt_in_rules. Acts as a whitelist, only the rules specified in this list will be enabled.</li>
+</ul>
+<p>官方sample<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">disabled_rules: # rule identifiers to exclude from running</span><br><span class="line">  - colon</span><br><span class="line">  - comma</span><br><span class="line">  - control_statement</span><br><span class="line">opt_in_rules: # some rules are only opt-in</span><br><span class="line">  - empty_count</span><br><span class="line">  - missing_docs</span><br><span class="line">  # Find all the available rules by running:</span><br><span class="line">  # swiftlint rules</span><br><span class="line">included: # paths to include during linting. `<span class="comment">--path` is ignored if present.</span></span><br><span class="line">  - Source</span><br><span class="line">excluded: # paths to ignore during linting. Takes precedence over `included`.</span><br><span class="line">  - Carthage</span><br><span class="line">  - Pods</span><br><span class="line">  - Source/ExcludedFolder</span><br><span class="line">  - Source/ExcludedFile.swift</span><br><span class="line"></span><br><span class="line"># configurable rules can be customized from this configuration file</span><br><span class="line"># binary rules can <span class="operator"><span class="keyword">set</span> their severity <span class="keyword">level</span></span><br><span class="line">force_cast: <span class="keyword">warning</span> # implicitly</span><br><span class="line">force_try:</span><br><span class="line">  severity: <span class="keyword">warning</span> # explicitly</span><br><span class="line"># <span class="keyword">rules</span> that have <span class="keyword">both</span> <span class="keyword">warning</span> <span class="keyword">and</span> <span class="keyword">error</span> <span class="keyword">levels</span>, can <span class="keyword">set</span> just the <span class="keyword">warning</span> <span class="keyword">level</span></span><br><span class="line"># implicitly</span><br><span class="line">line_length: <span class="number">110</span></span><br><span class="line"># they can <span class="keyword">set</span> <span class="keyword">both</span> implicitly <span class="keyword">with</span> an <span class="built_in">array</span></span><br><span class="line">type_body_length:</span><br><span class="line">  - <span class="number">300</span> # <span class="keyword">warning</span></span><br><span class="line">  - <span class="number">400</span> # <span class="keyword">error</span></span><br><span class="line"># <span class="keyword">or</span> they can <span class="keyword">set</span> <span class="keyword">both</span> explicitly</span><br><span class="line">file_length:</span><br><span class="line">  <span class="keyword">warning</span>: <span class="number">500</span></span><br><span class="line">  <span class="keyword">error</span>: <span class="number">1200</span></span><br><span class="line"># naming <span class="keyword">rules</span> can <span class="keyword">set</span> <span class="keyword">warnings</span>/<span class="keyword">errors</span> <span class="keyword">for</span> min_length <span class="keyword">and</span> max_length</span><br><span class="line"># additionally they can <span class="keyword">set</span> excluded <span class="keyword">names</span></span><br><span class="line">type_name:</span><br><span class="line">  min_length: <span class="number">4</span> # <span class="keyword">only</span> <span class="keyword">warning</span></span><br><span class="line">  max_length: # <span class="keyword">warning</span> <span class="keyword">and</span> <span class="keyword">error</span></span><br><span class="line">    <span class="keyword">warning</span>: <span class="number">40</span></span><br><span class="line">    <span class="keyword">error</span>: <span class="number">50</span></span><br><span class="line">  excluded: iPhone # excluded via <span class="keyword">string</span></span><br><span class="line">variable_name:</span><br><span class="line">  min_length: # <span class="keyword">only</span> min_length</span><br><span class="line">    <span class="keyword">error</span>: <span class="number">4</span> # <span class="keyword">only</span> <span class="keyword">error</span></span><br><span class="line">  excluded: # excluded via <span class="keyword">string</span> <span class="built_in">array</span></span><br><span class="line">    - <span class="keyword">id</span></span><br><span class="line">    - <span class="keyword">URL</span></span><br><span class="line">    - GlobalAPIKey</span><br><span class="line">reporter: <span class="string">"xcode"</span> # reporter <span class="keyword">type</span> (xcode, <span class="keyword">json</span>, csv, checkstyle)</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/breakwall/2016/02/18/gee-router-ss.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">极路由安装shadowsocks</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'bumaociyuan'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 不毛次元
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+
+clicky_site_ids.push( 100784435 );
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784435ns.gif" /></p></noscript>
+<!-- End Google Analytics -->
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

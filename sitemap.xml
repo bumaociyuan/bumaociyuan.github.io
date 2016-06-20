@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html</loc>
+    <lastmod>2016-06-20T08:07:23.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://bumaociyuan.github.io/breakwall/2016/02/18/gee-router-ss.html</loc>
-    <lastmod>2016-05-06T03:25:53.000Z</lastmod>
+    <lastmod>2016-05-10T01:34:24.000Z</lastmod>
   </url>
   
   <url>
@@ -87,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</loc>
+    <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -167,7 +172,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html</loc>
+    <loc>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -207,7 +212,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</loc>
+    <loc>http://bumaociyuan.github.io/game/2015/09/26/3ds-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -252,7 +257,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html</loc>
+    <loc>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -327,12 +332,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/iphone/2014/11/02/a1528-4g.html</loc>
+    <loc>http://bumaociyuan.github.io/docker/2015/09/16/docker-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -657,7 +662,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/31/turn-off-uisearchbar-animation.html</loc>
+    <loc>http://bumaociyuan.github.io/iphone/2014/11/02/a1528-4g.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
