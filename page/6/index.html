@@ -783,7 +783,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
+        <p><strong>How To Set Up Automatic Deployment with Git with a VPS</strong></p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> project.git/hook</span><br><span class="line">vim <span class="keyword">post</span>-receive</span><br></pre></td></tr></table></figure>
+<p>Add the following lines into <code>post-receive</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/sh</span></span><br><span class="line">git --work-tree=/path/of/project --git-dir=/path/of/project.git checkout <span class="operator">-f</span></span><br></pre></td></tr></table></figure>
+<p>Then make <code>post-receive</code> executable</p>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x post-<span class="keyword">receive</span></span><br></pre></td></tr></table></figure>
+<p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git archive -o latest<span class="class">.zip</span> HEAD</span><br></pre></td></tr></table></figure>
 <p><strong>How many lines of code differs between two commits?</strong></p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment">--shortstat commit1 commit2</span></span><br></pre></td></tr></table></figure>

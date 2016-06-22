@@ -6,25 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>git note 2 | 不毛次元</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Create a Zip archive that contains the contents of the latest commit on the current branch. 
-1git archive -o latest.zip HEAD
-How many lines of code differs between two commits?
-1git diff --shortstat c">
+  <meta name="description" content="How To Set Up Automatic Deployment with Git with a VPS
+12cd project.git/hookvim post-receive
+Add the following lines into post-receive
+12#!/bin/shgit --work-tree=/path/of/project --git-dir=/path/of/pr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git note 2">
 <meta property="og:url" content="http://bumaociyuan.github.io/git/2014/11/23/git-note-2.html">
 <meta property="og:site_name" content="不毛次元">
-<meta property="og:description" content="Create a Zip archive that contains the contents of the latest commit on the current branch. 
-1git archive -o latest.zip HEAD
-How many lines of code differs between two commits?
-1git diff --shortstat c">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:description" content="How To Set Up Automatic Deployment with Git with a VPS
+12cd project.git/hookvim post-receive
+Add the following lines into post-receive
+12#!/bin/shgit --work-tree=/path/of/project --git-dir=/path/of/pr">
+<meta property="og:updated_time" content="2016-06-22T03:27:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git note 2">
-<meta name="twitter:description" content="Create a Zip archive that contains the contents of the latest commit on the current branch. 
-1git archive -o latest.zip HEAD
-How many lines of code differs between two commits?
-1git diff --shortstat c">
+<meta name="twitter:description" content="How To Set Up Automatic Deployment with Git with a VPS
+12cd project.git/hookvim post-receive
+Add the following lines into post-receive
+12#!/bin/shgit --work-tree=/path/of/project --git-dir=/path/of/pr">
   
     <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
   
@@ -216,7 +216,13 @@ How many lines of code differs between two commits?
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
+        <p><strong>How To Set Up Automatic Deployment with Git with a VPS</strong></p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> project.git/hook</span><br><span class="line">vim <span class="keyword">post</span>-receive</span><br></pre></td></tr></table></figure>
+<p>Add the following lines into <code>post-receive</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/sh</span></span><br><span class="line">git --work-tree=/path/of/project --git-dir=/path/of/project.git checkout <span class="operator">-f</span></span><br></pre></td></tr></table></figure>
+<p>Then make <code>post-receive</code> executable</p>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x post-<span class="keyword">receive</span></span><br></pre></td></tr></table></figure>
+<p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git archive -o latest<span class="class">.zip</span> HEAD</span><br></pre></td></tr></table></figure>
 <p><strong>How many lines of code differs between two commits?</strong></p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment">--shortstat commit1 commit2</span></span><br></pre></td></tr></table></figure>

@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2016-06-20T08:07:23.000Z</updated>
+  <updated>2016-06-22T02:38:43.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html"/>
     <id>http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html</id>
     <published>2016-06-20T19:31:34.000Z</published>
-    <updated>2016-06-20T08:07:23.000Z</updated>
+    <updated>2016-06-22T02:38:43.000Z</updated>
     <content type="html"><![CDATA[<h1 id="SwiftLint__u662F_u4EC0_u4E48"><a href="#SwiftLint__u662F_u4EC0_u4E48" class="headerlink" title="SwiftLint 是什么"></a>SwiftLint 是什么</h1><p>A tool to enforce Swift style and conventions, loosely based on <a href="https://github.com/github/swift-style-guide" target="_blank" rel="external"> GitHub’s Swift Style Guide </a>.</p>
 <h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><p><a href="https://github.com/realm/SwiftLint" target="_blank" rel="external">GitHub 地址</a></p>
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install <span class="keyword">swiftlint</span></span><br></pre></td></tr></table></figure>
@@ -1855,8 +1855,14 @@
     <link href="http://bumaociyuan.github.io/git/2014/11/23/git-note-2.html"/>
     <id>http://bumaociyuan.github.io/git/2014/11/23/git-note-2.html</id>
     <published>2014-11-23T02:56:19.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
+    <updated>2016-06-22T03:27:13.000Z</updated>
+    <content type="html"><![CDATA[<p><strong>How To Set Up Automatic Deployment with Git with a VPS</strong></p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> project.git/hook</span><br><span class="line">vim <span class="keyword">post</span>-receive</span><br></pre></td></tr></table></figure>
+<p>Add the following lines into <code>post-receive</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/sh</span></span><br><span class="line">git --work-tree=/path/of/project --git-dir=/path/of/project.git checkout <span class="operator">-f</span></span><br></pre></td></tr></table></figure>
+<p>Then make <code>post-receive</code> executable</p>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x post-<span class="keyword">receive</span></span><br></pre></td></tr></table></figure>
+<p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git archive -o latest<span class="class">.zip</span> HEAD</span><br></pre></td></tr></table></figure>
 <p><strong>How many lines of code differs between two commits?</strong></p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment">--shortstat commit1 commit2</span></span><br></pre></td></tr></table></figure>
@@ -1985,8 +1991,8 @@ git diff &lt;commit1&gt; &lt;commit2&gt; -- &lt;paths&gt;
 <pre><code>git blame &lt;file path&gt;     # 文件追溯
 </code></pre>]]></content>
     <summary type="html">
-    <![CDATA[<p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
-<figure class="highligh]]>
+    <![CDATA[<p><strong>How To Set Up Automatic Deployment with Git with a VPS</strong></p>
+<figure class="highlight stata"><table><tr><td class="gutter"]]>
     </summary>
     
       <category term="git" scheme="http://bumaociyuan.github.io/categories/git/"/>
