@@ -1648,9 +1648,11 @@
     <link href="http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html"/>
     <id>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</id>
     <published>2014-12-03T15:58:24.000Z</published>
-    <updated>2016-07-04T15:42:51.000Z</updated>
+    <updated>2016-07-04T15:50:28.000Z</updated>
     <content type="html"><![CDATA[<h1 id="4th/7/2015">4th/7/2015</h1><p>To hide username@computername both in local and ssh login mode</p>
 <p>Add following lines in <code>.zshrc</code><br><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">prompt_context() &#123;</span><br><span class="line"># empty <span class="built_in">function</span> to <span class="keyword">override</span> agnoster.theme render username<span class="keyword">@computername</span> <span class="built_in">function</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Auto switch theme when ssh login</p>
+<p>Change theme line in <code>.zshrc</code> to following lines<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">[[ -n "$SSH_CLIENT" ]]</span>; <span class="keyword">then</span></span><br><span class="line">ZSH_THEME=<span class="string">"ys"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">ZSH_THEME=<span class="string">"agnoster"</span></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></p>
 <h1 id="Update_May_28,_2015">Update May 28, 2015</h1><p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
 <li><p>Install <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline/fonts</a></p>
