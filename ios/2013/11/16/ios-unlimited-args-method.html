@@ -20,7 +20,7 @@
      otherButtonTitles:(NSString *)otherButtonTitles, ... {
 
     UIAlertVi">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ios unlimited args method">
 <meta name="twitter:description" content="- (void)showErrorWithTitle:(NSString *)title message:(NSString *)message
@@ -219,19 +219,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>- (void)showErrorWithTitle:(NSString *)title message:(NSString *)message
-     cancelButtonTitle:(NSString *)cancelButtonTitle
-     otherButtonTitles:(NSString *)otherButtonTitles, ... {
+        <pre><code>- (<span class="keyword">void</span>)showErrorWithTitle:(<span class="built_in">NSString</span> *)title message:(<span class="built_in">NSString</span> *)message
+     cancelButtonTitle:(<span class="built_in">NSString</span> *)cancelButtonTitle
+     otherButtonTitles:(<span class="built_in">NSString</span> *)otherButtonTitles, ... {
 
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+    <span class="built_in">UIAlertView</span> *alert = [[<span class="built_in">UIAlertView</span> alloc] initWithTitle:title
                                                 message:message
-                                               delegate:nil
+                                               delegate:<span class="literal">nil</span>
                                       cancelButtonTitle:cancelButtonTitle
-                                      otherButtonTitles:nil];
+                                      otherButtonTitles:<span class="literal">nil</span>];
 
     va_list args;
     va_start(args, otherButtonTitles);
-    for (NSString *arg = otherButtonTitles; arg != nil; arg = va_arg(args, NSString*))
+    <span class="keyword">for</span> (<span class="built_in">NSString</span> *arg = otherButtonTitles; arg != <span class="literal">nil</span>; arg = va_arg(args, <span class="built_in">NSString</span>*))
         {
          [alert addButtonWithTitle:arg];
         }

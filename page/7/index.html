@@ -446,8 +446,8 @@
       
         <p><a href="http://doc.scrapy.org/en/latest/intro/tutorial.html" target="_blank" rel="external">http://doc.scrapy.org</a></p>
 <p>install <code>pip</code> <a href="https://pip.pypa.io/en/latest/installing.html#install-pip" target="_blank" rel="external">click here</a></p>
-<h2 id="install_scrapy"><a href="#install_scrapy" class="headerlink" title="install scrapy"></a>install scrapy</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> scrapy </span><br><span class="line"><span class="keyword">or</span></span><br><span class="line">sudo easy_install Scrapy</span><br></pre></td></tr></table></figure>
-<h2 id="tutorial_project"><a href="#tutorial_project" class="headerlink" title="tutorial project"></a>tutorial project</h2><ul>
+<h2 id="install_scrapy">install scrapy</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> scrapy </span><br><span class="line"><span class="keyword">or</span></span><br><span class="line">sudo easy_install Scrapy</span><br></pre></td></tr></table></figure>
+<h2 id="tutorial_project">tutorial project</h2><ul>
 <li>set up a new Scrapy project</li>
 </ul>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">scrapy</span> startproject proName</span><br></pre></td></tr></table></figure>
@@ -459,7 +459,7 @@
 <li>we edit items.py, found in the tutorial directory. Our Item class looks like this:</li>
 </ul>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class <span class="function"><span class="title">DmozItem</span><span class="params">(scrapy.Item)</span></span>:</span><br><span class="line">    title = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    link = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    desc = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="xpath"><a href="#xpath" class="headerlink" title="xpath"></a>xpath</h2><ol>
+<h2 id="xpath">xpath</h2><ol>
 <li><p><code>/html/head/title</code> : selects the <code>&lt;title&gt;</code> element, inside the <code>&lt;head&gt;</code> element of a HTML document</p>
 </li>
 <li><p><code>/html/head/title/text()</code> : selects the text inside the aforementioned <code>&lt;title&gt;</code> element</p>
@@ -477,7 +477,7 @@
 <li>Storing the scraped data</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">scrapy</span> <span class="tag">crawl</span> <span class="tag">dmoz</span> <span class="tag">-o</span> <span class="tag">items</span><span class="class">.json</span></span><br></pre></td></tr></table></figure>
-<h2 id="Trying_Selectors_in_the_Shell"><a href="#Trying_Selectors_in_the_Shell" class="headerlink" title="Trying Selectors in the Shell"></a>Trying Selectors in the Shell</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy <span class="built_in">shell</span> <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Trying_Selectors_in_the_Shell">Trying Selectors in the Shell</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy <span class="built_in">shell</span> <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -806,8 +806,8 @@
 </ul>
 <hr>
 <p><strong>类</strong><br>在 Ruby 中，类总是以关键字 class 开始，后跟类的名称。类名的首字母应该大写。类 Customer 如下所示：    </p>
-<pre><code>class Customer
-end
+<pre><code><span class="class"><span class="keyword">class</span> <span class="title">Customer</span></span>
+<span class="keyword">end</span>
 </code></pre><hr>
 <p><strong>Ruby 类中的变量</strong></p>
 <ul>
@@ -858,7 +858,7 @@ end
 <hr>
 <p><strong>返回值</strong></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def test</span><br><span class="line">   i = <span class="number">100</span></span><br><span class="line">   j = <span class="number">10</span></span><br><span class="line">   k = <span class="number">0</span></span><br><span class="line">end <span class="preprocessor">#返回最后一个声明的变量 k</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">OR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">12</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">OR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">OR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> x,y <span class="comment">#自带tuple like python</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">OR</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">12</span></span><br><span class="line"></span><br><span class="line">OR</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line"></span><br><span class="line">OR</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> x,y <span class="preprocessor">#自带tuple like python</span></span><br></pre></td></tr></table></figure>
 <p>可变数量的参数 like python</p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def <span class="keyword">sample</span> (*<span class="keyword">test</span>)</span><br><span class="line">   puts <span class="string">"The number of parameters is #&#123;test.length&#125;"</span></span><br><span class="line">   <span class="keyword">for</span> i <span class="keyword">in</span> 0...<span class="keyword">test</span>.<span class="literal">length</span></span><br><span class="line">      puts <span class="string">"The parameters are #&#123;test[i]&#125;"</span></span><br><span class="line">   end</span><br><span class="line">end</span><br><span class="line"><span class="keyword">sample</span> <span class="string">"Zara"</span>, <span class="string">"6"</span>, <span class="string">"F"</span></span><br><span class="line"><span class="keyword">sample</span> <span class="string">"Mac"</span>, <span class="string">"36"</span>, <span class="string">"M"</span>, <span class="string">"MCA"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">list</span> = [<span class="string">"Zara"</span>, <span class="string">"6"</span>, <span class="string">"F"</span>] #也可以使用 array 加* 前缀</span><br><span class="line"><span class="keyword">sample</span>(*<span class="keyword">list</span>)</span><br></pre></td></tr></table></figure>
 <hr>
@@ -1130,7 +1130,7 @@ end
 <p><strong>正则表达式</strong></p>
 <p><a href="http://www.w3cschool.cc/ruby/ruby-regular-expressions.html" target="_blank" rel="external">语法</a></p>
 <p>正则表达式从字面上看是一种介于斜杠之间或介于跟在 %r 后的任意分隔符之间的模式，如下所示：</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/pattern/</span></span><br><span class="line"><span class="regexp">/pattern/im</span>    <span class="comment"># 可以指定选项</span></span><br><span class="line">%r!/usr/local! <span class="comment"># 一般的分隔的正则表达式</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/pattern/</span><br><span class="line"><span class="regexp">/pattern/im</span>    <span class="comment"># 可以指定选项</span></span><br><span class="line"><span class="variable">%r</span>!<span class="regexp">/usr/local</span>! <span class="comment"># 一般的分隔的正则表达式</span></span><br></pre></td></tr></table></figure>
 
       
     </div>

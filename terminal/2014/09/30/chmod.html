@@ -39,7 +39,7 @@ a 表示包含以上三者即文件拥有者(u)、群组(g)、其他(o)
 r 表示有读取的权限
 w 表示有写入的权">
 <meta property="og:image" content="http://havee.qiniudn.com/images/2011/08/chmod_1.jpg">
-<meta property="og:updated_time" content="2015-12-09T03:44:17.000Z">
+<meta property="og:updated_time" content="2015-09-10T11:01:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="chmod">
 <meta name="twitter:description" content="link
@@ -267,9 +267,9 @@ w 表示有写入的权">
 </ul>
 <p>例：</p>
 <p>我们要将当前目录下name这个文件的权限修为所有用户拥有该文件的读取、写入、执行的权限。</p>
-<pre><code>$ chmod a+rwx name
+<pre><code>$ chmod a+rwx <span class="property">name</span>
 </code></pre><p>或者使用</p>
-<pre><code>$ chmod ugo+rwx name
+<pre><code>$ chmod ugo+rwx <span class="property">name</span>
 </code></pre><p>###方式二：<br>语法格式： chmod [-vR] [No] 文件名<br>参数说明:</p>
 <ul>
 <li>No 三位代表相应权限的数字</li>

@@ -6,44 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>use zsh | 不毛次元</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Update May 28, 2015
-Using agnoster
-
-Install powerline/fonts
-
-Change iterm2 font to Ubuntu Mono Derivative Powerline reference
-
-Add DEFAULT_USER=zx in ~/.zshrc to hide username@localhost
-
-Make theme l">
+  <meta name="description" content="4th/7/2015To hide username@computername
+1vim ~/.oh-my-zsh/themes/agnoster.zsh-theme&amp;#10;# comment following line&amp;#10;# prompt_segment black default &amp;#34;%(!.%&amp;#123;%F&amp;#123;yellow&amp;#125;%&amp;#125;.)$USER@%">
 <meta property="og:type" content="article">
 <meta property="og:title" content="use zsh">
 <meta property="og:url" content="http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html">
 <meta property="og:site_name" content="不毛次元">
-<meta property="og:description" content="#Update May 28, 2015
-Using agnoster
-
-Install powerline/fonts
-
-Change iterm2 font to Ubuntu Mono Derivative Powerline reference
-
-Add DEFAULT_USER=zx in ~/.zshrc to hide username@localhost
-
-Make theme l">
+<meta property="og:description" content="4th/7/2015To hide username@computername
+1vim ~/.oh-my-zsh/themes/agnoster.zsh-theme&amp;#10;# comment following line&amp;#10;# prompt_segment black default &amp;#34;%(!.%&amp;#123;%F&amp;#123;yellow&amp;#125;%&amp;#125;.)$USER@%">
 <meta property="og:image" content="https://camo.githubusercontent.com/a862b8b4a84524c727b6e912be2d70a5571ef2de/687474703a2f2f6935392e74696e797069632e636f6d2f327631356475722e706e67">
-<meta property="og:updated_time" content="2016-01-21T06:13:47.000Z">
+<meta property="og:updated_time" content="2016-07-04T15:37:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="use zsh">
-<meta name="twitter:description" content="#Update May 28, 2015
-Using agnoster
-
-Install powerline/fonts
-
-Change iterm2 font to Ubuntu Mono Derivative Powerline reference
-
-Add DEFAULT_USER=zx in ~/.zshrc to hide username@localhost
-
-Make theme l">
+<meta name="twitter:description" content="4th/7/2015To hide username@computername
+1vim ~/.oh-my-zsh/themes/agnoster.zsh-theme&amp;#10;# comment following line&amp;#10;# prompt_segment black default &amp;#34;%(!.%&amp;#123;%F&amp;#123;yellow&amp;#125;%&amp;#125;.)$USER@%">
   
     <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
   
@@ -239,8 +215,9 @@ Make theme l">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Update May 28, 2015</p>
-<p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
+        <h1 id="4th/7/2015">4th/7/2015</h1><p>To hide username@computername</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.oh-my-zsh/themes/agnoster.zsh-theme&#10;# comment following line&#10;# prompt_segment black default &#34;%(!.%&#123;%F&#123;yellow&#125;%&#125;.)$USER@%m&#34;</span><br></pre></td></tr></table></figure>
+<h1 id="Update_May_28,_2015">Update May 28, 2015</h1><p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
 <li><p>Install <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline/fonts</a></p>
 </li>
@@ -249,7 +226,7 @@ Make theme l">
 <li><p>Add <code>DEFAULT_USER=zx</code> in <code>~/.zshrc</code> to hide <code>username@localhost</code></p>
 </li>
 <li><p>Make theme like screenshot<br> <img src="https://camo.githubusercontent.com/a862b8b4a84524c727b6e912be2d70a5571ef2de/687474703a2f2f6935392e74696e797069632e636f6d2f327631356475722e706e67" alt="image"></p>
- <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>wget <span class="symbol">https:</span>/<span class="regexp">/raw.github.com/altercation</span><span class="regexp">/solarized/master</span><span class="regexp">/iterm2-colors-solarized/</span><span class="constant">Solarized</span>%<span class="number">20</span>Dark.itermcolors</span><br></pre></td></tr></table></figure>
+ <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>wget <span class="symbol">https:</span>/<span class="regexp">/raw.github.com/altercation</span><span class="regexp">/solarized/master</span><span class="regexp">/iterm2-colors-solarized/</span><span class="constant">Solarized</span><span class="variable">%20Dark</span>.itermcolors</span><br></pre></td></tr></table></figure>
 <p><code>iTerm</code> -&gt; <code>Profiles</code> -&gt; <code>Colors</code> -&gt;<br><code>Load Presets...</code> -&gt; <code>Import...</code> -&gt; <code>Solarized Dark.itermcolors</code></p>
 </li>
 </ol>
@@ -262,6 +239,7 @@ Make theme l">
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">vi .zshrc</span><br><span class="line">/en_US</span><br><span class="line"><span class="comment">#remove the #</span></span><br><span class="line">:wq</span><br><span class="line"><span class="built_in">source</span> .zshrc</span><br></pre></td></tr></table></figure>
 <p>install autojump</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git clone gi<span class="variable">t:</span>//github.<span class="keyword">com</span>/joelthelion/autojump.git</span><br><span class="line"><span class="keyword">cd</span> autojump</span><br><span class="line">./install.<span class="keyword">py</span></span><br><span class="line"><span class="keyword">vi</span> ~/.zshrc</span><br><span class="line"></span><br><span class="line">#paste </span><br><span class="line">	[[ -<span class="keyword">s</span> /Users/[ME]]/.autojump/etc/<span class="keyword">profile</span>.<span class="keyword">d</span>/autojump.<span class="keyword">sh</span> ]] &amp;&amp; <span class="keyword">source</span> /Users/[ME]/.autojump/etc/<span class="keyword">profile</span>.<span class="keyword">d</span>/autojump.<span class="keyword">sh</span></span><br><span class="line"># <span class="keyword">to</span> the <span class="keyword">last</span> of .zshrc</span><br><span class="line">#Please restart terminal(<span class="keyword">s</span>) before running autojump.</span><br></pre></td></tr></table></figure>
+
       
     </div>
     

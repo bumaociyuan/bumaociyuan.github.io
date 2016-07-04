@@ -279,9 +279,9 @@
 </ul>
 <p>例：</p>
 <p>我们要将当前目录下name这个文件的权限修为所有用户拥有该文件的读取、写入、执行的权限。</p>
-<pre><code>$ chmod a+rwx name
+<pre><code>$ chmod a+rwx <span class="property">name</span>
 </code></pre><p>或者使用</p>
-<pre><code>$ chmod ugo+rwx name
+<pre><code>$ chmod ugo+rwx <span class="property">name</span>
 </code></pre><p>###方式二：<br>语法格式： chmod [-vR] [No] 文件名<br>参数说明:</p>
 <ul>
 <li>No 三位代表相应权限的数字</li>
@@ -346,28 +346,28 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>use block as local var</strong></p>
-<pre><code>void (^someBlock)(NSMutableArray *,id) = ^(NSMutableArray *items,NSString *item) {
-       //do some thing
+<pre><code><span class="keyword">void</span> (^someBlock)(<span class="built_in">NSMutableArray</span> *,<span class="keyword">id</span>) = ^(<span class="built_in">NSMutableArray</span> *items,<span class="built_in">NSString</span> *item) {
+       <span class="comment">//do some thing</span>
 };
 
 someBlock(items, item);
 </code></pre><p><strong>use block as type</strong></p>
 <p>1</p>
-<pre><code>@property (nonatomic, strong) returnType(^propertyName)(arguments);
+<pre><code><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) returnType(^propertyName)(arguments);
 
-e.g.
-@property (nonatomic, strong) void(^onSelectedCustomer)(NSArray *customers);
+e<span class="variable">.g</span>.
+<span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) <span class="keyword">void</span>(^onSelectedCustomer)(<span class="built_in">NSArray</span> *customers);
 </code></pre><p>2</p>
-<pre><code>typedef returnType(^name)(arguments);
+<pre><code><span class="keyword">typedef</span> returnType(^name)(arguments);
 
-e.g.
-typedef void(^BlockType)(id);
-@property (nonatomic, strong) BlockType block;
+e<span class="variable">.g</span>.
+<span class="keyword">typedef</span> <span class="keyword">void</span>(^BlockType)(<span class="keyword">id</span>);
+<span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) BlockType block;
 </code></pre><p><strong>use block as method parameter</strong></p>
-<pre><code>- (void)methodWithBlock:(returnType(^)(arguments))block
+<pre><code>- (<span class="typename">void</span>)<span class="string">methodWithBlock:</span>(returnType(^)(arguments))block
 
 e.g.
-- (void)loginAnimated:(BOOL)animated completion:(void(^)(void))completion failed:(void(^)(void))failed;
+- (<span class="typename">void</span>)<span class="string">loginAnimated:</span>(BOOL)animated <span class="string">completion:</span>(<span class="typename">void</span>(^)(<span class="typename">void</span>))completion <span class="string">failed:</span>(<span class="typename">void</span>(^)(<span class="typename">void</span>))failed;
 </code></pre>
       
     </div>
@@ -429,8 +429,8 @@ e.g.
     <div class="article-entry" itemprop="articleBody">
       
         <p><a href="http://blog.cnrainbird.com/index.php/2013/02/14/osx_zhong_jian_spotlight_suo_yin/" target="_blank" rel="external">link</a></p>
-<pre><code>$sudo mdutil -E /Volumes/Macintosh\ HD/
-$sudo mdutil -a -i on
+<pre><code><span class="variable">$sudo</span> mdutil -E /Volumes/Macintosh\ HD/
+<span class="variable">$sudo</span> mdutil -a -i on
 </code></pre>
       
     </div>
@@ -696,8 +696,8 @@ $sudo mdutil -a -i on
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install mercurial</span><br><span class="line"><span class="keyword">brew </span>install vim</span><br></pre></td></tr></table></figure>
 <p>pratical vim</p>
 <p>update 2014.12.07</p>
-<pre><code>:%s/targetWord/relpaceWord/g &lt;Enter&gt;
-:%s/targetWord/relpaceWord/gc &lt;Enter&gt;
+<pre><code><span class="symbol">:%s/targetWord/relpaceWord/g</span> &lt;<span class="constant">Enter</span>&gt;
+<span class="symbol">:%s/targetWord/relpaceWord/gc</span> &lt;<span class="constant">Enter</span>&gt;
 
 vimtutor
 </code></pre><p>###vim基本命令<br>1.<br><code>i</code><br>#按一下i键,下端显示 –INSERT–<br>#插入命令,在vim中可能任意字符都有作用</p>
@@ -813,7 +813,7 @@ vimtutor
 <p>:wq 或 ZZ 或 :x         保存文件并退出 vi</p>
 <p>:q!                   不保存文件，退出 vi</p>
 <p>:e!                   放弃所有修改，从上次保存文件开始再编辑</p>
-<h3 id="shell__u8F6C_u4E49_u547D_u4EE4"><a href="#shell__u8F6C_u4E49_u547D_u4EE4" class="headerlink" title="shell 转义命令"></a>shell 转义命令</h3><p>:!command             执行 shell 的 command 命令，如 :!ls</p>
+<h3 id="shell_转义命令">shell 转义命令</h3><p>:!command             执行 shell 的 command 命令，如 :!ls</p>
 <p>:!!                         执行前一个 shell 命令</p>
 <p>:r!command            读取 command 命令的输入并插入，如 :r!ls 会先执行 ls，然后读入内容</p>
 <p>:w!command            将当前已编辑文件作为 command 命令的标准输入并执行 command 命令，如 :w!grep all</p>
@@ -923,28 +923,28 @@ vimtutor
 </ul>
 <figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">array</span>=($&#123;<span class="built_in">string</span><span class="comment">//,/&#125;)</span></span><br><span class="line">printf <span class="attribute">-v</span> <span class="built_in">var</span> <span class="string">"%s-"</span> <span class="string">"$&#123;array[@]&#125;"</span></span><br><span class="line"><span class="built_in">var</span>=$&#123;<span class="built_in">var</span>%?&#125;</span><br></pre></td></tr></table></figure>
 <p>—–2014-09-04——-</p>
-<h4 id="1-__u8BB0_u5F55_u547D_u4EE4_u5386_u53F2"><a href="#1-__u8BB0_u5F55_u547D_u4EE4_u5386_u53F2" class="headerlink" title="1. 记录命令历史"></a>1. 记录命令历史</h4><ul>
+<h4 id="1-_记录命令历史">1. 记录命令历史</h4><ul>
 <li><code>!! （”连续两个”!”），表示执行上一条指令</code></li>
 <li>!n（这里的n是数字），表示执行命令历史中第n条指令，例如”!100”表示执行命令历史中第100个命令</li>
 <li><code>!字符串（字符串大于等于1），例如!ta，表示执行命令历史中最近一次以ta为开头的指令。</code></li>
 </ul>
-<h4 id="2-__u6307_u4EE4_u548C_u6587_u4EF6_u540D_u8865_u5168"><a href="#2-__u6307_u4EE4_u548C_u6587_u4EF6_u540D_u8865_u5168" class="headerlink" title="2. 指令和文件名补全"></a>2. 指令和文件名补全</h4><ul>
+<h4 id="2-_指令和文件名补全">2. 指令和文件名补全</h4><ul>
 <li><code>按tab键，它可以帮你补全一个指令，也可以帮你补全一个路径或者一个文件名。连续按两次tab键，系统则会把所有的指令或者文件名都列出来。</code></li>
 </ul>
-<h4 id="3-__u522B_u540D_alias"><a href="#3-__u522B_u540D_alias" class="headerlink" title="3. 别名 alias"></a>3. 别名 alias</h4><p><img src="http://www.92csz.com/study/linux/images/12_7.png" alt="image"></p>
+<h4 id="3-_别名_alias">3. 别名 alias</h4><p><img src="http://www.92csz.com/study/linux/images/12_7.png" alt="image"></p>
 <ul>
 <li>alias语法很简单，alias [命令别名]=[’具体的命令’]。</li>
 </ul>
-<h4 id="4-__u901A_u914D_u7B26"><a href="#4-__u901A_u914D_u7B26" class="headerlink" title="4. 通配符"></a>4. 通配符</h4><ul>
+<h4 id="4-_通配符">4. 通配符</h4><ul>
 <li>在bash下，可以使用*来匹配零个或多个字符，而用?匹配一个字符。<br><img src="http://www.92csz.com/study/linux/images/12_8.png" alt="image"></li>
 </ul>
-<h4 id="5-__u7BA1_u9053_u7B26"><a href="#5-__u7BA1_u9053_u7B26" class="headerlink" title="5. 管道符"></a>5. 管道符</h4><ul>
+<h4 id="5-_管道符">5. 管道符</h4><ul>
 <li><code>前面已经提过过管道符”|”，就是把前面的命令运行的结果丢给后面的命令。</code></li>
 </ul>
-<h4 id="6-__u4F5C_u4E1A_u63A7_u5236"><a href="#6-__u4F5C_u4E1A_u63A7_u5236" class="headerlink" title="6. 作业控制"></a>6. 作业控制</h4><ul>
+<h4 id="6-_作业控制">6. 作业控制</h4><ul>
 <li>当运行一个进程时，<code>你可以使它暂停（按Ctrl+z），然后使用fg命令恢复它</code>，利用bg命令使他到后台运行，你也可以使它终止（按Ctrl+c）。</li>
 </ul>
-<h4 id="7-__u53D8_u91CF"><a href="#7-__u53D8_u91CF" class="headerlink" title="7. 变量"></a>7. 变量</h4><ul>
+<h4 id="7-_变量">7. 变量</h4><ul>
 <li>前面章节中笔者曾经介绍过环境变量PATH，这个环境变量就是shell预设的一个变量，通常shell预设的变量都是大写的。变量，说简单点就是使用一个较简单的字符串来替代某些具有特殊意义的设定以及数据。就拿PATH来讲，这个PATH就代替了所有常用命令的绝对路径的设定。因为有了PATH这个变量，所以我们运行某个命令时不再去输入全局路径，直接敲命令名即可。你可以使用echo命令显示变量的值。</li>
 <li>使用env命令即可全部列出系统预设的全部系统变量了。不过登录的用户不一样这些环境变量的值也不一样。当前显示的就是root这个账户的环境变量了。下面笔者简单介绍一下常见的环境变量：</li>
 </ul>
@@ -953,7 +953,7 @@ vimtutor
 <li>set不仅可以显示系统预设的变量，也可以连同用户自定义的变量显示出来。用户自定义变量？是的，用户自己同样可以定义变量</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">myname=zx //不能有空格 myname='first name'</span><br><span class="line"><span class="operator"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zx</span><br><span class="line"></span><br><span class="line">myname=<span class="string">"$myname"</span>dddd //变量内容可以累加其他变量的内容，需要**加双引号**</span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zxdddd</span><br><span class="line"></span><br><span class="line"><span class="keyword">work</span>=/<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday/</span><br><span class="line">cd $<span class="keyword">work</span></span><br><span class="line">pwd //<span class="keyword">output</span> : /<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday</span></span><br></pre></td></tr></table></figure>
-<h4 id="8-__u7279_u6B8A_u7B26_u53F7"><a href="#8-__u7279_u6B8A_u7B26_u53F7" class="headerlink" title="8. 特殊符号"></a>8. 特殊符号</h4><ol>
+<h4 id="8-_特殊符号">8. 特殊符号</h4><ol>
 <li>* ：代表零个或多个字符或数字。</li>
 <li>? ：只代表一个任意的字符</li>
 <li># ：这个符号在linux中表示注释说明的意思，即”#”后面的内容linux忽略掉。</li>
@@ -1041,7 +1041,7 @@ vimtutor
 <p>—2014.11.05—</p>
 <p>update lib</p>
 <p>edit the <code>NSString-BlockHelper.podspec</code> add <code>1.0.1</code> version</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">tag</span> <span class="title">1</span>.<span class="number">0.1</span>;	git push --tags</span><br><span class="line">pod trunk push NSString-BlockHelper.podspec --verbose</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">git</span> <span class="tag">tag</span> 1<span class="class">.0</span><span class="class">.1</span>;	<span class="tag">git</span> <span class="tag">push</span> <span class="tag">--tags</span></span><br><span class="line"><span class="tag">pod</span> <span class="tag">trunk</span> <span class="tag">push</span> <span class="tag">NSString-BlockHelper</span><span class="class">.podspec</span> <span class="tag">--verbose</span></span><br></pre></td></tr></table></figure>
 <p>get error <code>You need to register a session first.</code></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pod trunk register &lt;yourEmail&gt; <span class="string">'&lt;yourName&gt;'</span> --description=<span class="string">'macbook pro'</span></span><br><span class="line"><span class="id">#click</span> the confirm email <span class="keyword">in</span> yourEmail</span><br><span class="line">pod trunk push NSString-BlockHelper<span class="class">.podspec</span> --verbose</span><br></pre></td></tr></table></figure>
 <p><code>pod search</code> cannot search the <code>1.0.1</code> version</p>
