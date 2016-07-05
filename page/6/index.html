@@ -325,11 +325,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="4th/7/2015">4th/7/2015</h1><p>To hide username@computername both in local and ssh login mode</p>
+        <h1 id="4th/7/2015"><a href="#4th/7/2015" class="headerlink" title="4th/7/2015"></a>4th/7/2015</h1><p>To hide username@computername both in local and ssh login mode</p>
 <p>Add following lines in <code>.zshrc</code><br><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">prompt_context() &#123;</span><br><span class="line"># empty <span class="built_in">function</span> to <span class="keyword">override</span> agnoster.theme render username<span class="keyword">@computername</span> <span class="built_in">function</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>Auto switch theme when ssh login</p>
 <p>Change theme line in <code>.zshrc</code> to following lines<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">[[ -n "$SSH_CLIENT" ]]</span>; <span class="keyword">then</span></span><br><span class="line">ZSH_THEME=<span class="string">"ys"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">ZSH_THEME=<span class="string">"agnoster"</span></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></p>
-<h1 id="Update_May_28,_2015">Update May 28, 2015</h1><p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
+<h1 id="Update_May_28_2C_2015"><a href="#Update_May_28_2C_2015" class="headerlink" title="Update May 28, 2015"></a>Update May 28, 2015</h1><p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
 <li><p>Install <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline/fonts</a></p>
 </li>
@@ -338,7 +338,7 @@
 <li><p>Add <code>DEFAULT_USER=zx</code> in <code>~/.zshrc</code> to hide <code>username@localhost</code></p>
 </li>
 <li><p>Make theme like screenshot<br> <img src="https://camo.githubusercontent.com/a862b8b4a84524c727b6e912be2d70a5571ef2de/687474703a2f2f6935392e74696e797069632e636f6d2f327631356475722e706e67" alt="image"></p>
- <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>wget <span class="symbol">https:</span>/<span class="regexp">/raw.github.com/altercation</span><span class="regexp">/solarized/master</span><span class="regexp">/iterm2-colors-solarized/</span><span class="constant">Solarized</span><span class="variable">%20Dark</span>.itermcolors</span><br></pre></td></tr></table></figure>
+ <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>wget <span class="symbol">https:</span>/<span class="regexp">/raw.github.com/altercation</span><span class="regexp">/solarized/master</span><span class="regexp">/iterm2-colors-solarized/</span><span class="constant">Solarized</span>%<span class="number">20</span>Dark.itermcolors</span><br></pre></td></tr></table></figure>
 <p><code>iTerm</code> -&gt; <code>Profiles</code> -&gt; <code>Colors</code> -&gt;<br><code>Load Presets...</code> -&gt; <code>Import...</code> -&gt; <code>Solarized Dark.itermcolors</code></p>
 </li>
 </ol>
@@ -434,7 +434,7 @@
 <ol>
 <li>clone project</li>
 </ol>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">tf</span> clone http<span class="variable">s:</span>//server.<span class="keyword">com</span>/tfs $/projectName</span><br></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tf <span class="keyword">clone</span> <span class="title">https</span>://server.com/tfs $/projectName</span><br></pre></td></tr></table></figure>
 <ol>
 <li>pull</li>
 </ol>
@@ -569,7 +569,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="xcode_download_addresses"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html">xcode download addresses</a></h1><h1 id="multiple_xcode_coexist"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html">multiple xcode coexist</a></h1><h1 id="Storyboard_build_error">Storyboard build error</h1><p>Error message</p>
+        <h1 id="xcode_download_addresses"><a 11="" 25="" 2014="" href="#xcode_download_addresses" class="headerlink" title="<a href=" http:="" bumaociyuan.github.io="" xcode="" xcode-download-addresses.html"="">xcode download addresses</a>"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html">xcode download addresses</a></h1><h1 id="multiple_xcode_coexist"><a 11="" 25="" 2014="" href="#multiple_xcode_coexist" class="headerlink" title="<a href=" http:="" bumaociyuan.github.io="" xcode="" multiple-xcode-coexist.html"="">multiple xcode coexist</a>"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html">multiple xcode coexist</a></h1><h1 id="Storyboard_build_error"><a href="#Storyboard_build_error" class="headerlink" title="Storyboard build error"></a>Storyboard build error</h1><p>Error message</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This <span class="property">version</span> <span class="keyword">does</span> <span class="keyword">not</span> support constraints <span class="keyword">to</span> layout margins. Open this document <span class="keyword">with</span> Xcode <span class="number">6.0</span> <span class="keyword">or</span> later.</span><br></pre></td></tr></table></figure>
 <ol>
 <li>Select <code>UI.storyboard</code></li>
@@ -804,122 +804,122 @@
 <p><strong>fetch from origin with deleted remote branches</strong></p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> fetch -p</span><br></pre></td></tr></table></figure>
 <p><strong>revert git commit on server</strong><br><a href="http://stackoverflow.com/questions/1270514/undoing-a-git-push" target="_blank" rel="external">Undoing a git push</a></p>
-<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--hard &lt;commit&gt;</span>
-git push -<span class="keyword">f</span> origin &lt;<span class="keyword">commit</span>&gt;:&lt;branch&gt;
-#<span class="keyword">reset</span> <span class="keyword">local</span> <span class="keyword">and</span> origin &lt;branch&gt; <span class="keyword">to</span> &lt;<span class="keyword">commit</span>&gt;</span>
+<pre><code>git reset --hard &lt;commit&gt;
+git push -f origin &lt;commit&gt;:&lt;branch&gt;
+#reset local and origin &lt;branch&gt; to &lt;commit&gt;
 </code></pre><p><strong>reduce git repository size</strong></p>
-<pre><code><span class="comment">git</span> <span class="comment">reflog</span> <span class="comment">expire</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">all</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">expire=now</span>
-<span class="comment">git</span> <span class="comment">gc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">prune=now</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">aggressive</span>
+<pre><code>git reflog expire --all --expire=now
+git gc --prune=now --aggressive
 </code></pre><p><strong>git total count</strong></p>
-<pre><code>git rev-<span class="type">list</span> HEAD <span class="comment">--count</span>
+<pre><code>git rev-list HEAD --count
 </code></pre><p><strong>git rebase</strong></p>
-<pre><code>git rebase --onto <span class="tag">&lt;<span class="title">newbase</span>&gt;</span> <span class="tag">&lt;<span class="title">since</span>&gt;</span> <span class="tag">&lt;<span class="title">till</span>&gt;</span>
+<pre><code>git rebase --onto &lt;newbase&gt; &lt;since&gt; &lt;till&gt;
 
- git rebase -i <span class="tag">&lt;<span class="title">newbase</span>&gt;</span>    
+ git rebase -i &lt;newbase&gt;    
 </code></pre><p><strong>git help config</strong></p>
-<pre><code>git <span class="built_in">help</span> config
+<pre><code>git help config
 </code></pre><p><strong>git checkout</strong></p>
-<pre><code><span class="title">git</span> checkout 
+<pre><code>git checkout 
 </code></pre><p><strong>git reset</strong></p>
-<pre><code>git <span class="operator"><span class="keyword">reset</span> <span class="comment">--soft &lt;commit&gt;    # 不修改工作区和暂存区，只重置master</span>
-git <span class="keyword">reset</span> <span class="comment">--hard &lt;commit&gt;    # 替换工作区，暂存区，master &lt;commit&gt;</span>
-git <span class="keyword">reset</span> <span class="comment">--mixed </span></span>
+<pre><code>git reset --soft &lt;commit&gt;    # 不修改工作区和暂存区，只重置master
+git reset --hard &lt;commit&gt;    # 替换工作区，暂存区，master &lt;commit&gt;
+git reset --mixed 
 </code></pre><p><strong>git reset <commit> <path></path></commit></strong></p>
 <pre><code>git add .
-git <span class="operator"><span class="keyword">reset</span> <span class="keyword">HEAD</span> .    # 撤销 git <span class="keyword">add</span> .
+git reset HEAD .    # 撤销 git add .
 
-git <span class="keyword">reset</span> &lt;<span class="keyword">commit</span>&gt; &lt;paths&gt; # 重置暂存区为&lt;<span class="keyword">commit</span>&gt;</span>
+git reset &lt;commit&gt; &lt;paths&gt; # 重置暂存区为&lt;commit&gt;
 </code></pre><p><strong>git reflog</strong></p>
-<pre><code>git reflog             <span class="comment">#查看之前几次修改 SHA1值</span>
-git <span class="keyword">reset</span> --hard HEAD<span class="variable">@{num}</span> 
+<pre><code>git reflog             #查看之前几次修改 SHA1值
+git reset --hard HEAD@{num} 
 </code></pre><p><strong>commit count</strong></p>
-<pre><code>git rev-<span class="type">list</span> HEAD <span class="comment">--count</span>
+<pre><code>git rev-list HEAD --count
 </code></pre><p><strong>git clean</strong></p>
-<pre><code>git clean <span class="operator">-f</span> <span class="operator">-d</span> 
+<pre><code>git clean -f -d 
 </code></pre><p><strong>git stash</strong></p>
-<pre><code><span class="preprocessor"># 保存当前工作状态</span>
-git <span class="keyword">add</span> .                     <span class="preprocessor"># 加入index</span>
-git stash                     <span class="preprocessor"># 保存 ,当前工作区所有</span>
+<pre><code># 保存当前工作状态
+git add .                     # 加入index
+git stash                     # 保存 ,当前工作区所有
 
-git stash list                 <span class="preprocessor"># 查看 stash list</span>
+git stash list                 # 查看 stash list
 git checkout -b new_branch
 
-<span class="preprocessor"># do some thing ...</span>
+# do some thing ...
 
 git checkout master
-git stash <span class="keyword">pop</span>               <span class="preprocessor"># 多个stash 使用git stash pop stash@{num}</span>
+git stash pop               # 多个stash 使用git stash pop stash@{num}
 </code></pre><p><strong>后悔药</strong></p>
 <pre><code>git checkout HEAD^ -- &lt;file path&gt;
 
 HEAD^         后悔一步
 HEAD^^         后悔两步
 HEAD^^^     ...
-HEAD^<span class="number">4</span>        ...
-HEAD^<span class="number">5</span>        以此类推
+HEAD^4        ...
+HEAD^5        以此类推
 </code></pre><p>角色： 最近六次提交分别是ABCDEF</p>
-<pre><code>$git <span class="command">log</span> <span class="comment">--online -6</span>
-XXXXXXX modify hello.h                        <span class="comment"># F    XXXXXXX add hello.h                            # E</span>
-XXXXXXX ignore object files                    <span class="comment"># D</span>
-XXXXXXX move .<span class="type">file</span> outside also works.        <span class="comment"># C</span>
-XXXXXXX Hello world initialized                <span class="comment"># B</span>
-XXXXXXX README <span class="keyword">is</span> frome welcome.txt        <span class="comment"># A</span>
+<pre><code>$git log --online -6
+XXXXXXX modify hello.h                        # F    XXXXXXX add hello.h                            # E
+XXXXXXX ignore object files                    # D
+XXXXXXX move .file outside also works.        # C
+XXXXXXX Hello world initialized                # B
+XXXXXXX README is frome welcome.txt        # A
 </code></pre><p>坏蛋： 提交 D。</p>
 <p>目的就是：干掉提交D<br>需要拣选指令–<code>git cherry-pick</code><br>含义是从众多的提交中挑选出一个提交应用在当前的工作分支中。该命令需要提供一个提交ID作为参数，操作过程相当于讲该提交到出为补丁文件，然后在当前HEAD上重放，形成无论内容还是提交说明都一致的提提交<br>首先对版本库要‘参演’的角色进行标记，使用<code>git tag</code> 命令</p>
-<pre><code>git <span class="built_in">tag</span> F
-git <span class="built_in">tag</span> E HEAD^
-git <span class="built_in">tag</span> D HEAD^^
-git <span class="built_in">tag</span> C HEAD^^^
-git <span class="built_in">tag</span> B HEAD^<span class="number">4</span>
-git <span class="built_in">tag</span> A HEAD^<span class="number">5</span>
+<pre><code>git tag F
+git tag E HEAD^
+git tag D HEAD^^
+git tag C HEAD^^^
+git tag B HEAD^4
+git tag A HEAD^5
 </code></pre><p>1.第一幕干掉坏蛋 D<br>(1) 执行 git checkout ,暂时将 HEAD 头指针切换到 C。<br>切换过程显示非跟踪状态的警告，没有关系，因为剧情需要。</p>
-<pre><code><span class="variable">$git</span> checkout C
-<span class="variable">$git</span> checkout -b new_branch_name
+<pre><code>$git checkout C
+$git checkout -b new_branch_name
 </code></pre><p>(2) 执行拣选操作将 E 提交在    </p>
 <p><strong>change some history comment</strong></p>
-<pre><code>git rebase -<span class="tag">i</span> &lt;commit number&gt;
+<pre><code>git rebase -i &lt;commit number&gt;
 </code></pre><p><strong>change last comment</strong></p>
-<pre><code>git <span class="operator"><span class="keyword">commit</span> <span class="comment">--amend    </span></span>
+<pre><code>git commit --amend    
 </code></pre><p><strong>安装自动补全命令</strong></p>
-<pre><code><span class="keyword">brew </span>install <span class="keyword">bash-completion</span>
+<pre><code>brew install bash-completion
 </code></pre><p><strong>.gitignore</strong></p>
-<pre><code><span class="comment"># 这是注释行 -- 被忽略</span>
-*.a         <span class="comment"># 忽略所有以 .a 为扩展名的文件。</span>
-!<span class="class"><span class="keyword">lib</span>.<span class="title">a</span>        <span class="comment"># 但是 lib.a 文件或者目录不要忽略，即使前面设置了对 *.a 的忽略。</span></span>
-/<span class="constant">TODO</span>         <span class="comment"># 只忽略此目录下的 TODO 文件，子目录的 TODO 文件不忽略。</span>
-build/      <span class="comment"># 忽略所有 build/ 目录下的文件</span>
-doc/*.txt     <span class="comment"># 忽略文件如 doc/notes.txt，但是文件如 doc/server/arch.txt 不被忽略。</span>
+<pre><code># 这是注释行 -- 被忽略
+*.a         # 忽略所有以 .a 为扩展名的文件。
+!lib.a        # 但是 lib.a 文件或者目录不要忽略，即使前面设置了对 *.a 的忽略。
+/TODO         # 只忽略此目录下的 TODO 文件，子目录的 TODO 文件不忽略。
+build/      # 忽略所有 build/ 目录下的文件
+doc/*.txt     # 忽略文件如 doc/notes.txt，但是文件如 doc/server/arch.txt 不被忽略。
 
-“<span class="comment"># a comment - this is ignored</span>
-<span class="comment"># no .a files</span>
+“# a comment - this is ignored
+# no .a files
 *.a
-<span class="comment"># but do track lib.a, even though you're ignoring .a files above</span>
-!<span class="class"><span class="keyword">lib</span>.<span class="title">a</span></span>
-<span class="comment"># only ignore the root TODO file, not subdir/TODO</span>
-/<span class="constant">TODO</span>
-<span class="comment"># ignore all files in the build/ directory</span>
+# but do track lib.a, even though you&apos;re ignoring .a files above
+!lib.a
+# only ignore the root TODO file, not subdir/TODO
+/TODO
+# ignore all files in the build/ directory
 build/
-<span class="comment"># ignore doc/notes.txt, but not doc/server/arch.txt</span>
+# ignore doc/notes.txt, but not doc/server/arch.txt
 doc/*.txt
-<span class="comment"># ignore all .txt files in the doc/ directory</span>
-doc/**<span class="regexp">/*.txt”</span>
+# ignore all .txt files in the doc/ directory
+doc/**/*.txt”
 </code></pre><p><strong>remove ignored files</strong></p>
 <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm -r <span class="comment">--cached . </span></span><br><span class="line">git <span class="built_in">add</span> .</span><br><span class="line">git commit -am <span class="string">"Remove ignored files"</span></span><br></pre></td></tr></table></figure>
 <p><strong>git rev-list HEAD | wc -l</strong></p>
-<pre><code>git rev-<span class="type">list</span> HEAD | wc -l   <span class="comment"># 查看历史提交次数</span>
+<pre><code>git rev-list HEAD | wc -l   # 查看历史提交次数
 </code></pre><p><strong>git diff</strong></p>
-<pre><code>git diff B A             <span class="comment"># 比较里程碑 B 和里程碑 A</span>
-git diff A                <span class="comment"># 比较工作区和里程碑 A</span>
-git diff --cached A     <span class="comment"># 比较暂存区和里程碑 A</span>
-git diff --cached        <span class="comment"># 比较工作区和暂存区</span>
-git diff HEAD             <span class="comment"># 比较工作区和HEAD</span>
+<pre><code>git diff B A             # 比较里程碑 B 和里程碑 A
+git diff A                # 比较工作区和里程碑 A
+git diff --cached A     # 比较暂存区和里程碑 A
+git diff --cached        # 比较工作区和暂存区
+git diff HEAD             # 比较工作区和HEAD
 
 若只有一个参数就是比较工作区和 这个参数
 两个参数就是比较两个参数
 参数可以是 里程碑 commitId 工作区 等等
 
-git diff <span class="variable">&lt;commit1&gt;</span> <span class="variable">&lt;commit2&gt;</span> -- <span class="variable">&lt;paths&gt;</span>
+git diff &lt;commit1&gt; &lt;commit2&gt; -- &lt;paths&gt;
 </code></pre><p><strong>git blame</strong></p>
-<pre><code>git blame &lt;<span class="type">file</span> path&gt;     <span class="comment"># 文件追溯</span>
+<pre><code>git blame &lt;file path&gt;     # 文件追溯
 </code></pre>
       
     </div>
