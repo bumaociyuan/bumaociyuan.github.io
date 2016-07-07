@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
+    <lastmod>2016-07-07T07:11:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>ngrok note</title>
+        <pubTime>2015-09-14T18:45:55.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="ngrok" url="http://bumaociyuan.github.io/categories/ngrok/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/terminal/2014/12/03/use-zsh.html</loc>
     <lastmod>2016-07-05T03:54:39.000Z</lastmod>
     <data>
@@ -17,24 +35,6 @@
            
              
               <breadCrumb title="terminal" url="http://bumaociyuan.github.io/categories/terminal/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
-    <lastmod>2016-07-05T02:55:55.000Z</lastmod>
-    <data>
-        <display>
-        <title>ngrok note</title>
-        <pubTime>2015-09-14T18:45:55.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="ngrok" url="http://bumaociyuan.github.io/categories/ngrok/"/>
           
         </display>
     </data>

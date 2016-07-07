@@ -22,7 +22,7 @@ ngrok.com has been GFWed
 Installation
 https://ngrok.com/download
 unzip ngrok.zip">
-<meta property="og:updated_time" content="2016-07-05T02:55:55.000Z">
+<meta property="og:updated_time" content="2016-07-07T07:11:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ngrok note">
 <meta name="twitter:description" content="Basic
@@ -249,7 +249,7 @@ unzip ngrok.zip">
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ wget --no-check-certificate --no-verbose https:<span class="comment">//storage.googleapis.com/golang/go1.4.2.linux-386.tar.gz</span></span><br><span class="line">$ tar -C /usr/local -xzf go1.<span class="number">4.2</span><span class="class">.linux-386</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure>
 <p>Add this line on your <code>.bashrc</code></p>
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export <span class="constant">PATH=</span><span class="variable">$PATH</span><span class="symbol">:/usr/local/go/bin</span></span><br></pre></td></tr></table></figure>
-<h3 id="Compile"><a href="#Compile" class="headerlink" title="Compile"></a>Compile</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ GOOS=linux GOARCH=amd64 make </span><br><span class="line">$ release-server</span><br><span class="line"><span class="preprocessor">#如果是<span class="number">32</span>位系统，这里 GOARCH=<span class="number">386</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="Compile"><a href="#Compile" class="headerlink" title="Compile"></a>Compile</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ GOOS=linux GOARCH=amd64 </span><br><span class="line">$ make release-server</span><br><span class="line"><span class="preprocessor">#如果是<span class="number">32</span>位系统，这里 GOARCH=<span class="number">386</span></span></span><br></pre></td></tr></table></figure>
 <p>Error</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">GOOS=<span class="string">""</span> GOARCH=<span class="string">""</span> <span class="keyword">go</span> get github.com/jteeuwen/<span class="keyword">go</span>-bindata/<span class="keyword">go</span>-bindata</span><br><span class="line"># github.com/jteeuwen/<span class="keyword">go</span>-bindata</span><br><span class="line">src/github.com/jteeuwen/<span class="keyword">go</span>-bindata/toc.<span class="keyword">go</span>:<span class="number">47</span>: function ends without a <span class="keyword">return</span> statement</span><br><span class="line"><span class="built_in">make</span>: *** [bin/<span class="keyword">go</span>-bindata] Error <span class="number">2</span></span><br></pre></td></tr></table></figure>
 <p><a href="https://github.com/inconshreveable/ngrok/issues/237" target="_blank" rel="external">解决办法</a></p>
