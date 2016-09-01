@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2016-09-01T07:31:12.000Z</updated>
+  <updated>2016-09-01T07:32:01.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="http://bumaociyuan.github.io/node/2016/09/02/how-to-debug-node-with-atom.html"/>
     <id>http://bumaociyuan.github.io/node/2016/09/02/how-to-debug-node-with-atom.html</id>
     <published>2016-09-01T19:01:09.000Z</published>
-    <updated>2016-09-01T07:31:12.000Z</updated>
+    <updated>2016-09-01T07:32:01.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Install_Atom_and_node-debugger"><a href="#Install_Atom_and_node-debugger" class="headerlink" title="Install Atom and node-debugger"></a>Install Atom and node-debugger</h1><p><a href="https://atom.io/" target="_blank" rel="external">Atom</a></p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm i <span class="keyword">node</span><span class="identifier"></span><span class="title">-debugger</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm i node-debugger</span><br></pre></td></tr></table></figure>
 <h1 id="Config_Project"><a href="#Config_Project" class="headerlink" title="Config Project"></a>Config Project</h1><ol>
 <li>Open your node project.</li>
 <li>Click <code>Cmd+,</code> open <code>Settings</code>.</li>
@@ -41,7 +41,7 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<h1 id="Install_Atom_and_node-debugger"><a href="#Install_Atom_and_node-debugger" class="headerlink" title="Install Atom and node-debugger"></a>Install Atom and node-debugger</h1><p><a href="https://atom.io/">Atom</a></p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm i <span class="keyword">node</span><span class="identifier"></span><span class="title">-debugger</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm i node-debugger</span><br></pre></td></tr></table></figure>
 <h1 id="Config_Project"><a href="#Config_Project" class="headerlink" title="Config Project"></a>Config Project</h1><ol>
 <li>Open your node project.</li>
 <li>Click <code>Cmd+,</code> open <code>Settings</code>.</li>
