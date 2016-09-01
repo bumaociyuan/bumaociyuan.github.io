@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://bumaociyuan.github.io/node/2016/09/02/how-to-debug-node-with-atom.html</loc>
+    <lastmod>2016-09-01T07:29:35.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
     <lastmod>2016-07-07T07:11:19.000Z</lastmod>
   </url>

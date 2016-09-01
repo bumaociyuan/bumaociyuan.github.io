@@ -4,7 +4,7 @@
   
   <link href="/resources/testRss.xml" rel="self"/>
   <link href="http://bumaociyuan.github.io/"/>
-  <updated>2016-06-22T02:38:43.000Z</updated>
+  <updated>2016-09-01T07:29:35.000Z</updated>
   <id>http://bumaociyuan.github.io/</id>
   
   <author>
@@ -13,6 +13,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[how-to-debug-node-with-atom]]></title>
+    <link href="http://bumaociyuan.github.io/node/2016/09/02/how-to-debug-node-with-atom.html"/>
+    <id>http://bumaociyuan.github.io/node/2016/09/02/how-to-debug-node-with-atom.html</id>
+    <published>2016-09-01T19:01:09.000Z</published>
+    <updated>2016-09-01T07:29:35.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Install_Atom_and_node-debugger"><a href="#Install_Atom_and_node-debugger" class="headerlink" title="Install Atom and node-debugger"></a>Install Atom and node-debugger</h1><p><a href="https://atom.io/" target="_blank" rel="external">Atom</a></p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm i <span class="keyword">node</span><span class="identifier"></span><span class="title">-debugger</span></span><br></pre></td></tr></table></figure>
+<h1 id="Config_Project"><a href="#Config_Project" class="headerlink" title="Config Project"></a>Config Project</h1><ol>
+<li>Open your node project.</li>
+<li>Click <code>Cmd+,</code> open <code>Settings</code>.</li>
+<li>Select <code>Packages</code> and open settings of <code>node-debugger</code>.</li>
+<li>Config <code>Node Path</code> and <code>Script Main</code>.</li>
+</ol>
+<h1 id="How_to_debug"><a href="#How_to_debug" class="headerlink" title="How to debug"></a>How to debug</h1><a id="more"></a>
+<ol>
+<li>Use shortcut or <a href="https://atom.io/packages/command-palette" target="_blank" rel="external">command-palette:toggle</a> to run <code>node-debugger:start-resume</code>.</li>
+<li>Use <code>node-debugger:toggle-breakpoint</code> to toggle breakpoint where you want.</li>
+<li>Send request on client.</li>
+<li>Breakpoint will be trigger.</li>
+<li>Use <code>node-debugger:step-next</code> ,<code>node-debugger:start-resume</code> and <code>node-debugger:stop</code> for debug.</li>
+<li>Print variable by input js script in debug console.</li>
+</ol>
+<p><img src="https://cloud.githubusercontent.com/assets/4977911/18158917/c610c12a-7058-11e6-87c5-01a8ddb5c806.png" alt="d69cbc5e-ce8f-499e-a482-7981fa97e95f"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Install_Atom_and_node-debugger"><a href="#Install_Atom_and_node-debugger" class="headerlink" title="Install Atom and node-debugger"></a>Install Atom and node-debugger</h1><p><a href="https://atom.io/">Atom</a></p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm i <span class="keyword">node</span><span class="identifier"></span><span class="title">-debugger</span></span><br></pre></td></tr></table></figure>
+<h1 id="Config_Project"><a href="#Config_Project" class="headerlink" title="Config Project"></a>Config Project</h1><ol>
+<li>Open your node project.</li>
+<li>Click <code>Cmd+,</code> open <code>Settings</code>.</li>
+<li>Select <code>Packages</code> and open settings of <code>node-debugger</code>.</li>
+<li>Config <code>Node Path</code> and <code>Script Main</code>.</li>
+</ol>
+<h1 id="How_to_debug"><a href="#How_to_debug" class="headerlink" title="How to debug"></a>How to debug</h1>]]>
+    
+    </summary>
+    
+      <category term="atom" scheme="http://bumaociyuan.github.io/tags/atom/"/>
+    
+      <category term="node" scheme="http://bumaociyuan.github.io/tags/node/"/>
+    
+      <category term="node" scheme="http://bumaociyuan.github.io/categories/node/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[SwiftLint tutorial]]></title>
@@ -467,34 +513,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
-    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
-    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
-    <published>2015-09-07T04:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html" target="_blank" rel="external">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
-<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
-<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>]]>
-    
-    </summary>
-    
-      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
-    
-      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
-    
-      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[alfred run a jxa script]]></title>
     <link href="http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html"/>
     <id>http://bumaociyuan.github.io/js/2015/09/07/alfred-run-a-jxa-script.html</id>
@@ -521,6 +539,34 @@
       <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
     
       <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
+    
+      <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[make a jxa build system in sublime text 3]]></title>
+    <link href="http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html"/>
+    <id>http://bumaociyuan.github.io/js/2015/09/07/make-a-jxa-build-system-in-sublime-text-3.html</id>
+    <published>2015-09-07T04:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html" target="_blank" rel="external">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
+<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://sublimetext.info/docs/en/reference/build_systems.html">SUBLIME TEXT HELP » REFERENCE » Build Systems</a></p>
+<p><code>Tools</code> -&gt; <code>Build System</code> -&gt; <code>New Build System...</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"<span class="attribute">cmd</span>": <span class="value">[<span class="string">"osascript"</span>,<span class="string">"-l"</span>,<span class="string">"JavaScript"</span>,<span class="string">"$file"</span>]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="applescript" scheme="http://bumaociyuan.github.io/tags/applescript/"/>
+    
+      <category term="jxa" scheme="http://bumaociyuan.github.io/tags/jxa/"/>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
     
       <category term="js" scheme="http://bumaociyuan.github.io/categories/js/"/>
     
@@ -656,25 +702,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[open sublime in terminal]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
-    <published>2015-08-10T04:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
-    </summary>
-    
-      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
-    
-      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[using shadowsocks in terminal]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/08/10/using-shadowsocks-in-terminal.html</id>
@@ -696,6 +723,25 @@
       <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
     
       <category term="breakwall" scheme="http://bumaociyuan.github.io/categories/breakwall/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[open sublime in terminal]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/08/10/open-sublime-in-terminal.html</id>
+    <published>2015-08-10T04:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/Applications/</span>Sublime\ Text\ <span class="number">3</span>.app<span class="regexp">/Contents/</span>SharedSupport<span class="regexp">/bin/</span>subl <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>sublime</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span cl]]>
+    </summary>
+    
+      <category term="sublime" scheme="http://bumaociyuan.github.io/tags/sublime/"/>
+    
+      <category term="terminal" scheme="http://bumaociyuan.github.io/tags/terminal/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
     
   </entry>
   
@@ -1403,32 +1449,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
-    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
-    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
-    <published>2015-01-29T05:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
-<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
-<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
-<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>购买配件:</p>
-<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
-    </summary>
-    
-      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
-    
-      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
-    
-      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[bandwagon note]]></title>
     <link href="http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html"/>
     <id>http://bumaociyuan.github.io/breakwall/2015/01/29/bandwagon-note.html</id>
@@ -1477,6 +1497,32 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Mac mini upgrade ssd and memory]]></title>
+    <link href="http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html"/>
+    <id>http://bumaociyuan.github.io/mac/2015/01/29/mac-mini-upgrade-ssd-and-memory.html</id>
+    <published>2015-01-29T05:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item.jd.com/664484.html</a> ￥499.00 </p>
+<p>SSD : 三星（SAMSUNG）850 EVO系列 250G 2.5英寸 SATA-3固态硬盘(MZ-75E250B/CN) 地址 <a href="http://item.jd.com/1279827.html" target="_blank" rel="external">http://item.jd.com/1279827.html</a> ￥819.00</p>
+<p>螺丝刀 ：宝工（Pro’skit) SD-9802 31合1精密多功能手机起子组 螺丝刀套装 地址 <a href="http://item.jd.com/617776.html" target="_blank" rel="external">http://item.jd.com/617776.html</a></p>
+<p><a href="https://support.apple.com/en-us/HT205041" target="_blank" rel="external">support.apple.com</a></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDkxNTkzNTQw" frameborder="0" allowfullscreen></iframe>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>购买配件:</p>
+<p>内存条: 金士顿(Kingston)DDR3 1600 8GB 笔记本内存 地址 <a href="http://item.jd.com/664484.html" target="_blank" rel="external">http://item]]>
+    </summary>
+    
+      <category term="ssd" scheme="http://bumaociyuan.github.io/tags/ssd/"/>
+    
+      <category term="upgrade" scheme="http://bumaociyuan.github.io/tags/upgrade/"/>
+    
+      <category term="mac" scheme="http://bumaociyuan.github.io/categories/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[NSAssert note]]></title>
     <link href="http://bumaociyuan.github.io/ios/2015/01/21/nsassert-note.html"/>
     <id>http://bumaociyuan.github.io/ios/2015/01/21/nsassert-note.html</id>
@@ -1513,22 +1559,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[create .war for tomcat]]></title>
-    <link href="http://bumaociyuan.github.io/java/2015/01/16/create-war-for-tomcat.html"/>
-    <id>http://bumaociyuan.github.io/java/2015/01/16/create-war-for-tomcat.html</id>
-    <published>2015-01-16T05:00:00.000Z</published>
-    <updated>2015-12-09T03:44:17.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /to/your/folder/location</span><br><span class="line">jar -cvf my_web_app.war *</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><]]>
-    </summary>
-    
-      <category term="java" scheme="http://bumaociyuan.github.io/categories/java/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[cache github password]]></title>
     <link href="http://bumaociyuan.github.io/git/2015/01/16/cache-github-password.html"/>
     <id>http://bumaociyuan.github.io/git/2015/01/16/cache-github-password.html</id>
@@ -1542,6 +1572,22 @@
     </summary>
     
       <category term="git" scheme="http://bumaociyuan.github.io/categories/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[create .war for tomcat]]></title>
+    <link href="http://bumaociyuan.github.io/java/2015/01/16/create-war-for-tomcat.html"/>
+    <id>http://bumaociyuan.github.io/java/2015/01/16/create-war-for-tomcat.html</id>
+    <published>2015-01-16T05:00:00.000Z</published>
+    <updated>2015-12-09T03:44:17.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /to/your/folder/location</span><br><span class="line">jar -cvf my_web_app.war *</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><]]>
+    </summary>
+    
+      <category term="java" scheme="http://bumaociyuan.github.io/categories/java/"/>
     
   </entry>
   
