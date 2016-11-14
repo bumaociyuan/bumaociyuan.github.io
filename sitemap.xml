@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://bumaociyuan.github.io/node/2016/09/02/how-to-debug-node-with-atom.html</loc>
+    <loc>http://bumaociyuan.github.io/node/2016/09/01/how-to-debug-node-with-atom.html</loc>
     <lastmod>2016-09-01T07:33:26.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ngrok/2015/09/15/ngrok-note.html</loc>
+    <loc>http://bumaociyuan.github.io/ngrok/2015/09/14/ngrok-note.html</loc>
     <lastmod>2016-07-07T07:11:19.000Z</lastmod>
   </url>
   
@@ -22,7 +22,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2016/06/20/SwiftLint-tutorial.html</loc>
     <lastmod>2016-06-22T02:38:43.000Z</lastmod>
   </url>
   
@@ -97,7 +97,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/android/2015/10/13/remote-control-android-device.html</loc>
+    <loc>http://bumaociyuan.github.io/android/2015/10/12/remote-control-android-device.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -217,7 +217,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/game/2015/09/17/zelda-link-between-worlds.html</loc>
+    <loc>http://bumaociyuan.github.io/game/2015/09/16/zelda-link-between-worlds.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -257,7 +257,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2015/01/01/zsh-number-pad-not-working.html</loc>
+    <loc>http://bumaociyuan.github.io/terminal/2014/12/31/zsh-number-pad-not-working.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -267,7 +267,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/12/04/cocoapods-empty-reply-form-server.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/12/03/cocoapods-empty-reply-form-server.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -287,12 +287,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/11/26/ios-backwards-compatibility-faq.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/11/25/ios-backwards-compatibility-faq.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/11/26/cocoapods-update-error.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/11/25/cocoapods-update-error.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -302,12 +302,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/git/2014/11/21/svn-via-git.html</loc>
+    <loc>http://bumaociyuan.github.io/git/2014/11/20/svn-via-git.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/breakwall/2014/11/19/google-hosts.html</loc>
+    <loc>http://bumaociyuan.github.io/breakwall/2014/11/18/google-hosts.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -317,12 +317,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/11/18/go2shell-using-iterm2.html</loc>
+    <loc>http://bumaociyuan.github.io/terminal/2014/11/17/go2shell-using-iterm2.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/hybird/2014/11/14/PhoneGap-note.html</loc>
+    <loc>http://bumaociyuan.github.io/hybird/2014/11/13/PhoneGap-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -332,12 +332,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/11/04/app-extension-note.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/11/03/app-extension-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/mac/2015/11/05/fixed-brew-slow-problem.html</loc>
+    <loc>http://bumaociyuan.github.io/mac/2015/11/04/fixed-brew-slow-problem.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -347,12 +347,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/31/customize-tabbar-icon-and-text-color.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/30/customize-tabbar-icon-and-text-color.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ruby/2014/10/28/ruby-note.html</loc>
+    <loc>http://bumaociyuan.github.io/ruby/2014/10/27/ruby-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -372,12 +372,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/22/ios-app-%E5%AE%89%E8%A3%85%E6%9C%BA%E5%88%B6.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/21/ios-app-%E5%AE%89%E8%A3%85%E6%9C%BA%E5%88%B6.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/git/2014/10/21/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%88%A9%E7%94%A8GitHub.html</loc>
+    <loc>http://bumaociyuan.github.io/git/2014/10/20/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%88%A9%E7%94%A8GitHub.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -387,12 +387,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/10/17/run-shell-script-by-double-click.html</loc>
+    <loc>http://bumaociyuan.github.io/terminal/2014/10/16/run-shell-script-by-double-click.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/16/code-format.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/15/code-format.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -402,7 +402,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/10/10/url-schemes.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/10/09/url-schemes.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -412,7 +412,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/09/30/chmod.html</loc>
+    <loc>http://bumaociyuan.github.io/terminal/2014/09/29/chmod.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -427,7 +427,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/09/16/project-cannot-build-on-iphone5s.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/09/15/project-cannot-build-on-iphone5s.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -442,7 +442,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/09/05/shell-note.html</loc>
+    <loc>http://bumaociyuan.github.io/terminal/2014/09/04/shell-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -452,7 +452,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/08/30/make-a-cocoapods-lib.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/08/29/make-a-cocoapods-lib.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -467,7 +467,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/08/20/afnetworking-issue.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/08/19/afnetworking-issue.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -482,7 +482,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/08/02/ios-webview-bottom-black.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/08/01/ios-webview-bottom-black.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -492,7 +492,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/07/26/group-style-tableview-background-color-in-ios-7.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/07/25/group-style-tableview-background-color-in-ios-7.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -502,7 +502,7 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/other/2014/07/23/haha.html</loc>
+    <loc>http://bumaociyuan.github.io/other/2014/07/22/haha.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -522,12 +522,12 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/06/20/xcode-errors.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/06/19/xcode-errors.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/terminal/2014/06/18/delete-DS_Store.html</loc>
+    <loc>http://bumaociyuan.github.io/terminal/2014/06/17/delete-DS_Store.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
@@ -537,97 +537,97 @@
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ruby/2014/06/17/ruby-change-source.html</loc>
+    <loc>http://bumaociyuan.github.io/ruby/2014/06/16/ruby-change-source.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/git/2014/06/17/git-note.html</loc>
+    <loc>http://bumaociyuan.github.io/git/2014/06/16/git-note.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/jekyll/2014/06/14/jekyll-blog-deploy-github-pages.html</loc>
+    <loc>http://bumaociyuan.github.io/jekyll/2014/06/13/jekyll-blog-deploy-github-pages.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/03/27/name-from-images-xcassets.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/03/26/name-from-images-xcassets.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/android/2014/03/17/mi-tv-install-3rd-part-apk.html</loc>
+    <loc>http://bumaociyuan.github.io/android/2014/03/16/mi-tv-install-3rd-part-apk.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/03/15/ios-7-sharesdk.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/03/14/ios-7-sharesdk.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/03/15/ios-7-drop-box-download.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/03/14/ios-7-drop-box-download.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/01/08/mac-reinstall-system.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/01/07/mac-reinstall-system.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2014/01/07/baidu-appkey-register.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2014/01/06/baidu-appkey-register.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/12/19/baidu-map-2.1-bug.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/12/18/baidu-map-2.1-bug.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/vb/2013/12/10/vb-based-browser.html</loc>
+    <loc>http://bumaociyuan.github.io/vb/2013/12/09/vb-based-browser.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/12/10/ad-hoc-3.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/12/09/ad-hoc-3.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/11/16/ios-unlimited-args-method.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/11/15/ios-unlimited-args-method.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/10/26/ad-hoc-2.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/10/25/ad-hoc-2.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/breakwall/2013/10/24/free-vpn.html</loc>
+    <loc>http://bumaociyuan.github.io/breakwall/2013/10/23/free-vpn.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/10/23/ad-hoc-1.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/10/22/ad-hoc-1.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/10/14/introduction-to-cocoapods.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/10/13/introduction-to-cocoapods.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/10/12/2013-10-1-xcode-find-replace-with-regex.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/10/11/2013-10-1-xcode-find-replace-with-regex.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://bumaociyuan.github.io/ios/2013/09/19/iconSize.html</loc>
+    <loc>http://bumaociyuan.github.io/ios/2013/09/18/iconSize.html</loc>
     <lastmod>2015-12-09T03:44:17.000Z</lastmod>
   </url>
   
