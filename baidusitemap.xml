@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html</loc>
+    <lastmod>2016-11-15T02:55:01.126Z</lastmod>
+    <data>
+        <display>
+        <title>SwiftLint tutorial</title>
+        <pubTime>2016-06-20T19:31:34.000Z</pubTime>
+        
+        <tag>swift</tag>
+         
+        <tag>xcode</tag>
+         
+         
+           
+             
+              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://bumaociyuan.github.io/node/2016/09/02/how-to-debug-node-with-atom.html</loc>
     <lastmod>2016-09-01T07:33:26.000Z</lastmod>
     <data>
@@ -75,28 +97,6 @@
            
              
               <breadCrumb title="git" url="http://bumaociyuan.github.io/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html</loc>
-    <lastmod>2016-06-22T02:38:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>SwiftLint tutorial</title>
-        <pubTime>2016-06-20T19:31:34.000Z</pubTime>
-        
-        <tag>swift</tag>
-         
-        <tag>xcode</tag>
-         
-         
-           
-             
-              <breadCrumb title="ios" url="http://bumaociyuan.github.io/categories/ios/"/>
           
         </display>
     </data>
