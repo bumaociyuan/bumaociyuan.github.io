@@ -52,7 +52,7 @@ scheme , stackove">
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -242,7 +242,7 @@ scheme , stackove">
     <div class="article-entry" itemprop="articleBody">
       
         <p><a href="http://samwize.com/2014/05/22/create-multiple-targets-slash-apps-for-1-xcode-project/" target="_blank" rel="external">link</a><br><a href="http://stackoverflow.com/questions/5346767/is-there-a-way-to-rename-an-xcode-4-scheme" target="_blank" rel="external">stackoverflow.com 233</a> </p>
-<h1 id="Create_New_Target"><a href="#Create_New_Target" class="headerlink" title="Create New Target"></a>Create New Target</h1><ol>
+<h1 id="Create-New-Target"><a href="#Create-New-Target" class="headerlink" title="Create New Target"></a>Create New Target</h1><ol>
 <li>select project target </li>
 <li>right click </li>
 <li><code>Duplicate</code></li>
@@ -257,7 +257,7 @@ scheme , stackove">
 </ol>
 <p>#Info.plist<br>rename info.plist ,in <code>Build Settings</code> <code>General</code> tag select new plist file</p>
 <p>#Preprocessor<br>Select “Awesome Lite” target &gt; Build Settings &gt; Preprocessing &gt; Preprocessor Macros &gt; Add TARGET_LITE to each of the configuration (eg both Debug and Release configurations).</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#if defined(TARGET_LITE)</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Lite version"</span>);</span><br><span class="line"><span class="preprocessor">#else</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Original version"</span>);</span><br><span class="line"><span class="preprocessor">#endif</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#if defined(TARGET_LITE)</span></div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Lite version"</span>);</div><div class="line"><span class="meta">#else</span></div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"Original version"</span>);</div><div class="line"><span class="meta">#endif</span></div></pre></td></tr></table></figure>
 <p>#Resources, Images and Assets Catalog<br>Select the resource &gt; File Inspector &gt; Target Membership &gt; check the targets intended.</p>
 
       
@@ -326,7 +326,7 @@ scheme , stackove">
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -342,8 +342,8 @@ scheme , stackove">
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

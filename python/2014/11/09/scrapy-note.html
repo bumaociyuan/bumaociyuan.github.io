@@ -46,7 +46,7 @@ This will c">
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -237,19 +237,19 @@ This will c">
       
         <p><a href="http://doc.scrapy.org/en/latest/intro/tutorial.html" target="_blank" rel="external">http://doc.scrapy.org</a></p>
 <p>install <code>pip</code> <a href="https://pip.pypa.io/en/latest/installing.html#install-pip" target="_blank" rel="external">click here</a></p>
-<h2 id="install_scrapy"><a href="#install_scrapy" class="headerlink" title="install scrapy"></a>install scrapy</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> scrapy </span><br><span class="line"><span class="keyword">or</span></span><br><span class="line">sudo easy_install Scrapy</span><br></pre></td></tr></table></figure>
-<h2 id="tutorial_project"><a href="#tutorial_project" class="headerlink" title="tutorial project"></a>tutorial project</h2><ul>
+<h2 id="install-scrapy"><a href="#install-scrapy" class="headerlink" title="install scrapy"></a>install scrapy</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo pip install scrapy </div><div class="line">or</div><div class="line">sudo easy_install Scrapy</div></pre></td></tr></table></figure>
+<h2 id="tutorial-project"><a href="#tutorial-project" class="headerlink" title="tutorial project"></a>tutorial project</h2><ul>
 <li>set up a new Scrapy project</li>
 </ul>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">scrapy</span> startproject proName</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy startproject proName</div></pre></td></tr></table></figure>
 <ul>
 <li>This will create a tutorial directory with the following contents:</li>
 </ul>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tutorial/</span><br><span class="line">   	scrapy<span class="class">.cfg</span></span><br><span class="line">   	tutorial/</span><br><span class="line">        __init__<span class="class">.py</span></span><br><span class="line">        items<span class="class">.py</span></span><br><span class="line">        pipelines<span class="class">.py</span></span><br><span class="line">        settings<span class="class">.py</span></span><br><span class="line">        spiders/</span><br><span class="line">            __init__<span class="class">.py</span></span><br><span class="line">           ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">tutorial/</div><div class="line">   	scrapy.cfg</div><div class="line">   	tutorial/</div><div class="line">        __init__.py</div><div class="line">        items.py</div><div class="line">        pipelines.py</div><div class="line">        settings.py</div><div class="line">        spiders/</div><div class="line">            __init__.py</div><div class="line">           ...</div></pre></td></tr></table></figure>
 <ul>
 <li>we edit items.py, found in the tutorial directory. Our Item class looks like this:</li>
 </ul>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class <span class="function"><span class="title">DmozItem</span><span class="params">(scrapy.Item)</span></span>:</span><br><span class="line">    title = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    link = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br><span class="line">    desc = scrapy.<span class="function"><span class="title">Field</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line">class DmozItem(scrapy.Item):</div><div class="line">    title = scrapy.Field()</div><div class="line">    link = scrapy.Field()</div><div class="line">    desc = scrapy.Field()</div></pre></td></tr></table></figure>
 <h2 id="xpath"><a href="#xpath" class="headerlink" title="xpath"></a>xpath</h2><ol>
 <li><p><code>/html/head/title</code> : selects the <code>&lt;title&gt;</code> element, inside the <code>&lt;head&gt;</code> element of a HTML document</p>
 </li>
@@ -263,12 +263,12 @@ This will c">
 <ul>
 <li>This is the code for our first Spider; save it in a file named <code>dmoz_spider.py</code> under the <code>tutorial/spiders</code> directory:</li>
 </ul>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">from tutorial<span class="class">.items</span> import DmozItem</span><br><span class="line"></span><br><span class="line">class <span class="function"><span class="title">DmozSpider</span><span class="params">(scrapy.Spider)</span></span>:</span><br><span class="line">    name = <span class="string">"dmoz"</span></span><br><span class="line">    allowed_domains = [<span class="string">"dmoz.org"</span>]</span><br><span class="line">    start_urls = [</span><br><span class="line">        <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span>,</span><br><span class="line">        <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"</span></span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line">    def <span class="function"><span class="title">parse</span><span class="params">(self, response)</span></span>:</span><br><span class="line">        <span class="keyword">for</span> sel <span class="keyword">in</span> response.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'//ul/li'</span>)</span></span>:</span><br><span class="line">            item = <span class="function"><span class="title">DmozItem</span><span class="params">()</span></span></span><br><span class="line">            item[<span class="string">'title'</span>] = sel.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'a/text()'</span>)</span></span>.<span class="function"><span class="title">extract</span><span class="params">()</span></span></span><br><span class="line">            item[<span class="string">'link'</span>] = sel.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'a/@href'</span>)</span></span>.<span class="function"><span class="title">extract</span><span class="params">()</span></span></span><br><span class="line">            item[<span class="string">'desc'</span>] = sel.<span class="function"><span class="title">xpath</span><span class="params">(<span class="string">'text()'</span>)</span></span>.<span class="function"><span class="title">extract</span><span class="params">()</span></span></span><br><span class="line">           yield item</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line">from tutorial.items import DmozItem</div><div class="line"></div><div class="line">class DmozSpider(scrapy.Spider):</div><div class="line">    name = &quot;dmoz&quot;</div><div class="line">    allowed_domains = [&quot;dmoz.org&quot;]</div><div class="line">    start_urls = [</div><div class="line">        &quot;http://www.dmoz.org/Computers/Programming/Languages/Python/Books/&quot;,</div><div class="line">        &quot;http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/&quot;</div><div class="line">    ]</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        for sel in response.xpath(&apos;//ul/li&apos;):</div><div class="line">            item = DmozItem()</div><div class="line">            item[&apos;title&apos;] = sel.xpath(&apos;a/text()&apos;).extract()</div><div class="line">            item[&apos;link&apos;] = sel.xpath(&apos;a/@href&apos;).extract()</div><div class="line">            item[&apos;desc&apos;] = sel.xpath(&apos;text()&apos;).extract()</div><div class="line">           yield item</div></pre></td></tr></table></figure>
 <ul>
 <li>Storing the scraped data</li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">scrapy</span> <span class="tag">crawl</span> <span class="tag">dmoz</span> <span class="tag">-o</span> <span class="tag">items</span><span class="class">.json</span></span><br></pre></td></tr></table></figure>
-<h2 id="Trying_Selectors_in_the_Shell"><a href="#Trying_Selectors_in_the_Shell" class="headerlink" title="Trying Selectors in the Shell"></a>Trying Selectors in the Shell</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy <span class="built_in">shell</span> <span class="string">"http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy crawl dmoz -o items.json</div></pre></td></tr></table></figure>
+<h2 id="Trying-Selectors-in-the-Shell"><a href="#Trying-Selectors-in-the-Shell" class="headerlink" title="Trying Selectors in the Shell"></a>Trying Selectors in the Shell</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy shell &quot;http://www.dmoz.org/Computers/Programming/Languages/Python/Books/&quot;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -335,7 +335,7 @@ This will c">
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -351,8 +351,8 @@ This will c">
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

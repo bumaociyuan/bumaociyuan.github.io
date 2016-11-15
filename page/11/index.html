@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>不毛次元</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="不毛次元">
 <meta property="og:url" content="http://bumaociyuan.github.io/page/11/index.html">
 <meta property="og:site_name" content="不毛次元">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="不毛次元">
-<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -351,23 +348,23 @@ git -d temporary
 <ul>
 <li>Now, create a folder in your Google Drive folder called “git”. You want this folder as git produces a lot of files and you may want other stuff on your google drive besides your code repository.</li>
 </ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir \Users\JoeUser\Google Drive\git</div></pre></td></tr></table></figure>
 <ul>
 <li>CD yourself to your project folder (or whatever folder you want to have git control over).</li>
 </ul>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> \my-project-<span class="built_in">path</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd \my-project-path</div></pre></td></tr></table></figure>
 <ul>
 <li>Now, in the projects folder, perform the following git commands</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"first commit"</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git add .</div><div class="line">git commit -m &quot;first commit&quot;</div></pre></td></tr></table></figure>
 <ul>
 <li>Now we go to Google Drive and create a bare git repo (note that the backslash between Google and Drive should be exactly there)</li>
 </ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br><span class="line">git init --bare my-project.git</span><br><span class="line">cd <span class="command">\my</span>-project-path</span><br><span class="line">git remote add origin /Users/JoeUser/Google<span class="command">\ </span>Drive/git/my-project.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd \Users\JoeUser\Google Drive\git</div><div class="line">git init --bare my-project.git</div><div class="line">cd \my-project-path</div><div class="line">git remote add origin /Users/JoeUser/Google\ Drive/git/my-project.git</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
 <ul>
 <li>To checkout this project from another machine, you simply make sure you have google drive on that machine and type</li>
 </ul>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /the_location_I_want_to_checkout_the_repo</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">/Users</span>/JoeUser/Google\ Drive/git/project1.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /the_location_I_want_to_checkout_the_repo</div><div class="line">git clone /Users/JoeUser/Google\ Drive/git/project1.git</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -427,17 +424,17 @@ git -d temporary
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="u547D_u540D"><a href="#u547D_u540D" class="headerlink" title="命名"></a>命名</h1><h2 id="0-_u6587_u4EF6_u547D_u540D"><a href="#0-_u6587_u4EF6_u547D_u540D" class="headerlink" title="0.文件命名"></a>0.文件命名</h2><pre><code>Tip
+        <h1 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h1><h2 id="0-文件命名"><a href="#0-文件命名" class="headerlink" title="0.文件命名"></a>0.文件命名</h2><pre><code>Tip
 文件名须反映出其实现了什么类 – 包括大小写。遵循你所参与项目的约定。
 </code></pre><p>类别的文件名应该包含被扩展的类名，如：GTMNSString+Utils.h 或<code>GTMNSTextView+Autocomplete.h</code>。</p>
-<h2 id="1-__u53D8_u91CF_u547D_u540D"><a href="#1-__u53D8_u91CF_u547D_u540D" class="headerlink" title="1. 变量命名"></a>1. 变量命名</h2><pre><code>Tip
+<h2 id="1-变量命名"><a href="#1-变量命名" class="headerlink" title="1. 变量命名"></a>1. 变量命名</h2><pre><code>Tip
 方法名应该以小写字母开头，并混合驼峰格式。每个具名参数也应该以小写字母开头。
 </code></pre><p>变量命名需要能明白两点</p>
 <ul>
 <li>变量意思</li>
 <li>变量类型</li>
 </ul>
-<h3 id="BOOL_u578B"><a href="#BOOL_u578B" class="headerlink" title="BOOL型"></a>BOOL型</h3><p><strong>以 <code>is</code>开头</strong></p>
+<h3 id="BOOL型"><a href="#BOOL型" class="headerlink" title="BOOL型"></a>BOOL型</h3><p><strong>以 <code>is</code>开头</strong></p>
 <p>如：</p>
 <pre><code>//GOOD
 BOOL isShouldReload;
@@ -445,7 +442,7 @@ BOOL isLoading;
 
 //AVOID
 BOOL k;
-</code></pre><h3 id="Array__u578B"><a href="#Array__u578B" class="headerlink" title="Array 型"></a>Array 型</h3><p><strong>以 <code>s</code> 结尾</strong> 或者 <code>Array</code> </p>
+</code></pre><h3 id="Array-型"><a href="#Array-型" class="headerlink" title="Array 型"></a>Array 型</h3><p><strong>以 <code>s</code> 结尾</strong> 或者 <code>Array</code> </p>
 <p>如：</p>
 <pre><code>NSArray *users;
 NSArray *messages
@@ -456,7 +453,7 @@ NSDictionary *message;
 <pre><code>NSString *urlString;
 
 @property (nonatomic,strong) NSString * topId;//尽量与服务器统一
-</code></pre><h3 id="UI_Class"><a href="#UI_Class" class="headerlink" title="UI Class"></a>UI Class</h3><p><strong>以 <code>class</code> 结尾</strong> 尽量不使用<code>btn</code> <code>tv</code>等简写</p>
+</code></pre><h3 id="UI-Class"><a href="#UI-Class" class="headerlink" title="UI Class"></a>UI Class</h3><p><strong>以 <code>class</code> 结尾</strong> 尽量不使用<code>btn</code> <code>tv</code>等简写</p>
 <p>如：</p>
 <pre><code>//GOOD
 UIButton *loginButton
@@ -471,7 +468,7 @@ typedef void(^OnFailed)(API *, id error);
 
 OnCompletion  onCompletion;
 OnFailed      onFailed;
-</code></pre><h2 id="2-__u65B9_u6CD5_u547D_u540D"><a href="#2-__u65B9_u6CD5_u547D_u540D" class="headerlink" title="2. 方法命名"></a>2. 方法命名</h2><p><em>fds</em>  </p>
+</code></pre><h2 id="2-方法命名"><a href="#2-方法命名" class="headerlink" title="2. 方法命名"></a>2. 方法命名</h2><p><em>fds</em>  </p>
 
       
     </div>
@@ -533,7 +530,7 @@ OnFailed      onFailed;
 <p><strong>Showing first 200 notices only</strong><br>静态库重复</p>
 <hr>
 <p><strong>Mach O Link Error- linker command failed with exit code 1 (use -v to see invocation)</strong></p>
-<p><a href="http://stackoverflow.com/questions/12591711/mach-o-link-error-linker-command-failed-with-exit-code-1-use-v-to-see-invocat" target="_blank" rel="external">link</a><br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"build active architecture only"</span> <span class="keyword">to</span> <span class="literal">yes</span></span><br></pre></td></tr></table></figure></p>
+<p><a href="http://stackoverflow.com/questions/12591711/mach-o-link-error-linker-command-failed-with-exit-code-1-use-v-to-see-invocat" target="_blank" rel="external">link</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&quot;build active architecture only&quot; to yes</div></pre></td></tr></table></figure></p>
 <hr>
 <p><strong>E79CDDB501B68E74DDF03EA4E75246A7FDF010D0: no identity found Command /usr/bin/codesign failed with exit code 1</strong></p>
 <p><a href="http://stackoverflow.com/questions/26376166/e79cddb501b68e74ddf03ea4e75246a7fdf010d0-no-identity-found-command-usr-bin-cod" target="_blank" rel="external">link</a></p>
@@ -992,11 +989,11 @@ $ gem install rails
 <p> <a href="http://jekyllrb.com/" target="_blank" rel="external">http://jekyllrb.com/</a></p>
 </li>
 </ol>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">gem <span class="operator"><span class="keyword">install</span> jekyll</span><br><span class="line"></span><br><span class="line">jekyll <span class="keyword">new</span> my-awesome-site</span><br><span class="line"></span><br><span class="line">cd my-awesome-site</span><br><span class="line"></span><br><span class="line">jekyll serve</span><br><span class="line"></span><br><span class="line">//<span class="keyword">Now</span> browse <span class="keyword">to</span> <span class="keyword">http</span>://localhost:<span class="number">4000</span></span><br><span class="line"></span><br><span class="line">cp my-awesome-site <span class="keyword">path</span>/<span class="keyword">of</span>/USERNAME.github.com</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">gem install jekyll</div><div class="line"></div><div class="line">jekyll new my-awesome-site</div><div class="line"></div><div class="line">cd my-awesome-site</div><div class="line"></div><div class="line">jekyll serve</div><div class="line"></div><div class="line">//Now browse to http://localhost:4000</div><div class="line"></div><div class="line">cp my-awesome-site path/of/USERNAME.github.com</div></pre></td></tr></table></figure>
 <ol>
 <li>Write .md file in _post dir</li>
 </ol>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="built_in">path</span>/of/USERNAME.github.com </span><br><span class="line"></span><br><span class="line">jekyll build</span><br><span class="line">//auto create HTML file <span class="flow">in</span> _site <span class="built_in">dir</span> </span><br><span class="line"></span><br><span class="line">jekyll serve </span><br><span class="line">//preview <span class="flow">in</span> port <span class="number">4000</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cd path/of/USERNAME.github.com </div><div class="line"></div><div class="line">jekyll build</div><div class="line">//auto create HTML file in _site dir </div><div class="line"></div><div class="line">jekyll serve </div><div class="line">//preview in port 4000</div></pre></td></tr></table></figure>
 <p>commit ur changes to github,visit <code>USERNAME.github.io</code></p>
 
       
@@ -1048,7 +1045,7 @@ $ gem install rails
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -1064,8 +1061,8 @@ $ gem install rails
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

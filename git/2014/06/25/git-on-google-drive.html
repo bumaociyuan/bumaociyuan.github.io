@@ -28,7 +28,7 @@ Now, create a folder in your Google Drive folder called “git”. You want this
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -221,23 +221,23 @@ Now, create a folder in your Google Drive folder called “git”. You want this
 <ul>
 <li>Now, create a folder in your Google Drive folder called “git”. You want this folder as git produces a lot of files and you may want other stuff on your google drive besides your code repository.</li>
 </ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir \Users\JoeUser\Google Drive\git</div></pre></td></tr></table></figure>
 <ul>
 <li>CD yourself to your project folder (or whatever folder you want to have git control over).</li>
 </ul>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> \my-project-<span class="built_in">path</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd \my-project-path</div></pre></td></tr></table></figure>
 <ul>
 <li>Now, in the projects folder, perform the following git commands</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"first commit"</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git add .</div><div class="line">git commit -m &quot;first commit&quot;</div></pre></td></tr></table></figure>
 <ul>
 <li>Now we go to Google Drive and create a bare git repo (note that the backslash between Google and Drive should be exactly there)</li>
 </ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="command">\Users</span><span class="command">\JoeUser</span><span class="command">\Google</span> Drive<span class="command">\git</span></span><br><span class="line">git init --bare my-project.git</span><br><span class="line">cd <span class="command">\my</span>-project-path</span><br><span class="line">git remote add origin /Users/JoeUser/Google<span class="command">\ </span>Drive/git/my-project.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd \Users\JoeUser\Google Drive\git</div><div class="line">git init --bare my-project.git</div><div class="line">cd \my-project-path</div><div class="line">git remote add origin /Users/JoeUser/Google\ Drive/git/my-project.git</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
 <ul>
 <li>To checkout this project from another machine, you simply make sure you have google drive on that machine and type</li>
 </ul>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /the_location_I_want_to_checkout_the_repo</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">/Users</span>/JoeUser/Google\ Drive/git/project1.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /the_location_I_want_to_checkout_the_repo</div><div class="line">git clone /Users/JoeUser/Google\ Drive/git/project1.git</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -304,7 +304,7 @@ Now, create a folder in your Google Drive folder called “git”. You want this
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -320,8 +320,8 @@ Now, create a folder in your Google Drive folder called “git”. You want this
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

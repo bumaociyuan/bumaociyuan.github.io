@@ -25,7 +25,7 @@
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -211,9 +211,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/issues/765" target="_blank" rel="external">Observe textField.text changing</a></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></span><br><span class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span><span class="variable">.textField</span>, text),<span class="keyword">self</span><span class="variable">.textField</span><span class="variable">.rac_textSignal</span>]];</span><br><span class="line">   </span><br><span class="line">   [textFieldTextSignal subscribeNext:block];</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//only RACObserve(self.textField, text) or self.textField.rac_textSignal will not working</span></div><div class="line">   RACSignal *textFieldTextSignal = [RACSignal merge:@[RACObserve(<span class="keyword">self</span>.textField, text),<span class="keyword">self</span>.textField.rac_textSignal]];</div><div class="line">   </div><div class="line">   [textFieldTextSignal subscribeNext:block];</div></pre></td></tr></table></figure>
 <p>Combine two signals</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</span><br><span class="line">	<span class="built_in">NSString</span> *x = tuple<span class="variable">.first</span>;</span><br><span class="line">       <span class="built_in">NSString</span> *y = tuple<span class="variable">.second</span>;</span><br><span class="line">       <span class="comment">//do something</span></span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">void</span>(^block)(RACTuple *) = ^(RACTuple *tuple) &#123;</div><div class="line">	<span class="built_in">NSString</span> *x = tuple.first;</div><div class="line">       <span class="built_in">NSString</span> *y = tuple.second;</div><div class="line">       <span class="comment">//do something</span></div><div class="line">   &#125;;</div><div class="line"></div><div class="line">[[RACSignal combineLatest:@[signal1,signal2]] subscribeNext:block];</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -222,18 +222,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/06/29/lucky-seven.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/ios/2015/07/15/uitextview-text-length-limitation.html" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Lucky Seven
+          UITextView text length limitation
         
       </div>
     </a>
   
   
-    <a href="/2015/05/28/reveal-crisis.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">reveal crisis</div>
+    <a href="/2015/06/29/lucky-seven.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Lucky Seven</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -280,7 +280,7 @@
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -296,8 +296,8 @@
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

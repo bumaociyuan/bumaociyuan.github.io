@@ -28,7 +28,7 @@ Solution:
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -215,16 +215,16 @@ Solution:
       
         <p>Bug: ios7中使用UISearchDisplayController进行搜索 输入内容然后滑动searchResultsTableView然后取消 再次点击搜索 输入内容之后点search 然后在取消 这样重复几次UISearchDisplayController的contentSize就会不正确的能向下滑动很长 </p>
 <p>Solution:</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#pragma mark - UISearchDisplayDelegate</span></span><br><span class="line">- (<span class="keyword">void</span>)searchDisplayController:(<span class="built_in">UISearchDisplayController</span> *)controller 	willShowSearchResultsTableView:(<span class="built_in">UITableView</span> *)tableView &#123;</span><br><span class="line"> 	  tableView<span class="variable">.contentInset</span> = <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line"> 	  tableView<span class="variable">.scrollIndicatorInsets</span> = <span class="built_in">UIEdgeInsetsZero</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#pragma mark - UISearchDisplayDelegate</span></div><div class="line">- (<span class="keyword">void</span>)searchDisplayController:(<span class="built_in">UISearchDisplayController</span> *)controller 	willShowSearchResultsTableView:(<span class="built_in">UITableView</span> *)tableView &#123;</div><div class="line"> 	  tableView.contentInset = <span class="built_in">UIEdgeInsetsZero</span>;</div><div class="line"> 	  tableView.scrollIndicatorInsets = <span class="built_in">UIEdgeInsetsZero</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Bug: <a href="http://stackoverflow.com/questions/19569688/right-aligned-uitextfield-spacebar-does-not-advance-cursor-in-ios-7" target="_blank" rel="external">Right aligned UITextField spacebar does not advance cursor in iOS 7</a><br><a href="https://github.com/nicklockwood/FXForms/issues/106" target="_blank" rel="external">FXForms/issues/106</a></p>
 <p>Solution:</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)textField:(<span class="built_in">UITextField</span> *)textField shouldChangeCharactersInRange:(<span class="built_in">NSRange</span>)range replacementString:(<span class="built_in">NSString</span> *)string &#123;</span><br><span class="line">    <span class="comment">// only when adding on the end of textfield &amp;&amp; it's a space</span></span><br><span class="line">    <span class="keyword">if</span> (range<span class="variable">.location</span> == textField<span class="variable">.text</span><span class="variable">.length</span> &amp;&amp; [string isEqualToString:<span class="string">@" "</span>]) &#123;</span><br><span class="line">        <span class="comment">// ignore replacement string and add your own</span></span><br><span class="line">        textField<span class="variable">.text</span> = [textField<span class="variable">.text</span> stringByAppendingString:<span class="string">@"\u00a0"</span>];</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// for all other cases, proceed with replacement</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">BOOL</span>)textField:(<span class="built_in">UITextField</span> *)textField shouldChangeCharactersInRange:(<span class="built_in">NSRange</span>)range replacementString:(<span class="built_in">NSString</span> *)string &#123;</div><div class="line">    <span class="comment">// only when adding on the end of textfield &amp;&amp; it's a space</span></div><div class="line">    <span class="keyword">if</span> (range.location == textField.text.length &amp;&amp; [string isEqualToString:<span class="string">@" "</span>]) &#123;</div><div class="line">        <span class="comment">// ignore replacement string and add your own</span></div><div class="line">        textField.text = [textField.text stringByAppendingString:<span class="string">@"\u00a0"</span>];</div><div class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// for all other cases, proceed with replacement</span></div><div class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Bug: <a href="http://stackoverflow.com/questions/5659674/uitableviewcell-textlabel-offset" target="_blank" rel="external">UITableViewCell textLabel offset</a></p>
 <p>Solution:</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//in Cell.m file</span></span><br><span class="line"><span class="keyword">self</span><span class="variable">.indentationLevel</span> = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">self</span><span class="variable">.indentationWidth</span> = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//in Cell.m file</span></div><div class="line"><span class="keyword">self</span>.indentationLevel = <span class="number">0</span>;</div><div class="line"><span class="keyword">self</span>.indentationWidth = <span class="number">0</span>;</div></pre></td></tr></table></figure>
 <p>Bug: <a href="http://stackoverflow.com/questions/5190648/why-is-detailtextlabel-not-visible" target="_blank" rel="external">Why is detailTextLabel not visible?</a></p>
 <p>Solution:</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cell = [[<span class="built_in">UITableViewCell</span> alloc] initWithStyle:<span class="built_in">UITableViewCellStyleSubtitle</span> reuseIdentifier:CellIdentifier];</span><br><span class="line">   cell<span class="variable">.detailTextLabel</span><span class="variable">.text</span> = <span class="string">@"some words"</span>;</span><br><span class="line">   [cell setNeedsLayout];</span><br><span class="line">   [cell layoutIfNeeded];</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cell = [[<span class="built_in">UITableViewCell</span> alloc] initWithStyle:<span class="built_in">UITableViewCellStyleSubtitle</span> reuseIdentifier:CellIdentifier];</div><div class="line">   cell.detailTextLabel.text = <span class="string">@"some words"</span>;</div><div class="line">   [cell setNeedsLayout];</div><div class="line">   [cell layoutIfNeeded];</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -291,7 +291,7 @@ Solution:
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -307,8 +307,8 @@ Solution:
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

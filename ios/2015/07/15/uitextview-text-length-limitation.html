@@ -37,7 +37,7 @@ textViewDidChange: crashes in iOS 7
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -227,7 +227,7 @@ textViewDidChange: crashes in iOS 7
 <li><a href="http://blog.csdn.net/jasonblog/article/details/36894075" target="_blank" rel="external">再谈multistage text input（中文输入法）下UITextView的内容长度限制</a></li>
 <li><a href="http://stackoverflow.com/questions/19948394/textviewdidchange-crashes-in-ios-7/19960476#19960476" target="_blank" rel="external">textViewDidChange: crashes in iOS 7</a></li>
 </ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#define textLimitLength 50</span></span><br><span class="line"><span class="preprocessor">#pragma mark - UITextViewDelegate</span></span><br><span class="line">- (<span class="built_in">BOOL</span>)textView:(<span class="built_in">UITextView</span> *)textView shouldChangeTextInRange:(<span class="built_in">NSRange</span>)range replacementText:(<span class="built_in">NSString</span> *)text &#123;</span><br><span class="line">    <span class="keyword">if</span> (textView<span class="variable">.text</span><span class="variable">.length</span> &gt;= textLimitLength &amp;&amp; text<span class="variable">.length</span> &gt; range<span class="variable">.length</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)textViewDidChange:(<span class="built_in">UITextView</span> *)textView &#123;</span><br><span class="line">    <span class="keyword">if</span> (textView<span class="variable">.markedTextRange</span> == <span class="literal">nil</span> &amp;&amp;  textView<span class="variable">.text</span><span class="variable">.length</span> &gt; textLimitLength) &#123;</span><br><span class="line">        textView<span class="variable">.text</span> = [textView<span class="variable">.text</span> substringToIndex:textLimitLength];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#define textLimitLength 50</span></div><div class="line"><span class="meta">#pragma mark - UITextViewDelegate</span></div><div class="line">- (<span class="built_in">BOOL</span>)textView:(<span class="built_in">UITextView</span> *)textView shouldChangeTextInRange:(<span class="built_in">NSRange</span>)range replacementText:(<span class="built_in">NSString</span> *)text &#123;</div><div class="line">    <span class="keyword">if</span> (textView.text.length &gt;= textLimitLength &amp;&amp; text.length &gt; range.length) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">- (<span class="keyword">void</span>)textViewDidChange:(<span class="built_in">UITextView</span> *)textView &#123;</div><div class="line">    <span class="keyword">if</span> (textView.markedTextRange == <span class="literal">nil</span> &amp;&amp;  textView.text.length &gt; textLimitLength) &#123;</div><div class="line">        textView.text = [textView.text substringToIndex:textLimitLength];</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -246,8 +246,8 @@ textViewDidChange: crashes in iOS 7
     </a>
   
   
-    <a href="/2015/06/29/lucky-seven.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Lucky Seven</div>
+    <a href="/ios/2015/06/29/reactive-cocoa-note.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">reactive cocoa note</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -294,7 +294,7 @@ textViewDidChange: crashes in iOS 7
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -310,8 +310,8 @@ textViewDidChange: crashes in iOS 7
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

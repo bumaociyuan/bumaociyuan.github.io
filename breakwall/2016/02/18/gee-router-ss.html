@@ -40,7 +40,7 @@ ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -230,25 +230,25 @@ ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口
     <div class="article-entry" itemprop="articleBody">
       
         <p>为了打PS4可以快一点买了个极路由</p>
-<h1 id="u5F00_u542Froot_u6743_u9650"><a href="#u5F00_u542Froot_u6743_u9650" class="headerlink" title="开启root权限"></a>开启root权限</h1><ul>
+<h1 id="开启root权限"><a href="#开启root权限" class="headerlink" title="开启root权限"></a>开启root权限</h1><ul>
 <li>官方开启root方法：<a href="http://bbs.hiwifi.com/thread-74899-1-1.html" target="_blank" rel="external">[公告] 【开发者模式功能开放公告】</a>我用的iPhone5s 在微信验证的时候卡住，换个其他手机就可以了</li>
 <li>安装开发者模式插件</li>
 </ul>
-<h1 id="ssh__u767B_u5F55"><a href="#ssh__u767B_u5F55" class="headerlink" title="ssh 登录"></a>ssh 登录</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@<span class="number">192.168</span><span class="number">.199</span><span class="number">.1</span> -p <span class="number">1022</span> <span class="preprocessor">#使用root帐号连接路由，端口为<span class="number">1022</span>，密码为后台登陆密码。 ssh能登录就万能了</span></span><br></pre></td></tr></table></figure>
-<h1 id="u5B89_u88C5ss"><a href="#u5B89_u88C5ss" class="headerlink" title="安装ss"></a>安装ss</h1><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /tmp &amp;&amp; wget http<span class="variable">s:</span>//gist.githubusercontent.<span class="keyword">com</span>/bumaociyuan/<span class="number">8945</span>f34046c296c9a66b/raw/<span class="number">1924</span>c8bc6a648ebdf99c2d924276bc64da6ef89f/shadow.<span class="keyword">sh</span> &amp;&amp; <span class="keyword">sh</span> shadow.<span class="keyword">sh</span> &amp;&amp; rm shadow.<span class="keyword">sh</span></span><br><span class="line"></span><br><span class="line"># 我把参考blog的脚本<span class="built_in">copy</span>了一份放到gist上</span><br></pre></td></tr></table></figure>
-<h1 id="u5F00_u542Fss"><a href="#u5F00_u542Fss" class="headerlink" title="开启ss"></a>开启ss</h1><ul>
+<h1 id="ssh-登录"><a href="#ssh-登录" class="headerlink" title="ssh 登录"></a>ssh 登录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口为1022，密码为后台登陆密码。 ssh能登录就万能了</div></pre></td></tr></table></figure>
+<h1 id="安装ss"><a href="#安装ss" class="headerlink" title="安装ss"></a>安装ss</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /tmp &amp;&amp; wget https://gist.githubusercontent.com/bumaociyuan/8945f34046c296c9a66b/raw/1924c8bc6a648ebdf99c2d924276bc64da6ef89f/shadow.sh &amp;&amp; sh shadow.sh &amp;&amp; rm shadow.sh</div><div class="line"></div><div class="line"># 我把参考blog的脚本copy了一份放到gist上</div></pre></td></tr></table></figure>
+<h1 id="开启ss"><a href="#开启ss" class="headerlink" title="开启ss"></a>开启ss</h1><ul>
 <li>重新登录极路由的后台的高级设置，会发现shadowsocks加速的选项，在表单中填写SS帐号密码和加密方式，选择智能模式，保存，只要提示运行中 已加速就表示已经成功连上SS了</li>
 <li><strong>注意不要升级路由器系统</strong></li>
 <li>若shadowsocks选项显示的是：{ “msg”: “请求的接口不存在.”, “code”: 560 }，请重启路由器。</li>
 </ul>
 <a id="more"></a>
-<h1 id="u81EA_u5B9A_u4E49pac"><a href="#u81EA_u5B9A_u4E49pac" class="headerlink" title="自定义pac"></a>自定义pac</h1><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="regexp">/etc/g</span>w-redsocks<span class="regexp">/gw-shadowsocks/g</span>w-shadowsocks.dnslist</span><br></pre></td></tr></table></figure>
-<h1 id="u52A0_u901F"><a href="#u52A0_u901F" class="headerlink" title="加速"></a>加速</h1><ul>
+<h1 id="自定义pac"><a href="#自定义pac" class="headerlink" title="自定义pac"></a>自定义pac</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/gw-redsocks/gw-shadowsocks/gw-shadowsocks.dnslist</div></pre></td></tr></table></figure>
+<h1 id="加速"><a href="#加速" class="headerlink" title="加速"></a>加速</h1><ul>
 <li><a href="https://github.com/shadowsocks/shadowsocks/wiki/Setup-a-Shadowsocks-relay" target="_blank" rel="external">Setup a Shadowsocks relay</a></li>
 <li><a href="https://smileawei.com/shadowsocks-haproxy/" target="_blank" rel="external">使用haproxy实现shadowsocks 国内中转加速</a></li>
 <li><a href="http://www.jianshu.com/p/475182d8c503/comments/468732" target="_blank" rel="external">提速 Shadowsocks</a></li>
 </ul>
-<h1 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h1><ul>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
 <li><a href="https://luolei.org/hiwifi-shadowsocks/" target="_blank" rel="external">极路由Shadowsocks家庭无痛翻墙实践</a></li>
 </ul>
 
@@ -318,7 +318,7 @@ ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -334,8 +334,8 @@ ssh 登录1ssh root@192.168.199.1 -p 1022 #使用root帐号连接路由，端口
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

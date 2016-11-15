@@ -25,7 +25,7 @@
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -215,7 +215,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>You can cancel animation by subclassing UISearchDisplayController and adding this:</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)setActive:(<span class="built_in">BOOL</span>)visible animated:(<span class="built_in">BOOL</span>)animated</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">self</span><span class="variable">.active</span> == visible) <span class="keyword">return</span>;</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.searchContentsController</span><span class="variable">.navigationController</span> setNavigationBarHidden:<span class="literal">YES</span> animated:<span class="literal">NO</span>];</span><br><span class="line">    [<span class="keyword">super</span> setActive:visible animated:animated];</span><br><span class="line">    [<span class="keyword">self</span><span class="variable">.searchContentsController</span><span class="variable">.navigationController</span> setNavigationBarHidden:<span class="literal">NO</span> animated:<span class="literal">NO</span>];</span><br><span class="line">    <span class="keyword">if</span> (visible) &#123;</span><br><span class="line">        [<span class="keyword">self</span><span class="variable">.searchBar</span> becomeFirstResponder];</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        [<span class="keyword">self</span><span class="variable">.searchBar</span> resignFirstResponder];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">- (void)setActive:(BOOL)visible animated:(BOOL)animated</div><div class="line">&#123;</div><div class="line">    if(self.active == visible) return;</div><div class="line">    [self.searchContentsController.navigationController setNavigationBarHidden:YES animated:NO];</div><div class="line">    [super setActive:visible animated:animated];</div><div class="line">    [self.searchContentsController.navigationController setNavigationBarHidden:NO animated:NO];</div><div class="line">    if (visible) &#123;</div><div class="line">        [self.searchBar becomeFirstResponder];</div><div class="line">    &#125; else &#123;</div><div class="line">        [self.searchBar resignFirstResponder];</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -282,7 +282,7 @@
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -298,8 +298,8 @@
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

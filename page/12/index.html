@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>不毛次元</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="不毛次元">
 <meta property="og:url" content="http://bumaociyuan.github.io/page/12/index.html">
 <meta property="og:site_name" content="不毛次元">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="不毛次元">
-<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -604,6 +601,93 @@
 
 
   
+    <article id="post-ad-hoc-3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/ios/2013/12/10/ad-hoc-3.html" class="article-date">
+  	<time datetime="2013-12-09T21:06:50.000Z" itemprop="datePublished">2013-12-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/ios/2013/12/10/ad-hoc-3.html">Ad hoc 教程 3 ==&gt; ipa 的远程安装</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Ad hoc 是苹果的内测机制，可以给所有注册的device 安装内测ipa。</p>
+<ul>
+<li>首先申请ad hoc 证书</li>
+<li>在dev center 加入设备udid</li>
+<li>设备下载 mobleprovision文件</li>
+<li>生成ipa,并安装(安装可以用itunes，安装或者远程安装) <code>注意打包时不能连接手机！特别是5s 不然会出现5s可以安装，其他设备不能安装的bug，原因是5s 是64位</code></li>
+</ul>
+<p>生成证书参考:<a href="/ios/2013/10/23/ad-hoc-1.html">Ad hoc 教程 1 ==&gt; 生成证书</a></p>
+<p>用itunes安装参考:<a href="/ios/2013/10/26/ad-hoc-2.html">Ad hoc 教程 2==&gt; 通过itunes安装ipa</a></p>
+<p><strong>ipa 的远程安装</strong></p>
+<p>主要是使用苹果的itms协议<br>通过safari打开<br><code>itms-services://?action=download-manifest&amp;url=https://10.0.0.23:8000/srp.plist</code></p>
+<p>或者应用内调用 </p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[[<span class="built_in">UIApplication</span> sharedApplication]openURL:[<span class="built_in">NSURL</span> URLWithString:<span class="string">@"itms-services://?action=download-manifest&amp;url=https://10.0.0.23:8000/srp.plist"</span>]];</div></pre></td></tr></table></figure>
+<p><code>iOS7 以上必须使用https 服务器存放plist</code></p>
+<p>标准plist</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot;</div><div class="line"> </div><div class="line">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</div><div class="line"> </div><div class="line">&lt;plist version=&quot;1.0&quot;&gt;</div><div class="line"> </div><div class="line">&lt;dict&gt;</div><div class="line"> </div><div class="line">   &lt;!-- array of downloads. --&gt;</div><div class="line"> </div><div class="line">   &lt;key&gt;items&lt;/key&gt;</div><div class="line"> </div><div class="line">   &lt;array&gt;</div><div class="line"> </div><div class="line">       &lt;dict&gt;</div><div class="line"> </div><div class="line">           &lt;!-- an array of assets to download --&gt;</div><div class="line"> </div><div class="line">           &lt;key&gt;assets&lt;/key&gt;</div><div class="line"> </div><div class="line">           &lt;array&gt;</div><div class="line"> </div><div class="line">               &lt;!-- software-package: the ipa to install. --&gt;</div><div class="line"> </div><div class="line">               &lt;dict&gt;</div><div class="line"> </div><div class="line">                   &lt;!-- required.  the asset kind. --&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;kind&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;string&gt;software-package&lt;/string&gt;</div><div class="line"> </div><div class="line">                   &lt;!-- optional.  md5 every n bytes.  --&gt;</div><div class="line"> </div><div class="line">                   &lt;!-- will restart a chunk if md5 fails. --&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;md5-size&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;integer&gt;10485760&lt;/integer&gt;</div><div class="line"> </div><div class="line">                   &lt;!-- optional.  array of md5 hashes --&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;md5s&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;array&gt;</div><div class="line"> </div><div class="line">                       &lt;string&gt;41fa64bb7a7cae5a46bfb45821ac8bba&lt;/string&gt;</div><div class="line"> </div><div class="line">                       &lt;string&gt;51fa64bb7a7cae5a46bfb45821ac8bba&lt;/string&gt;</div><div class="line"> </div><div class="line">                   &lt;/array&gt;</div><div class="line"> </div><div class="line">                   &lt;!-- required.  the URL of the file to download. --&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;url&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;string&gt;http://www.example.com/apps/foo.ipa&lt;/string&gt;</div><div class="line"> </div><div class="line">               &lt;/dict&gt;</div><div class="line"> </div><div class="line">               &lt;!-- display-image: the icon to display during download. --&gt;</div><div class="line"> </div><div class="line">               &lt;dict&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;kind&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;string&gt;display-image&lt;/string&gt;</div><div class="line"> </div><div class="line">                   &lt;!-- optional. icon needs shine effect applied. --&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;needs-shine&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;true/&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;url&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;string&gt;http://www.example.com/image.57×57.png&lt;/string&gt;</div><div class="line"> </div><div class="line">               &lt;/dict&gt;</div><div class="line"> </div><div class="line">               &lt;!-- full-size-image: the large 512×512 icon used by iTunes. --&gt;</div><div class="line"> </div><div class="line">               &lt;dict&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;kind&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;string&gt;full-size-image&lt;/string&gt;</div><div class="line"> </div><div class="line">                   &lt;!-- optional.  one md5 hash for the entire file. --&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;md5&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;string&gt;61fa64bb7a7cae5a46bfb45821ac8bba&lt;/string&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;needs-shine&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;true/&gt;</div><div class="line"> </div><div class="line">                   &lt;key&gt;url&lt;/key&gt;</div><div class="line"> </div><div class="line">                   &lt;string&gt;http://www.example.com/image.512×512.jpg&lt;/string&gt;</div><div class="line"> </div><div class="line">               &lt;/dict&gt;</div><div class="line"> </div><div class="line">           &lt;/array&gt;&lt;key&gt;metadata&lt;/key&gt;</div><div class="line"> </div><div class="line">           &lt;dict&gt;</div><div class="line"> </div><div class="line">               &lt;!-- required --&gt;</div><div class="line"> </div><div class="line">               &lt;key&gt;bundle-identifier&lt;/key&gt;</div><div class="line"> </div><div class="line">               &lt;string&gt;com.example.fooapp&lt;/string&gt;</div><div class="line"> </div><div class="line">               &lt;!-- optional (software only) --&gt;</div><div class="line"> </div><div class="line">               &lt;key&gt;bundle-version&lt;/key&gt;</div><div class="line"> </div><div class="line">               &lt;string&gt;1.0&lt;/string&gt;</div><div class="line"> </div><div class="line">               &lt;!-- required.  the download kind. --&gt;</div><div class="line"> </div><div class="line">               &lt;key&gt;kind&lt;/key&gt;</div><div class="line"> </div><div class="line">               &lt;string&gt;software&lt;/string&gt;</div><div class="line"> </div><div class="line">               &lt;!-- optional. displayed during download; --&gt;</div><div class="line"> </div><div class="line">               &lt;!-- typically company name --&gt;</div><div class="line"> </div><div class="line">               &lt;key&gt;subtitle&lt;/key&gt;</div><div class="line"> </div><div class="line">               &lt;string&gt;Apple&lt;/string&gt;</div><div class="line"> </div><div class="line">               &lt;!-- required.  the title to display during the download. --&gt;</div><div class="line"> </div><div class="line">               &lt;key&gt;title&lt;/key&gt;</div><div class="line"> </div><div class="line">               &lt;string&gt;Example Corporate App&lt;/string&gt;</div><div class="line"> </div><div class="line">           &lt;/dict&gt;</div><div class="line"> </div><div class="line">       &lt;/dict&gt;</div><div class="line"> </div><div class="line">   &lt;/array&gt;</div><div class="line"> </div><div class="line">&lt;/dict&gt;</div><div class="line"> </div><div class="line">&lt;/plist&gt;</div></pre></td></tr></table></figure>
+<p>需要配置的 字段</p>
+<ul>
+<li><p>bundle-identifier     ==&gt; bundle identifier</p>
+</li>
+<li><p>bundle-version        ==&gt; bundle version</p>
+</li>
+<li><p>title                 ==&gt; 安装的时候显示的title</p>
+</li>
+<li><p>software-package      ==&gt; ipa url #<code>必须</code></p>
+</li>
+<li><p>display-image         ==&gt; 144 * 144 icon url</p>
+</li>
+<li><p>full-size-image        ==&gt; 512 * 512 icon url</p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/ios/">ios</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-vb-based-browser" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -666,93 +750,6 @@ End Class
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/vb/">vb</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-ad-hoc-3" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/ios/2013/12/10/ad-hoc-3.html" class="article-date">
-  	<time datetime="2013-12-09T21:06:50.000Z" itemprop="datePublished">2013-12-09</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/ios/2013/12/10/ad-hoc-3.html">Ad hoc 教程 3 ==&gt; ipa 的远程安装</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Ad hoc 是苹果的内测机制，可以给所有注册的device 安装内测ipa。</p>
-<ul>
-<li>首先申请ad hoc 证书</li>
-<li>在dev center 加入设备udid</li>
-<li>设备下载 mobleprovision文件</li>
-<li>生成ipa,并安装(安装可以用itunes，安装或者远程安装) <code>注意打包时不能连接手机！特别是5s 不然会出现5s可以安装，其他设备不能安装的bug，原因是5s 是64位</code></li>
-</ul>
-<p>生成证书参考:<a href="/ios/2013/10/23/ad-hoc-1.html">Ad hoc 教程 1 ==&gt; 生成证书</a></p>
-<p>用itunes安装参考:<a href="/ios/2013/10/26/ad-hoc-2.html">Ad hoc 教程 2==&gt; 通过itunes安装ipa</a></p>
-<p><strong>ipa 的远程安装</strong></p>
-<p>主要是使用苹果的itms协议<br>通过safari打开<br><code>itms-services://?action=download-manifest&amp;url=https://10.0.0.23:8000/srp.plist</code></p>
-<p>或者应用内调用 </p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[[<span class="built_in">UIApplication</span> sharedApplication]openURL:[<span class="built_in">NSURL</span> URLWithString:<span class="string">@"itms-services://?action=download-manifest&amp;url=https://10.0.0.23:8000/srp.plist"</span>]];</span><br></pre></td></tr></table></figure>
-<p><code>iOS7 以上必须使用https 服务器存放plist</code></p>
-<p>标准plist</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"</span><br><span class="line"> </span><br><span class="line">"http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="title">plist</span> <span class="attribute">version</span>=<span class="value">"1.0"</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">   <span class="comment">&lt;!-- array of downloads. --&gt;</span></span><br><span class="line"> </span><br><span class="line">   <span class="tag">&lt;<span class="title">key</span>&gt;</span>items<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">   <span class="tag">&lt;<span class="title">array</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">       <span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">           <span class="comment">&lt;!-- an array of assets to download --&gt;</span></span><br><span class="line"> </span><br><span class="line">           <span class="tag">&lt;<span class="title">key</span>&gt;</span>assets<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">           <span class="tag">&lt;<span class="title">array</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- software-package: the ipa to install. --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="comment">&lt;!-- required.  the asset kind. --&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">string</span>&gt;</span>software-package<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="comment">&lt;!-- optional.  md5 every n bytes.  --&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="comment">&lt;!-- will restart a chunk if md5 fails. --&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>md5-size<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">integer</span>&gt;</span>10485760<span class="tag">&lt;/<span class="title">integer</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="comment">&lt;!-- optional.  array of md5 hashes --&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>md5s<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">array</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                       <span class="tag">&lt;<span class="title">string</span>&gt;</span>41fa64bb7a7cae5a46bfb45821ac8bba<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                       <span class="tag">&lt;<span class="title">string</span>&gt;</span>51fa64bb7a7cae5a46bfb45821ac8bba<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;/<span class="title">array</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="comment">&lt;!-- required.  the URL of the file to download. --&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>url<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">string</span>&gt;</span>http://www.example.com/apps/foo.ipa<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- display-image: the icon to display during download. --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">string</span>&gt;</span>display-image<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="comment">&lt;!-- optional. icon needs shine effect applied. --&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">true</span>/&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>url<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">string</span>&gt;</span>http://www.example.com/image.57×57.png<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- full-size-image: the large 512×512 icon used by iTunes. --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">string</span>&gt;</span>full-size-image<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="comment">&lt;!-- optional.  one md5 hash for the entire file. --&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>md5<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">string</span>&gt;</span>61fa64bb7a7cae5a46bfb45821ac8bba<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>needs-shine<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">true</span>/&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">key</span>&gt;</span>url<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">                   <span class="tag">&lt;<span class="title">string</span>&gt;</span>http://www.example.com/image.512×512.jpg<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">           <span class="tag">&lt;/<span class="title">array</span>&gt;</span><span class="tag">&lt;<span class="title">key</span>&gt;</span>metadata<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">           <span class="tag">&lt;<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- required --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">key</span>&gt;</span>bundle-identifier<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">string</span>&gt;</span>com.example.fooapp<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- optional (software only) --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">key</span>&gt;</span>bundle-version<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">string</span>&gt;</span>1.0<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- required.  the download kind. --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">key</span>&gt;</span>kind<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">string</span>&gt;</span>software<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- optional. displayed during download; --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- typically company name --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">key</span>&gt;</span>subtitle<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">string</span>&gt;</span>Apple<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="comment">&lt;!-- required.  the title to display during the download. --&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">key</span>&gt;</span>title<span class="tag">&lt;/<span class="title">key</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">               <span class="tag">&lt;<span class="title">string</span>&gt;</span>Example Corporate App<span class="tag">&lt;/<span class="title">string</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">           <span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">       <span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line">   <span class="tag">&lt;/<span class="title">array</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="title">dict</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="title">plist</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>需要配置的 字段</p>
-<ul>
-<li><p>bundle-identifier     ==&gt; bundle identifier</p>
-</li>
-<li><p>bundle-version        ==&gt; bundle version</p>
-</li>
-<li><p>title                 ==&gt; 安装的时候显示的title</p>
-</li>
-<li><p>software-package      ==&gt; ipa url #<code>必须</code></p>
-</li>
-<li><p>display-image         ==&gt; 144 * 144 icon url</p>
-</li>
-<li><p>full-size-image        ==&gt; 512 * 512 icon url</p>
-</li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/ios/">ios</a>
 	</div>
 
 
@@ -869,7 +866,7 @@ End Class
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -885,8 +882,8 @@ End Class
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

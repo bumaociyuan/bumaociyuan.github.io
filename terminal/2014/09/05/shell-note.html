@@ -24,13 +24,14 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 <meta name="twitter:description" content="February 2, 2015
 1caffeinate -t 3600
 Where 3600 is the number of seconds in one hour. You may modify it to any number of seconds, or alternatively just enter caffeinate without a timer to disable slee">
+<meta name="twitter:image" content="http://www.92csz.com/study/linux/images/12_7.png">
   
     <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -216,12 +217,12 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
     <div class="article-entry" itemprop="articleBody">
       
         <p>February 2, 2015</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caffeinate -t <span class="number">3600</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">caffeinate -t 3600</div></pre></td></tr></table></figure>
 <p>Where 3600 is the number of seconds in one hour. You may modify it to any number of seconds, or alternatively just enter caffeinate without a timer to disable sleep mode until that terminal window is closed.</p>
 <hr>
 <p>January 14, 2015</p>
 <p><a href="http://osxdaily.com/2012/11/02/list-most-used-terminal-commands/" target="_blank" rel="external">List Your 15 Most Used Terminal Commands</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">history</span> | awk <span class="string">'&#123;a[$2]++&#125;END&#123;for(i in a)&#123;print a[i] " " i&#125;&#125;'</span> | sort -rn | head -<span class="number">15</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">history</span> | awk <span class="string">'&#123;a[$2]++&#125;END&#123;for(i in a)&#123;print a[i] " " i&#125;&#125;'</span> | sort -rn | head -15</div></pre></td></tr></table></figure>
 <hr>
 <p><a href="http://www.freeos.com/guides/lsst/" target="_blank" rel="external">Linux Shell Scripting Tutorial v1.05r3<br>A Beginner’s handbook</a></p>
 <p><a href="http://www.92csz.com/study/linux/12.htm" target="_blank" rel="external">link</a></p>
@@ -233,7 +234,7 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 <p><code>Ctrl + K</code>    Clear the line after the cursor </p>
 <p><code>Ctrl + W</code>    Delete the word before the cursor </p>
 <p>—2014.11.09–</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rm</span> -rf dirPath</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm -rf dirPath</div></pre></td></tr></table></figure>
 <p>—–2014.10.25——-</p>
 <ul>
 <li><p>创建以当前时间为文件名的</p>
@@ -242,43 +243,43 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 <li><p>split</p>
 </li>
 </ul>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">string=<span class="string">"hello,world,i,like,you,babalala"</span>  </span><br><span class="line"><span class="keyword">array</span>=($&#123;string//,/ &#125;)  </span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> $&#123;array[@]&#125;  </span><br><span class="line">do  </span><br><span class="line">  	 echo <span class="variable">$i</span>  </span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">string=&quot;hello,world,i,like,you,babalala&quot;  </div><div class="line">array=($&#123;string//,/ &#125;)  </div><div class="line"> </div><div class="line">for i in $&#123;array[@]&#125;  </div><div class="line">do  </div><div class="line">  	 echo $i  </div><div class="line">done</div></pre></td></tr></table></figure>
 <ul>
 <li>join</li>
 </ul>
-<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">array</span>=($&#123;<span class="built_in">string</span><span class="comment">//,/&#125;)</span></span><br><span class="line">printf <span class="attribute">-v</span> <span class="built_in">var</span> <span class="string">"%s-"</span> <span class="string">"$&#123;array[@]&#125;"</span></span><br><span class="line"><span class="built_in">var</span>=$&#123;<span class="built_in">var</span>%?&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">array=($&#123;string//,/&#125;)</div><div class="line">printf -v var &quot;%s-&quot; &quot;$&#123;array[@]&#125;&quot;</div><div class="line">var=$&#123;var%?&#125;</div></pre></td></tr></table></figure>
 <p>—–2014-09-04——-</p>
-<h4 id="1-__u8BB0_u5F55_u547D_u4EE4_u5386_u53F2"><a href="#1-__u8BB0_u5F55_u547D_u4EE4_u5386_u53F2" class="headerlink" title="1. 记录命令历史"></a>1. 记录命令历史</h4><ul>
+<h4 id="1-记录命令历史"><a href="#1-记录命令历史" class="headerlink" title="1. 记录命令历史"></a>1. 记录命令历史</h4><ul>
 <li><code>!! （”连续两个”!”），表示执行上一条指令</code></li>
 <li>!n（这里的n是数字），表示执行命令历史中第n条指令，例如”!100”表示执行命令历史中第100个命令</li>
 <li><code>!字符串（字符串大于等于1），例如!ta，表示执行命令历史中最近一次以ta为开头的指令。</code></li>
 </ul>
-<h4 id="2-__u6307_u4EE4_u548C_u6587_u4EF6_u540D_u8865_u5168"><a href="#2-__u6307_u4EE4_u548C_u6587_u4EF6_u540D_u8865_u5168" class="headerlink" title="2. 指令和文件名补全"></a>2. 指令和文件名补全</h4><ul>
+<h4 id="2-指令和文件名补全"><a href="#2-指令和文件名补全" class="headerlink" title="2. 指令和文件名补全"></a>2. 指令和文件名补全</h4><ul>
 <li><code>按tab键，它可以帮你补全一个指令，也可以帮你补全一个路径或者一个文件名。连续按两次tab键，系统则会把所有的指令或者文件名都列出来。</code></li>
 </ul>
-<h4 id="3-__u522B_u540D_alias"><a href="#3-__u522B_u540D_alias" class="headerlink" title="3. 别名 alias"></a>3. 别名 alias</h4><p><img src="http://www.92csz.com/study/linux/images/12_7.png" alt="image"></p>
+<h4 id="3-别名-alias"><a href="#3-别名-alias" class="headerlink" title="3. 别名 alias"></a>3. 别名 alias</h4><p><img src="http://www.92csz.com/study/linux/images/12_7.png" alt="image"></p>
 <ul>
 <li>alias语法很简单，alias [命令别名]=[’具体的命令’]。</li>
 </ul>
-<h4 id="4-__u901A_u914D_u7B26"><a href="#4-__u901A_u914D_u7B26" class="headerlink" title="4. 通配符"></a>4. 通配符</h4><ul>
+<h4 id="4-通配符"><a href="#4-通配符" class="headerlink" title="4. 通配符"></a>4. 通配符</h4><ul>
 <li>在bash下，可以使用*来匹配零个或多个字符，而用?匹配一个字符。<br><img src="http://www.92csz.com/study/linux/images/12_8.png" alt="image"></li>
 </ul>
-<h4 id="5-__u7BA1_u9053_u7B26"><a href="#5-__u7BA1_u9053_u7B26" class="headerlink" title="5. 管道符"></a>5. 管道符</h4><ul>
+<h4 id="5-管道符"><a href="#5-管道符" class="headerlink" title="5. 管道符"></a>5. 管道符</h4><ul>
 <li><code>前面已经提过过管道符”|”，就是把前面的命令运行的结果丢给后面的命令。</code></li>
 </ul>
-<h4 id="6-__u4F5C_u4E1A_u63A7_u5236"><a href="#6-__u4F5C_u4E1A_u63A7_u5236" class="headerlink" title="6. 作业控制"></a>6. 作业控制</h4><ul>
+<h4 id="6-作业控制"><a href="#6-作业控制" class="headerlink" title="6. 作业控制"></a>6. 作业控制</h4><ul>
 <li>当运行一个进程时，<code>你可以使它暂停（按Ctrl+z），然后使用fg命令恢复它</code>，利用bg命令使他到后台运行，你也可以使它终止（按Ctrl+c）。</li>
 </ul>
-<h4 id="7-__u53D8_u91CF"><a href="#7-__u53D8_u91CF" class="headerlink" title="7. 变量"></a>7. 变量</h4><ul>
+<h4 id="7-变量"><a href="#7-变量" class="headerlink" title="7. 变量"></a>7. 变量</h4><ul>
 <li>前面章节中笔者曾经介绍过环境变量PATH，这个环境变量就是shell预设的一个变量，通常shell预设的变量都是大写的。变量，说简单点就是使用一个较简单的字符串来替代某些具有特殊意义的设定以及数据。就拿PATH来讲，这个PATH就代替了所有常用命令的绝对路径的设定。因为有了PATH这个变量，所以我们运行某个命令时不再去输入全局路径，直接敲命令名即可。你可以使用echo命令显示变量的值。</li>
 <li>使用env命令即可全部列出系统预设的全部系统变量了。不过登录的用户不一样这些环境变量的值也不一样。当前显示的就是root这个账户的环境变量了。下面笔者简单介绍一下常见的环境变量：</li>
 </ul>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">使用env命令即可全部列出系统预设的全部系统变量了。不过登录的用户不一样这些环境变量的值也不一样。当前显示的就是root这个账户的环境变量了。下面笔者简单介绍一下常见的环境变量：</span><br><span class="line">PATH	决定了<span class="keyword">shell</span>将到哪些目录中寻找命令或程序</span><br><span class="line"></span><br><span class="line">HOME	当前用户主目录</span><br><span class="line"></span><br><span class="line">HISTSIZE	历史记录数</span><br><span class="line"></span><br><span class="line">LOGNAME	当前用户的登录名</span><br><span class="line"></span><br><span class="line">HOSTNAME	指主机的名称</span><br><span class="line"></span><br><span class="line"><span class="keyword">SHELL</span>	前用户<span class="keyword">Shell</span>类型</span><br><span class="line"></span><br><span class="line">LANG	语言相关的环境变量，多语言可以修改此环境变量</span><br><span class="line"></span><br><span class="line">MAIL	当前用户的邮件存放目录</span><br><span class="line"></span><br><span class="line"><span class="keyword">PWD</span>	当前目录</span><br><span class="line"></span><br><span class="line">env命令显示的变量只是环境变量，系统预设的变量其实还有很多，你可以使用<span class="keyword">set</span>命令把系统预设的全部变量都显示出来。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">使用env命令即可全部列出系统预设的全部系统变量了。不过登录的用户不一样这些环境变量的值也不一样。当前显示的就是root这个账户的环境变量了。下面笔者简单介绍一下常见的环境变量：</div><div class="line">PATH	决定了shell将到哪些目录中寻找命令或程序</div><div class="line"></div><div class="line">HOME	当前用户主目录</div><div class="line"></div><div class="line">HISTSIZE	历史记录数</div><div class="line"></div><div class="line">LOGNAME	当前用户的登录名</div><div class="line"></div><div class="line">HOSTNAME	指主机的名称</div><div class="line"></div><div class="line">SHELL	前用户Shell类型</div><div class="line"></div><div class="line">LANG	语言相关的环境变量，多语言可以修改此环境变量</div><div class="line"></div><div class="line">MAIL	当前用户的邮件存放目录</div><div class="line"></div><div class="line">PWD	当前目录</div><div class="line"></div><div class="line">env命令显示的变量只是环境变量，系统预设的变量其实还有很多，你可以使用set命令把系统预设的全部变量都显示出来。</div></pre></td></tr></table></figure>
 <ul>
 <li>set不仅可以显示系统预设的变量，也可以连同用户自定义的变量显示出来。用户自定义变量？是的，用户自己同样可以定义变量</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">myname=zx //不能有空格 myname='first name'</span><br><span class="line"><span class="operator"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zx</span><br><span class="line"></span><br><span class="line">myname=<span class="string">"$myname"</span>dddd //变量内容可以累加其他变量的内容，需要**加双引号**</span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>|grep myname</span><br><span class="line">//<span class="keyword">output</span> : myname=zxdddd</span><br><span class="line"></span><br><span class="line"><span class="keyword">work</span>=/<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday/</span><br><span class="line">cd $<span class="keyword">work</span></span><br><span class="line">pwd //<span class="keyword">output</span> : /<span class="keyword">Users</span>/niko/<span class="keyword">work</span>/handday</span></span><br></pre></td></tr></table></figure>
-<h4 id="8-__u7279_u6B8A_u7B26_u53F7"><a href="#8-__u7279_u6B8A_u7B26_u53F7" class="headerlink" title="8. 特殊符号"></a>8. 特殊符号</h4><ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">myname=zx //不能有空格 myname=&apos;first name&apos;</div><div class="line">set|grep myname</div><div class="line">//output : myname=zx</div><div class="line"></div><div class="line">myname=&quot;$myname&quot;dddd //变量内容可以累加其他变量的内容，需要**加双引号**</div><div class="line"></div><div class="line">set|grep myname</div><div class="line">//output : myname=zxdddd</div><div class="line"></div><div class="line">work=/Users/niko/work/handday/</div><div class="line">cd $work</div><div class="line">pwd //output : /Users/niko/work/handday</div></pre></td></tr></table></figure>
+<h4 id="8-特殊符号"><a href="#8-特殊符号" class="headerlink" title="8. 特殊符号"></a>8. 特殊符号</h4><ol>
 <li>* ：代表零个或多个字符或数字。</li>
 <li>? ：只代表一个任意的字符</li>
 <li># ：这个符号在linux中表示注释说明的意思，即”#”后面的内容linux忽略掉。</li>
@@ -286,7 +287,7 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 <li>| ：管道符，前面多次说过，它的作用在于将符号前面命令的结果丢给符号后面的命令。这里提到的后面的命令，并不是所有的命令都可以的，一般针对文档操作的命令比较常用，例如cat, less, head, tail, grep, cut, sort, wc, uniq, tee, tr, split, sed, awk等等，其中grep, sed, awk为正则表达式必须掌握的工具，在后续内容中详细介绍。</li>
 <li>$ ：除了用于变量前面的标识符外，还有一个妙用，就是和’!’结合起来使用。</li>
 </ol>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ls</span> <span class="keyword">test</span>.txt </span><br><span class="line"><span class="keyword">test</span>.txt</span><br><span class="line"><span class="keyword">ls</span> !$</span><br><span class="line"><span class="keyword">ls</span> <span class="keyword">test</span>.txt</span><br><span class="line"><span class="keyword">test</span>.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ls test.txt </div><div class="line">test.txt</div><div class="line">ls !$</div><div class="line">ls test.txt</div><div class="line">test.txt</div></pre></td></tr></table></figure>
 <p>‘!$’表示上条命中中最后一个变量（也许称为变量不合适，总之就是上条命令中最后出现的那个东西）例如上边命令最后是test.txt那么在当前命令下输入!$则代表test.txt。</p>
 <ul>
 <li>grep ：过滤一个或多个字符</li>
@@ -301,7 +302,7 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 <li>：分号。平时我们都是在一行中敲一个命令，然后回车就运行了，那么想在一行中运行两个或两个以上的命令如何呢？则需要在命令之间加一个”;”了。</li>
 <li>[ ] ：中括号，中间为字符组合，代表中间字符中的任意一个 </li>
 </ol>
-<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">zx:terminal_study niko$ <span class="keyword">ls</span></span><br><span class="line">ddd	<span class="keyword">error</span>	<span class="keyword">text</span></span><br><span class="line">zx:terminal_study niko$ <span class="keyword">ls</span> t*</span><br><span class="line"><span class="keyword">text</span></span><br><span class="line">zx:terminal_study niko$ <span class="keyword">ls</span> [te]*</span><br><span class="line"><span class="keyword">error</span>	<span class="keyword">text</span></span><br><span class="line">zx:terminal_study niko$</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">zx:terminal_study niko$ ls</div><div class="line">ddd	error	text</div><div class="line">zx:terminal_study niko$ ls t*</div><div class="line">text</div><div class="line">zx:terminal_study niko$ ls [te]*</div><div class="line">error	text</div><div class="line">zx:terminal_study niko$</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -369,7 +370,7 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -385,8 +386,8 @@ Where 3600 is the number of seconds in one hour. You may modify it to any number
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

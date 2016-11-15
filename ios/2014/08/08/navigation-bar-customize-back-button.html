@@ -25,7 +25,7 @@
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -211,7 +211,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>July 21, 2015<br><a href="http://blog.csdn.net/justinjing0612/article/details/42294329" target="_blank" rel="external">iOS开发的一些奇巧淫技</a></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">self</span><span class="variable">.navigationItem</span><span class="variable">.leftBarButtonItem</span> = [[<span class="built_in">UIBarButtonItem</span> alloc]</span><br><span class="line"></span><br><span class="line">                                         initWithImage:img</span><br><span class="line"></span><br><span class="line">                                         style:<span class="built_in">UIBarButtonItemStylePlain</span></span><br><span class="line"></span><br><span class="line">                                         target:<span class="keyword">self</span></span><br><span class="line"></span><br><span class="line">                                         action:<span class="keyword">@selector</span>(onBack:)];</span><br><span class="line"></span><br><span class="line"><span class="keyword">self</span><span class="variable">.navigationController</span><span class="variable">.interactivePopGestureRecognizer</span><span class="variable">.delegate</span> = (<span class="keyword">id</span>)<span class="keyword">self</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">self</span>.navigationItem.leftBarButtonItem = [[<span class="built_in">UIBarButtonItem</span> alloc]</div><div class="line"></div><div class="line">                                         initWithImage:img</div><div class="line"></div><div class="line">                                         style:<span class="built_in">UIBarButtonItemStylePlain</span></div><div class="line"></div><div class="line">                                         target:<span class="keyword">self</span></div><div class="line"></div><div class="line">                                         action:<span class="keyword">@selector</span>(onBack:)];</div><div class="line"></div><div class="line"><span class="keyword">self</span>.navigationController.interactivePopGestureRecognizer.delegate = (<span class="keyword">id</span>)<span class="keyword">self</span>;</div></pre></td></tr></table></figure>
 <p>December 27, 2014 update<br><a href="http://www.jianshu.com/p/50b63a221f09" target="_blank" rel="external">link</a></p>
 <pre><code>[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
                                                    forBarMetrics:UIBarMetricsDefault];
@@ -291,7 +291,7 @@ self.navigationItem.backBarButtonItem = [self textBarButtonItemWithText:@&quot;&
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -307,8 +307,8 @@ self.navigationItem.backBarButtonItem = [self textBarButtonItemWithText:@&quot;&
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

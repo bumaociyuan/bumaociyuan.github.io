@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>不毛次元</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="不毛次元">
 <meta property="og:url" content="http://bumaociyuan.github.io/page/6/index.html">
 <meta property="og:site_name" content="不毛次元">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="不毛次元">
-<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -256,7 +253,7 @@
       
         <p><a href="https://github.com/robbyrussell/oh-my-zsh/issues/2654" target="_blank" rel="external">oh-my-zsh issue 2654</a></p>
 <p>@tomduncalf’s answer</p>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I found <span class="operator">a</span> fix <span class="keyword">for</span> this issue over <span class="keyword">at</span> <span class="operator">the</span> iTerm <span class="number">2</span> issue tracker: <span class="keyword">https</span>://code.google.com/p/iterm2/issues/detail?id=<span class="number">2000</span> - basically, go <span class="built_in">to</span> Preferences -&gt; Profile -&gt; Keys <span class="operator">and</span> <span class="built_in">load</span> <span class="operator">the</span> <span class="string">"xterm with numeric keypad"</span> preset. Not sure why this isn<span class="string">'t the default!</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">I found a fix for this issue over at the iTerm 2 issue tracker: https://code.google.com/p/iterm2/issues/detail?id=2000 - basically, go to Preferences -&gt; Profile -&gt; Keys and load the &quot;xterm with numeric keypad&quot; preset. Not sure why this isn&apos;t the default!</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -318,11 +315,11 @@
       
         <p>When run <code>pod install</code></p>
 <p>Get error message </p>
-<figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal <span class="keyword">error</span> blabla <span class="literal">empty</span> reply form <span class="built_in">server</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fatal error blabla empty reply form server</div></pre></td></tr></table></figure>
 <p>Fix this </p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="keyword">global</span> url.<span class="string">"git://"</span>.<span class="keyword">insteadOf</span> https:<span class="comment">//</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global url.&quot;git://&quot;.insteadOf https://</div></pre></td></tr></table></figure>
 <p>remove it</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="keyword">global</span> --<span class="keyword">unset</span> url.<span class="string">"git://"</span>.<span class="keyword">insteadOf</span> https:<span class="comment">//</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global --unset url.&quot;git://&quot;.insteadOf https://</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -382,12 +379,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="4th/7/2015"><a href="#4th/7/2015" class="headerlink" title="4th/7/2015"></a>4th/7/2015</h1><p>To hide username@computername both in local and ssh login mode</p>
-<p>Add following lines in <code>.zshrc</code><br><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">prompt_context() &#123;</span><br><span class="line"># empty <span class="built_in">function</span> to <span class="keyword">override</span> agnoster.theme render username<span class="keyword">@computername</span> <span class="built_in">function</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h1 id="4th-7-2015"><a href="#4th-7-2015" class="headerlink" title="4th/7/2015"></a>4th/7/2015</h1><p>To hide username@computername both in local and ssh login mode</p>
+<p>Add following lines in <code>.zshrc</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">prompt_context() &#123;</div><div class="line"># empty function to override agnoster.theme render username@computername function</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>Auto switch theme when ssh login</p>
-<p>Change theme line in <code>.zshrc</code> to following lines<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="string">[[ -n "$SSH_CLIENT" ]]</span>; <span class="keyword">then</span></span><br><span class="line">ZSH_THEME=<span class="string">"ys"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">ZSH_THEME=<span class="string">"agnoster"</span></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></p>
+<p>Change theme line in <code>.zshrc</code> to following lines<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">if [[ -n &quot;$SSH_CLIENT&quot; ]]; then</div><div class="line">ZSH_THEME=&quot;ys&quot;</div><div class="line">else</div><div class="line">ZSH_THEME=&quot;agnoster&quot;</div><div class="line">fi</div></pre></td></tr></table></figure></p>
 <p><a href="http://sub.pentacom.jp/custom-ios-fonts" target="_blank" rel="external">Install font on iOS device</a></p>
-<h1 id="Update_May_28_2C_2015"><a href="#Update_May_28_2C_2015" class="headerlink" title="Update May 28, 2015"></a>Update May 28, 2015</h1><p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
+<h1 id="Update-May-28-2015"><a href="#Update-May-28-2015" class="headerlink" title="Update May 28, 2015"></a>Update May 28, 2015</h1><p>Using <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">agnoster</a></p>
 <ol>
 <li><p>Install <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline/fonts</a></p>
 </li>
@@ -396,19 +393,19 @@
 <li><p>Add <code>DEFAULT_USER=zx</code> in <code>~/.zshrc</code> to hide <code>username@localhost</code></p>
 </li>
 <li><p>Make theme like screenshot<br> <img src="https://camo.githubusercontent.com/a862b8b4a84524c727b6e912be2d70a5571ef2de/687474703a2f2f6935392e74696e797069632e636f6d2f327631356475722e706e67" alt="image"></p>
- <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>wget <span class="symbol">https:</span>/<span class="regexp">/raw.github.com/altercation</span><span class="regexp">/solarized/master</span><span class="regexp">/iterm2-colors-solarized/</span><span class="constant">Solarized</span>%<span class="number">20</span>Dark.itermcolors</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget https://raw.github.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors</div></pre></td></tr></table></figure>
 <p><code>iTerm</code> -&gt; <code>Profiles</code> -&gt; <code>Colors</code> -&gt;<br><code>Load Presets...</code> -&gt; <code>Import...</code> -&gt; <code>Solarized Dark.itermcolors</code></p>
 </li>
 </ol>
 <hr>
 <p>Install <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a> by running follow command</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># via curl</span></span><br><span class="line">$ sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># via wget</span></span><br><span class="line">$ sh -c <span class="string">"<span class="variable">$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># via curl</div><div class="line">$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</div><div class="line"></div><div class="line"># via wget</div><div class="line">$ sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;</div></pre></td></tr></table></figure>
 <p><a href="https://www.iterm2.com/" target="_blank" rel="external">Download iTerm2</a></p>
 <p>Instead I went to <code>iTerm2</code> -&gt; <code>Preferences</code> -&gt; <code>Profiles</code> -&gt; <code>Default</code> and in the <code>General</code> Tab set the <code>Command</code> to <code>/bin/zsh</code> instead of Login shell</p>
 <p>显示中文</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">vi .zshrc</span><br><span class="line">/en_US</span><br><span class="line"><span class="comment">#remove the #</span></span><br><span class="line">:wq</span><br><span class="line"><span class="built_in">source</span> .zshrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">cd ~</div><div class="line">vi .zshrc</div><div class="line">/en_US</div><div class="line">#remove the #</div><div class="line">:wq</div><div class="line">source .zshrc</div></pre></td></tr></table></figure>
 <p>install autojump</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git clone gi<span class="variable">t:</span>//github.<span class="keyword">com</span>/joelthelion/autojump.git</span><br><span class="line"><span class="keyword">cd</span> autojump</span><br><span class="line">./install.<span class="keyword">py</span></span><br><span class="line"><span class="keyword">vi</span> ~/.zshrc</span><br><span class="line"></span><br><span class="line">#paste </span><br><span class="line">	[[ -<span class="keyword">s</span> /Users/[ME]]/.autojump/etc/<span class="keyword">profile</span>.<span class="keyword">d</span>/autojump.<span class="keyword">sh</span> ]] &amp;&amp; <span class="keyword">source</span> /Users/[ME]/.autojump/etc/<span class="keyword">profile</span>.<span class="keyword">d</span>/autojump.<span class="keyword">sh</span></span><br><span class="line"># <span class="keyword">to</span> the <span class="keyword">last</span> of .zshrc</span><br><span class="line">#Please restart terminal(<span class="keyword">s</span>) before running autojump.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">git clone git://github.com/joelthelion/autojump.git</div><div class="line">cd autojump</div><div class="line">./install.py</div><div class="line">vi ~/.zshrc</div><div class="line"></div><div class="line">#paste </div><div class="line">	[[ -s /Users/[ME]]/.autojump/etc/profile.d/autojump.sh ]] &amp;&amp; source /Users/[ME]/.autojump/etc/profile.d/autojump.sh</div><div class="line"># to the last of .zshrc</div><div class="line">#Please restart terminal(s) before running autojump.</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -478,27 +475,27 @@
 <li>Add the path where you extracted Git-TF (i.e. <code>/Users/[ME]/git-tf/</code>) to your PATH environment variable.</li>
 </ol>
 <p>open ~/.profile</p>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export PATH=<span class="string">"/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/"</span>:<span class="variable">$PATH</span></span><br><span class="line">export PATH=<span class="string">"/Users/[ME]/git-tf/"</span>:<span class="variable">$PATH</span></span><br><span class="line">export JAVA_HOME=<span class="string">"/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"</span></span><br><span class="line"></span><br><span class="line">$ source .profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">export PATH=&quot;/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/&quot;:$PATH</div><div class="line">export PATH=&quot;/Users/[ME]/git-tf/&quot;:$PATH</div><div class="line">export JAVA_HOME=&quot;/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home&quot;</div><div class="line"></div><div class="line">$ source .profile</div></pre></td></tr></table></figure>
 <ol>
 <li>add user name and password</li>
 </ol>
-<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global git-tf.server.username username</span><br><span class="line">git config --global git-tf.server.password <span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global git-tf.server.username username</div><div class="line">git config --global git-tf.server.password ***********</div></pre></td></tr></table></figure>
 <ol>
 <li>install ca.cer</li>
 </ol>
 <p>required java version “1.6.0_65” (must)</p>
 <p><a href="http://support.apple.com/kb/DL1572" target="_blank" rel="external">download Java for OS X 2014-001</a></p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo keytool -import -trustcacerts -file zztxca.cer -<span class="keyword">alias</span> <span class="constant">CompanyCA</span> -keystore  /<span class="constant">System</span>/<span class="constant">Library</span>/<span class="constant">Java</span>/<span class="constant">JavaVirtualMachines</span>/<span class="number">1.6</span>.<span class="number">0</span>.jdk/<span class="constant">Contents</span>/<span class="constant">Home</span>/<span class="class"><span class="keyword">lib</span>/<span class="title">security</span>/<span class="title">cacerts</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">#the default password for the cacerts keystore is `changeit`</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#When asked Trust this certificate? by keytool, answer yes</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo keytool -import -trustcacerts -file zztxca.cer -alias CompanyCA -keystore  /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/security/cacerts</div><div class="line"></div><div class="line">#the default password for the cacerts keystore is `changeit`</div><div class="line"></div><div class="line">#When asked Trust this certificate? by keytool, answer yes</div></pre></td></tr></table></figure>
 <ol>
 <li>clone project</li>
 </ol>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tf <span class="keyword">clone</span> <span class="title">https</span>://server.com/tfs $/projectName</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tf clone https://server.com/tfs $/projectName</div></pre></td></tr></table></figure>
 <ol>
 <li>pull</li>
 </ol>
-<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git tf pull</span><br><span class="line"><span class="escape">``</span><span class="escape">` </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">8</span>. checkin</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git tf pull</div><div class="line">``` </div><div class="line"></div><div class="line"></div><div class="line">8. checkin</div></pre></td></tr></table></figure>
 <p>git tf configure <a href="http://myserver:8080/tfs/mycollection" target="_blank" rel="external">http://myserver:8080/tfs/mycollection</a> $/TeamProjectA/Main<br>git tf pull<br>git commit -a -m “merge commit”<br>git tf checkin<br>git push</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">9.</span> recommended git settings</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">9. recommended git settings</div></pre></td></tr></table></figure>
 <p>git config [–global] core.autocrlf false<br>git config [–global] core.ignorecase true<br>```</p>
 
       
@@ -562,9 +559,9 @@
       
         <p>Run <code>pod install</code></p>
 <p>Get message like below</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[!] From now on <span class="operator"><span class="keyword">use</span> <span class="string">`abc.xcworkspace`</span>.</span><br><span class="line"></span><br><span class="line">[!] The <span class="keyword">use</span> <span class="keyword">of</span> implicit sources has been deprecated. <span class="keyword">To</span> continue <span class="keyword">using</span> all <span class="keyword">of</span> the sources currently <span class="keyword">on</span> your machine, <span class="keyword">add</span> the <span class="keyword">following</span> <span class="keyword">to</span> the top <span class="keyword">of</span> your Podfile:</span><br><span class="line"></span><br><span class="line">    <span class="keyword">source</span> <span class="string">'https://github.com/CocoaPods/Specs.git'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[!] The <span class="string">`abc [Debug]`</span> target overrides the <span class="string">`OTHER_LDFLAGS`</span> <span class="keyword">build</span> setting defined <span class="keyword">in</span> <span class="string">`Pods/Target Support Files/Pods/Pods.debug.xcconfig'. This can lead to problems with the CocoaPods installation</span><br><span class="line">    - Use the `</span>$(inherited)<span class="string">` flag, or</span><br><span class="line">    - Remove the build settings from the target.</span><br><span class="line"></span><br><span class="line">[!] The `</span>abc [<span class="keyword">Release</span>]<span class="string">` target overrides the `</span>OTHER_LDFLAGS<span class="string">` build setting defined in `</span>Pods/Target Support Files/Pods/Pods.<span class="keyword">release</span>.xcconfig<span class="string">'. This can lead to problems with the CocoaPods installation</span><br><span class="line">    - Use the `$(inherited)` flag, or</span><br><span class="line">    - Remove the build settings from the target.</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">[!] From now on use `abc.xcworkspace`.</div><div class="line"></div><div class="line">[!] The use of implicit sources has been deprecated. To continue using all of the sources currently on your machine, add the following to the top of your Podfile:</div><div class="line"></div><div class="line">    source &apos;https://github.com/CocoaPods/Specs.git&apos;</div><div class="line"></div><div class="line"></div><div class="line">[!] The `abc [Debug]` target overrides the `OTHER_LDFLAGS` build setting defined in `Pods/Target Support Files/Pods/Pods.debug.xcconfig&apos;. This can lead to problems with the CocoaPods installation</div><div class="line">    - Use the `$(inherited)` flag, or</div><div class="line">    - Remove the build settings from the target.</div><div class="line"></div><div class="line">[!] The `abc [Release]` target overrides the `OTHER_LDFLAGS` build setting defined in `Pods/Target Support Files/Pods/Pods.release.xcconfig&apos;. This can lead to problems with the CocoaPods installation</div><div class="line">    - Use the `$(inherited)` flag, or</div><div class="line">    - Remove the build settings from the target.</div></pre></td></tr></table></figure>
 <p>Build project get error below</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Undefined symbol <span class="keyword">for</span> architecture “_OBJC_CLASS_<span class="variable">$_AFHTTPClient</span>”</span><br><span class="line"></span><br><span class="line">blablabla</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Undefined symbol for architecture “_OBJC_CLASS_$_AFHTTPClient”</div><div class="line"></div><div class="line">blablabla</div></pre></td></tr></table></figure>
 <p>#Solution :</p>
 <p>Add <code>$(inherited)</code> to <code>Ohter Linker Flags</code></p>
 
@@ -627,8 +624,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="xcode_download_addresses"><a 11="" 25="" 2014="" href="#xcode_download_addresses" class="headerlink" title="<a href=" http:="" bumaociyuan.github.io="" xcode="" xcode-download-addresses.html"="">xcode download addresses</a>"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html">xcode download addresses</a></h1><h1 id="multiple_xcode_coexist"><a 11="" 25="" 2014="" href="#multiple_xcode_coexist" class="headerlink" title="<a href=" http:="" bumaociyuan.github.io="" xcode="" multiple-xcode-coexist.html"="">multiple xcode coexist</a>"><a href="http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html">multiple xcode coexist</a></h1><h1 id="Storyboard_build_error"><a href="#Storyboard_build_error" class="headerlink" title="Storyboard build error"></a>Storyboard build error</h1><p>Error message</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This <span class="property">version</span> <span class="keyword">does</span> <span class="keyword">not</span> support constraints <span class="keyword">to</span> layout margins. Open this document <span class="keyword">with</span> Xcode <span class="number">6.0</span> <span class="keyword">or</span> later.</span><br></pre></td></tr></table></figure>
+        <h1 id="xcode-download-addresses"><a href="#xcode-download-addresses" class="headerlink" title="xcode download addresses"></a><a href="http://bumaociyuan.github.io/xcode/2014/11/25/xcode-download-addresses.html">xcode download addresses</a></h1><h1 id="multiple-xcode-coexist"><a href="#multiple-xcode-coexist" class="headerlink" title="multiple xcode coexist"></a><a href="http://bumaociyuan.github.io/xcode/2014/11/25/multiple-xcode-coexist.html">multiple xcode coexist</a></h1><h1 id="Storyboard-build-error"><a href="#Storyboard-build-error" class="headerlink" title="Storyboard build error"></a>Storyboard build error</h1><p>Error message</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">This version does not support constraints to layout margins. Open this document with Xcode 6.0 or later.</div></pre></td></tr></table></figure>
 <ol>
 <li>Select <code>UI.storyboard</code></li>
 <li>Show the file inspector</li>
@@ -846,21 +843,21 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>How To Set Up Automatic Deployment with Git with a VPS</strong></p>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> project.git/hook</span><br><span class="line">vim <span class="keyword">post</span>-receive</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd project.git/hook</div><div class="line">vim post-receive</div></pre></td></tr></table></figure>
 <p>Add the following lines into <code>post-receive</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/sh</span></span><br><span class="line">git --work-tree=/path/of/project --git-dir=/path/of/project.git checkout <span class="operator">-f</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#!/bin/sh</div><div class="line">git --work-tree=/path/of/project --git-dir=/path/of/project.git checkout -f</div></pre></td></tr></table></figure>
 <p>Then make <code>post-receive</code> executable</p>
-<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x post-<span class="keyword">receive</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod +x post-receive</div></pre></td></tr></table></figure>
 <p><strong>Create a Zip archive that contains the contents of the latest commit on the current branch. </strong></p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git archive -o latest<span class="class">.zip</span> HEAD</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git archive -o latest.zip HEAD</div></pre></td></tr></table></figure>
 <p><strong>How many lines of code differs between two commits?</strong></p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment">--shortstat commit1 commit2</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff --shortstat commit1 commit2</div></pre></td></tr></table></figure>
 <p><strong>git merge tool</strong></p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#configure</span></span><br><span class="line">git config [--global] merge<span class="class">.tool</span> &lt;toolname&gt; <span class="id">#vimdiff</span> opendiff meld or kdiff3</span><br><span class="line">git config --global mergetool<span class="class">.keepBackup</span> false</span><br><span class="line"></span><br><span class="line"><span class="id">#using</span> kdiff3</span><br><span class="line">git config --global merge<span class="class">.tool</span> kdiff3</span><br><span class="line">git config --global mergetool<span class="class">.kdiff3</span><span class="class">.path</span> /Applications/kdiff3.app/Contents/MacOS/kdiff3</span><br><span class="line"><span class="id">#remove</span> <span class="class">.orig</span> backup file [Git mergetool generates unwanted <span class="class">.orig</span> files](http:<span class="comment">//stackoverflow.com/a/26218700/2480488)</span></span><br><span class="line"></span><br><span class="line"><span class="id">#merge</span> using specific tool</span><br><span class="line">git mergetool -t &lt;toolname&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#configure</div><div class="line">git config [--global] merge.tool &lt;toolname&gt; #vimdiff opendiff meld or kdiff3</div><div class="line">git config --global mergetool.keepBackup false</div><div class="line"></div><div class="line">#using kdiff3</div><div class="line">git config --global merge.tool kdiff3</div><div class="line">git config --global mergetool.kdiff3.path /Applications/kdiff3.app/Contents/MacOS/kdiff3</div><div class="line">#remove .orig backup file [Git mergetool generates unwanted .orig files](http://stackoverflow.com/a/26218700/2480488)</div><div class="line"></div><div class="line">#merge using specific tool</div><div class="line">git mergetool -t &lt;toolname&gt;</div></pre></td></tr></table></figure>
 <p><strong>resolve merge conflicts</strong></p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grep</span> -<span class="keyword">lr</span> <span class="string">'&lt;&lt;&lt;&lt;&lt;&lt;&lt;'</span> .				  #output conflict <span class="keyword">files</span></span><br><span class="line">git checkout --ours PATH/FILE 			#solution <span class="keyword">is</span> current branch </span><br><span class="line">git checkout --theirs PATH/FILE 		#solution <span class="keyword">is</span> others branch</span><br><span class="line"></span><br><span class="line"><span class="keyword">grep</span> -<span class="keyword">lr</span> <span class="string">'&lt;&lt;&lt;&lt;&lt;&lt;&lt;'</span> . | xargs git checkout --ours</span><br><span class="line"><span class="keyword">grep</span> -<span class="keyword">lr</span> <span class="string">'&lt;&lt;&lt;&lt;&lt;&lt;&lt;'</span> . | xargs git checkout --theirs</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">grep -lr &apos;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&apos; .				  #output conflict files</div><div class="line">git checkout --ours PATH/FILE 			#solution is current branch </div><div class="line">git checkout --theirs PATH/FILE 		#solution is others branch</div><div class="line"></div><div class="line">grep -lr &apos;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&apos; . | xargs git checkout --ours</div><div class="line">grep -lr &apos;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&apos; . | xargs git checkout --theirs</div></pre></td></tr></table></figure>
 <p><strong>fetch from origin with deleted remote branches</strong></p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> fetch -p</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch -p</div></pre></td></tr></table></figure>
 <p><strong>revert git commit on server</strong><br><a href="http://stackoverflow.com/questions/1270514/undoing-a-git-push" target="_blank" rel="external">Undoing a git push</a></p>
 <pre><code>git reset --hard &lt;commit&gt;
 git push -f origin &lt;commit&gt;:&lt;branch&gt;
@@ -961,7 +958,7 @@ doc/*.txt
 # ignore all .txt files in the doc/ directory
 doc/**/*.txt”
 </code></pre><p><strong>remove ignored files</strong></p>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm -r <span class="comment">--cached . </span></span><br><span class="line">git <span class="built_in">add</span> .</span><br><span class="line">git commit -am <span class="string">"Remove ignored files"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git rm -r --cached . </div><div class="line">git add .</div><div class="line">git commit -am &quot;Remove ignored files&quot;</div></pre></td></tr></table></figure>
 <p><strong>git rev-list HEAD | wc -l</strong></p>
 <pre><code>git rev-list HEAD | wc -l   # 查看历史提交次数
 </code></pre><p><strong>git diff</strong></p>
@@ -1028,7 +1025,7 @@ git diff &lt;commit1&gt; &lt;commit2&gt; -- &lt;paths&gt;
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -1044,8 +1041,8 @@ git diff &lt;commit1&gt; &lt;commit2&gt; -- &lt;paths&gt;
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 
