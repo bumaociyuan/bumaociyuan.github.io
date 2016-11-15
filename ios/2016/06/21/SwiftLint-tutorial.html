@@ -8,21 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="SwiftLint 是什么A tool to enforce Swift style and conventions, loosely based on  GitHub’s Swift Style Guide .
 安装GitHub 地址
-1$ brew install swiftlint # install swiftlint">
+1$ brew install swiftlint">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SwiftLint tutorial">
 <meta property="og:url" content="http://bumaociyuan.github.io/ios/2016/06/21/SwiftLint-tutorial.html">
 <meta property="og:site_name" content="不毛次元">
 <meta property="og:description" content="SwiftLint 是什么A tool to enforce Swift style and conventions, loosely based on  GitHub’s Swift Style Guide .
 安装GitHub 地址
-1$ brew install swiftlint # install swiftlint">
+1$ brew install swiftlint">
 <meta property="og:image" content="https://github.com/realm/SwiftLint/raw/master/assets/runscript.png">
-<meta property="og:updated_time" content="2016-11-15T02:59:25.696Z">
+<meta property="og:updated_time" content="2016-11-15T03:02:01.390Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SwiftLint tutorial">
 <meta name="twitter:description" content="SwiftLint 是什么A tool to enforce Swift style and conventions, loosely based on  GitHub’s Swift Style Guide .
 安装GitHub 地址
-1$ brew install swiftlint # install swiftlint">
+1$ brew install swiftlint">
   
     <link rel="alternative" href="/atom.xml" title="不毛次元" type="application/atom+xml">
   
@@ -220,7 +220,7 @@
       
         <h1 id="SwiftLint__u662F_u4EC0_u4E48"><a href="#SwiftLint__u662F_u4EC0_u4E48" class="headerlink" title="SwiftLint 是什么"></a>SwiftLint 是什么</h1><p>A tool to enforce Swift style and conventions, loosely based on <a href="https://github.com/github/swift-style-guide" target="_blank" rel="external"> GitHub’s Swift Style Guide </a>.</p>
 <h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><p><a href="https://github.com/realm/SwiftLint" target="_blank" rel="external">GitHub 地址</a></p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">brew </span>install <span class="keyword">swiftlint </span># install <span class="keyword">swiftlint</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">brew </span>install <span class="keyword">swiftlint</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="Xcode"><a href="#Xcode" class="headerlink" title="Xcode"></a>Xcode</h2><h3 id="SwiftLintXcode"><a href="#SwiftLintXcode" class="headerlink" title="SwiftLintXcode"></a>SwiftLintXcode</h3><p>插件自动在保存文件时运行 <code>swiftlint</code><br><a href="https://github.com/ypresto/SwiftLintXcode" target="_blank" rel="external">SwiftLintXcode</a></p>
 <h3 id="Run_Script_Phase"><a href="#Run_Script_Phase" class="headerlink" title="Run Script Phase"></a>Run Script Phase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">which</span> swiftlint &gt;/dev/null; <span class="keyword">then</span></span><br><span class="line">swiftlint</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"warning: SwiftLint not installed, install use `brew install swiftlint`</span><br><span class="line">fi</span></span><br></pre></td></tr></table></figure>
